@@ -24,7 +24,7 @@ const PopularCoursesHomeOne = () => {
           ease: 'none',
           scrollTrigger: {
             trigger: container, // animation triggered when container comes into view
-            start: 'top top', // start when container hits the top of viewport
+            start: 'top-=100 top', // start when container hits the top of viewport
             end: () => `+=${totalScrollDistance}`, // animation runs for the length of the scroll distance
             scrub: true, // smooth scrubbing for a real-time connection between scroll and animation
             pin: true,   // pin the container so that normal scrolling is disabled during the animation
@@ -111,7 +111,7 @@ const PopularCoursesHomeOne = () => {
                 <div className="section-title-area align-items-end">
                     <div className="section-title">
                         <h6 className="wow fadeInUp">
-                            Popular Courses
+                            Popular Coursessss
                         </h6>
                         <h2 className="wow fadeInUp" data-wow-delay=".3S">Our Unique Courses</h2>
                     </div>
