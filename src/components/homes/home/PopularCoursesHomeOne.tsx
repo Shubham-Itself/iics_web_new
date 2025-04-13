@@ -11,32 +11,36 @@ const PopularCoursesHomeOne = () => {
     const scrollRef = useRef<any>(null);
 
     useEffect(() => {
-        // Get the container element and all cards inside it
         const container = containerRef.current;
+        const scrollContent = scrollRef.current;
+        
+        if (!container || !scrollContent) return;
+      
         const sections = gsap.utils.toArray('.card');
-    
-        // Calculate the total horizontal scroll distance
-        const totalScrollDistance = scrollRef?.current?.scrollWidth - window.innerWidth;
-    
-        // Create the horizontal scroll animation
-        window.addEventListener('load',()=>{
-            gsap.to(sections, {
-                x: -totalScrollDistance, // move left across the total scroll width
-                ease: 'none',
-                scrollTrigger: {
-                  trigger: container, 
-                  start: 'top top',
-                  end: () => `+=${totalScrollDistance}`,
-                  scrub: true, 
-                  pin: true,   
-                  markers:true
-                }
-              });
-          });
-       
-        ScrollTrigger.refresh();
+        const lastCard = scrollContent.querySelector('.card:last-child');
+const totalScrollDistance = scrollContent.scrollWidth - window.innerWidth + (lastCard?.offsetWidth || 0);
+      
+        const animation = gsap.to(sections, {
+          x: -totalScrollDistance,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: container,
+            start: 'top top', // ← adjust start if needed
+            end: `+=${totalScrollDistance}`,
+            scrub: true,
+            pin: true,
+        
+          }
+        });
+      
+        ScrollTrigger.refresh(); // ← call this after animation is set
+      
+        return () => {
+          // Cleanup animation and trigger on unmount
+          animation.kill();
+          ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
       }, []);
-
      
 
     const coursesInformation = [
@@ -127,25 +131,25 @@ const PopularCoursesHomeOne = () => {
     
   return (
     <>
-       <section className=" popular-courses-section fix section-padding section-bg"
+       <section className=" popular-courses-section bg-white !pb-0 fix section-padding   !max-h-full !h-full"
        ref={containerRef}  
        >
             <div className="container !max-w-full"
             
              style={{
               position: 'relative',
-              height: '', // full viewport height
+              height: '100vh', // full viewport height
               overflow: 'hidden' // hide the native scrollbar to prevent regular scrolling
             }}
             >
                 <div className="section-title-area align-items-end">
-                    <div className="section-title">
+                    <div className="section-title px-[100px]">
                         <h6 className="wow fadeInUp">
                             Popular Coursessss
                         </h6>
                         <h2 className="wow fadeInUp" data-wow-delay=".3S">Our Unique Courses</h2>
                     </div>
-                    <ul className="nav">
+                    {/* <ul className="nav">
                         <li className="nav-item wow fadeInUp" data-wow-delay=".2s">
                             <a href="#All" data-bs-toggle="tab" className="nav-link active">
                                 All Courses 
@@ -166,9 +170,9 @@ const PopularCoursesHomeOne = () => {
                                 Marketing
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
-                <div className="tab-content">
+                <div className="tab-content ml-[200px]">
                     <div id="All" className="tab-pane fade show active ">
                         <div className=""  ref={scrollRef}
         style={{
