@@ -66,12 +66,12 @@
 	white-space: nowrap;
 	display: flex;
 	gap: 20px;
-    padding: 15px 0;
+    padding: 10px 25px;
 
 	.comm {
 		display: flex;
 		align-items: center;
-		animation: scroll 60s linear infinite;
+		// animation: scroll 60s linear infinite;
 		gap: 30px;
 		cursor: pointer;
 

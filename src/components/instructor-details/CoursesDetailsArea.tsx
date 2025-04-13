@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
  
 const CoursesDetailsArea = () => {
+   
   return (
     <>
       <section className="popular-courses-section fix section-padding pt-0">

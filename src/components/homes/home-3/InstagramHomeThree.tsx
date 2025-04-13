@@ -7,7 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const InstagramHomeThree = () => {
   return (
     <>
-      <div className="instagram-section fix">
+      <div className="instagram-section fix py-[100px]">
+      <div className="section-title mb-[7px] px-[100px]">
+                            <h6 className="wow fadeInUp">
+                            Student Life @ IICS
+                            </h6>
+                        
+                        </div>
             <Swiper
              spaceBetween={0}
              speed={1500}
@@ -30,6 +36,7 @@ const InstagramHomeThree = () => {
                 }               
              }}
              className="swiper instagram-slider">
+                
                  
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">

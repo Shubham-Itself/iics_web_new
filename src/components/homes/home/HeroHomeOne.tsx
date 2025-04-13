@@ -1,25 +1,54 @@
-import { Link } from "react-router-dom";
-import Count from "../../../common/Count";
+
 
  
 
 const HeroHomeOne = () => {
+    const registrationInfo = [
+        {
+            date:'1st April 2025',
+            procees : 'Registration Start Date'
+        },
+        {
+            date:'15th April 2025',
+            procees : 'Registration End Date'
+        },
+        {
+            date:'19th April 2025',
+            procees : 'Entrance Exam Date'
+          
+        },
+        {
+            date:'15th May 2025',
+            procees : 'Batch Start Date'
+        },
+    ]
   return (
     <>
-        <section className="hero-section hero-1 fix">
-            <div className="shape-left">
+        <section className=" fix relative pb-[96px]">
+            <img src="assets/iics_image/admission-iics.webp" alt="banner_imahe" />
+            <div className="absolute bottom-[47px] left-0 w-[70%] bg-white shadow-custom rounded-[20px] left-1/2 -translate-x-1/2 flex justify-between p-[20px]">
+            {
+                registrationInfo.map((items , index)=>(
+                    <div key={index} className="flex flex-col gap-[5px]">
+                        <p className="text-[22px] font-bold text-black">{items.date}</p>
+                        <p className="text-[15px] text-black">{items.procees}</p>
+                    </div>
+                ))
+            }
+            </div>
+            {/* <div className="shape-left">
                 <img src="assets/img/hero/shape-left.png" alt="img" />
-            </div>
-            <div className="shape-right">
+            </div> */}
+            {/* <div className="shape-right">
                 <img src="assets/img/hero/shape-right.png" alt="img" />
-            </div>
-            <div className="dot-shape float-bob-x">
+            </div> */}
+            {/* <div className="dot-shape float-bob-x">
                 <img src="assets/img/hero/dot.png" alt="img" />
-            </div>
-            <div className="vector-shape float-bob-y">
+            </div> */}
+            {/* <div className="vector-shape float-bob-y">
                 <img src="assets/img/hero/vectoe.png" alt="img" />
-            </div>
-            <div className="container">
+            </div> */}
+            {/* <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="hero-content">
@@ -65,7 +94,7 @@ const HeroHomeOne = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     </>
   );

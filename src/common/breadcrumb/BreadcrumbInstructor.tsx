@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
  
 
-const BreadcrumbInstructor = () => {
+const BreadcrumbInstructor = ({ breadCrumbName , pathLink }:any) => {
   return (
     <>
        <div className="breadcrumb-wrapper style-2 style-3">
@@ -20,10 +20,10 @@ const BreadcrumbInstructor = () => {
             </div>
             <div className="container">
                 <div className="page-heading">
-                    <ul className="breadcrumb-items">
-                        <li><Link to="/">Home</Link></li>
-                        <li>Instructors</li>
-                        <li className="style-2"> Instructors Details</li>
+                    <ul className="breadcrumb-items mt-[40px] !gap-[40px] ">
+                        <li className="!text-[16px]"><Link to="/">Home</Link></li>
+                        <li className="!text-[16px]"> <Link to={pathLink}>{breadCrumbName+'s'}</Link></li>
+                        <li className="style-2 !text-[16px]"> {breadCrumbName} Details</li>
                     </ul>
                 </div>
             </div>

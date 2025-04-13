@@ -4,7 +4,7 @@ import Count from "../../common/Count";
 const AboutCounter = () => {
   return (
     <>
-    <div className="counter-section-23 section-padding pt-0">
+    <div className="counter-section-23 section-padding ">
             <div className="container custom-container">
                 <div className="counter-wrapper-2 bg-cover" style={{background: `url(/assets/img/counter-bg-3.jpg)`}}>
                     <div className="counter-items">

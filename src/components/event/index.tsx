@@ -1,5 +1,5 @@
 import BreadcrumbEvent from "../../common/breadcrumb/BreadcrumbEvent";
-import MarqueeOne from "../../common/MarqueeOne";
+
 import Preloader from "../../common/Preloader";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
@@ -13,9 +13,9 @@ const Event = () => {
     <>
     <Preloader />
       <HeaderOne />
-      <BreadcrumbEvent title="Event List" subtitle="Event List" />
+      <BreadcrumbEvent title="Events" subtitle="Event List" />
       <EventLisrArea />
-			<MarqueeOne style_2={true} />
+			{/* <MarqueeOne style_2={true} /> */}
       <FooterOne />
       <ScrollTop />
     </>

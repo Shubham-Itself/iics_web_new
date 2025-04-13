@@ -1,17 +1,46 @@
 import { Link } from "react-router-dom";
-import NiceSelect from "../../ui/NiceSelect";
+
 
  
 
 const EventLisrArea = () => {
-  const selectHandler = (_e: any) => { };
+
+  const events = [
+    {
+        dateDay:'18',
+        dateMonthYear:'April 2025',
+        name:'Careers in Game',
+        officeLocation:'Lakshya Ingame Academy',
+        placeLocation:'Lajpat Nagar, Delhi',
+        time:'03:00 PM',
+
+    },
+    {
+        dateDay:'25',
+        dateMonthYear:'April 2025',
+        name:'AI Game Jam',
+        officeLocation:'Nilee Games',
+        placeLocation:'Lajpat Nagar, Delhi',
+        time:'09:00 AM',
+        
+    },
+    {
+        dateDay:'26',
+        dateMonthYear:'April 2025',
+        name:'AI Game Jam',
+        officeLocation:'Nilee Games',
+        placeLocation:'Lajpat Nagar, Delhi',
+        time:'09:00 AM',
+        
+    },
+  ]
 
   return (
     <>
         <section className="event-list-section fix section-padding pt-0">
             <div className="container">
                 <div className="event-list-wrapper">
-                    <div className="event-list-top-area">
+                    {/* <div className="event-list-top-area">
                         <div className="search-widget">
                             <input type="text" placeholder="Find event" />
                             <div className="sub-icon"><i className="fal fa-search"></i></div>
@@ -51,218 +80,49 @@ const EventLisrArea = () => {
                         <div className="event-button-top">
                             <button type="submit" className="theme-btn">Find Event</button>
                         </div>
+                    </div> */}
+                    <div className="my-[60px]">
+                    <p className="text-[35px] font-bold text-black mb-[30px]">Indian Institute of Creative Skills</p>
+                    <div className="section-title !mb-0 ">
+                    <h6 className="wow fadeInUp !mb-0">Upcoming Events</h6>
+                   
+                </div>
                     </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>18</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Outdoor Games and Nature Exploration</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
+                    {
+                        events.map((event)=>(
+                            <div className="event-list-items">
+                            <div className="event-content">
+                                <div className="content">
+                                    <div className="date !px-[6px]">
+                                        <h2>{event.dateDay}</h2>
+                                        <span>{event.dateMonthYear}</span>
+                                    </div>
+                                    <div className="title-text">
+                                        <h4><Link to="/event-details">{event.name}</Link></h4>
+                                        <ul className="post-time">
+                                            <li><i className="far fa-map-marker-alt"></i>{event.officeLocation}</li>
+                                            <li><i className="far fa-map-marker-alt"></i>{event.placeLocation}</li>
+                                            <li><i className="far fa-clock"></i>{event.time}</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/01.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>20</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Time Management Skills for Learning</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
+                            <div className="event-image">
+                                <img src="assets/img/event/list/01.jpg" alt="img" />
+                            </div>
+                            <div className="event-btn"> 
+                                <Link to="/event-details" className="theme-btn">
+                                   Register Now
+                                </Link>
                             </div>
                         </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/02.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>22</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Interactive Study Collaborate Conquer</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/03.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>24</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Boost Memory Study Hacks Work</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/04.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>26</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Study Smart Efficiency in Learning</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/05.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>28</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Note-Taking Mastery Best Techniques</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/06.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>30</h2>
-                                    <span>Sep 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Exam Strategies to Ace Your Finals</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/07.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-list-items">
-                        <div className="event-content">
-                            <div className="content">
-                                <div className="date">
-                                    <h2>01</h2>
-                                    <span>Oct 2024</span>
-                                </div>
-                                <div className="title-text">
-                                    <h4><Link to="/event-details">Mastering Techniques Workshop</Link></h4>
-                                    <ul className="post-time">
-                                        <li><i className="far fa-map-marker-alt"></i>Ronald D. Birt</li>
-                                        <li><i className="far fa-map-marker-alt"></i> New York</li>
-                                        <li><i className="far fa-clock"></i> 09:30am</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-image">
-                            <img src="assets/img/event/list/08.jpg" alt="img" />
-                        </div>
-                        <div className="event-btn"> 
-                            <Link to="/event-details" className="theme-btn">
-                                Book A Seat
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="event-button">
+                        ))
+                    }
+                   
+                   
+                    {/* <div className="event-button">
                         <Link to="/event-details" className="theme-btn">View All Events</Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

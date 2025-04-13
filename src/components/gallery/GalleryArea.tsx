@@ -5,40 +5,31 @@ import { Link } from "react-router-dom";
 const GalleryArea = () => {
   return (
     <>
-       <section className="gallery-section section-padding pt-0 fix">
+       <section className="gallery-section section-padding  fix">
             <div className="container">
                 <div className="section-title text-center">
                     <h6>Photo Gallery</h6>
                     <h2>
-                        Explore Our Photo Gallery
+                    A Glimpse into Our Creative World
                     </h2>
                 </div>
                 <ul className="nav">
                     <li className="nav-item wow fadeInUp" data-wow-delay=".2s">
                         <a href="#All" data-bs-toggle="tab" className="nav-link active">
-                            All Courses 
+                        Creator’s Summit 
                         </a>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".4s">
                         <a href="#Design" data-bs-toggle="tab" className="nav-link">
-                            Design
+                        Workshops
                         </a>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".6s">
                         <a href="#Business" data-bs-toggle="tab" className="nav-link">
-                            Business
+                        Events
                         </a>
                     </li>
-                    <li className="nav-item wow fadeInUp" data-wow-delay=".8s">
-                        <a href="#Marketing" data-bs-toggle="tab" className="nav-link">
-                            Marketing
-                        </a>
-                    </li>
-                    <li className="nav-item wow fadeInUp" data-wow-delay=".9s">
-                        <a href="#University" data-bs-toggle="tab" className="nav-link">
-                            University
-                        </a>
-                    </li>
+                   
                 </ul>
                 <div className="tab-content">
                     <div id="All" className="tab-pane fade show active">

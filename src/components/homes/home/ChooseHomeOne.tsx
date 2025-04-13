@@ -14,10 +14,10 @@ const ChooseHomeOne = () => {
                     <div className="choose-us-top">
                         <div className="section-title mb-0">
                             <h6 className="wow fadeInUp">
-                                Why Choose Us
+                            Our Unique Course Structure
                             </h6>
-                            <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                                Master New Skills <br /> with Our Engaging <br /> and Interactive
+                            <h2 className="wow fadeInUp !text-[30px]" data-wow-delay=".3s">
+                            From Learning to Earning – A Complete Career Journey
                             </h2>
                         </div>
                         <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
@@ -25,10 +25,9 @@ const ChooseHomeOne = () => {
                                 <i className="flaticon-satisfaction"></i>
                             </div>
                             <div className="content">
-                               <h2><span className="odometer" data-count="99"> <Count number={99} text='%' /> </span></h2>
+                               <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="6"> <Count number={6}  /> </span>months</h2>
                                <p>
-                                    Education is a vital process
-                                    fosters personal growth.
+                               Paid Internship with a Stipend of ₹35K-50K
                                </p>
                             </div>
                         </div>
@@ -39,11 +38,10 @@ const ChooseHomeOne = () => {
                                 <i className="flaticon-graduation"></i>
                             </div>
                             <div className="content">
-                                <p>Student Enrolled</p>
-                                <h2><span className="odometer" data-count="48.5"><Count number={99} text='.5k' /></span></h2>
+                                {/* <p>Student Enrolled</p> */}
+                                <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="12"><Count number={12}  /></span>months</h2>
                                 <p>
-                                    Education is a vital process
-                                    fosters personal growth.
+                                Intensive Training to Build Your Foundation
                                 </p>
                             </div>
                         </div>
@@ -52,11 +50,10 @@ const ChooseHomeOne = () => {
                                 <i className="flaticon-instructor"></i>
                             </div>
                             <div className="content">
-                                <p>Instructors</p>
-                                <h2><span className="odometer" data-count="250"><Count number={250} text='+' /></span></h2>
+                                {/* <p>Instructors</p> */}
+                                <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="6"><Count number={6}  /></span>Months</h2>
                                 <p>
-                                    Education is a vital process
-                                    fosters personal growth.
+                                Real-World Experience with Industry & LIVE Projects
                                 </p>
                             </div>
                         </div>

@@ -8,6 +8,7 @@ const BreacrumbEventDetails = () => {
        <section className="breadcrumb-wrapper style-2 style-event">
         <div className="shape-1">
             <img src="assets/img/breadcrumb/shape-1.png" alt="img" />
+            
         </div>
         <div className="shape-2">
             <img src="assets/img/breadcrumb/shape-2.png" alt="img" />

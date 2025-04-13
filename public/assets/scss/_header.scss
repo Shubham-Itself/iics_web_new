@@ -115,10 +115,11 @@
 						}
 					}
 					.submenu {
-						inset-inline-start: 113%;
+						inset-inline-start: 119%;
 						top: 0;
 						visibility: hidden;
 						opacity: 0;
+						border-radius: 15px;
 					}
 					&:hover {
 						>a {
@@ -248,18 +249,15 @@
 	}
 }
 
-.marquee-section {
-    &.style-header {
-        .scrolling-wrap {
 
-        }
-    }
-}
 
 //>>>>> Header 01 Start <<<<<//
 .header-1 {
 	.container-fluid {
 		padding: 0 70px;
+		.main-logo{
+			object-fit: contain;
+		}
 
 		@include breakpoint (max-xl4){
 			padding: 0 20px;
@@ -282,7 +280,7 @@
 		}
 
 		@include breakpoint (max-xxxl){
-			max-width: 340px;
+			max-width: 300px;
 		}
 
 		@include breakpoint (max-xxl){
@@ -482,7 +480,9 @@
 
 	.header-logo {
 		display: none;
-
+		.main-logo{
+			object-fit: contain;
+		}
 		@include breakpoint (max-xl){
 			display: block;
 		}

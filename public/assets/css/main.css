@@ -1676,7 +1676,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 
 .header-main .main-menu ul {
@@ -1719,7 +1719,7 @@ p {
 
 .header-main .main-menu ul li a {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--header);
   padding: 20px 0;
@@ -1779,7 +1779,7 @@ p {
 .header-main .main-menu ul li .submenu li a {
   position: relative;
   z-index: 11;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--header);
   padding: 0 0;
@@ -1970,7 +1970,7 @@ p {
 
 @media (max-width: 1399px) {
   .header-1 .header-left {
-    max-width: initial;
+    max-width: 17%;
     width: initial;
   }
 }
@@ -2072,7 +2072,7 @@ p {
 }
 
 .header-1 .header-right {
-  gap: 40px;
+  gap: 60px;
 }
 
 @media (max-width: 1199px) {
@@ -2097,8 +2097,14 @@ p {
   }
 }
 
+@media (max-width: 1199px) {
+  .header-1 .header-button {
+    display: none;
+  }
+}
+
 .header-1 .header-right .header-button .theme-btn {
-  padding: 16px 24px;
+  padding: 12px 16px;
 }
 
 .header-1 .header-right .header-button .theme-btn.style-2 {
@@ -2199,6 +2205,7 @@ p {
 @media (max-width: 1199px) {
   .header-2 .header-logo {
     display: block;
+    
   }
 }
 
@@ -3037,7 +3044,7 @@ p {
 }
 
 .breadcrumb-wrapper::before {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -18000,3 +18007,17 @@ p {
 }
 /*# sourceMappingURL=main.css.map */
 
+
+/* instructor */
+
+.leader-overlay{
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 0;
+}
+
+.team-card-items:hover .leader-overlay{
+  opacity: 1;
+}

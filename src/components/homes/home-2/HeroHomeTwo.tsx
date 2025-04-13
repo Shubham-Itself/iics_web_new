@@ -16,25 +16,28 @@ const HeroHomeTwo = () => {
                 <div className="row g-4">
                     <div className="col-lg-6">
                         <div className="hero-content">
-                            <h1 className="wow fadeInUp" data-wow-delay=".3s">
-                                Best Quality
-                                Online Courses
-                                With <span>Eduspace <img src="assets/img/hero/bar-shape-2.png" alt="shape-img" /></span>
+                            <h1 className="wow fadeInUp !text-[30px]" data-wow-delay=".3s">
+                            WELCOME TO THE INDIAN INSTITUTE OF {" "} 
+                                 <span>CREATIVE SKILLS<img src="assets/img/hero/bar-shape-2.png" alt="shape-img" /></span>
                             </h1>
-                            <p className="wow fadeInUp" data-wow-delay=".5s">
-                                Online courses have revolutionized the people learn
-                                by offering and a wide range every interest
+                            <p className="wow fadeInUp !text-[16px]" data-wow-delay=".5s">
+                            The Indian Institute of Creative Skills (IICS), an institution affiliated with NSDC Academy and operated by the Media & Entertainment Skills Council (MESC), funded by NSDC, functions under the aegis of the Ministry of Skill Development & Entrepreneurship (MSDE). We are a premier institution dedicated to shaping the next generation of creators, leaders, and entrepreneurs in the Media & Entertainment Industry. <br /> <br />
+                               <span className="font-bold">- </span> Industry-Driven Training with World-Class Facilities to equip you with real-world skills. <br />
+                               <span className="font-bold">- </span> Learn from Celebs, Oscar Award Winners and Industry Icons who bring decades of experience to the classroom. <br />
+                               <span className="font-bold">- </span> Fostering Entrepreneurship & IP Creation to position India as a global leader in Media & Entertainment. <br /> <br />
+                               <span className="font-bold text-black">Driven by Industry. Built for Creators. Backed by Legends.</span>
+
                             </p>
                             <div className="hero-button">
-                                <Link to="/courses" className="theme-btn wow fadeInUp" data-wow-delay=".3s">Find Best Courses</Link>
-                                <span className="button-text wow fadeInUp" data-wow-delay=".5s">
+                                <Link to="/courses" className="theme-btn wow fadeInUp" data-wow-delay=".3s">Learn More</Link>
+                                {/* <span className="button-text wow fadeInUp" data-wow-delay=".5s">
                                     <a  onClick={() => setIsVideoOpen(true)}
                                         style={{ cursor: "pointer" }} 
                                         className="video-btn video-popup">
                                         <i className="fas fa-play"></i>
                                     </a>
                                     <span className="ms-3 d-line">Play Video</span>
-                                </span>
+                                </span> */}
                             </div>
                         </div>
                     </div>

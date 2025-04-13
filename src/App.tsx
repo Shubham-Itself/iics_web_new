@@ -35,6 +35,17 @@ import Register from "./components/register";
 import NotFound from "./components/Error";
 import Contact from "./components/contact";
 
+import Management from "./components/managment";
+import StakeHolder from "./components/stake-holders";
+import ChiefMentors from "./components/chief-mentor";
+import IndustryMentors from "./components/industry-mentor";
+import InternationMentors from "./components/international-mentor";
+import Campus from "./components/campus";
+import Partners from "./components/partner";
+import PressMedia from "./components/press-media";
+import Workshop from "./components/workshop";
+import Career from "./components/career";
+
 
 const router = createBrowserRouter([
   { path: "/", element: <HomeOne /> },
@@ -57,8 +68,8 @@ const router = createBrowserRouter([
   { path: "/shop-cart", element: <ShopCart /> },
   { path: "/checkout", element: <Checkout /> },
   { path: "/about", element: <About /> }, 
-  { path: "/instructor", element: <Instructor /> }, 
-  { path: "/instructor-details", element: <InstructorDetails /> }, 
+  { path: "/leaders", element: <Instructor /> }, 
+  { path: "/details", element: <InstructorDetails /> }, 
   { path: "/program", element: <Program /> }, 
   { path: "/program-details", element: <ProgramDetails /> }, 
   { path: "/news", element: <News /> }, 
@@ -69,6 +80,34 @@ const router = createBrowserRouter([
   { path: "/sign-in", element: <SignIn /> }, 
   { path: "/register", element: <Register /> }, 
   { path: "/contact", element: <Contact /> }, 
+  { path: "/management", element: <Management /> }, 
+  { path: "/stakeHolders", element: <StakeHolder /> }, 
+  { path: "/chiefMentors", element: <ChiefMentors /> }, 
+  { path: "/industryMentors", element: <IndustryMentors /> }, 
+  { path: "/internationalMentors", element: <InternationMentors /> }, 
+  { path: "/courses-details/:courseTitle", element: <CoursesDetails /> },
+  { path: "/press-media", element: <PressMedia /> },
+  { path: "/workshop", element: <Workshop /> },
+  { path: "/event", element: <Workshop /> },
+  { path: "/careers", element: <Career /> },
+
+
+
+
+
+  
+
+  { path: "/campus", element: <Campus /> }, 
+
+  { path: "/partners", element: <Partners /> }, 
+
+
+  
+
+
+
+
+
 
 
 

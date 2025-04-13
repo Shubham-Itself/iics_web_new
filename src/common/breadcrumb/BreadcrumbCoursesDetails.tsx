@@ -2,21 +2,22 @@ import { Link } from "react-router-dom";
 
  
 
-const BreadcrumbCoursesDetails = () => {
+const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType , mentorIcon}:any) => {
+   
   return (
     <>
        <section className="breadcrumb-wrapper style-2">
         <div className="shape-1">
-            <img src="assets/img/breadcrumb/shape-1.png" alt="img" />
+            <img src="/assets/img/breadcrumb/shape-1.png" alt="img" />
         </div>
         <div className="shape-2">
-            <img src="assets/img/breadcrumb/shape-2.png" alt="img" />
+            <img src="/assets/img/breadcrumb/shape-2.png" alt="img" />
         </div>
         <div className="dot-shape">
-            <img src="assets/img/breadcrumb/dot-shape.png" alt="img" />
+            <img src="/assets/img/breadcrumb/dot-shape.png" alt="img" />
         </div>
         <div className="vector-shape">
-            <img src="assets/img/breadcrumb/Vector.png" alt="img" />
+            <img src="/assets/img/breadcrumb/Vector.png" alt="img" />
         </div>
         <div className="container">
             <div className="page-heading">
@@ -26,28 +27,28 @@ const BreadcrumbCoursesDetails = () => {
                     <li className="style-2"> Course Details</li>
                 </ul>
                 <div className="breadcrumb-content">
-                    <h1>Advance UX/UI Design Using Figma</h1>
+                    <h1>{titleCourse}</h1>
                     <div className="courses-breadcrumb-items">
                         <div className="client-image-items">
-                            <img src="assets/img/courses/client-3.png" alt="img" />
+                            <img src={mentorIcon} alt="img" className="w-[60px] h-[60px] object-cover rounded-[50%]" />
                             <div className="client-content">
-                                <span>Instructor</span>
-                                <h5>Patrick C. Amore</h5>
+                                <span>Chief Mentor</span>
+                                <h5>{mentor}</h5>
                             </div>
                         </div>
                         <div className="client-image-items">
                             <div className="client-content">
-                                <span>Instructor</span>
-                                <h5>Web Design</h5>
+                                <span>Duration</span>
+                                <h5>{duration}</h5>
                             </div>
                         </div>
                         <div className="client-image-items">
                             <div className="client-content">
-                                <span>Price</span>
-                                <h5>$100.00</h5>
+                                <span>Course Type</span>
+                                <h5>{courseType}</h5>
                             </div>
                         </div>
-                        <div className="client-image-items">
+                        {/* <div className="client-image-items">
                             <div className="client-content">
                                 <span>Reviews</span>
                                 <div className="star">
@@ -59,7 +60,7 @@ const BreadcrumbCoursesDetails = () => {
                                     <b>(15)</b>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

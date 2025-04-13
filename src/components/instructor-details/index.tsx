@@ -1,22 +1,27 @@
+import { useLocation } from "react-router-dom";
 import BreadcrumbInstructor from "../../common/breadcrumb/BreadcrumbInstructor";
-import MarqueeOne from "../../common/MarqueeOne";
+
 import Preloader from "../../common/Preloader";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderOne from "../../layouts/headers/HeaderOne";
-import CoursesDetailsArea from "./CoursesDetailsArea";
+
 import InstructorDetailsArea from "./InstructorDetailsArea";
+
 
  
 const InstructorDetails = () => {
+  const location = useLocation();
+  const {breadCrumbName , pathLink} = location.state || {}
+ 
   return (
     <>
     <Preloader />
       <HeaderOne />
-			<BreadcrumbInstructor />
+			<BreadcrumbInstructor  breadCrumbName={breadCrumbName} pathLink = {pathLink}/>
       <InstructorDetailsArea />       
-      <CoursesDetailsArea />       
-			<MarqueeOne style_2={true} />
+      {/* <CoursesDetailsArea />        */}
+			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
       <ScrollTop />
     </>
