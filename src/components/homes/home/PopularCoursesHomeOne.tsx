@@ -19,20 +19,25 @@ const PopularCoursesHomeOne = () => {
         const totalScrollDistance = scrollRef?.current?.scrollWidth - window.innerWidth;
     
         // Create the horizontal scroll animation
-        gsap.to(sections, {
-          x: -totalScrollDistance, // move left across the total scroll width
-          ease: 'none',
-          scrollTrigger: {
-            trigger: container, // animation triggered when container comes into view
-            start: 'top-=100 top', // start when container hits the top of viewport
-            end: () => `+=${totalScrollDistance}`, // animation runs for the length of the scroll distance
-            scrub: true, // smooth scrubbing for a real-time connection between scroll and animation
-            pin: true,   // pin the container so that normal scrolling is disabled during the animation
-            markers:true
-          }
-        });
+        window.addEventListener('load',()=>{
+            gsap.to(sections, {
+                x: -totalScrollDistance, // move left across the total scroll width
+                ease: 'none',
+                scrollTrigger: {
+                  trigger: container, 
+                  start: 'top top',
+                  end: () => `+=${totalScrollDistance}`,
+                  scrub: true, 
+                  pin: true,   
+                  markers:true
+                }
+              });
+          });
+       
         ScrollTrigger.refresh();
       }, []);
+
+     
 
     const coursesInformation = [
         {
@@ -40,71 +45,96 @@ const PopularCoursesHomeOne = () => {
              mentorName:"Dr. (Hon) Amit Behl",
              mentorDesignation:"Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
              availableSeat:'20 Seats Available',
-             batchStartDate:'15.05.2025'
+             batchStartDate:'15.05.2025',
+             mentorIcon:'/assets/iics_image/leaders/amit_behl.webp',
+             fees:"6 Lakh Per Annum",
+             duration:'2 Years'
         },
         {
             name:'Hair, Makeup & Prosthetics',
             mentorName:"Ms. Yasmin Rodgers",
             mentorDesignation:"Celebrity Makeup & Prosthetics Artist",
             availableSeat:'15 Seats Available',
-            batchStartDate:'15.05.2025'
+            batchStartDate:'15.05.2025',
+            mentorIcon:'/assets/iics_image/leaders/yasmin_rodger.webp',
+            fees:"6 Lakh Per Annum",
+            duration:'1 Year'
        },
        {
         name:'Sound Recording & Sound Design',
         mentorName:"Padma Shri Dr. Resul Pookutty",
         mentorDesignation:"Academy Award Winner, Indian Sound Designer",
         availableSeat:'20 Seats Available',
-        batchStartDate:'20.05.2025'
+        batchStartDate:'20.05.2025',
+        mentorIcon:'/assets/iics_image/leaders/resul_pookutty.webp',
+        fees:"6 Lakh Per Annum",
+        duration:'2 Years'
    },
    {
     name:'3D Game Art',
     mentorName:"Mr. Manvendra Shukul",
     mentorDesignation:"CEO, Lakshya Digital",
     availableSeat:'25 Seats Available',
-    batchStartDate:'15.05.2025'
+    batchStartDate:'15.05.2025',
+     mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
+    fees:"6 Lakh Per Annum",
+    duration:'2 Years'
 },
 {
     name:'Advance Gaming and Extended Reality (XR) Innovations',
     mentorName:"Mr. Anand Jha",
     mentorDesignation:"CEO, Nilee Games",
     availableSeat:'25 Seats Available',
-    batchStartDate:'20.05.2025'
+    batchStartDate:'20.05.2025',
+    mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
+    fees:"6 Lakh Per Annum",
+    duration:'2 Years'
 },
 {
     name:'Journalism, PR, Image Strategization & Brand Custodianship',
     mentorName:"Dr. (Hon) Anusha Srinivasan Iyer",
     mentorDesignation:"Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
     secondMentorName:'Dr. (Hon) S Ramachandran',
+    secondMentorIcon:'assets/iics_image/leaders/ramachandran.webp',
     secondMentorDesignation:'Journalist, Filmmaker, Brand Strategist, Author, Theatrician',
     availableSeat:'20 Seats Available',
-    batchStartDate:'20.05.2025'
+    batchStartDate:'20.05.2025',
+    mentorIcon:'/assets/iics_image/leaders/anusha_srinivasan_iyer.webp',
+    fees:"6 Lakh Per Annum",
+    duration:'2 Years'
 },
 {
     name:'Events and Experiential Management Program',
     mentorName:"Ms. Sushma Gaikwad",
     mentorDesignation:"Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
     availableSeat:'30 Seats Available',
-    batchStartDate:'15.05.2025'
+    batchStartDate:'15.05.2025',
+    mentorIcon:'assets/iics_image/leaders/sushma_gaikwad.webp',
+    fees:"6 Lakh Per Annum",
+    duration:'2 Years'
 },
 {
     name:'Digital Management and Content Creation',
     mentorName:"Ms. Ketki Pandit ",
     mentorDesignation:"Film Producer, Director, Storyteller, Founder- Youth Music",
     availableSeat:'20 Seats Available',
-    batchStartDate:'15.05.2025'
+    batchStartDate:'15.05.2025',
+    mentorIcon:'assets/iics_image/leaders/ketki_pandit.webp',
+    fees:"6 Lakh Per Annum",
+    duration:'2 Years'
 },
     ]
     
   return (
     <>
        <section className=" popular-courses-section fix section-padding section-bg"
-      
+       ref={containerRef}  
        >
-            <div className="container"
-             ref={containerRef}  
+            <div className="container !max-w-full"
+            
              style={{
               position: 'relative',
-              height: '100vh', // full viewport height
+              height: '', // full viewport height
               overflow: 'hidden' // hide the native scrollbar to prevent regular scrolling
             }}
             >
@@ -142,13 +172,14 @@ const PopularCoursesHomeOne = () => {
                     <div id="All" className="tab-pane fade show active ">
                         <div className=""  ref={scrollRef}
         style={{
-          display: 'flex'
+          display: 'flex',
+          gap:'50px'
         }} >
                             {
                                 coursesInformation.map((course , index)=>(
-<div key={index} className=" !w-[30%] col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp card" data-wow-delay=".2s" >
-                                <div className="courses-card-main-items">
-                                    <div className="courses-card-items">
+<div key={index} className=" !w-[25%] col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp card" data-wow-delay=".2s" >
+                                <div className="courses-card-main-items h-full">
+                                    <div className="courses-card-items !mt-0">
                                         <div className="courses-image">
                                             <img src="assets/img/courses/01.jpg" alt="img" />
                                             {/* <h3 className="courses-title">{course.name}</h3>
@@ -194,7 +225,7 @@ const PopularCoursesHomeOne = () => {
                                             </h5>
                                             <div className="client-items !items-start !flex-col">
                                                 <div className="flex !items-center gap-[20px]">
-                                                <div className="client-img bg-cover !w-[25px]" style={{background: `url(assets/img/courses/client-1.png)`}}></div>
+                                               <img src={course.mentorIcon} alt="" className="w-[25px] h-[25px] rounded-[50%] object-cover"  />
                                                 <div>
                                                 <p className="!text-[12px]">{course.mentorName}</p>
                                                 {/* <p className="!text-[12px]">{course.mentorDesignation}</p> */}
@@ -203,7 +234,7 @@ const PopularCoursesHomeOne = () => {
                                                
                                                 {
                                                     course.secondMentorName && course.secondMentorDesignation && <div className="flex !items-center gap-[20px]">
-                                                        <div className="client-img bg-cover" style={{background: `url(assets/img/courses/client-1.png)`}}></div>
+                                                    <img src={course.secondMentorIcon} alt="" className="w-[25px] min-w-[25px] h-[25px] rounded-[50%] object-cover"  />
                                                 <div>
                                                 <p className="!text-[12px]">{course.secondMentorName}</p>
                                                 {/* <p className="!text-[12px]">{course.secondMentorDesignation}</p> */}
@@ -225,7 +256,7 @@ const PopularCoursesHomeOne = () => {
                                     </div>
                                     <div className="courses-card-items-hover">
                                         <div className="courses-content">
-                                            <ul className="post-cat">
+                                            {/* <ul className="post-cat">
                                                 <li>
                                                     <Link to="/courses">Design</Link>
                                                 </li>
@@ -236,30 +267,38 @@ const PopularCoursesHomeOne = () => {
                                                     <i className="fas fa-star"></i>
                                                     <i className="fas fa-star"></i>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                             <h5>
                                                 <Link to="/courses-details">
-                                                    Learn With Advance Web
-                                                    Design (UX/UI) Course
+                                                  {course.name}
                                                 </Link>
                                             </h5>
-                                            <h4>$85</h4>
-                                            <span>
-                                                Education is only empowers
-                                                people to pursue career
-                                            </span>
-                                            <div className="client-items">
-                                                <div className="client-img bg-cover" style={{background: `url(assets/img/courses/client-1.png)`}}></div>
-                                                <p>Paul C. Deleon</p>
+                                            <h4 className="!text-[20px]">&#8377;{course.fees}</h4>
+                                           
+                                            <div className="client-items !mt-[0px] !pb-[5px]">
+                                                <img src={course.mentorIcon} alt="" className="w-[25px] min-w-[25px] h-[25px] object-cover rounded-[50%]" />
+                                                <div>
+                                                <p>{course.mentorName}</p>
+                                                <p className="text-[10px] leading-[20px]">{course.mentorDesignation}</p>
+                                                </div>
                                             </div>
+                                            {
+                                                course.secondMentorName && course.secondMentorDesignation &&  <div className="client-items !mt-[0px] !pb-[5px]">
+                                                <img src={course.secondMentorIcon} alt="" className="w-[25px] min-w-[25px] h-[25px] object-cover rounded-[50%]" />
+                                                <div>
+                                                <p>{course.secondMentorName}</p>
+                                                <p className="text-[10px]">{course.secondMentorDesignation}</p>
+                                                </div>
+                                            </div>
+                                            }
                                             <ul className="post-class">
                                                 <li>
                                                     <i className="far fa-clock"></i>
-                                                    7h 40min
+                                                    {course.duration}
                                                 </li>
                                                 <li>
                                                     <i className="far fa-user"></i>
-                                                    80 Students
+                                                    {course.availableSeat}
                                                 </li>
                                             </ul>
                                             <Link to="/courses-details" className="theme-btn yellow-btn">Enroll Now</Link>
