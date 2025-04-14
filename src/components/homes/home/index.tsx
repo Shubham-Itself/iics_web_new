@@ -14,10 +14,9 @@ import BrandsHomeOne from "./BrandsHomeOne";
 import ChooseHomeOne from "./ChooseHomeOne";
 
 import HeroHomeOne from "./HeroHomeOne";
-import NewsletterHomeOne from "./NewsletterHomeOne";
+
 import PopularCoursesHomeOne from "./PopularCoursesHomeOne";
 
-import TestimonialHomeOne from "./TestimonialHomeOne";
 
 
 

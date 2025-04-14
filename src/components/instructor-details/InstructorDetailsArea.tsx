@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+
 
 const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image}:any) => {
         // const location = useLocation();
