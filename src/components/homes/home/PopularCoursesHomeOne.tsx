@@ -41,7 +41,7 @@ const PopularCoursesHomeOne = () => {
     ScrollTrigger.refresh();
     return () => {
       ctx.revert();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    //   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
      
