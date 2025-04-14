@@ -3,22 +3,28 @@ import VideoPopup from "../../modals/VideoPopup";
 import { Link } from "react-router-dom";
 
 const AccordionItem = ({ title, content, isOpen, onClick }: any) => (
-  <div className="border-b">
+  <div className="border rounded-2xl shadow p-4 mb-[20px]">
     <button
       onClick={onClick}
-      className="w-full flex justify-between items-center p-4 text-left font-medium text-lg"
+      className="w-full flex justify-between items-center  text-left font-medium text-lg"
     >
       {title}
-      <span>{isOpen ? "-" : "+"}</span>
+      <span
+                          className={`ml-2 transform transition-transform duration-300 ${
+                            isOpen ? "rotate-180" : ""
+                          }`}
+                        >
+                          ▼
+                        </span>
     </button>
     {isOpen && (
-      <div  className="accordion-collapse"
+      <div  className="accordion-collapse "
       aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-          <ul>
+      <div className="accordion-body !transition-all !duration-300 ease-in-out">
+          <ul className="mt-[20px]">
            { content?.map((item:any)=>(
             <li>
-                  <span>
+                  <span className="flex gap-[20px] items-center">
                       <i className="fas fa-file-alt"></i>
                       {item}
                   </span>
@@ -37,7 +43,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }: any) => (
 const CoursesDetailsArea = ({
   fees,
   courseInfo,
-
+courseImg,
   mentor,
   duration,
   courseType,
@@ -50,7 +56,8 @@ const CoursesDetailsArea = ({
   careerJob,
   careerEntrepreneurship,
   mentorIcon,
-  eligibilityCriteria
+  eligibilityCriteria,
+  courseVideo
 }: any) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
@@ -77,14 +84,14 @@ const CoursesDetailsArea = ({
               <div className="col-lg-8">
                 <div className="courses-details-items">
                   <div className="courses-image">
-                    <img src="/assets/img/courses/details-1.jpg" alt="img" />
-                    <a
+                  <video src={courseVideo? courseVideo : '/assets/iics_video/course_video/events.mp4'} autoPlay muted loop playsInline></video>
+                    {/* <a
                       onClick={() => setIsVideoOpen(true)}
                       style={{ cursor: "pointer" }}
                       className="video-btn ripple video-popup"
                     >
                       <i className="fas fa-play"></i>
-                    </a>
+                    </a> */}
                   </div>
                   <div className="courses-details-content">
                     <ul className="nav !gap-0 !justify-between">
@@ -96,7 +103,7 @@ const CoursesDetailsArea = ({
                         <a
                           href="#Curriculum"
                           data-bs-toggle="tab"
-                          className="nav-link"
+                          className="nav-link active "
                         >
                           Curriculum
                         </a>
@@ -108,7 +115,7 @@ const CoursesDetailsArea = ({
                         <a
                           href="#Course"
                           data-bs-toggle="tab"
-                          className="nav-link active"
+                          className="nav-link "
                         >
                           Eligibility Criteria
                         </a>
@@ -139,14 +146,14 @@ const CoursesDetailsArea = ({
                       </li>
                     </ul>
                     <div className="tab-content">
-                      <div id="Course" className="tab-pane fade show active">
+                      <div id="Course" className="tab-pane fade  active">
                         <div className="description-content">
                           <p className="mb-3">
                             {eligibilityCriteria}
                           </p>
                         </div>
                       </div>
-                      <div id="Curriculum" className="tab-pane fade">
+                      <div id="Curriculum" className="tab-pane show fade">
                         {courseCurricullam?.map((item:any, index:any) => (
                           <AccordionItem
                             key={index}
@@ -264,8 +271,8 @@ const CoursesDetailsArea = ({
               <div className="col-lg-4">
                 <div className="courses-sidebar-area sticky-style">
                   <div className="courses-items">
-                    <div className="courses-image">
-                      <img src="/assets/img/courses/22.jpg" alt="img" />
+                    <div className="courses-image !mb-0">
+                      <img src={courseImg} alt="img" />
                       {/* <h3 className="courses-title">Development</h3>
                                         <h4 className="topic-title">Web Development</h4> */}
                       <div className="arrow-items">

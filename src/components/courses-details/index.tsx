@@ -16,19 +16,27 @@ const CoursesDetails = () => {
   const { courseTitle } = useParams(); 
   const [courseData, setCourseData] = useState<any>(null);
   useEffect(() => {
-    const getInnerMenuByTitle = (title: string) => {
-      const innerMenus = menu_data
-        .flatMap(item =>
-          item.sub_menus?.flatMap(sub =>
-            sub.inner_menu ? sub.inner_menus || [] : []
-          ) || []
-        );
-
-      return innerMenus.find(inner => inner.title?.toLowerCase() === title.toLowerCase());
+    const titleStr = courseTitle?.toLowerCase() || "";
+  
+    const findCourseData = () => {
+      const innerMenus = menu_data?.flatMap(item =>
+        item.sub_menus?.flatMap(sub =>
+          sub.inner_menu ? sub.inner_menus || [] : []
+        ) || []
+      );
+  
+      const innerMatch = innerMenus.find(inner => inner.title?.toLowerCase() === titleStr);
+      if (innerMatch) return innerMatch;
+  
+      const outerMenus = menu_data?.flatMap(item => item.sub_menus || []);
+      const outerMatch = outerMenus.find(outer => outer?.title?.toLowerCase() === titleStr);
+      if (outerMatch) return outerMatch;
+  
+      return null;
     };
-
-    const course = getInnerMenuByTitle(courseTitle || '');
-    setCourseData(course ?? null);
+  
+    const result = findCourseData();
+    setCourseData(result);
   }, [courseTitle]);
 
   if (!courseData) {
@@ -39,14 +47,14 @@ const CoursesDetails = () => {
     );
   }
 
-  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria} = courseData
+  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo} = courseData 
 
   return (
     <>
     <Preloader />
     <HeaderOne />
     <BreadcrumbCoursesDetails titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} mentorIcon={mentorIcon}/>
-    <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria}/>
+    <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria} courseImg={courseImg} courseVideo={courseVideo}/>
     {/* <RelatedCourses /> */}
     {/* <MarqueeOne style_2={true} /> */}
     <FooterOne /> 

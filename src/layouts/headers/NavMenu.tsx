@@ -84,7 +84,7 @@ const NavMenu = () => {
                   <React.Fragment key={sub_index}>
                     {sub_item?.link && !sub_item.inner_menu && (
                       <li>
-                        <Link to={sub_item.link} className="!text-[14px]">{sub_item.title}</Link>
+                        <Link to={sub_item.title =='Digital Content Creatio' || sub_item.title == 'Events And Experiential Media' ?`/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}` : sub_item.link } className="!text-[14px]">{sub_item.title}</Link>
                       </li>
                     )}
 

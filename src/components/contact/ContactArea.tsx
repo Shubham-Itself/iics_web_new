@@ -2,7 +2,7 @@
 const ContactArea = () => {
   return (
     <>
-      <section className="contact-section section-padding pt-0 fix">
+      <section className="contact-section section-padding  fix">
             <div className="container">
                 <div className="section-title text-center">
                     <h6 className="wow fadeInUp">Get In Touch</h6>
@@ -17,15 +17,13 @@ const ContactArea = () => {
                                 <i className="flaticon-map"></i>
                             </div>
                             <h5>
-                                Academic Location
+                            Headquarters
                             </h5>
                             <div className="image">
                                 <img src="assets/img/small-line.png" alt="img" />
                             </div>
                             <h4>
-                                70 Washington Square <br />
-                                South New York, NY 10012, <br />
-                                 United States
+                            13-A, 3rd Floor, <br /> Above Tata Motors Showroom, Main Ring Road,<br /> Lajpat Nagar -4, New Delhi - 110024
                             </h4>
                         </div>
                     </div>
@@ -41,8 +39,8 @@ const ContactArea = () => {
                                 <img src="assets/img/small-line.png" alt="img" />
                             </div>
                             <h4>
-                                <a href="mailto:supportedus@gmail.com">supportedus@gmail.com</a> <br />
-                                <a href="mailto:www.eduspace.com">www.eduspace.com</a>
+                                <a href="mailto:supportedus@gmail.com">info@iicsindia.org</a> 
+                             
                             </h4>
                         </div>
                     </div>
@@ -52,14 +50,14 @@ const ContactArea = () => {
                                 <img src="assets/img/call.png" alt="img" />
                             </div>
                             <h5>
-                                Emergency
+                            Contact Number
                             </h5>
                             <div className="image">
                                 <img src="assets/img/small-line.png" alt="img" />
                             </div>
                             <h4>
-                                <a href="tel:++00012345688">+000 123 456 88</a> <br />
-                                <a href="tel:+4325688899">+432 568 88 99</a>
+                                <a href="tel:++00012345688">+91- 959-4949-959</a> <br />
+                               
                             </h4>
                         </div>
                     </div>

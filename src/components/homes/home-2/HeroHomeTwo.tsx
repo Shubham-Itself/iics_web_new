@@ -51,9 +51,9 @@ const HeroHomeTwo = () => {
                                 <div className="counter-box float-bob-y">
                                     <p>More then</p>
                                     <h2><span className="odometer" data-count="2800">
-                                        <Count number={2800} text='+' />
+                                        <Count number={100} text='+' />
                                         </span></h2>
-                                    <p>Quality Courses</p>
+                                    <p>Creative Career <br /> Pathways</p>
                                 </div>
                             </div>
                         </div>

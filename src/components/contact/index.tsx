@@ -17,9 +17,9 @@ const Contact = () => {
 			<HeaderOne />
 			<BreadcrumbEvent title="Contact" subtitle="Contact" />
 			<ContactArea />
-      <MapArea />
+      {/* <MapArea /> */}
       <ContactForm />
-			<MarqueeOne style_2={true} />
+			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
 			<ScrollTop />
 		</>

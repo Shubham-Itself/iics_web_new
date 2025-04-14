@@ -17,6 +17,25 @@ export interface DataType {
     one_page_title?: string;
     demo_img?: string | any;
     inner_menu?: boolean;
+	mentorName?:string;
+	mentorIcon?:string;
+	mentorInfo?:string
+	duration?:string;
+	courseType?:string;
+	fees?:string;
+	courseInfo?:string;
+	studentsSeat?:string;
+	enrollmentDeadLine?:string
+	courseStartDate?:string
+	industryMentors?:string[]
+	eligibilityCriteria?:string
+	courseImg?:string
+	courseVideo?:string
+	courseCurricullam?:{
+
+	}
+	careerJob?:string
+	careerEntrepreneurship?:string
     inner_menus?: {
       link?: string;
       title?: string;
@@ -26,12 +45,14 @@ export interface DataType {
 	  duration?:string;
 	  courseType?:string;
 	  fees?:string;
+	  courseVideo?:string
 	  courseInfo?:string;
 	  studentsSeat?:string;
 	  enrollmentDeadLine?:string
 	  courseStartDate?:string
 	  industryMentors?:string[]
 	  eligibilityCriteria?:string
+	   courseImg?:string
 	  courseCurricullam?:{
 
 	  }
@@ -119,6 +140,8 @@ const menu_data: DataType[] = [
 			  title: "Performing Arts and Media Management",
 			  mentorName: 'Dr. (Hon) Amit Behl',
 			  mentorIcon:'/assets/iics_image/leaders/amit_behl.webp',
+			  courseImg:'/assets/iics_course_image/performing-arts-media-management.webp',
+			  courseVideo:'/assets/iics_video/course_video/acting_video.mp4',
 			  mentorInfo:'Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant',
 			  duration: '2 Years (12+6+6 Months)',
 			  courseType: 'Certificate',
@@ -183,6 +206,7 @@ const menu_data: DataType[] = [
 			  duration: '1 Year (6+3+3 Months)',
 			  courseType: 'Certificate',
 			  fees: '6 Lakhs Per Annum',
+			   courseImg:'/assets/iics_course_image/hair-makeup-prosthetics.webp',
 			  courseInfo: 'Makeup Artistry, Special Effects, Prosthetic design all integrated over a one-year program.',
 			  studentsSeat:'15',
 			  enrollmentDeadLine:'15.04.2025',
@@ -226,6 +250,8 @@ const menu_data: DataType[] = [
 			  studentsSeat:'20',
 			  enrollmentDeadLine:'20.04.2025',
 			  courseStartDate:'19.05.2025',
+			  courseVideo:'/assets/iics_video/course_video/sound_school.mp4',
+			   courseImg:'/assets/iics_course_image/sound-recording-sound-design.webp',
 			  industryMentors:[],
 			  mentorIcon:'/assets/iics_image/leaders/resul_pookutty.webp',
 			  mentorInfo:'Academy Award Winner, Indian Sound Designer ',
@@ -294,6 +320,7 @@ const menu_data: DataType[] = [
 			  studentsSeat:'25',
 			  enrollmentDeadLine:'19.04.2025',
 			  courseStartDate:'15.05.2025',
+			       courseImg:'/assets/iics_course_image/3d-game-art.webp',
 			  industryMentors:[],
 			  mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
 			  mentorInfo:'CEO, Lakshya Digital',
@@ -353,6 +380,7 @@ const menu_data: DataType[] = [
 			  studentsSeat:'25',
 			  enrollmentDeadLine:'19.04.2025',
 			  courseStartDate:'20.05.2025',
+			   courseImg:'/assets/iics_course_image/advance-gaming-extended-reality-innovations.webp',
 			  industryMentors:[],
 			  mentorIcon:'/assets/iics_image/leaders/anand_jha.webp',
 			  mentorInfo:'CEO, Nilee Games',
@@ -428,6 +456,7 @@ const menu_data: DataType[] = [
 			  studentsSeat:'20',
 			  enrollmentDeadLine:'19.04.2025',
 			  courseStartDate:'20.05.2025',
+			     courseImg:'/assets/iics_course_image/journalism-PR-Image-strategization-Brand-Custodianship.webp',
 			  industryMentors:[],
 			  mentorIcon:'/assets/iics_image/leaders/anusha_srinivasan_iyer.webp',
 			  mentorInfo:'Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist',
@@ -497,27 +526,137 @@ const menu_data: DataType[] = [
         ],
       },
 
-      { link: "/event-details", title: "Events And Experiential Media" },
+      {  link: "/event-details", title: "Events And Experiential Media" ,  mentorName: 'Ms. Sushma Gaikwad',
+		duration: '2 Year (12+6+6 Months)',
+		courseType: 'Certificate',
+		fees: '6 Lakhs Per Annum',
+		courseInfo: 'Events and Experiential Management Program',
+		studentsSeat:'20',
+		enrollmentDeadLine:'20.04.2025',
+		courseStartDate:'19.05.2025',
+		courseVideo:'/assets/iics_video/course_video/events.mp4',
+		courseImg:'/assets/iics_course_image/event-experiential-management-program.webp',
+		industryMentors:[],
+		mentorIcon:'/assets/iics_image/leaders/sushma_gaikwad.webp',
+		mentorInfo:'Academy Award Winner, Indian Sound Designer ',
+		careerJob:'Sound Designer, Sound Editor, Audio Engineer, Foley Artist, Mixing/Mastering Engineer',
+		careerEntrepreneurship:'Home Studio Business, Independent Sound Post-Production Services, Podcast & Music Production Studio Owner',
+		eligibilityCriteria:'Open to B.Tech, B.Sc. graduates in Sound Engineering or related disciplines, music producers, audio technicians, and professionals in the music and film industry.',
+		courseCurricullam : [
+		  {
+			title: "Semester 1: Fundamentals of Event Management",
+			content:  [
+			  "Overview of Experiential & Event Management",
+			  'Understanding the Science Behind Experiential Management',
+			  'Understanding the Functioning of Experiential Management',
+			  'Types of Events',
+			  'Event Planning'
+			  
+			],
+		  },
+		  {
+			  title: "Semester 2: Sound Recording, Sound Designing and Sound Editing",
+			  content:  [
+				"Introduction to Sound Recording and Sound Designing",
+				'Sound Recording and Sound Editing',
+				'Project (Dialogue Film)'
+				
+			  ],
+			},
+			{
+			  title: "Semester 3: Sound Mixing, Mastering and Playback Project",
+			  content:  [
+				"Sound Mixing",
+				'Mastering',
+				'Playback Project'
+				
+			  ],
+			},
+			{
+			  title: "Semester 4:  Sound Design, Sound Production and Film Project",
+			  content:  [
+				"Sound Design (Aesthetics, Spirituality and Technology)",
+				'Different formats of Sound Production',
+				'Graduation Portfolio',
+				'Internship and Industry Exposure'
+				
+			  ],
+			},
+		  
+		  
+		  
+		] },
 
       {
-        inner_menu: true,
-        title: "Digital Content Creation",
-        inner_menus: [
-          {
-			  link: "/courses-details",
-			  title: "Digital Management and Content Creation",
-			//   mentorName: 'Dr. (Hon) Anusha Srinivasan Iyer',
-			//   duration: '2 Year (12+6+6 Months)',
-			//   courseType: 'Certificate',
-			//   fees: '6 Lakhs Per Annum',
-			//   courseInfo: 'Journalism, PR, Image Strategization & Brand Custodianship all integrated over a one-year program.',
-			//   studentsSeat:'20',
-			//   enrollmentDeadLine:'19.04.2025',
-			//   courseStartDate:'20.05.2025',
-			//   industryMentors:[]
-		
+     link: "/event-details",
+        title: "Digital Content Creation",  mentorName: 'Ms. Ketki Pandit',
+		duration: '2 Year (12+6+6 Months)',
+		courseType: 'Certificate',
+		fees: '6 Lakhs Per Annum',
+		courseInfo: 'Events and Experiential Management Program',
+		studentsSeat:'20',
+		enrollmentDeadLine:'20.04.2025',
+		courseStartDate:'19.05.2025',
+		    courseImg:'/assets/iics_course_image/digital-management-content-creation.webp',
+		industryMentors:[],
+		mentorIcon:'/assets/iics_image/leaders/ketki_pandit.webp',
+		mentorInfo:'Academy Award Winner, Indian Sound Designer ',
+		careerJob:'Sound Designer, Sound Editor, Audio Engineer, Foley Artist, Mixing/Mastering Engineer',
+		careerEntrepreneurship:'Home Studio Business, Independent Sound Post-Production Services, Podcast & Music Production Studio Owner',
+		eligibilityCriteria:'Open to B.Tech, B.Sc. graduates in Sound Engineering or related disciplines, music producers, audio technicians, and professionals in the music and film industry.',
+		courseCurricullam : [
+		  {
+			title: "Semester 1: Digital Content Mastery: Building the Foundation",
+			content:  [
+			  "Foundations of Content Creation",
+			  'Communication & Design',
+			  'Visual Content Creation',
+			  'Customer Journey & Engagement',
+			  'Digital Analytics & Measurement',
+			  'Social Media Marketing (A)'
+			  
+			],
 		  },
-        ],
+		  {
+			  title: "Semester 2: Advanced Media Strategies & AI Integration",
+			  content:  [
+				"Audio Influence & Podcast Mastery",
+				'Video Creation & AI Integration',
+				'AR/VR, Blogging & Web Optimization',
+				'Measuring Content Performance',
+				'Creative Studio with AI Integration',
+				'Specialization & Major Project',
+
+				
+			  ],
+			},
+			{
+			  title: "Semester 3: 6 Months Internship",
+			  content:  [
+				"Potential Internship Opportunities",
+				'Media Houses',
+				'Film Studios',
+				'Digital Platforms',
+				'Advertising Agencies'
+				
+			  ],
+			},
+			{
+			  title: "Semester 4: 6 Months Apprenticeship",
+			  content:  [
+				"Execute a full-scale content project under expert mentorship",
+				'Develop high-level content strategy & leadership skills',
+				'Build an industry-ready portfolio',
+				// 'Internship and Industry Exposure'
+				
+			  ],
+			},
+		  
+		  
+		  
+		]
+	
+      
       },
     ],
   },
@@ -530,7 +669,7 @@ const menu_data: DataType[] = [
     sub_menus: [
       { link: "/gallery", title: "Gallery" },
       {
-        inner_menu: true,
+        inner_menu: false,
         title: "Events",
 		link: "/event",
         inner_menus: [

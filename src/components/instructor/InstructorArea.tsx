@@ -1,130 +1,159 @@
 import { Link } from "react-router-dom";
+export const leadersDetails = [
+  {
+    leaderName: "Shri Jayant Chaudhary",
+    leaderDesignation:
+      "Hon’ble Minister of State (Independent Charge), Ministry of Skill Development & Entrepreneurship & Ministry of state, Ministry of Education, Govt of India ",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/jayant.webp",
+    mentorType:'Leader',
+    pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Atul Kumar Tiwari",
+    leaderDesignation:
+      "Secretary of the Ministry of Skill Development & Entrepreneurship ",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/atul.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Ved Mani Tiwari",
+    leaderDesignation:
+      "CEO, NSDC & Managing Director, NSDC International (NSDCI)",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/ved_mani_tiwari.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Shankar Mahadevan",
+    leaderDesignation:
+      "Indian Singer & Composer, Chairman, Media and Entertainment Skills Council (MESC)",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/shankar_madhavan.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Mohit Soni",
+    leaderDesignation: "CEO, Media and Entertainment Skills Council (MESC)",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/mohit.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
 
+  {
+    leaderName: "Dr. (Hon) Amit Behl",
+    leaderDesignation:
+      "Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    
+    image: "/assets/iics_image/leaders/amit_behl.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Ms. Yasmin Rodgers",
+    leaderDesignation: "Celebrity Makeup & Prosthetics Artist",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/yasmin_rodger.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Padma Shri Dr. Resul Pookutty",
+    leaderDesignation: "Academy Award Winner, Indian Sound Designer",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/resul_pookutty.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Manvendra Shukul",
+    leaderDesignation: "CEO, Lakshya Digital",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/manvendra_shukul.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Mr. Anand Jha",
+    leaderDesignation: "CEO, Nilee Games",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/anand_jha.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Dr.(Hon) Anusha Srinivasan Iyer",
+    leaderDesignation:
+      "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Ms. Sushma Gaikwad",
+    leaderDesignation:
+      "Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/sushma_gaikwad.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+    leaderName: "Ms. Ketki Pandit",
+    leaderDesignation:
+      "Film Producer, Director, Storyteller, Founder- Youth Music",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/ketki_pandit.webp",
+     mentorType:'Leader',
+      pathLink:'/leaders'
+  },
+  {
+      leaderName: "Dr. (Hon) S Ramachandran",
+      leaderDesignation:
+        "Journalist, Filmmaker, Brand Strategist, Author, Theatrician",
+      instagramLink: "",
+      linkedIn: "",
+      facebookLink: "",
+      image: "/assets/iics_image/leaders/ramachandran.webp",
+       mentorType:'Leader',
+        pathLink:'/leaders'
+    },
+];
 const InstructorArea = () => {
-  const leadersDetails = [
-    {
-      leaderName: "Shri Jayant Chaudhary",
-      leaderDesignation:
-        "Hon’ble Minister of State (Independent Charge), Ministry of Skill Development & Entrepreneurship & Ministry of state, Ministry of Education, Govt of India ",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/jayant.webp",
-    },
-    {
-      leaderName: "Mr. Atul Kumar Tiwari",
-      leaderDesignation:
-        "Secretary of the Ministry of Skill Development & Entrepreneurship ",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/atul.webp",
-    },
-    {
-      leaderName: "Mr. Ved Mani Tiwari",
-      leaderDesignation:
-        "CEO, NSDC & Managing Director, NSDC International (NSDCI)",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/ved_mani_tiwari.webp",
-    },
-    {
-      leaderName: "Mr. Shankar Mahadevan",
-      leaderDesignation:
-        "Indian Singer & Composer, Chairman, Media and Entertainment Skills Council (MESC)",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/shankar_madhavan.webp",
-    },
-    {
-      leaderName: "Mr. Mohit Soni",
-      leaderDesignation: "CEO, Media and Entertainment Skills Council (MESC)",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/mohit.webp",
-    },
-
-    {
-      leaderName: "Dr. (Hon) Amit Behl",
-      leaderDesignation:
-        "Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/amit_behl.webp",
-    },
-    {
-      leaderName: "Ms. Yasmin Rodgers",
-      leaderDesignation: "Celebrity Makeup & Prosthetics Artist",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/yasmin_rodger.webp",
-    },
-    {
-      leaderName: "Padma Shri Dr. Resul Pookutty",
-      leaderDesignation: "Academy Award Winner, Indian Sound Designer",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/resul_pookutty.webp",
-    },
-    {
-      leaderName: "Mr. Manvendra Shukul",
-      leaderDesignation: "CEO, Lakshya Digital",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/manvendra_shukul.webp",
-    },
-    {
-      leaderName: "Mr. Anand Jha",
-      leaderDesignation: "CEO, Nilee Games",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/anand_jha.webp",
-    },
-    {
-      leaderName: "Dr.(Hon) Anusha Srinivasan Iyer",
-      leaderDesignation:
-        "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
-    },
-    {
-      leaderName: "Ms. Sushma Gaikwad",
-      leaderDesignation:
-        "Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/sushma_gaikwad.webp",
-    },
-    {
-      leaderName: "Ms. Ketki Pandit",
-      leaderDesignation:
-        "Film Producer, Director, Storyteller, Founder- Youth Music",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/ketki_pandit.webp",
-    },
-    {
-        leaderName: "Dr. (Hon) S Ramachandran",
-        leaderDesignation:
-          "Journalist, Filmmaker, Brand Strategist, Author, Theatrician",
-        instagramLink: "",
-        linkedIn: "",
-        facebookLink: "",
-        image: "assets/iics_image/leaders/ramachandran.webp",
-      },
-  ];
+ 
   return (
     <>
       <section className="team-section-5 fix section-padding ">
@@ -189,7 +218,7 @@ const InstructorArea = () => {
                   <div className="content">
                     <h4>
                       <Link
-                        to="/details"
+                        to={`/details/${encodeURIComponent(leader.leaderName?.toString() || '')}`}
                         state={{
                           leaderName: leader.leaderName,
                           leaderImage: leader.image,

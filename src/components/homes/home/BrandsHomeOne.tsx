@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
  
 
 const BrandsHomeOne = () => {
+
+	
 	return (
 		<>
 			<section className="brand-section fix section-padding pt-0">
@@ -11,7 +13,7 @@ const BrandsHomeOne = () => {
 					<div className="brand-wrapper">
 						<div className="section-title text-center">
 							<h2 className="wow fadeInUp mb-3" data-wow-delay=".3s">
-								25m+ Trusted Partners
+								6 Trusted Partners
 							</h2>
 							<p className="wow fadeInUp" data-wow-delay=".5s mt-3">
 								Education is the foundation of personal societal growth,
@@ -55,63 +57,81 @@ const BrandsHomeOne = () => {
 							 
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/01.png" alt="img" />
+										<img src="assets/iics_image/partners/iwata.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/02.png" alt="img" />
+										<img src="assets/iics_image/partners/lakshay_one.webp" alt="img" />
+										
+
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/03.png" alt="img" />
+										
+										<img src="assets/iics_image/partners/lakshay_two.webp" alt="img" />
+
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/04.png" alt="img" />
+										<img src="assets/iics_image/partners/makeup.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/05.png" alt="img" />
+										<img src="assets/iics_image/partners/moira.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/06.png" alt="img" />
+										<img src="assets/iics_image/partners/nilee_games.webp" alt="img" />
+									</div>
+								</SwiperSlide>
+								<SwiperSlide className="swiper-slide">
+									<div className="brand-img text-center">
+										<img src="assets/iics_image/partners/smoothOn.webp" alt="img" />
 									</div>
 								</SwiperSlide>
             {/* swiper slider repite */}
-                <SwiperSlide className="swiper-slide">
+			<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/01.png" alt="img" />
+										<img src="assets/iics_image/partners/iwata.webp" alt="img" />
+									</div>
+								</SwiperSlide>
+								<SwiperSlide className="swiper-slide ">
+									<div className="brand-img text-center">
+										<img src="assets/iics_image/partners/lakshay_one.webp" alt="img" />
+										
+
+									</div>
+								</SwiperSlide>
+								<SwiperSlide className="swiper-slide ">
+									<div className="brand-img text-center">
+										
+										<img src="assets/iics_image/partners/lakshay_two.webp" alt="img" />
+
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/02.png" alt="img" />
+										<img src="assets/iics_image/partners/makeup.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/03.png" alt="img" />
+										<img src="assets/iics_image/partners/moira.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/04.png" alt="img" />
+										<img src="assets/iics_image/partners/nilee_games.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
-										<img src="assets/img/brand/05.png" alt="img" />
-									</div>
-								</SwiperSlide>
-								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
-										<img src="assets/img/brand/06.png" alt="img" />
+										<img src="assets/iics_image/partners/smoothOn.webp" alt="img" />
 									</div>
 								</SwiperSlide>
 						 

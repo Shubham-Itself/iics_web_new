@@ -13,49 +13,58 @@ const PopularCoursesHomeOne = () => {
   const location = useLocation();
   useLayoutEffect(() => {
     let ctx: gsap.Context;
-  
-    const timeout = setTimeout(() => {
+
+    const handleLoad = () => {
       ctx = gsap.context(() => {
         const container = containerRef.current;
         const scrollContent = scrollRef.current;
-  
+
         if (!container || !scrollContent) return;
-  
-        // Force layout reflow
-        scrollContent.offsetWidth;
-  
-        const sections = scrollContent.querySelectorAll('.cardGsapAnimation');
-        const lastCard = scrollContent.querySelector('.cardGsapAnimation:last-child');
-  
+
+        const sections = scrollContent.querySelectorAll(".cardGsapAnimation");
+        const lastCard = scrollContent.querySelector(".cardGsapAnimation:last-child");
+
         const totalScrollDistance =
           scrollContent.scrollWidth - window.innerWidth + (lastCard?.clientWidth || 0);
-  
+
         ScrollTrigger.matchMedia({
           "(min-width: 768px)": function () {
             gsap.to(sections, {
               x: -totalScrollDistance,
-              ease: 'none',
+              ease: "none",
               scrollTrigger: {
                 trigger: container,
-                start: 'top top',
+                start: "top top",
                 end: `+=${totalScrollDistance}`,
                 scrub: true,
                 pin: true,
                 anticipatePin: 1,
+                // markers: true, // optional: for debugging scroll area
               },
             });
-          }
+          },
         });
-  
-        ScrollTrigger.refresh();
+
+        // Ensure layout is measured correctly after load
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 100);
       }, containerRef);
-    }, 50);
-  
+    };
+
+    if (document.readyState === "complete") {
+      // If already loaded, run immediately
+      handleLoad();
+    } else {
+      // Else wait for full page load
+      window.addEventListener("load", handleLoad);
+    }
+
     return () => {
-      clearTimeout(timeout);
+      window.removeEventListener("load", handleLoad);
       if (ctx) ctx.revert();
       ScrollTrigger.getAll().forEach(trigger => trigger.kill(true));
-      gsap.killTweensOf('.cardGsapAnimation');
+      gsap.killTweensOf(".cardGsapAnimation");
     };
   }, [location.pathname]);
 
@@ -70,7 +79,8 @@ const PopularCoursesHomeOne = () => {
              batchStartDate:'15.05.2025',
              mentorIcon:'/assets/iics_image/leaders/amit_behl.webp',
              fees:"6 Lakh Per Annum",
-             duration:'2 Years'
+             duration:'2 Years',
+             courseImg:'assets/iics_course_image/performing-arts-media-management.webp'
         },
         {
             name:'Hair, Makeup & Prosthetics',
@@ -80,7 +90,8 @@ const PopularCoursesHomeOne = () => {
             batchStartDate:'15.05.2025',
             mentorIcon:'/assets/iics_image/leaders/yasmin_rodger.webp',
             fees:"6 Lakh Per Annum",
-            duration:'1 Year'
+            duration:'1 Year',
+                  courseImg:'assets/iics_course_image/hair-makeup-prosthetics.webp'
        },
        {
         name:'Sound Recording & Sound Design',
@@ -90,7 +101,8 @@ const PopularCoursesHomeOne = () => {
         batchStartDate:'20.05.2025',
         mentorIcon:'/assets/iics_image/leaders/resul_pookutty.webp',
         fees:"6 Lakh Per Annum",
-        duration:'2 Years'
+        duration:'2 Years',
+              courseImg:'assets/iics_course_image/sound-recording-sound-design.webp'
    },
    {
     name:'3D Game Art',
@@ -100,7 +112,8 @@ const PopularCoursesHomeOne = () => {
     batchStartDate:'15.05.2025',
      mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
     fees:"6 Lakh Per Annum",
-    duration:'2 Years'
+    duration:'2 Years',
+          courseImg:'assets/iics_course_image/3d-game-art.webp'
 },
 {
     name:'Advance Gaming and Extended Reality (XR) Innovations',
@@ -110,7 +123,8 @@ const PopularCoursesHomeOne = () => {
     batchStartDate:'20.05.2025',
     mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
     fees:"6 Lakh Per Annum",
-    duration:'2 Years'
+    duration:'2 Years',
+          courseImg:'assets/iics_course_image/advance-gaming-extended-reality-innovations.webp'
 },
 {
     name:'Journalism, PR, Image Strategization & Brand Custodianship',
@@ -123,7 +137,8 @@ const PopularCoursesHomeOne = () => {
     batchStartDate:'20.05.2025',
     mentorIcon:'/assets/iics_image/leaders/anusha_srinivasan_iyer.webp',
     fees:"6 Lakh Per Annum",
-    duration:'2 Years'
+    duration:'2 Years',
+          courseImg:'assets/iics_course_image/journalism-PR-Image-strategization-Brand-Custodianship.webp'
 },
 {
     name:'Events and Experiential Management Program',
@@ -133,7 +148,8 @@ const PopularCoursesHomeOne = () => {
     batchStartDate:'15.05.2025',
     mentorIcon:'assets/iics_image/leaders/sushma_gaikwad.webp',
     fees:"6 Lakh Per Annum",
-    duration:'2 Years'
+    duration:'2 Years',
+          courseImg:'assets/iics_course_image/event-experiential-management-program.webp'
 },
 {
     name:'Digital Management and Content Creation',
@@ -143,7 +159,8 @@ const PopularCoursesHomeOne = () => {
     batchStartDate:'15.05.2025',
     mentorIcon:'assets/iics_image/leaders/ketki_pandit.webp',
     fees:"6 Lakh Per Annum",
-    duration:'2 Years'
+    duration:'2 Years',
+          courseImg:'assets/iics_course_image/digital-management-content-creation.webp'
 },
     ]
     
@@ -203,7 +220,7 @@ const PopularCoursesHomeOne = () => {
                                 <div className="courses-card-main-items h-full">
                                     <div className="courses-card-items !mt-0">
                                         <div className="courses-image">
-                                            <img src="assets/img/courses/01.jpg" alt="img" />
+                                            <img src={course.courseImg} alt="img" />
                                             {/* <h3 className="courses-title">{course.name}</h3>
                                             <h4 className="topic-title">Advance Web Design</h4> */}
                                             <div className="arrow-items">

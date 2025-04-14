@@ -1,32 +1,40 @@
 import { Link } from "react-router-dom";
 
-const InternationalMentorsArea = () => {
-  const leadersDetails = [
+export const leadersDetails = [
    
    
     
 
-    {
-      leaderName: "Mr. Mark Theodossiou",
-      leaderDesignation: "International Mentor",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/internationalMentors/mark.webp",
-    },
-    {
-      leaderName: "Mr. Gareth Benson",
-      leaderDesignation: "International Mentor",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/internationalMentors/garethBenson.webp",
-    },
-   
-   
-   
-    
-  ];
+  {
+    leaderName: "Mr. Mark Theodossiou",
+    leaderDesignation: "International Mentor",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/internationalMentors/mark.webp",
+    mentorType:'International Mentor',
+    pathLink:'/internationalMentors'
+
+  },
+  {
+    leaderName: "Mr. Gareth Benson",
+    leaderDesignation: "International Mentor",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/internationalMentors/garethBenson.webp",
+    mentorType:'International Mentor',
+     pathLink:'/internationalMentors'
+
+  },
+ 
+ 
+ 
+  
+];
+
+const InternationalMentorsArea = () => {
+  
   return (
     <>
       <section className="team-section-5 fix section-padding ">
@@ -85,7 +93,7 @@ const InternationalMentorsArea = () => {
                   </div>
                   <div className="content">
                     <h4>
-                    <Link to="/details"
+                    <Link to={`/details/${encodeURIComponent(leader.leaderName?.toString() || '')}`}
                                               state={{
                                                 leaderName: leader.leaderName,
                                                 leaderImage: leader.image,

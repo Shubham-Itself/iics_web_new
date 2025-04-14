@@ -1,40 +1,50 @@
 import { Link } from "react-router-dom";
 
-const IndustryMentorsArea = () => {
-  const leadersDetails = [
+
+export  const leadersDetails = [
    
    
     
 
-    {
-      leaderName: "Prof. Dimpy Mishra",
-      leaderDesignation: "Head of Department, School of Performing Arts and Media Management (Performing Arts)",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/industryMentors/dimpy.webp",
-    },
-    {
-      leaderName: " Mr. Harry",
-      leaderDesignation: "Head of Department, Certificate in Hair, Makeup & Prosthetics ",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image:  "assets/iics_image/industryMentors/harry.webp",
-    },
-   
-    {
-      leaderName: "Mr. Ashish Kant Tatla",
-      leaderDesignation:
-        "Industry Mentor, School of Performing Arts and Media Management (Performing Arts)",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/industryMentors/ashish.webp",
-    },
-   
-    
-  ];
+  {
+    leaderName: "Prof. Dimpy Mishra",
+    leaderDesignation: "Head of Department, School of Performing Arts and Media Management (Performing Arts)",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/industryMentors/dimpy.webp",
+     mentorType:'Industry Mentor',
+     pathLink:'/industryMentors'
+  },
+  {
+    leaderName: " Mr. Harry",
+    leaderDesignation: "Head of Department, Certificate in Hair, Makeup & Prosthetics ",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image:  "/assets/iics_image/industryMentors/harry.webp",
+    mentorType:'Industry Mentor',
+    pathLink:'/industryMentors'
+
+  },
+ 
+  {
+    leaderName: "Mr. Ashish Kant Tatla",
+    leaderDesignation:
+      "Industry Mentor, School of Performing Arts and Media Management (Performing Arts)",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/industryMentors/ashish.webp",
+    mentorType:'Industry Mentor',
+    pathLink:'/industryMentors'
+
+  },
+ 
+  
+];
+const IndustryMentorsArea = () => {
+ 
   return (
     <>
       <section className="team-section-5 fix section-padding ">
@@ -93,7 +103,7 @@ const IndustryMentorsArea = () => {
                   </div>
                   <div className="content">
                     <h4>
-                      <Link to="/details"
+                      <Link  to={`/details/${encodeURIComponent(leader.leaderName?.toString() || '')}`}
                                               state={{
                                                 leaderName: leader.leaderName,
                                                 leaderImage: leader.image,

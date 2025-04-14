@@ -12,7 +12,7 @@ import InternationalMentorsArea from "./InternationMentorsArea";
 const InternationMentors = () => {
   return (
     <>
-    <Preloader />
+    {/* <Preloader /> */}
       <HeaderOne />
 			<BreadcrumbEvent title="International Mentors at IICS" subtitle="International Mentors" />
       <InternationalMentorsArea/>     

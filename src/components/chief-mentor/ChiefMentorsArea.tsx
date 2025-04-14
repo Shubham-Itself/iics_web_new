@@ -1,92 +1,115 @@
 import { Link } from "react-router-dom";
 
-const ChiefMentorsArea = () => {
-  const leadersDetails = [
+export const leadersDetails = [
    
    
     
 
-    {
-      leaderName: "Padma Shri Dr. Resul Pookutty",
-      leaderDesignation: "Academy Award Winner, Indian Sound Designer",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/resul_pookutty.webp",
-    },
-    {
-      leaderName: "Mr. Manvendra Shukul",
-      leaderDesignation: "CEO, Lakshya Digital",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/manvendra_shukul.webp",
-    },
-   
-    {
-      leaderName: "Dr.(Hon) Anusha Srinivasan Iyer",
-      leaderDesignation:
-        "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
-    },
-   
-    {
-      leaderName: "Ms. Ketki Pandit",
-      leaderDesignation:
-        "Film Producer, Director, Storyteller, Founder- Youth Music",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/ketki_pandit.webp",
-    },
-    {
-      leaderName: "Dr. (Hon) Amit Behl",
-      leaderDesignation:
-        "Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/amit_behl.webp",
-    },
-    {
-      leaderName: "Ms. Yasmin Rodgers",
-      leaderDesignation: "Celebrity Makeup & Prosthetics Artist",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/yasmin_rodger.webp",
-    },
-    {
-      leaderName: "Mr. Anand Jha",
-      leaderDesignation: "CEO, Nilee Games",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/anand_jha.webp",
-    },
-    {
-      leaderName: "Ms. Sushma Gaikwad",
-      leaderDesignation:
-        "Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/sushma_gaikwad.webp",
-    },
-    {
-      leaderName: "Dr. (Hon) S Ramachandran",
-      leaderDesignation:
-        "Journalist, Filmmaker, Brand Strategist, Author, Theatrician",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/leaders/ramachandran.webp",
-    },
+  {
+    leaderName: "Padma Shri Dr. Resul Pookutty",
+    leaderDesignation: "Academy Award Winner, Indian Sound Designer",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+  
+    
+    image: "/assets/iics_image/leaders/resul_pookutty.webp",
+    mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors'
+  },
+  {
+    leaderName: "Mr. Manvendra Shukul",
+    leaderDesignation: "CEO, Lakshya Digital",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/manvendra_shukul.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+ 
+  {
+    leaderName: "Dr.(Hon) Anusha Srinivasan Iyer",
+    leaderDesignation:
+      "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+ 
+  {
+    leaderName: "Ms. Ketki Pandit",
+    leaderDesignation:
+      "Film Producer, Director, Storyteller, Founder- Youth Music",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    
+    image: "/assets/iics_image/leaders/ketki_pandit.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+  {
+    leaderName: "Dr. (Hon) Amit Behl",
+    leaderDesignation:
+      "Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/amit_behl.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+  {
+    leaderName: "Ms. Yasmin Rodgers",
+    leaderDesignation: "Celebrity Makeup & Prosthetics Artist",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/yasmin_rodger.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+  {
+    leaderName: "Mr. Anand Jha",
+    leaderDesignation: "CEO, Nilee Games",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/anand_jha.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+  {
+    leaderName: "Ms. Sushma Gaikwad",
+    leaderDesignation:
+      "Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    
+    image: "/assets/iics_image/leaders/sushma_gaikwad.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
+  {
+    leaderName: "Dr. (Hon) S Ramachandran",
+    leaderDesignation:
+      "Journalist, Filmmaker, Brand Strategist, Author, Theatrician",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/leaders/ramachandran.webp",
+     mentorType:'Chief Mentor',
+     pathLink:'/chiefMentors',
+  },
 
-  ];
+];
+const ChiefMentorsArea = () => {
+  
   return (
     <>
       <section className="team-section-5 fix section-padding ">
@@ -150,7 +173,7 @@ const ChiefMentorsArea = () => {
                   </div>
                   <div className="content">
                     <h4>
-                      <Link to="/details" 
+                      <Link    to={`/details/${encodeURIComponent(leader.leaderName?.toString() || '')}`}
                       state={{
                         leaderName: leader.leaderName,
                         leaderImage: leader.image,

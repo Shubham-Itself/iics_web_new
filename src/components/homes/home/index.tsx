@@ -4,6 +4,7 @@ import ScrollTop from "../../../common/ScrollTop";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import HeaderOne from "../../../layouts/headers/HeaderOne";
 import ChooseHomeTwo from "../home-2/ChooseHomeTwo";
+import CoursesHomeTwo from "../home-2/CoursesHomeTwo";
 import HeroHomeTwo from "../home-2/HeroHomeTwo";
 import TopCategoryHomeTwo from "../home-2/TopCategoryHomeTwo";
 import InstagramHomeThree from "../home-3/InstagramHomeThree";
@@ -41,8 +42,9 @@ const HomeOne = () => {
 			<InstagramHomeThree/>
 			<ChooseHomeTwo/>
 			{/* <TeamHomeOne /> */}
-			<NewsletterHomeOne />
-			<TestimonialHomeOne />
+			{/* <NewsletterHomeOne /> */}
+			{/* <TestimonialHomeOne /> */}
+			<CoursesHomeTwo/>
 			<BrandsHomeOne />
 			<BlogHomeOne />
 			<MarqueeOne /> 

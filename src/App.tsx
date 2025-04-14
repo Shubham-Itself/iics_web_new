@@ -105,6 +105,9 @@ const router = createBrowserRouter([
   { path: "/prospectus", element: <Prospectus /> },
   { path: "/publicNotes", element: <PublicNotes /> },
 
+  { path: "/details/:title", element: <InstructorDetails /> }, 
+
+
 
 
 
