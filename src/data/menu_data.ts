@@ -92,15 +92,15 @@ const menu_data: DataType[] = [
     has_dropdown: true,
     has_dropdown_inner: true,
     sub_menus: [
-      { link: "/courses", title: "How To Apply" },
-      { link: "/courses-grid", title: "Entrance Process" },
-      { link: "/courses-list", title: "Public Notice " },
-      { link: "/courses-details", title: "Fees & Support" },
-      { link: "/courses-details-2", title: "Eligibility Criteria" },
-      { link: "/courses-details-2", title: "Sample Papers" },
-      { link: "/courses-details-2", title: "Prospectus" },
+      { link: "/how-to-apply", title: "How To Apply" },
+      { link: "/entranceProcess", title: "Entrance Process" },
+      { link: "/publicNotes", title: "Public Notice " },
+      { link: "/fees&studentSupport", title: "Fees & Support" },
+      { link: "/eligibilityCriteria", title: "Eligibility Criteria" },
+      { link: "/samplePaper", title: "Sample Papers" },
+      { link: "/prospectus", title: "Prospectus" },
 
-      { link: "/courses-details-2", title: "FAQs" },
+      { link: "/faq", title: "FAQs" },
     ],
   },
   {

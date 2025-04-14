@@ -21,7 +21,7 @@ const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType 
         </div>
         <div className="container">
             <div className="page-heading">
-                <ul className="breadcrumb-items">
+                <ul className="breadcrumb-items !mt-[60px]">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/courses-grid">Courses</Link></li>
                     <li className="style-2"> Course Details</li>

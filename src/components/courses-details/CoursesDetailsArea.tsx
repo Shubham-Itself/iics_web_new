@@ -88,18 +88,7 @@ const CoursesDetailsArea = ({
                   </div>
                   <div className="courses-details-content">
                     <ul className="nav !gap-0 !justify-between">
-                      <li
-                        className="nav-item wow fadeInUp"
-                        data-wow-delay=".3s"
-                      >
-                        <a
-                          href="#Course"
-                          data-bs-toggle="tab"
-                          className="nav-link active"
-                        >
-                          Eligibility Criteria
-                        </a>
-                      </li>
+                      
                       <li
                         className="nav-item wow fadeInUp"
                         data-wow-delay=".5s"
@@ -110,6 +99,18 @@ const CoursesDetailsArea = ({
                           className="nav-link"
                         >
                           Curriculum
+                        </a>
+                      </li>
+                      <li
+                        className="nav-item wow fadeInUp"
+                        data-wow-delay=".3s"
+                      >
+                        <a
+                          href="#Course"
+                          data-bs-toggle="tab"
+                          className="nav-link active"
+                        >
+                          Eligibility Criteria
                         </a>
                       </li>
                       <li

@@ -45,6 +45,13 @@ import Partners from "./components/partner";
 import PressMedia from "./components/press-media";
 import Workshop from "./components/workshop";
 import Career from "./components/career";
+import HowToApply from "./components/how-to-apply";
+import EntranceProcess from "./components/entranceProcess";
+import FeesSupport from "./components/fess-student-support";
+import EligibilityCriteria from "./components/eligibilityCriteria";
+import SamplePaper from "./components/sample-paper";
+import Prospectus from "./components/prospectus";
+import PublicNotes from "./components/public-notes";
 
 
 const router = createBrowserRouter([
@@ -90,6 +97,20 @@ const router = createBrowserRouter([
   { path: "/workshop", element: <Workshop /> },
   { path: "/event", element: <Workshop /> },
   { path: "/careers", element: <Career /> },
+  { path: "/how-to-apply", element: <HowToApply /> },
+  { path: "/entranceProcess", element: <EntranceProcess /> },
+  { path: "/fees&studentSupport", element: <FeesSupport /> },
+  { path: "/eligibilityCriteria", element: <EligibilityCriteria /> },
+  { path: "/samplePaper", element: <SamplePaper /> },
+  { path: "/prospectus", element: <Prospectus /> },
+  { path: "/publicNotes", element: <PublicNotes /> },
+
+
+
+
+
+
+
 
 
 
