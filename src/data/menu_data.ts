@@ -141,7 +141,7 @@ const menu_data: DataType[] = [
 			  mentorName: 'Dr. (Hon) Amit Behl',
 			  mentorIcon:'/assets/iics_image/leaders/amit_behl.webp',
 			  courseImg:'/assets/iics_course_image/performing-arts-media-management.webp',
-			  courseVideo:'/assets/iics_video/course_video/acting_video.mp4',
+		
 			  mentorInfo:'Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant',
 			  duration: '2 Years (12+6+6 Months)',
 			  courseType: 'Certificate',
