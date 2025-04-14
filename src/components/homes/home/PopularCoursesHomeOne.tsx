@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {gsap} from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {  useLayoutEffect, useRef } from "react";
@@ -10,41 +10,48 @@ const PopularCoursesHomeOne = () => {
     const containerRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  const location = useLocation();
   useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const container = containerRef.current;
-      const scrollContent = scrollRef.current;
+    let ctx: gsap.Context;
   
-      if (!container || !scrollContent) return;
+    const timeout = setTimeout(() => {
+      ctx = gsap.context(() => {
+        const container = containerRef.current;
+        const scrollContent = scrollRef.current;
   
-      const sections = scrollContent.querySelectorAll('.cardGsapAnimation'); // scoped to scrollContent
-      const lastCard = scrollContent.querySelector('.cardGsapAnimation:last-child');
+        if (!container || !scrollContent) return;
   
-      const totalScrollDistance =
-        scrollContent.scrollWidth - window.innerWidth + (lastCard?.clientWidth || 0);
+        const sections = scrollContent.querySelectorAll('.cardGsapAnimation');
+        const lastCard = scrollContent.querySelector('.cardGsapAnimation:last-child');
   
-      gsap.to(sections, {
-        x: -totalScrollDistance,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: container,
-          start: 'top top',
-          end: `+=${totalScrollDistance}`,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-        },
-      });
+        const totalScrollDistance =
+          scrollContent.scrollWidth - window.innerWidth + (lastCard?.clientWidth || 0);
   
-      ScrollTrigger.refresh();
-    }, containerRef); // attach context to containerRef (or use the outermost element that includes all children)
-    ScrollTrigger.refresh();
+        gsap.to(sections, {
+          x: -totalScrollDistance,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: container,
+            start: 'top top',
+            end: `+=${totalScrollDistance}`,
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+          },
+        });
+  
+        ScrollTrigger.refresh();
+      }, containerRef);
+    }, 50); // Delay a little to allow layout to settle
+  
     return () => {
-      ctx.revert();
-    //   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      clearTimeout(timeout);
+      ctx?.revert();
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-  }, []);
-     
+  }, [location.pathname]);
+
+
 
     const coursesInformation = [
         {
