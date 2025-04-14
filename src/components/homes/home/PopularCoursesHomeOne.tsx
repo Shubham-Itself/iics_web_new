@@ -21,33 +21,41 @@ const PopularCoursesHomeOne = () => {
   
         if (!container || !scrollContent) return;
   
+        // Force layout reflow
+        scrollContent.offsetWidth;
+  
         const sections = scrollContent.querySelectorAll('.cardGsapAnimation');
         const lastCard = scrollContent.querySelector('.cardGsapAnimation:last-child');
   
         const totalScrollDistance =
           scrollContent.scrollWidth - window.innerWidth + (lastCard?.clientWidth || 0);
   
-        gsap.to(sections, {
-          x: -totalScrollDistance,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: container,
-            start: 'top top',
-            end: `+=${totalScrollDistance}`,
-            scrub: true,
-            pin: true,
-            anticipatePin: 1,
-          },
+        ScrollTrigger.matchMedia({
+          "(min-width: 768px)": function () {
+            gsap.to(sections, {
+              x: -totalScrollDistance,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: container,
+                start: 'top top',
+                end: `+=${totalScrollDistance}`,
+                scrub: true,
+                pin: true,
+                anticipatePin: 1,
+              },
+            });
+          }
         });
   
         ScrollTrigger.refresh();
       }, containerRef);
-    }, 50); // Delay a little to allow layout to settle
+    }, 50);
   
     return () => {
       clearTimeout(timeout);
-      ctx?.revert();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      if (ctx) ctx.revert();
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill(true));
+      gsap.killTweensOf('.cardGsapAnimation');
     };
   }, [location.pathname]);
 
