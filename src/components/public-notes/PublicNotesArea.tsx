@@ -5,75 +5,75 @@ import { Link } from "react-router-dom";
 
 const PublicNotesArea = () => {
 
-  const careers = [
-    {
+//   const careers = [
+//     {
        
-        name:'1. Performing Arts & Media Management',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//         name:'1. Performing Arts & Media Management',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'20',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
        
 
-    },
-    {
-       name:'2. Hair, Makeup & Prosthetics',
-        courseDuration:'1 Year (6 Months Learning + 3 Months Industry Experience + 3 Months Paid Internship)',
-        numberofSeat:'15',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//        name:'2. Hair, Makeup & Prosthetics',
+//         courseDuration:'1 Year (6 Months Learning + 3 Months Industry Experience + 3 Months Paid Internship)',
+//         numberofSeat:'15',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
      
         
-    },
-    {
-        name:'3. Sound Recording & Sound Design',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'3. Sound Recording & Sound Design',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'20',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-    {
-        name:'4. 3D Game Art',
-        courseDuration:'2 Years (12 months Game Art Foundation + 6 months Game Art Specialization + 6 months Paid Internship)',
-        numberofSeat:'25',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'4. 3D Game Art',
+//         courseDuration:'2 Years (12 months Game Art Foundation + 6 months Game Art Specialization + 6 months Paid Internship)',
+//         numberofSeat:'25',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-    {
-        name:'5. Advanced Gaming & XR Innovations',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'25',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'5. Advanced Gaming & XR Innovations',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'25',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-    {
-        name:'6. Journalism, PR, Image Strategization & Branding',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'6. Journalism, PR, Image Strategization & Branding',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'20',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-    {
-        name:'7. Events & Experiential Management',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'30',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'7. Events & Experiential Management',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'30',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-    {
-        name:'8. Digital Management & Content Creation',
-        courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+//     },
+//     {
+//         name:'8. Digital Management & Content Creation',
+//         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
+//         numberofSeat:'20',
+//         courseLocation:'Lajpat Nagar, New Delhi',
+//         fees:'6,00,000 Rs'
         
-    },
-  ]
+//     },
+//   ]
 
   return (
     <>

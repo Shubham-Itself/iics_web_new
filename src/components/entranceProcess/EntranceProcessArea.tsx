@@ -1,45 +1,45 @@
-import { Link } from "react-router-dom";
+
 
 
  
 
 const EntranceProcessArea = () => {
 
-  const careers = [
-    {
+//   const careers = [
+//     {
        
-        step:'1. Fill the Online Application Form',
-        information:'Click Here (Redirect it to application form) and complete the online application form. Make sure to enter accurate personal, academic, and contact details.'
-       
-       
-
-    },
-    {
-       
-        step:'2.  Choose Your Program & Campus',
-        information:'Select your preferred course and location.'
+//         step:'1. Fill the Online Application Form',
+//         information:'Click Here (Redirect it to application form) and complete the online application form. Make sure to enter accurate personal, academic, and contact details.'
        
        
 
-    },
-    {
+//     },
+//     {
        
-        step:'3. Upload Required Documents',
-        information:'Upload  the following:',
-        documentOne:'A government-issued ID (Aadhaar, Passport, etc.)',
-        documentTwo:'10th & 12th Standard marksheet/ certificate',
-        documentThree:'Portfolio (if applicable)',
-        documentFour:'Passport-sized photo'
+//         step:'2.  Choose Your Program & Campus',
+//         information:'Select your preferred course and location.'
        
        
 
-    },
+//     },
+//     {
+       
+//         step:'3. Upload Required Documents',
+//         information:'Upload  the following:',
+//         documentOne:'A government-issued ID (Aadhaar, Passport, etc.)',
+//         documentTwo:'10th & 12th Standard marksheet/ certificate',
+//         documentThree:'Portfolio (if applicable)',
+//         documentFour:'Passport-sized photo'
+       
+       
+
+//     },
    
     
     
     
     
-  ]
+//   ]
 
   return (
     <>
