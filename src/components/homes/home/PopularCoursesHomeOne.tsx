@@ -1,46 +1,49 @@
 import { Link } from "react-router-dom";
 import {gsap} from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const PopularCoursesHomeOne = () => {
 
-    const containerRef = useRef<any>(null);
-    const scrollRef = useRef<any>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const container = containerRef.current;
-        const scrollContent = scrollRef.current;
-        
-        if (!container || !scrollContent) return;
-      
-        const sections = gsap.utils.toArray('.card');
-        const lastCard = scrollContent.querySelector('.card:last-child');
-const totalScrollDistance = scrollContent.scrollWidth - window.innerWidth + (lastCard?.offsetWidth || 0);
-      
-        const animation = gsap.to(sections, {
-          x: -totalScrollDistance,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: container,
-            start: 'top top', // ← adjust start if needed
-            end: `+=${totalScrollDistance}`,
-            scrub: true,
-            pin: true,
-        
-          }
-        });
-      
-        ScrollTrigger.refresh(); // ← call this after animation is set
-      
-        return () => {
-          // Cleanup animation and trigger on unmount
-          animation.kill();
-          ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
-      }, []);
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const container = containerRef.current;
+      const scrollContent = scrollRef.current;
+  
+      if (!container || !scrollContent) return;
+  
+      const sections = scrollContent.querySelectorAll('.cardGsapAnimation'); // scoped to scrollContent
+      const lastCard = scrollContent.querySelector('.cardGsapAnimation:last-child');
+  
+      const totalScrollDistance =
+        scrollContent.scrollWidth - window.innerWidth + (lastCard?.clientWidth || 0);
+  
+      gsap.to(sections, {
+        x: -totalScrollDistance,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: container,
+          start: 'top top',
+          end: `+=${totalScrollDistance}`,
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+        },
+      });
+  
+      ScrollTrigger.refresh();
+    }, containerRef); // attach context to containerRef (or use the outermost element that includes all children)
+    ScrollTrigger.refresh();
+    return () => {
+      ctx.revert();
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
      
 
     const coursesInformation = [
@@ -172,7 +175,7 @@ const totalScrollDistance = scrollContent.scrollWidth - window.innerWidth + (las
                         </li>
                     </ul> */}
                 </div>
-                <div className="tab-content ml-[200px]">
+                <div className="tab-content pl-[200px]">
                     <div id="All" className="tab-pane fade show active ">
                         <div className=""  ref={scrollRef}
         style={{
@@ -181,7 +184,7 @@ const totalScrollDistance = scrollContent.scrollWidth - window.innerWidth + (las
         }} >
                             {
                                 coursesInformation.map((course , index)=>(
-<div key={index} className=" !w-[25%] col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp card" data-wow-delay=".2s" >
+<div key={index} className=" !w-[25%] col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp cardGsapAnimation" data-wow-delay=".2s" >
                                 <div className="courses-card-main-items h-full">
                                     <div className="courses-card-items !mt-0">
                                         <div className="courses-image">
@@ -258,7 +261,7 @@ const totalScrollDistance = scrollContent.scrollWidth - window.innerWidth + (las
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="courses-card-items-hover">
+                                    <div className="courses-card-items-hover !mt-0">
                                         <div className="courses-content">
                                             {/* <ul className="post-cat">
                                                 <li>
