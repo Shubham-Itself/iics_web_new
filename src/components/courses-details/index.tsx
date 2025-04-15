@@ -48,6 +48,7 @@ const CoursesDetails = () => {
   }
 
   const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo} = courseData 
+  console.log(courseVideo)
 
   return (
     <>

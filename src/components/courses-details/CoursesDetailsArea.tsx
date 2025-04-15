@@ -66,7 +66,8 @@ courseImg,
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  
+//   const cleanedVideo = courseVideo?.trim();
+//   console.log(courseVideo);
 
   return (
     <>
@@ -84,7 +85,7 @@ courseImg,
               <div className="col-lg-8">
                 <div className="courses-details-items">
                   <div className="courses-image">
-                  <video src={courseVideo? courseVideo : '/assets/iics_video/course_video/events.mp4'} autoPlay muted loop playsInline></video>
+                  <video src={'https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4'} autoPlay muted loop playsInline></video>
                     {/* <a
                       onClick={() => setIsVideoOpen(true)}
                       style={{ cursor: "pointer" }}

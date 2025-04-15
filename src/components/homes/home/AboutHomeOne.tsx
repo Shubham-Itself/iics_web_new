@@ -11,7 +11,7 @@ const AboutHomeOne = () => {
                     <div className="col-xl-4 col-lg-6 col-md-6">
                         <div className="about-image wow img-custom-anim-left !mt-[37px]" data-wow-duration="1.5s" data-wow-delay="0.3s">
                             {/* <img src="assets/img/about/01.jpg" alt="img" /> */}
-                            <video src="/assets/iics_video/about2.mp4" autoPlay muted loop playsInline></video>
+                            <video src="https://res.cloudinary.com/dwgwz52rq/video/upload/v1744688605/about2_y8w3ju.mp4" autoPlay muted loop playsInline></video>
                         </div>
                     </div>
                     <div className="col-xl-5 col-lg-6 col-md-6 !w-[64%]">

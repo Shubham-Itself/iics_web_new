@@ -534,7 +534,7 @@ const menu_data: DataType[] = [
 		studentsSeat:'20',
 		enrollmentDeadLine:'20.04.2025',
 		courseStartDate:'19.05.2025',
-		courseVideo:'/assets/iics_video/course_video/events.mp4',
+		courseVideo:'https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4',
 		courseImg:'/assets/iics_course_image/event-experiential-management-program.webp',
 		industryMentors:[],
 		mentorIcon:'/assets/iics_image/leaders/sushma_gaikwad.webp',
