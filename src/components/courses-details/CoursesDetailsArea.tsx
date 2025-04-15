@@ -67,7 +67,7 @@ courseImg,
   };
 
 //   const cleanedVideo = courseVideo?.trim();
-//   console.log(courseVideo);
+  console.log(courseVideo);
 
   return (
     <>
