@@ -1,5 +1,5 @@
 import {  useParams } from "react-router-dom";
-import BreadcrumbInstructor from "../../common/breadcrumb/BreadcrumbInstructor";
+// import BreadcrumbInstructor from "../../common/breadcrumb/BreadcrumbInstructor";
 
 
 import ScrollTop from "../../common/ScrollTop";
@@ -52,7 +52,7 @@ const InstructorDetails = () => {
   }
 
     
-  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorType, pathLink , mentorMessage} = leaderData;
+  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorMessage} = leaderData;
  console.log(leaderData)
   return (
     <>

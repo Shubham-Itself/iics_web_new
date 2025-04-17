@@ -1,7 +1,7 @@
 import {  useParams } from "react-router-dom";
 import BreadcrumbCoursesDetails from "../../common/breadcrumb/BreadcrumbCoursesDetails";
 
-import Preloader from "../../common/Preloader";
+// import Preloader from "../../common/Preloader";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderOne from "../../layouts/headers/HeaderOne";
