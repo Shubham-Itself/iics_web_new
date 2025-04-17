@@ -6,27 +6,27 @@ const HeroHomeOne = () => {
     const registrationInfo = [
         {
             date:'1st April 2025',
-            procees : 'Registration Start Date'
+            procees : 'Important Dates'
         },
         {
             date:'15th April 2025',
-            procees : 'Registration End Date'
+            procees : 'Upcoming Event'
         },
         {
             date:'19th April 2025',
-            procees : 'Entrance Exam Date'
+            procees : 'School'
           
         },
-        {
-            date:'15th May 2025',
-            procees : 'Batch Start Date'
-        },
+        // {
+        //     date:'15th May 2025',
+        //     procees : 'Batch Start Date'
+        // },
     ]
   return (
     <>
         <section className=" fix relative pb-[96px]">
-            <img src="assets/iics_image/admission-iics.webp" alt="banner_imahe" />
-            <div className="absolute bottom-[47px] left-0 w-[70%] bg-white shadow-custom rounded-[20px] left-1/2 -translate-x-1/2 flex justify-between p-[20px]">
+            <img src="assets/iics_image/main_iics_banner.webp" alt="banner_imahe" className="w-[100%]" />
+            <div className="absolute bottom-[47px] left-0 w-[50%] bg-white shadow-custom rounded-[20px] left-1/2 -translate-x-1/2 flex justify-between p-[20px]">
             {
                 registrationInfo.map((items , index)=>(
                     <div key={index} className="flex flex-col gap-[5px]">

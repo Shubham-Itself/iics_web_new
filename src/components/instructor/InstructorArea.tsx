@@ -9,10 +9,11 @@ export const leadersDetails = [
     facebookLink: "",
     image: "/assets/iics_image/leaders/jayant.webp",
     mentorType:'Leader',
-    pathLink:'/leaders'
+    pathLink:'/leaders',
+    mentorMessage:'The Media & Entertainment sector is a cornerstone of India’s global influence, and its future depends on skilled professionals who can push creative and technological boundaries. IICS plays a vital role in equipping young talent with cutting-edge expertise, ensuring they are ready to lead the industry. The Ministry of Skills Development & Entrepreneurship remains committed to strengthening skill- based education, industry collaborations, and infrastructure to make India the world’s creative powerhouse.'
   },
   {
-    leaderName: "Mr. Atul Kumar Tiwari",
+    leaderName: "Shri Atul Kumar Tiwari",
     leaderDesignation:
       "Secretary of the Ministry of Skill Development & Entrepreneurship ",
     instagramLink: "",
@@ -20,10 +21,11 @@ export const leadersDetails = [
     facebookLink: "",
     image: "/assets/iics_image/leaders/atul.webp",
      mentorType:'Leader',
-      pathLink:'/leaders'
+      pathLink:'/leaders',
+    mentorMessage:'India’s Media & Entertainmentsector is poised for exponential growth, with the AVGC (Animation, Visual Effects, Gaming, and Comics) industry alone projected to exceed $25 billion by 2030. With a young, digitally native workforce, India has the potential to become a global hub for creative services. The Indian Institute of Creative Skills (IICS) is a pivotal initiative that aligns with our vision of transforming raw talent into future-ready professionals through industry-integrated training. By bridging the skill gap and fostering innovation, we are not only unlocking new job opportunities but also reinforcing India’s position as a leader in the global creative economy.'
   },
   {
-    leaderName: "Mr. Ved Mani Tiwari",
+    leaderName: "Shri Ved Mani Tiwari",
     leaderDesignation:
       "CEO, NSDC & Managing Director, NSDC International (NSDCI)",
     instagramLink: "",
@@ -31,7 +33,8 @@ export const leadersDetails = [
     facebookLink: "",
     image: "/assets/iics_image/leaders/ved_mani_tiwari.webp",
      mentorType:'Leader',
-      pathLink:'/leaders'
+      pathLink:'/leaders',
+    mentorMessage:'Skilling is the cornerstone of societal progress, and fostering world-class institutes is essential to equip individuals with the capabilities needed to thrive in a dynamic Global economy. The Indian Institute of Creative Skills (IICS) is a visionary initiative that places creativity at the heart of skill development, nurturing talent that not only meets professional standards but also pioneers new possibilities. At IICS, the focus is on empowering individuals to become creative entrepreneurs, shaping Industries and driving innovation rather than merely joining the workforce. NSDC is proud to champion this initiative, providing unwavering support to build a world of boundless opportunities and a thriving creative ecosystem.'
   },
   {
     leaderName: "Mr. Shankar Mahadevan",

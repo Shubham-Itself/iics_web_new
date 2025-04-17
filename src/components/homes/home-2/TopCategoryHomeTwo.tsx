@@ -24,10 +24,12 @@ const TopCategoryHomeTwo = () => {
                             <div className="top-category-left-items mb-5 mb-lg-0">
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div className="top-category-box border-left-none border-top-none">
+                                        <div className="top-category-box border-left-none border-top-none h-full">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                    {/* <i className="flaticon-graphic-design"></i>
+                                                     */}
+                                                     <p>1</p>
                                                 </div>
                                                 <div className="content">
                                                     <h6 className="!text-[14px] mb-[15px]">Application Form Submission</h6> 
@@ -37,10 +39,10 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div className="top-category-box border-left-none border-top-none">
+                                        <div className="top-category-box border-left-none border-top-none h-full">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>2</p>
                                                 </div>
                                                 <div className="content">
                                                     <h6 className="!text-[14px] mb-[15px]">Entrance Exam</h6>
@@ -53,7 +55,7 @@ const TopCategoryHomeTwo = () => {
                                         <div className="top-category-box border-left-none border-bottom-none border-top-none">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>3</p>
                                                 </div>
                                                 <div className="content">
                                                     <h6 className="!text-[14px] mb-[15px]">Portfolio Submission / Audition</h6>
@@ -66,7 +68,7 @@ const TopCategoryHomeTwo = () => {
                                         <div className="top-category-box border-left-none border-bottom-none border-top-none">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>4</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Personal Interview</h6>
@@ -90,10 +92,10 @@ const TopCategoryHomeTwo = () => {
                             <div className="top-category-left-items">
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div className="top-category-box border-right-none border-top-none">
+                                        <div className="top-category-box border-right-none border-top-none h-full">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>5</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Unique Course Structure – 12+6+6 Model </h6>
@@ -103,10 +105,10 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div className="top-category-box border-right-none border-top-none">
+                                        <div className="top-category-box border-right-none border-top-none h-full">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>6</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Mentorship by Industry Icons</h6>
@@ -119,7 +121,7 @@ const TopCategoryHomeTwo = () => {
                                         <div className="top-category-box border-right-none border-bottom-none border-top-none">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-graphic-design"></i>
+                                                <p>7</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Real-World Learning Environment </h6>
@@ -132,7 +134,7 @@ const TopCategoryHomeTwo = () => {
                                         <div className="top-category-box border-right-none border-bottom-none border-top-none">
                                             <Link to="/courses">
                                                 <div className="icon">
-                                                    <i className="flaticon-coding"></i>
+                                                <p>8</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Focus on Entrepreneurship</h6>

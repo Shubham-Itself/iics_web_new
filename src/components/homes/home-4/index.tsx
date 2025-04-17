@@ -1,5 +1,4 @@
 import MarqueeThree from "../../../common/MarqueeThree";
-import Preloader from "../../../common/Preloader";
 import ScrollTop from "../../../common/ScrollTop";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import HeaderFour from "../../../layouts/headers/HeaderFour";
@@ -19,7 +18,7 @@ import TestimonialHomeFour from "./TestimonialHomeFour";
 const HomeFour = () => {
   return (
     <>
-    <Preloader />
+    {/* <Preloader /> */}
     <HeaderFour />
     <HeroHomeFour />
     <ChooseHomeFour />

@@ -54,15 +54,15 @@ const NavMenu = () => {
 
                           {sub_item?.inner_menu && sub_item?.inner_menus && (
                             <li className="has-dropdown">
-                              <Link to="#" className="!text-[14px]">
-                                {sub_item.title}
+                              <Link to={sub_item.link || '#'} className="!text-[14px]">
+                                {sub_item.title }
                                 <i className="fas fa-angle-right"></i>
                               </Link>
                               <ul className="submenu" style={{insetInlineStart : '111%'}}>
                                 {sub_item.inner_menus.map(
                                   (innerMenu, index) => (
                                     <li key={index} >
-                                      <Link to={innerMenu.link || "#"} className="!text-[14px]">
+                                      <Link to={innerMenu.title == 'Shri Jayant Chaudhary' || innerMenu.title == 'Shri Atul Kumar Tiwari' || innerMenu.title == 'Shri Ved Mani Tiwari'? `/details/${encodeURIComponent(innerMenu.title.toString() || '')}?from=message`:  innerMenu.link || "#"} className="!text-[14px]">
                                         {innerMenu.title }
                                       </Link>
                                     </li>
@@ -84,20 +84,21 @@ const NavMenu = () => {
                   <React.Fragment key={sub_index}>
                     {sub_item?.link && !sub_item.inner_menu && (
                       <li>
-                        <Link to={sub_item.title =='Digital Content Creatio' || sub_item.title == 'Events And Experiential Media' ?`/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}` : sub_item.link } className="!text-[14px]">{sub_item.title}</Link>
+                        <Link to={sub_item.title =='Digital Content Creation' || sub_item.title == 'Events And Experiential Media' ? `/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}` : sub_item.link } className="!text-[14px]">{sub_item.title}</Link>
                       </li>
                     )}
 
                     {sub_item?.inner_menu && sub_item?.inner_menus && (
                       <li className="has-dropdown">
                         <Link to={sub_item.link || ''} className="!text-[14px]">
-                          {sub_item.title}
+                          {sub_item.title }
                           <i className="fas fa-angle-right"></i>
                         </Link>
                         <ul className="submenu" style={{insetInlineStart : '112%'}}>
                           {sub_item.inner_menus.map((innerMenu, index) => (
                             <li key={index} onClick={scrollTop}>
-                              <Link to={`/courses-details/${encodeURIComponent(innerMenu.title?.toString() || '')}`} state={{
+                              <Link to={innerMenu.title  == 'How To Apply' || innerMenu.title == 'Eligibility Criteria' || innerMenu.title == 'Fees & Support' || innerMenu.title == 'Sample Papers' ? innerMenu.link || "#" : 
+                               `/courses-details/${encodeURIComponent(innerMenu.title?.toString() || '')}`} state={{
                                 titleCourse: innerMenu.title,
                                 mentor: innerMenu.mentorName,
                                 duration:innerMenu.duration,

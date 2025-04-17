@@ -26,14 +26,14 @@ const ManagementArea = () => {
       facebookLink: "",
       image: "assets/iics_image/management/roshni.webp",
     },
-    {
-      leaderName: "Ms. Heena Bhardwaj",
-      leaderDesignation: "Project Head",
-      instagramLink: "",
-      linkedIn: "",
-      facebookLink: "",
-      image: "assets/iics_image/management/ms-heena.webp",
-    },
+    // {
+    //   leaderName: "Ms. Heena Bhardwaj",
+    //   leaderDesignation: "Project Head",
+    //   instagramLink: "",
+    //   linkedIn: "",
+    //   facebookLink: "",
+    //   image: "assets/iics_image/management/ms-heena.webp",
+    // },
     {
       leaderName: "Ms. Nancy Singhal",
       leaderDesignation: "Deputy General Manager, Media and Entertainment Skills Council (MESC)",
@@ -58,7 +58,7 @@ const ManagementArea = () => {
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
-      image: "assets/iics_image/leaders/yasmin_rodger.webp",
+      image: "assets/iics_image/management/aman.webp",
     },
     {
       leaderName: "Ms. Varsha",
@@ -66,7 +66,7 @@ const ManagementArea = () => {
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
-      image: "assets/iics_image/leaders/resul_pookutty.webp",
+      image: "assets/iics_image/management/varsha.webp",
     },
     {
       leaderName: "Mr. Sahil Bhatnagar",
@@ -74,7 +74,7 @@ const ManagementArea = () => {
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
-      image: "assets/iics_image/leaders/manvendra_shukul.webp",
+      image: "assets/iics_image/management/sahil.webp",
     },
     {
       leaderName: "Ms. Prishita Tiwari",
@@ -82,7 +82,7 @@ const ManagementArea = () => {
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
-      image: "assets/iics_image/leaders/anand_jha.webp",
+      image: "assets/iics_image/management/prishita.webp",
     }
    
   ];

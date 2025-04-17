@@ -10,9 +10,9 @@ const BlogHomeOne = () => {
                 <div className="section-title-area">
                     <div className="section-title">
                         <h6 className="wow fadeInUp">
-                            News & Blog 
+                        Latest News 
                         </h6>
-                        <h2 className="wow fadeInUp" data-wow-delay=".3s">Our News & Blog</h2>
+                        {/* <h2 className="wow fadeInUp" data-wow-delay=".3s"></h2> */}
                     </div>
                     <div className="news-btn d-none d-md-block wow fadeInUp" data-wow-delay=".3s">
                         <Link to="/news" className="theme-btn yellow-btn">

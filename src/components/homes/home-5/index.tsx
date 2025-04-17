@@ -1,5 +1,5 @@
 import MarqueeFour from "../../../common/MarqueeFour";
-import Preloader from "../../../common/Preloader";
+// import Preloader from "../../../common/Preloader";
 import ScrollTop from "../../../common/ScrollTop";
 import FooterFive from "../../../layouts/footers/FooterFive";
 import HeaderFive from "../../../layouts/headers/HeaderFive";
@@ -19,7 +19,7 @@ import TestimonialHomeFive from "./TestimonialHomeFive";
 const HomeFive = () => {
 	return (
 		<>
-		<Preloader />
+		{/* <Preloader /> */}
 			<HeaderFive />
 			<HeroHomeFive />
 			<CategoryHomeFive />

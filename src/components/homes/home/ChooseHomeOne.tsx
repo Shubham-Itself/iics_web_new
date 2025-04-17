@@ -5,7 +5,7 @@ import Count from "../../../common/Count";
 const ChooseHomeOne = () => {
   return (
     <>
-      <section className="choose-us-section fix section-padding ">
+      <section className="choose-us-section fix pt-0  section-padding ">
             <div className="container">
                 <div className="main-choose-us-wrapper">
                     <div className="line-shape">
@@ -25,7 +25,7 @@ const ChooseHomeOne = () => {
                                 <i className="flaticon-satisfaction"></i>
                             </div>
                             <div className="content">
-                               <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="6"> <Count number={6}  /> </span>months</h2>
+                               <h2 className="flex gap-[5px] "><span className="odometer" data-count="6"> <Count number={6}  /> </span>Months</h2>
                                <p>
                                Paid Internship with a Stipend of ₹35K-50K
                                </p>
@@ -39,7 +39,7 @@ const ChooseHomeOne = () => {
                             </div>
                             <div className="content">
                                 {/* <p>Student Enrolled</p> */}
-                                <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="12"><Count number={12}  /></span>months</h2>
+                                <h2 className="flex gap-[5px] "><span className="odometer" data-count="12"><Count number={12}  /></span>/<span className="odometer" data-count="24"><Count number={24}  /></span>Months</h2>
                                 <p>
                                 Intensive Training to Build Your Foundation
                                 </p>
@@ -51,7 +51,7 @@ const ChooseHomeOne = () => {
                             </div>
                             <div className="content">
                                 {/* <p>Instructors</p> */}
-                                <h2 className="flex gap-[5px] text-lowercase"><span className="odometer" data-count="6"><Count number={6}  /></span>Months</h2>
+                                <h2 className="flex gap-[5px] "><span className="odometer" data-count="6"><Count number={6}  /></span>Months</h2>
                                 <p>
                                 Real-World Experience with Industry & LIVE Projects
                                 </p>

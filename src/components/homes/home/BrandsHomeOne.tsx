@@ -13,7 +13,7 @@ const BrandsHomeOne = () => {
 					<div className="brand-wrapper">
 						<div className="section-title text-center">
 							<h2 className="wow fadeInUp mb-3" data-wow-delay=".3s">
-								6 Trusted Partners
+							Our Esteemed Partners
 							</h2>
 							<p className="wow fadeInUp" data-wow-delay=".5s mt-3">
 								Education is the foundation of personal societal growth,

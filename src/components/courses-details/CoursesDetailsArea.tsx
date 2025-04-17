@@ -57,7 +57,6 @@ courseImg,
   careerEntrepreneurship,
   mentorIcon,
   eligibilityCriteria,
-  courseVideo
 }: any) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
@@ -65,14 +64,14 @@ courseImg,
   const toggleItem = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-//   const cleanedVideo = courseVideo?.trim();
-  console.log(courseVideo);
+  const courseVideoTrim = 'https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4'
+  const cleanedVideo = courseVideoTrim?.trim();
+  console.log(cleanedVideo);
 
   return (
     <>
       {/* video modal start */}
-      <VideoPopup
+    <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"Ml4XCF-JS0k"}
@@ -130,7 +129,7 @@ courseImg,
                           data-bs-toggle="tab"
                           className="nav-link"
                         >
-                          Instructors
+                          Chief Mentor
                         </a>
                       </li>
                       <li
@@ -154,7 +153,7 @@ courseImg,
                           </p>
                         </div>
                       </div>
-                      <div id="Curriculum" className="tab-pane show fade">
+                      <div id="Curriculum" className="tab-pane active show fade">
                         {courseCurricullam?.map((item:any, index:any) => (
                           <AccordionItem
                             key={index}

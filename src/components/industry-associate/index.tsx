@@ -1,0 +1,24 @@
+import BreadcrumbEvent from "../../common/breadcrumb/BreadcrumbEvent";
+
+import ScrollTop from "../../common/ScrollTop";
+import FooterOne from "../../layouts/footers/FooterOne";
+import HeaderOne from "../../layouts/headers/HeaderOne";
+import IndustryAssociateArea from "./IndustryAssociateArea";
+
+ 
+
+const IndustryAssociate = () => {
+  return (
+    <>
+    {/* <Preloader /> */}
+      <HeaderOne />
+      <BreadcrumbEvent title="Industry Assosiate" subtitle="Industry Assosiate" />
+      <IndustryAssociateArea/>
+			{/* <MarqueeOne style_2={true} /> */}
+      <FooterOne />
+      <ScrollTop />
+    </>
+  );
+};
+
+export default IndustryAssociate;

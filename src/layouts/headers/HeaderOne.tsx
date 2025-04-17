@@ -27,7 +27,7 @@ const HeaderOne = () => {
         >
           <div className="container-fluid">
             <div className="mega-menu-wrapper">
-              <div className="header-main !p-[0px] !gap-[10px] !justify-between">
+              <div className="header-main !p-[0px] !gap-[5px] !justify-between">
                 <div className="header-left max-2xl:!max-w-[18%]">
                   <div className="logo">
                     <Link to="/" className="header-logo">

@@ -1,6 +1,5 @@
 import BreadcrumbEvent from "../../common/breadcrumb/BreadcrumbEvent";
 
-import Preloader from "../../common/Preloader";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderOne from "../../layouts/headers/HeaderOne";
@@ -12,7 +11,7 @@ import ManagementArea from "./ManagementArea";
 const Management = () => {
   return (
     <>
-    <Preloader />
+    {/* <Preloader /> */}
       <HeaderOne />
 			<BreadcrumbEvent title="Management at IICS" subtitle="Management" />
       <ManagementArea/>     

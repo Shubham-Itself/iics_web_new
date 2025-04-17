@@ -13,8 +13,8 @@ export  const leadersDetails = [
     linkedIn: "",
     facebookLink: "",
     image: "/assets/iics_image/industryMentors/dimpy.webp",
-     mentorType:'Industry Mentor',
-     pathLink:'/industryMentors'
+     mentorType:'Mentor',
+     pathLink:'/mentors'
   },
   {
     leaderName: " Mr. Harry",
@@ -23,8 +23,8 @@ export  const leadersDetails = [
     linkedIn: "",
     facebookLink: "",
     image:  "/assets/iics_image/industryMentors/harry.webp",
-    mentorType:'Industry Mentor',
-    pathLink:'/industryMentors'
+    mentorType:'Mentor',
+    pathLink:'/mentors'
 
   },
  
@@ -36,8 +36,30 @@ export  const leadersDetails = [
     linkedIn: "",
     facebookLink: "",
     image: "/assets/iics_image/industryMentors/ashish.webp",
-    mentorType:'Industry Mentor',
-    pathLink:'/industryMentors'
+    mentorType:'Mentor',
+    pathLink:'/mentors'
+
+  },
+  {
+    leaderName: "Mr. Mark Theodossiou",
+    leaderDesignation: "International Mentor",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/internationalMentors/mark.webp",
+    mentorType:'Mentor',
+    pathLink:'/mentors'
+
+  },
+  {
+    leaderName: "Mr. Gareth Benson",
+    leaderDesignation: "International Mentor",
+    instagramLink: "",
+    linkedIn: "",
+    facebookLink: "",
+    image: "/assets/iics_image/internationalMentors/garethBenson.webp",
+    mentorType:'Mentor',
+     pathLink:'/mentors'
 
   },
  

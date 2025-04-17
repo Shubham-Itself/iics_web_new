@@ -41,15 +41,21 @@ const FooterOne = ({style_2} : any) => {
                                     <p>
                                     The Indian Institute of Creative Skills (IICS), affiliated with NSDC Academy and operated by MESC (funded by NSDC) under the aegis of the Ministry of Skill Development & Entrepreneurship (MSDE), is dedicated to shaping the future of creative education.
                                     </p>
-                                    <div className="social-icon">
+                                   <div className="mt-[30px]">
+                                   <p >Follow Us:</p>
+                                    <div className="social-icon !mt-[10px]">
+                                    
                                         <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fab fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/iicsindiaorg/"><i className="fab fa-instagram"></i></a>
                                         {/* <a href="#"><i className="fab fa-dribbble"></i></a>
                                         <a href="#"><i className="fab fa-behance"></i></a> */}
                                         <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                                        <a href="#"><i className="fab fa-youtube"></i></a>
+                                        <a href="https://x.com/IICS_INDIA"><i className="fab fa-twitter"></i></a>
+
+                                        <a href="https://youtube.com/@iicsindiaorg?si=3jYkJMvyrO_lO97m"><i className="fab fa-youtube"></i></a>
 
                                     </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -90,18 +96,31 @@ const FooterOne = ({style_2} : any) => {
                                     <ul className="contact-info">
                                         <li>
                                             <span className="block text-[18px] font-semibold">Delhi Campus</span>
-                                            13-A, 2nd and 3rd floor, Lajpat Nagar- 4, Ring Road, New Delhi - 110024
-                                        </li>
-                                        {/* <li>
-                                            55 Main Street, 2nd block
-                                            Malborne, Australia
-                                        </li>
-                                        <li>
-                                            <a href="mailto:info@example.com" className="link">info@example.com</a>
+                                            13-A 3rd Floor Above Tata Motors Showroom Main Ring Road Lajpat Nagar -4 New Delhi - 110024
+                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
+                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
+
                                         </li>
                                         <li>
-                                            <a href="tel:+0001238899">+000 (123) 88 99</a>
-                                        </li> */}
+                                            <span className="block text-[18px] font-semibold">Bhopal</span>
+                                            Sage University, Katara Hills, Extension, Bhopal, Madhya Pradesh 462022
+                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
+                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
+                                            
+                                        </li>
+                                        <li>
+                                            <span className="block text-[18px] font-semibold">Kolkata</span>
+                                            Coming Soon
+                                            
+                                            
+                                        </li>
+                                        <li>
+                                            <span className="block text-[18px] font-semibold">Bhubaneshwar</span>
+                                            Coming Soon
+                                            
+                                            
+                                        </li>
+                                     
                                     </ul>
                                 </div>
                             </div>

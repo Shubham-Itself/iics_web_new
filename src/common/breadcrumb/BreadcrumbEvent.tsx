@@ -36,6 +36,7 @@ const BreadcrumbEvent = ({ title, subtitle }: any) => {
 				<div className="container relative z-10">
 					<div className="row">
 						<div className="page-heading">
+							
 							<h1 className="normal-case">{title}</h1>
 							<ul className="breadcrumb-items">
 								<li>

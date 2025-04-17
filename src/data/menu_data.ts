@@ -53,6 +53,7 @@ export interface DataType {
 	  industryMentors?:string[]
 	  eligibilityCriteria?:string
 	   courseImg?:string
+	   mentorMessage?:string
 	  courseCurricullam?:{
 
 	  }
@@ -72,10 +73,17 @@ const menu_data: DataType[] = [
     img_dropdown: true,
     has_dropdown_inner: true,
     sub_menus: [
-      { link: "/about", title: "About us" },
-      { link: "/leaders", title: "Leadership" },
-      { link: "/management", title: "Management" },
-      { link: "/stakeHolders", title: "Stake Holder" },
+      { link: "#", title: "About",
+		inner_menu:true,
+		inner_menus:[
+			{link:'/about' , title:'About IICS'},
+			{ link: "/leaders", title: "Our Guiding Force" },
+			{ link: "/management", title: "Management" },
+			{ link: "/stakeHolders", title: "Stake Holders" },
+		]
+	   },
+
+     
       {
         inner_menu: true,
         title: "Mentors",
@@ -85,18 +93,42 @@ const menu_data: DataType[] = [
 			  studentsSeat: ""
 		  },
           {
-			  link: "/industryMentors", title: "Industry Mentors",
+			  link: "/mentors", title: "Mentors",
 			  studentsSeat: ""
 		  },
-          {
-			  link: "/internationalMentors", title: "International Mentors",
-			  studentsSeat: ""
-		  },
+        //   {
+		// 	  link: "/internationalMentors", title: "International Mentors",
+		// 	  studentsSeat: ""
+		//   },
         ],
       },
-
+	  
+	 
+	  
       { link: "/partners", title: "Partners" },
+	  { link: "/hiring", title: "Hiring" },
       { link: "/campus", title: "Campus" },
+      
+	  {
+        inner_menu: true,
+        title: "Mentor Voice",
+
+		inner_menus:[
+			{ link: "/how-to-apply", 
+			title: "Shri Jayant Chaudhary" ,
+			mentorMessage:'The Media & Entertainment sector is a cornerstone of India’s global influence, and its future depends on skilled professionals who can push creative and technological boundaries. IICS plays a vital role in equipping young talent with cutting-edge expertise, ensuring they are ready to lead the industry. The Ministry of Skills Development & Entrepreneurship remains committed to strengthening skill- based education, industry collaborations, and infrastructure to make India the world’s creative powerhouse.'
+
+			},
+			{ link: "/eligibilityCriteria",
+			 title: "Shri Atul Kumar Tiwari" ,
+mentorMessage:'India’s Media & Entertainmentsector is poised for exponential growth, with the AVGC (Animation, Visual Effects, Gaming, and Comics) industry alone projected to exceed $25 billion by 2030. With a young, digitally native workforce, India has the potential to become a global hub for creative services. The Indian Institute of Creative Skills (IICS) is a pivotal initiative that aligns with our vision of transforming raw talent into future-ready professionals through industry-integrated training. By bridging the skill gap and fostering innovation, we are not only unlocking new job opportunities but also reinforcing India’s position as a leader in the global creative economy.'
+			},
+			{ link: "/fees&studentSupport", title: "Shri Ved Mani Tiwari",
+				mentorMessage:'Skilling is the cornerstone of societal progress, and fostering world-class institutes is essential to equip individuals with the capabilities needed to thrive in a dynamic Global economy. The Indian Institute of Creative Skills (IICS) is a visionary initiative that places creativity at the heart of skill development, nurturing talent that not only meets professional standards but also pioneers new possibilities. At IICS, the focus is on empowering individuals to become creative entrepreneurs, shaping Industries and driving innovation rather than merely joining the workforce. NSDC is proud to champion this initiative, providing unwavering support to build a world of boundless opportunities and a thriving creative ecosystem.'
+			 },
+			// { link: "/samplePaper", title: "Sample Papers" },
+		]
+      },
 
      
 
@@ -113,12 +145,20 @@ const menu_data: DataType[] = [
     has_dropdown: true,
     has_dropdown_inner: true,
     sub_menus: [
-      { link: "/how-to-apply", title: "How To Apply" },
-      { link: "/entranceProcess", title: "Entrance Process" },
+     
+      { link: "/entranceProcess", title: "Entrance Process", 
+		inner_menu:true,
+		inner_menus:[
+			{ link: "/how-to-apply", title: "How To Apply" },
+			{ link: "/eligibilityCriteria", title: "Eligibility Criteria" },
+			{ link: "/fees&studentSupport", title: "Fees & Support" },
+			{ link: "/samplePaper", title: "Sample Papers" },
+		]
+	  },
       { link: "/publicNotes", title: "Public Notice " },
-      { link: "/fees&studentSupport", title: "Fees & Support" },
-      { link: "/eligibilityCriteria", title: "Eligibility Criteria" },
-      { link: "/samplePaper", title: "Sample Papers" },
+      
+      
+     
       { link: "/prospectus", title: "Prospectus" },
 
       { link: "/faq", title: "FAQs" },
@@ -710,7 +750,9 @@ const menu_data: DataType[] = [
       { link: "/startup-support", title: "Startup Support" },
       { link: "/portfolio-development", title: "Portfolio Development" },
       { link: "/industry-association", title: "Industry Association" },
-      { link: "/industry-association", title: "Source Funding & IP Creation" },
+      { link: "/source-funding-ip-creation", title: "Source Funding & IP Creation" },
+      { link: "/podcast", title: "Podcast" },
+
 
 	  
     ],
@@ -722,5 +764,6 @@ const menu_data: DataType[] = [
     icon: "fas fa-phone-rotary",
     has_dropdown: false,
   },
+ 
 ];
 export default menu_data;
