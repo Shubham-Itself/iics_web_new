@@ -52,14 +52,14 @@ const InstructorDetails = () => {
   }
 
     
-  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorMessage} = leaderData;
+  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorMessage , description} = leaderData;
  console.log(leaderData)
   return (
     <>
     {/* <Preloader /> */}
       <HeaderOne />
 			{/* <BreadcrumbInstructor  breadCrumbName={mentorType} pathLink = {pathLink}/> */}
-      <InstructorDetailsArea  leaderName={leaderName} leaderDesignation={leaderDesignation} instagramLink={instagramLink} linkedIn={linkedIn} facebookLink={facebookLink} image={image} mentorMessage={mentorMessage}/>       
+      <InstructorDetailsArea  leaderName={leaderName} leaderDesignation={leaderDesignation} instagramLink={instagramLink} linkedIn={linkedIn} facebookLink={facebookLink} image={image} mentorMessage={mentorMessage} mentorBio={description}/>       
       {/* <CoursesDetailsArea />        */}
 			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />

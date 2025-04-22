@@ -1,6 +1,6 @@
 
 import {  useSearchParams } from 'react-router-dom';
-const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image , mentorMessage}:any) => {
+const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image , mentorMessage ,mentorBio}:any) => {
         // const location = useLocation();
         // const {leaderName , leaderImage , leaderDesig} = location.state || {}
         const [searchParams] = useSearchParams();
@@ -40,7 +40,7 @@ const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image , mentor
                                 About Me
                             </h3> */}
                            {!from  && <p className="mt-4">
-                                UX/UI instructors play a crucial role in shaping the next generation of designers by offering expert guidance, practical insights, and personalized feedback. With their deep industry experience, they bring real-world knowledge into the classroom, helping students understand the complexity user experience and interface design. Instructors not only teach the fundamentals of UX/UI, such as user research, wireframing, and prototyping, but also mentor students on how to apply design
+                                {mentorBio}
                             </p>}
                             {from =='message' && <p className="mt-4">
                                {mentorMessage}

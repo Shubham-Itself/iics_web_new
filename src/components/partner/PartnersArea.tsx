@@ -40,6 +40,12 @@ const PartnersArea = () => {
          
 
         },
+        {
+            name: 'Schwarkopf Professional',
+            logo:'assets/iics_image/partners/schwarzkopf.webp',
+         
+
+        },
     ]
   return (
     <>

@@ -109,6 +109,13 @@ const FooterOne = ({style_2} : any) => {
                                             
                                         </li>
                                         <li>
+                                            <span className="block text-[18px] font-semibold">Ahmedabad</span>
+                                            Karnavati University, Uvarsad-Adalaj Road At.&Po.: Uvarsad, Dist, Gandhinagar, Gujarat 382422
+                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
+                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
+                                            
+                                        </li>
+                                        <li>
                                             <span className="block text-[18px] font-semibold">Kolkata</span>
                                             Coming Soon
                                             

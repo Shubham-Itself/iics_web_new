@@ -63,6 +63,8 @@ import IndustryAssociate from "./components/industry-associate";
 import SourceFundingIpCreation from "./components/source-funding-ip-creation";
 
 import MainLayout from "./components/mainLayout/MainLayout";
+import Podcast from "./components/podcast";
+import Hiring from "./components/hiring";
 
 const router = createBrowserRouter([
   {
@@ -126,6 +128,10 @@ const router = createBrowserRouter([
       { path: '/portfolio-development', element: <PortfolioDevelopment /> },
       { path: '/industry-association', element: <IndustryAssociate /> },
       { path: '/source-funding-ip-creation', element: <SourceFundingIpCreation /> },
+      { path: '/podcast', element: <Podcast /> },
+      { path: '/hiring', element: <Hiring /> },
+
+
       { path: '*', element: <NotFound /> },
     ],
   },

@@ -121,7 +121,7 @@ const PublicNotesArea = () => {
                                           
                                             <p><span className="font-semibold">Date: </span> 11.04.2025</p>
                                             
-                                            <p><span className="font-semibold">Download/View </span>Download Here</p>
+                                            <p><span className="font-semibold">Download/View </span><a target="blank" href="/IICS PDF/IICS_Public_Notice.pdf">Download Here</a></p>
                                            
                                         </div>
                                         {/* <div className="p-[30px] border rounded-[20px]" style={{

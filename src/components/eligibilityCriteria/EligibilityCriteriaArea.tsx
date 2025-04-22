@@ -152,7 +152,7 @@ const EligibilityCriteriaArea = () => {
                     <ul className="list-disc pl-[40px]">
                         <li className="font-bold text-[18px] text-black mb-[5px]">Portfolio submission <span className="font-normal">(for creative programs)</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]">Audition<span className="font-normal">(for performing arts)</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Interview<span className="font-normal">as part of final selection</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px]">Interview<span className="font-normal"> as part of the final selection</span></li>
                         {/* <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Access to industry-standard labs & equipment</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li> */}
 

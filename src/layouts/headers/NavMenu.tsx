@@ -62,8 +62,23 @@ const NavMenu = () => {
                                 {sub_item.inner_menus.map(
                                   (innerMenu, index) => (
                                     <li key={index} >
-                                      <Link to={innerMenu.title == 'Shri Jayant Chaudhary' || innerMenu.title == 'Shri Atul Kumar Tiwari' || innerMenu.title == 'Shri Ved Mani Tiwari'? `/details/${encodeURIComponent(innerMenu.title.toString() || '')}?from=message`:  innerMenu.link || "#"} className="!text-[14px]">
-                                        {innerMenu.title }
+                                      <Link  to={
+    [
+      "Shri Jayant Chaudhary",
+      "Shri Atul Kumar Tiwari",
+      "Shri Ved Mani Tiwari",
+    ].includes(innerMenu.title ?? '')
+      ? `/details/${encodeURIComponent(innerMenu.title ?? '')}?from=message`
+      : innerMenu.link || "#"
+  } className="!text-[14px]">
+   {[
+  "Shri Jayant Chaudhary",
+  "Shri Atul Kumar Tiwari",
+  "Shri Ved Mani Tiwari"
+].includes(innerMenu.title ?? '') 
+  ? `Message from ${innerMenu.title}` 
+  : innerMenu.title}
+                                       
                                       </Link>
                                     </li>
                                   )

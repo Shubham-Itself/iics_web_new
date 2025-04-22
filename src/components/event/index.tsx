@@ -4,6 +4,7 @@ import BreadcrumbEvent from "../../common/breadcrumb/BreadcrumbEvent";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderOne from "../../layouts/headers/HeaderOne";
+import EventGallery from "../eventGallery/EventGallery";
 import EventLisrArea from "./EventLisrArea";
 
  
@@ -16,6 +17,7 @@ const Event = () => {
       <BreadcrumbEvent title="Events" subtitle="Event List" />
       <EventLisrArea />
 			{/* <MarqueeOne style_2={true} /> */}
+      <EventGallery/>
       <FooterOne />
       <ScrollTop />
     </>

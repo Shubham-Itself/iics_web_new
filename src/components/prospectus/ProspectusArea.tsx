@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 
  
@@ -59,12 +59,13 @@ const ProspectusArea = () => {
                     <p className="text-[18px] font-bold mt-[10px]">Download Now</p>
                     <p className="text-[16px] mb-[10px]">Click the button below to download the IICS Prospectus (PDF).</p>
                     <div className="flex gap-[10px] items-center">Delhi Campus: <div className="header-button min-l:!hidden">
-                    <Link
-                      to="/register"
+                    <a
+                      href="/IICS PDF/IICS_FINAL_PROSPECTUS_21 APRIL.pdf"
+                      target="blank"
                       className="theme-btn yellow-btn !px-[16px] !py-[12px] "
                     >
                       Download Prospectus
-                    </Link>
+                    </a>
                   </div></div>
                     
                    

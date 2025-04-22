@@ -1,12 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
+import Dropdown from "../../common/dropdown/Dropdown";
 
  
 const ContactForm = () => {
-    const [selectedOption, setSelectedOption] = useState('');
+    // const [selectedOption, setSelectedOption] = useState('');
 
-    const handleChange = (event:any) => {
-      setSelectedOption(event.target.value);
-    };
+    // const handleChange = (event:any) => {
+    //   setSelectedOption(event.target.value);
+    // };
   return (
     <>
        <section className="contact-section-2 section-padding pt-0">
@@ -39,21 +40,13 @@ const ContactForm = () => {
                                             <input type="text" name="address" id="address" placeholder="Address" />
                                         </div>
                                     </div>
+                                    <Dropdown/>
                                     <div className="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
                                         <div className="form-clt">
                                             <textarea name="message" id="message" placeholder="Write message"></textarea>
                                         </div>
                                     </div>
-                                    <div  className="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
-    
-      <select id="dropdown" className="" value={selectedOption} onChange={handleChange}>
-        <option value="">-- Select an option --</option>
-        <option value="option1">Option One</option>
-        <option value="option2">Option Two</option>
-        <option value="option3">Option Three</option>
-      </select>
-      {selectedOption && <p>You selected: {selectedOption}</p>}
-    </div>
+                              
                                     <div className="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
                                         <button type="submit" className="theme-btn">
                                            Enquire Now

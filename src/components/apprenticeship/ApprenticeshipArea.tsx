@@ -24,7 +24,7 @@ const ApprenticeshipArea = () => {
     },
     {
        
-        name:'Paid Apprenticeship with Minimum Stipend ₹35K–₹50K',
+        name:'Paid Apprenticeship with Minimal Stipend',
        description:'We believe talent should be valued from Day 1. That’s why every apprenticeship includes a paid contract, not just an unpaid internship.',
         
        
@@ -108,7 +108,7 @@ const ApprenticeshipArea = () => {
                         ))
                     }
                    
-                   <p>Who Gets This?</p>
+                   {/* <p>Who Gets This?</p> */}
                   
                    <div className="event-list-items flex-col !items-start" style={{boxShadow:'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e'}}>
                                 {/* <div>

@@ -13,7 +13,7 @@ const PublicNotes = () => {
     <>
     {/* <Preloader /> */}
       <HeaderOne />
-      <BreadcrumbEvent title="Public Notes" subtitle="Public Notes" />
+      <BreadcrumbEvent title="Public Notice" subtitle="Public Notice" />
       <PublicNotesArea/>
 			{/* <MarqueeOne style_2={true} /> */}
       <FooterOne />

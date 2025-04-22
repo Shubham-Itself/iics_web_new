@@ -69,6 +69,11 @@ const BrandsHomeOne = () => {
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
+										<img src="assets/iics_image/partners/schwarzkopf.webp" alt="img" className="h-[152.3px] object-fit" />
+									</div>
+								</SwiperSlide>
+								<SwiperSlide className="swiper-slide">
+									<div className="brand-img text-center">
 										
 										<img src="assets/iics_image/partners/lakshay_two.webp" alt="img" />
 
@@ -98,6 +103,11 @@ const BrandsHomeOne = () => {
 			<SwiperSlide className="swiper-slide">
 									<div className="brand-img text-center">
 										<img src="assets/iics_image/partners/iwata.webp" alt="img" />
+									</div>
+								</SwiperSlide>
+								<SwiperSlide className="swiper-slide">
+									<div className="brand-img text-center">
+										<img src="assets/iics_image/partners/schwarzkopf.webp" alt="img" className="h-[152.3px] object-fit"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide ">

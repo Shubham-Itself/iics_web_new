@@ -102,13 +102,13 @@ const IndustryMentorsArea = () => {
                       className="w-full h-full object-cover rounded-full"
                     />
                     <div className="leader-overlay"></div>
-                    <div className="box box1">
+                    {/* <div className="box box1">
                       <a href="#" style={{ color: "#3b5998" }}>
                         <i className="fab fa-facebook-f fa-2x"></i>
                       </a>
-                    </div>
+                    </div> */}
 
-                    <div className="box box2">
+                    {/* <div className="box box2">
                       <a href="#" style={{ color: "#E1306C" }}>
                         <i className="fab fa-instagram fa-2x"></i>
                       </a>
@@ -118,9 +118,9 @@ const IndustryMentorsArea = () => {
                       <a href="#" style={{ color: "#0077B5" }}>
                         <i className="fab fa-linkedin-in fa-2x"></i>
                       </a>
-                    </div>
+                    </div> */}
 
-                    <div className="box box4"></div>
+                    {/* <div className="box box4"></div> */}
                     {/* <div className="social-icon"></div> */}
                   </div>
                   <div className="content">

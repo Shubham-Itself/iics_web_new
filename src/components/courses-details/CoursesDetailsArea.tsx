@@ -1,6 +1,7 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import VideoPopup from "../../modals/VideoPopup";
 import { Link } from "react-router-dom";
+// import { title } from "framer-motion/client";
 
 const AccordionItem = ({ title, content, isOpen, onClick }: any) => (
   <div className="border rounded-2xl shadow p-4 mb-[20px]">
@@ -57,9 +58,11 @@ courseImg,
   careerEntrepreneurship,
   mentorIcon,
   eligibilityCriteria,
+  titleCourse
 }: any) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
+  const [link , setLink] = useState('');
 
   const toggleItem = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -67,6 +70,21 @@ courseImg,
   const courseVideoTrim = 'https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4'
   const cleanedVideo = courseVideoTrim?.trim();
   console.log(cleanedVideo);
+  useEffect(()=>{
+    if(titleCourse == '3D Game Art'){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745234851/gaming_rtkrc2.mp4')
+    }else if(titleCourse == "Advance Gaming and Extended Reality (XR)"){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745234851/gaming_rtkrc2.mp4')
+    }
+    else if(titleCourse == 'Sound Recording and Sound Design'){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1744688387/sound_school_ybuclq.mp4')
+    }
+    else{
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4')
+    }
+
+    console.log(titleCourse);
+  },[link , titleCourse])
 
   return (
     <>
@@ -84,7 +102,7 @@ courseImg,
               <div className="col-lg-8">
                 <div className="courses-details-items">
                   <div className="courses-image">
-                  <video src={'https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4'} autoPlay muted loop playsInline></video>
+                  <video src={link} autoPlay muted loop playsInline></video>
                     {/* <a
                       onClick={() => setIsVideoOpen(true)}
                       style={{ cursor: "pointer" }}
@@ -146,7 +164,7 @@ courseImg,
                       </li>
                     </ul>
                     <div className="tab-content">
-                      <div id="Course" className="tab-pane fade  active">
+                      <div id="Course" className="tab-pane fade  ">
                         <div className="description-content">
                           <p className="mb-3">
                             {eligibilityCriteria}
