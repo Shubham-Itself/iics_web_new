@@ -89,6 +89,7 @@ export const leadersDetails = [
     image: "/assets/iics_image/leaders/anand_jha.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
+     description:"Mr. Anand Jha is a visionary entrepreneur and seasoned professional with over 19 years in the Animation, Visual Effects, Gaming, and Comics (AVGC) sector. As the Founder and CEO of Nilee Games and Future Technologies Pvt. Ltd., Anand has driven the company’s transformation from a service-based game development studio into a leader in original IP creation, expanding into Gaming, AR, VR, Animated series, Metaverse, Artificial Intelligence, and interactive entertainment. His accomplishments earned him a spot in Forbes India’s Select 200 in Nov 2024, a recognition highlighting influential leaders shaping India's business landscape."
   },
   {
     leaderName: "Ms. Sushma Gaikwad",
@@ -113,6 +114,7 @@ export const leadersDetails = [
     image: "/assets/iics_image/leaders/ramachandran.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
+     description:'Dr. ( Hon) S Ramachandran is a celebrated journalist, author, brand strategist, and filmmaker with over three decades of experience in print, television, and digital media. A prolific writer, he has authored thought-provoking books that delve into contemporary issues, offering unique perspectives that resonate with readers. His journalism career is marked by incisive storytelling and impactful narratives that have shaped public opinion and established him as a trusted voice in the industry also having worked in organisations like NDTV, Indian Express and Mid-day among others. In addition to his literary and journalistic accomplishments, Ramachandran is a renowned brand strategist who has successfully elevated the public personas of celebrities, corporates, and political figures. His innovative approach to image-building, combined with his deep understanding of human psychology, makes him a sought-after mentor and thought leader in the fields of media and public relations.'
   },
 
 ];

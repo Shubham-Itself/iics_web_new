@@ -106,7 +106,7 @@ const NavMenu = () => {
                     {sub_item?.inner_menu && sub_item?.inner_menus && (
                       <li className="has-dropdown">
                         <Link to={sub_item.link || ''} className="!text-[14px]">
-                          {sub_item.title }
+                          {sub_item.title}
                           <i className="fas fa-angle-right"></i>
                         </Link>
                         <ul className="submenu" style={{insetInlineStart : '112%'}}>

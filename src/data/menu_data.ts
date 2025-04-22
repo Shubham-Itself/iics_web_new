@@ -53,6 +53,7 @@ export interface DataType {
       courseCurricullam?: {};
       careerJob?: string;
       careerEntrepreneurship?: string;
+	  imagesArr?:string[];
     }[];
   }[];
 }
@@ -160,7 +161,11 @@ const menu_data: DataType[] = [
     icon: "fas fa-gift",
     has_dropdown: true,
     sub_menus: [
-		{
+      {
+        inner_menu: true,
+        title: "Performing Arts And Media Management",
+        inner_menus: [
+          {
             link: "/courses-details",
             title: "Performing Arts and Media Management",
             mentorName: "Dr. (Hon) Amit Behl",
@@ -170,6 +175,7 @@ const menu_data: DataType[] = [
 
             mentorInfo:
               "Award-Winning Film, Television, Theatre Actor, Professor of Media & Entertainment, Creative Producer & Senior Consultant",
+
             duration: "2 Years (12+6+6 Months)",
             courseType: "Certificate",
             fees: "6 Lakhs Per Annum",
@@ -185,6 +191,9 @@ const menu_data: DataType[] = [
               "Founder of Theatre Group, Independent Creative Producer, Talent Management Agency Owner",
             eligibilityCriteria:
               "Open to all, aspiring actors, theatre enthusiasts, media professionals, and graduates from related fields",
+			 imagesArr : Array.from({ length: 14 }, (_, i) => 
+				`/assets/iics_image/perform_art/perform_art_${i + 1}.webp`
+			  ),
             courseCurricullam: [
               {
                 title: "Semester 1",
@@ -226,7 +235,7 @@ const menu_data: DataType[] = [
               },
             ],
           },
-		  {
+          {
             link: "/courses-details",
             title: "Hair, Makeup & Prosthetics",
             mentorName: "Ms. Yasmin Rodgers",
@@ -255,12 +264,6 @@ const menu_data: DataType[] = [
               },
             ],
           },
-      {
-        inner_menu: true,
-        title: "Performing Arts And Media Management",
-        inner_menus: [
-         
-         
         ],
       },
 

@@ -65,6 +65,7 @@ import SourceFundingIpCreation from "./components/source-funding-ip-creation";
 import MainLayout from "./components/mainLayout/MainLayout";
 import Podcast from "./components/podcast";
 import Hiring from "./components/hiring";
+import Infrastructure from "./components/infrastructure";
 
 const router = createBrowserRouter([
   {
@@ -130,6 +131,8 @@ const router = createBrowserRouter([
       { path: '/source-funding-ip-creation', element: <SourceFundingIpCreation /> },
       { path: '/podcast', element: <Podcast /> },
       { path: '/hiring', element: <Hiring /> },
+      { path: '/infrastructure', element: <Infrastructure /> },
+
 
 
       { path: '*', element: <NotFound /> },
