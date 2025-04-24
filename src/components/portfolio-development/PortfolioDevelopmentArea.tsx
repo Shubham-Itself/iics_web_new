@@ -56,7 +56,7 @@ const PortfolioDevelopmentArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Portfolio Development – Craft Your Unique Creative Identity</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Portfolio Development – Craft Your Unique Creative Identity</p>
                     <p>In the creative industry, your portfolio is your most powerful tool. It’s not just a collection of your work — it’s your identity, your story, and your personal brand. At IICS, we provide the resources, mentorship, and hands-on opportunities to help you build a standout portfolio that reflects your skills, passion, and vision.
 </p>
                     {/* <div className="section-title !mb-0 ">

@@ -12,14 +12,14 @@ const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image , mentor
             <div className="container">
                 <div className="team-details-wrapper" style={{ boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24)' }}>
                     <div className="team-details-items">
-                        <div className="details-image w-[30%]">
+                        <div className="details-image w-[30%] mobile:w-full">
                             <img src={image} alt="img" />
                         </div>
-                        <div className="team-details-content w-[82%] mt-0">
-                            <h2>
+                        <div className="team-details-content w-[82%] mt-0 mobile:w-full">
+                            <h2 className='mobile:!text-[20px]'>
                                {leaderName}
                             </h2>
-                            <span>{leaderDesignation}</span>
+                            <span className='mobile:!text-[16px]'>{leaderDesignation}</span>
                             {/* <ul className="details-list">
                                 <li>
                                     <i className="far fa-user"></i>
@@ -39,10 +39,10 @@ const InstructorDetailsArea = ({leaderName , leaderDesignation ,  image , mentor
                             {/* <h3>
                                 About Me
                             </h3> */}
-                           {!from  && <p className="mt-4">
+                           {!from  && <p className="mt-4 mobile:!text-[12px]">
                                 {mentorBio}
                             </p>}
-                            {from =='message' && <p className="mt-4">
+                            {from =='message' && <p className="mt-4 mobile:!text-[12px]">
                                {mentorMessage}
                             </p>}
                             <div className="details-area">

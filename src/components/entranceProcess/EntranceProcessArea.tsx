@@ -48,7 +48,7 @@ const EntranceProcessArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-semibold text-black mb-[30px]">Entrance Process
+                    <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">Entrance Process
                     </p>
                     <div className="section-title !mb-[15px] ">
                     <h6 className="wow fadeInUp !mb-0">Your creativity is your key — show us what you’ve got!</h6>

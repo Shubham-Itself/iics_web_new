@@ -129,7 +129,7 @@ const ChiefMentorsArea = () => {
               Driven by Purpose, Defined by Passion
             </h6>
             <h2
-              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px]"
+              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[16px] mobile:!leading-[20px]"
               data-wow-delay=".3s"
             >
               At IICS, leadership is rooted in collaboration, creativity, and

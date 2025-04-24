@@ -38,21 +38,21 @@ const StakeHolderArea = () => {
                     Backed by India’s most trusted names in skilling and innovation.
                     </h2>
                 </div>
-                <div className="row gap-y-[20px]">
+                <div className="row gap-y-[20px] mobile:flex-col">
                     {
                         stakeHolders.map((stakeHolder , index)=>(
-                            <div key={index} className=" col-xl-4 col-lg-6 col-md-6 wow fadeInUp !w-[50%]  " data-wow-delay=".3s">
+                            <div key={index} className=" col-xl-4 col-lg-6 col-md-6 wow fadeInUp !w-[50%] mobile:!w-full  " data-wow-delay=".3s">
                             <div className="contact-box-items !h-full rounded-[50px] bg-[#e0e0e0] shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
                                 <div className="icon">
                                     <img src={stakeHolder.logo} alt="stake holders" className="w-fit h-[100px] object-contain" />
                                 </div>
-                                <h5 className="text-[20px] text-black">
+                                <h5 className="text-[20px] mobile:text-[16px] text-black">
                                   <a href={stakeHolder.path || '#'} target="blank">{stakeHolder.name}</a>
                                 </h5>
                                 <div className="image">
                                     <img src="assets/img/small-line.png" alt="img" />
                                 </div>
-                                <h4 className="text-[14px] font-normal">
+                                <h4 className="text-[14px] font-normal mobile:text-[12px]">
                                   {stakeHolder.information}
                                 </h4>
                             </div>

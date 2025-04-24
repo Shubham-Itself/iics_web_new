@@ -1,7 +1,7 @@
 
 
 const InfrastructureArea = () => {
-    const imageArr = Array.from({ length: 23 }, (_, i) => 
+    const imageArr = Array.from({ length: 27 }, (_, i) => 
         `/assets/iics_image/infrastructure/infrastructure_${i + 1}.webp`
       );
   return (

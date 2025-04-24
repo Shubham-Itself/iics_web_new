@@ -79,11 +79,26 @@ courseImg,
     else if(titleCourse == 'Sound Recording and Sound Design'){
       setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1744688387/sound_school_ybuclq.mp4')
     }
+    else if(titleCourse == 'Performing Arts and Media Management'){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745401329/Performing_Arts_Media_Management_-_Amit_Sir_afw0lk.mp4')
+    }
+    else if(titleCourse == 'Hair, Makeup & Prosthetics'){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745401327/School_of_Performing_Arts_Media_Management_-_Yasmin_Ma_am_gar8hq.mp4')
+    }
+    else if(titleCourse == 'Advance Gaming and Extended Reality (XR) Innovations'){
+      setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745401330/School_of_Video_Games_Digital_Media_-_Anand_Sir_skoeok.mp4')
+    }
+  else if(titleCourse == 'Journalism, PR, Image Strategization & Brand Custodianship Program'){
+    setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745477463/School_of_Creative_Communication_h80t7a.mp4')
+  }
+  else if(titleCourse == 'Digital Content Creation'){
+    setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1745477584/School_of_Digital_Design_Content_Creation_iraeid.mp4')
+  }
     else{
       setLink('https://res.cloudinary.com/dwgwz52rq/video/upload/v1744687414/events_xbzrld.mp4')
     }
 
-    console.log(titleCourse);
+    // console.log(titleCourse);
   },[link , titleCourse])
 
   return (
@@ -115,49 +130,49 @@ courseImg,
                     <ul className="nav !gap-0 !justify-between">
                       
                       <li
-                        className="nav-item wow fadeInUp"
+                        className="nav-item wow fadeInUp  "
                         data-wow-delay=".5s"
                       >
                         <a
                           href="#Curriculum"
                           data-bs-toggle="tab"
-                          className="nav-link active "
+                          className="nav-link active afterMobile"
                         >
                           Curriculum
                         </a>
                       </li>
                       <li
-                        className="nav-item wow fadeInUp"
+                        className="nav-item wow fadeInUp "
                         data-wow-delay=".3s"
                       >
                         <a
                           href="#Course"
                           data-bs-toggle="tab"
-                          className="nav-link "
+                          className="nav-link afterMobile"
                         >
                           Eligibility Criteria
                         </a>
                       </li>
                       <li
-                        className="nav-item wow fadeInUp"
+                        className="nav-item wow fadeInUp "
                         data-wow-delay=".5s"
                       >
                         <a
                           href="#Instructors"
                           data-bs-toggle="tab"
-                          className="nav-link"
+                          className="nav-link afterMobile"
                         >
                           Chief Mentor
                         </a>
                       </li>
                       <li
-                        className="nav-item wow fadeInUp"
+                        className="nav-item wow fadeInUp "
                         data-wow-delay=".5s"
                       >
                         <a
                           href="#Reviews"
                           data-bs-toggle="tab"
-                          className="nav-link bb-none"
+                          className="nav-link bb-none afterMobile"
                         >
                           Career Outcomes
                         </a>

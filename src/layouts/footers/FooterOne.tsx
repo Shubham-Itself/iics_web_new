@@ -87,13 +87,15 @@ const FooterOne = ({style_2} : any) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6  wow fadeInUp" data-wow-delay=".8s">
+                      
+                    </div>
+                    <div className="  wow fadeInUp "  data-wow-delay=".8s">
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                    <h3>Address</h3>
                                 </div>
                                 <div className="footer-content">
-                                    <ul className="contact-info">
+                                    <ul className="contact-info !flex justify-between gap-[40px] mobile:flex-wrap">
                                         <li>
                                             <span className="block text-[18px] font-semibold">Delhi Campus</span>
                                             13-A 3rd Floor Above Tata Motors Showroom Main Ring Road Lajpat Nagar -4 New Delhi - 110024
@@ -132,7 +134,6 @@ const FooterOne = ({style_2} : any) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <div className={`footer-bottom wow fadeInUp ${style_2 ? "style-4" : ""}`} data-wow-delay=".3s">
                     <p>Copyright © <Link to="/">Indian Institute of Creative Skills</Link>, all rights reserved.</p>
                 </div>

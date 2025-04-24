@@ -48,14 +48,14 @@ const HowtoapplyArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-semibold text-black mb-[30px]">Take the First Step Toward a Career That Inspires
+                    <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">Take the First Step Toward a Career That Inspires
                     </p>
                     <div className=" !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Joining IICS means taking your first step toward a future in the Media, Entertainment & Creative Industry. Our application process is simple, transparent, and designed to help us discover passionate, driven individuals ready to make their mark.</h6>
                    
                 </div>
                     </div>
-                    <p className="text-[25px] text-black flex  gap-[10px]">
+                    <p className="text-[25px] text-black flex  gap-[10px] mobile:text-[20px]">
                     <span className="fa fa-step-forward text-[#de4141]" aria-hidden="true"></span>
                         Step-by-Step Application Process</p>
                    
@@ -109,7 +109,7 @@ const HowtoapplyArea = () => {
                  
                 </div>
                 <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px]">Submit the Application Form</p>
+                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] mobile:text-[20px]">Submit the Application Form</p>
                  
                         <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
                         Once all required documents have been uploaded and details filled in, submit the form to complete your application.
@@ -119,7 +119,7 @@ const HowtoapplyArea = () => {
                 </div>
 
                 <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
+                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px] mobile:text-[20px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
                    
                     <ul className="list-disc pl-[40px]">
                         <li className="font-semibold text-[18px] text-black mb-[5px]">Registration Start Date: <span className="font-normal">April 01, 2025</span></li>
@@ -132,7 +132,7 @@ const HowtoapplyArea = () => {
                   
                 </div>
                 <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]"><span className="text-[#de4141] fa fa-phone" aria-hidden="true"></span> Need Help?</p>
+                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px] mobile:text-[20px]"><span className="text-[#de4141] fa fa-phone" aria-hidden="true"></span> Need Help?</p>
                  
                         <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
                         Have questions? Our admissions counselors are here to guide you.

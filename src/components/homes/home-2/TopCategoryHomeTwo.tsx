@@ -11,10 +11,10 @@ const TopCategoryHomeTwo = () => {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <h6 className="text-white wow fadeInUp">
+                    <h6 className="text-white wow fadeInUp mobile:!text-[15px]">
                     How to Join
                     </h6>
-                    <h2 className="text-white wow fadeInUp !text-[35px] " data-wow-delay=".3s">
+                    <h2 className="text-white wow fadeInUp mobile:!text-[25px] !text-[35px] " data-wow-delay=".3s">
                     The Most Innovative Program in Media <span className="text-[#de4141]">&</span> Entertainment
                     </h2>
                 </div>
@@ -24,9 +24,10 @@ const TopCategoryHomeTwo = () => {
                             <div className="top-category-left-items mb-5 mb-lg-0">
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div className="top-category-box border-left-none border-top-none h-full">
-                                            <Link to="/courses">
-                                                <div className="icon">
+                                        <div className=" top-category-box bg-1 border-left-none border-top-none h-full overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                            <Link to="#" className="relative z-20">
+                                                <div className="icon hover:!text-">
                                                     {/* <i className="flaticon-graphic-design"></i>
                                                      */}
                                                      <p>1</p>
@@ -39,8 +40,10 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div className="top-category-box border-left-none border-top-none h-full">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-2 border-left-none border-top-none h-full overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
                                                 <p>2</p>
                                                 </div>
@@ -52,8 +55,10 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                        <div className="top-category-box border-left-none border-bottom-none border-top-none">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-3 border-left-none border-bottom-none border-top-none overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
                                                 <p>3</p>
                                                 </div>
@@ -65,8 +70,10 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                        <div className="top-category-box border-left-none border-bottom-none border-top-none">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-4 border-left-none border-bottom-none border-top-none h-full overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
                                                 <p>4</p>
                                                 </div>
@@ -82,7 +89,7 @@ const TopCategoryHomeTwo = () => {
                         </div>
                         <div className="col-xl-4 col-lg-6">
                             <div className="courses-image mb-5 mb-lg-0">
-                                <img src="assets/img/boy-img.png" alt="img" className="wow img-custom-anim-left" />
+                                <img src="/assets/iics_image/how_to_join_center.webp" alt="img" className="wow img-custom-anim-left w-[350px] h-[400px] object-cover rounded-t-[60px]" />
                                 <div className="bg-shape">
                                     <img src="assets/img/boy-bg-shape.png" alt="img" />
                                 </div>
@@ -92,10 +99,12 @@ const TopCategoryHomeTwo = () => {
                             <div className="top-category-left-items">
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div className="top-category-box border-right-none border-top-none h-full">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-5 border-right-none border-top-none h-full overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
-                                                <p>5</p>
+                                                <p>1</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Unique Course Structure – 12+6+6 Model </h6>
@@ -105,10 +114,12 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div className="top-category-box border-right-none border-top-none h-full">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-6 border-right-none border-top-none h-full overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
-                                                <p>6</p>
+                                                <p>2</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Mentorship by Industry Icons</h6>
@@ -118,10 +129,12 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                        <div className="top-category-box border-right-none border-bottom-none border-top-none">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-7 border-right-none border-bottom-none border-top-none overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
-                                                <p>7</p>
+                                                <p>3</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Real-World Learning Environment </h6>
@@ -131,10 +144,12 @@ const TopCategoryHomeTwo = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                        <div className="top-category-box border-right-none border-bottom-none border-top-none">
-                                            <Link to="/courses">
+                                        <div className="top-category-box bg-8 border-right-none border-bottom-none border-top-none overflow-hidden relative">
+                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+
+                                            <Link to="#" className="relative z-20">
                                                 <div className="icon">
-                                                <p>8</p>
+                                                <p>4</p>
                                                 </div>
                                                 <div className="content">
                                                 <h6 className="!text-[14px] mb-[15px]">Focus on Entrepreneurship</h6>

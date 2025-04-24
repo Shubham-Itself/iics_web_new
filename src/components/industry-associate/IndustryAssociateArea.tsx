@@ -49,7 +49,7 @@ const IndustryAssociateArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Industry Associations – Bridging Education with Real-World Impact</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Industry Associations – Bridging Education with Real-World Impact</p>
                     <p>At IICS, we believe in the power of collaboration between academia and the industry. Our Industry Associations provide students with direct access to leading organizations, professionals, and thought leaders across media, entertainment, and creative industries. These partnerships not only enhance your learning experience but also open doors to countless opportunities for growth, employment, and entrepreneurship.
 </p>
                     {/* <div className="section-title !mb-0 ">
@@ -58,7 +58,7 @@ const IndustryAssociateArea = () => {
                 </div> */}
                     </div>
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Strong Industry Ties, Real-World Learning</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Strong Industry Ties, Real-World Learning</p>
                     <p>We understand the value of industry exposure in shaping well-rounded professionals. That’s why we’ve forged strong connections with top media houses, production studios, event agencies, gaming companies, and more. Through these associations, students have access to exclusive internships, live projects, mentorship, and career placements.
 </p>
                     {/* <div className="section-title !mb-0 ">

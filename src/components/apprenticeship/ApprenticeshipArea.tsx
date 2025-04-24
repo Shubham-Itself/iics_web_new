@@ -48,7 +48,7 @@ const ApprenticeshipArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Immersive Apprenticeships for Every Creative Mind</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Immersive Apprenticeships for Every Creative Mind</p>
                     <p>At our institute, apprenticeship isn’t an afterthought — it’s a core part of your education. Every student, regardless of course, is placed in paid, skill-matched roles that are embedded within the creative and media ecosystem.</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>

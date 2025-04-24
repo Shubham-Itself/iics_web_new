@@ -14,7 +14,8 @@ export default {
       screens: {
         'max-2xl': { raw: '(min-width: 1200px) and (max-width: 1399px)' },
          // custom screen
-         'min-l':{max:'1199px'}
+         'min-l':{max:'1199px'},
+         'mobile':{max:'767px'}
       },
     },
   },

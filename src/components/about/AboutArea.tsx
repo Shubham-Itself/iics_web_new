@@ -5,8 +5,8 @@ const AboutArea = () => {
         <div className="about-wrapper-5">
           <div className="container !m-0  !max-w-full bg-[#F4F9FF]">
             <div className=" g-4 justify-content-between !px-[40px] py-[40px] gap-[30px] ">
-              <div className=" flex gap-[50px]">
-                <div className="section-title mb-0 w-[50%]">
+              <div className=" flex gap-[50px] mobile:flex-col">
+                <div className="section-title mb-0 w-[50%] mobile:w-full">
                   <h6 className="wow fadeInUp">Our Vision</h6>
                   <p
                     className="wow fadeInUp !text-[16px]  text-black"
@@ -25,16 +25,16 @@ const AboutArea = () => {
                 </div>
                 <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden">
                   <img
-                    src="/assets/iics_image/gallery/creatorSubmit/creatorSubmit8.webp"
+                    src="/assets/iics_image/our_vision.webp"
                     alt="Our Vision"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-50" />
+                  {/* <div className="absolute inset-0 bg-black bg-opacity-50" /> */}
                 </div>
               </div>
-              <div className="flex mt-[100px]">
-                <div className="about-content flex gap-[50px]">
-                <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden !w-[50%]">
+              <div className="flex mt-[100px] ">
+                <div className="about-content flex gap-[50px] mobile:flex-col">
+                <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden !w-[50%] mobile:!w-full">
                   <img
                     src="/assets/iics_image/gallery/creatorSubmit/creatorSubmit7.webp"
                     alt="Our Vision"
@@ -42,7 +42,7 @@ const AboutArea = () => {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50" />
                 </div>
-                  <div className="section-title mb-0 w-[50%]">
+                  <div className="section-title mb-0 w-[50%] mobile:w-full">
                     <h6 className="wow fadeInUp">Our Mission</h6>
                     <p
                       className="wow fadeInUp !text-[16px] !font-normal text-black"

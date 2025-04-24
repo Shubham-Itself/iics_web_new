@@ -336,4 +336,83 @@ ul {
   background-color: #ff0000;
 }
 
+.top-category-box:hover {
+  background-color: transparent !important; /* removes all hover styles */
+}
+.top-category-box .icon p {
+  color: white !important; /* removes all hover styles */
+}
+.top-category-box:hover .icon p {
+  color: white !important; /* removes all hover styles */
+}
+.top-category-box:hover .content{
+  color: white !important;
+}
+.top-category-box .content{
+  color: white !important;
+}
+.top-category-box .content h6{
+  color: white !important;
+}
+
+.bg-1 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_1.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-2 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_2.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-3 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_3.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-4 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_4.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-5 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_5.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-6 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_6.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-7 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_7.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-8 {
+  background-image: url('/assets/iics_image/how_to_join/how_to_join_8.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width:767px) {
+  .header-1 .container-fluid{
+    padding: 0px 15px !important;
+  }
+
+  .header-1 .header-left{
+    max-width: 150px !important;
+  }
+  .afterMobile::after{
+    bottom: 10px !important;
+  }
+}
   

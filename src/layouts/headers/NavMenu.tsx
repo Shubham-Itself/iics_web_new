@@ -70,7 +70,7 @@ const NavMenu = () => {
     ].includes(innerMenu.title ?? '')
       ? `/details/${encodeURIComponent(innerMenu.title ?? '')}?from=message`
       : innerMenu.link || "#"
-  } className="!text-[14px]">
+  } className="!text-[14px] leading-[22px]">
    {[
   "Shri Jayant Chaudhary",
   "Shri Atul Kumar Tiwari",
@@ -99,7 +99,20 @@ const NavMenu = () => {
                   <React.Fragment key={sub_index}>
                     {sub_item?.link && !sub_item.inner_menu && (
                       <li>
-                        <Link to={sub_item.title =='Digital Content Creation' || sub_item.title == 'Events And Experiential Media' ? `/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}` : sub_item.link } className="!text-[14px]">{sub_item.title}</Link>
+                        <Link  to={
+    [
+      'Digital Content Creation',
+      'Events And Experiential Media',
+      'Performing Arts and Media Management',
+      'Hair, Makeup & Prosthetics',
+      'Sound Recording and Sound Design',
+      '3D Game Art',
+      'Advance Gaming and Extended Reality (XR) Innovations',
+      'Journalism, PR, Image Strategization & Brand Custodianship Program'
+    ].includes(sub_item.title || '')
+      ? `/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}`
+      : sub_item.link
+  } className="!text-[14px] leading-[22px]">{sub_item.title}</Link>
                       </li>
                     )}
 
@@ -125,7 +138,7 @@ const NavMenu = () => {
                                 courseStartDate:innerMenu.courseStartDate,
                                 industryMentors: innerMenu.industryMentors
                               }} className="!text-[14px]">
-                                {innerMenu.title }
+                                {innerMenu.title  }
                               </Link>
                             </li>
                           ))}

@@ -57,10 +57,10 @@ const PartnersArea = () => {
                     At IICS, we believe that creativity has no boundaries — and neither should training. Our campuses are strategically located in India’s emerging creative hubs, equipped with world-class infrastructure, studio-grade labs, and immersive learning environments.
                     </h2> */}
                 </div>
-                <div className="flex gap-[60px] flex-wrap">
+                <div className="flex gap-[60px] flex-wrap mobile:flex-col">
                     {
                         partnersInformation.map(( partner , index )=>(
-                            <div key={index} className="content cardStake  w-[30%] flex flex-col items-center rounded-[20px] py-[20px]" style={{ boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff' }}>
+                            <div key={index} className="content cardStake  w-[30%] mobile:w-full flex flex-col items-center rounded-[20px] py-[20px]" style={{ boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff' }}>
                                 <div className="mb-[20px] flex gap-[10px] logo">
                                     <img src={partner.logo} alt="logo" className="w-fit h-[100px] object-contain" />
                                     {partner.logoTwo &&  <img src={partner.logoTwo} alt="logo" className="w-fit h-[100px] object-contain" />}

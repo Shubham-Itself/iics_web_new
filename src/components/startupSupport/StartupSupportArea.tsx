@@ -56,7 +56,7 @@ const StartupSupportArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Startup Support – Launch Your Creative Venture with Confidence</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Startup Support – Launch Your Creative Venture with Confidence</p>
                     <p>At IICS, we believe innovation is just the beginning. For students with entrepreneurial ambitions, our Startup Support Program is designed to help transform your ideas into impactful ventures in the media and entertainment space.
 Whether you're launching a production house, building a creative agency, or starting your own makeup brand or gaming studio — we’ve got you covered.
 </p>

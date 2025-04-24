@@ -29,21 +29,22 @@ const PopularCoursesHomeOne = () => {
 
         ScrollTrigger.matchMedia({
           "(min-width: 768px)": function () {
-            gsap.to(sections, {
-              x: -totalScrollDistance,
-              ease: "none",
-              scrollTrigger: {
-                trigger: container,
-                start: "top top",
-                end: `+=${totalScrollDistance}`,
-                scrub: true,
-                pin: true,
-                anticipatePin: 1,
-                // markers: true, // optional: for debugging scroll area
-              },
-            });
+           
           },
         });
+        gsap.to(sections, {
+            x: -totalScrollDistance,
+            ease: "none",
+            scrollTrigger: {
+              trigger: container,
+              start: "top top",
+              end: `+=${totalScrollDistance}`,
+              scrub: true,
+              pin: true,
+              anticipatePin: 1,
+              // markers: true, // optional: for debugging scroll area
+            },
+          });
 
         // Ensure layout is measured correctly after load
         setTimeout(() => {
@@ -166,7 +167,7 @@ const PopularCoursesHomeOne = () => {
     
   return (
     <>
-       <section className=" popular-courses-section bg-white !pb-0 fix section-padding   !max-h-full !h-full"
+       <section className=" popular-courses-section bg-white mobile:!pt-[50px] !pb-0 fix section-padding    !max-h-full !h-full"
        ref={containerRef}  
        >
             <div className="container !max-w-full"
@@ -179,10 +180,10 @@ const PopularCoursesHomeOne = () => {
             >
                 <div className="section-title-area align-items-end">
                     <div className="section-title px-[100px]">
-                        <h6 className="wow fadeInUp">
-                            Popular Coursessss
+                        <h6 className="wow fadeInUp mobile:!text-[12px]">
+                            Popular Courses
                         </h6>
-                        <h2 className="wow fadeInUp" data-wow-delay=".3S">Our Unique Courses</h2>
+                        <h2 className="wow fadeInUp mobile:!text-[20px]" data-wow-delay=".3S">Our Unique Courses</h2>
                     </div>
                     {/* <ul className="nav">
                         <li className="nav-item wow fadeInUp" data-wow-delay=".2s">
@@ -207,18 +208,18 @@ const PopularCoursesHomeOne = () => {
                         </li>
                     </ul> */}
                 </div>
-                <div className="tab-content pl-[200px]">
+                <div className="tab-content pl-[200px] mobile:pl-0">
                     <div id="All" className="tab-pane fade show active ">
-                        <div className=""  ref={scrollRef}
+                        <div className="mobile:!gap-[10px] mobile:items-end"  ref={scrollRef}
         style={{
           display: 'flex',
           gap:'50px'
         }} >
                             {
                                 coursesInformation.map((course , index)=>(
-<div key={index} className=" !w-[25%] col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp cardGsapAnimation" data-wow-delay=".2s" >
-                                <div className="courses-card-main-items h-full">
-                                    <div className="courses-card-items !mt-0">
+<div key={index} className=" !w-[25%] mobile:!w-full col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp cardGsapAnimation mobile:h-full" data-wow-delay=".2s" >
+                                <div className="courses-card-main-items h-full mobile:w-[300px]">
+                                    <div className="courses-card-items !mt-0 !opacity-100 !visible flex flex-col ">
                                         <div className="courses-image">
                                             <img src={course.courseImg} alt="img" />
                                             {/* <h3 className="courses-title">{course.name}</h3>
@@ -244,7 +245,8 @@ const PopularCoursesHomeOne = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="courses-content !p-[10px]">
+                                       <div className="flex-1 flex flex-col">
+                                         <div className="courses-content !p-[10px]">
                                             {/* <ul className="post-cat">
                                                 <li>
                                                     <Link to="/courses">Design</Link>
@@ -257,19 +259,21 @@ const PopularCoursesHomeOne = () => {
                                                     <i className="fas fa-star"></i>
                                                 </li>
                                             </ul> */}
-                                            <h5>
+                                            <h5 className="mobile:text-[16px]">
                                                 <Link to="/courses-details">
                                                     {course.name}
                                                 </Link>
                                             </h5>
-                                            <div className="client-items !items-start !flex-col">
+                                            <div className="client-items !items-start !flex-col !border-none">
                                                 <div className="flex !items-center gap-[20px]">
                                                <img src={course.mentorIcon} alt="" className="w-[25px] h-[25px] rounded-[50%] object-cover"  />
                                                 <div>
                                                 <p className="!text-[12px]">{course.mentorName}</p>
                                                 {/* <p className="!text-[12px]">{course.mentorDesignation}</p> */}
+                                                
                                                 </div>
                                                 </div>
+                                                
                                                
                                                 {
                                                     course.secondMentorName && course.secondMentorDesignation && <div className="flex !items-center gap-[20px]">
@@ -280,22 +284,25 @@ const PopularCoursesHomeOne = () => {
                                                 </div>
                                                     </div>
                                                 }
+                                                <Link to="/courses-details" className="theme-btn yellow-btn mt-[10px] !py-[10px]">Enroll Now</Link>
                                             </div>
-                                            <ul className="post-class">
-                                                <li>
-                                                    <i className="far fa-books"></i>
-                                                    {course.availableSeat}
-                                                </li>
-                                                <li>
-                                                    <i className="far fa-user"></i>
-                                                    {course.batchStartDate}
-                                                </li>
-                                            </ul>
+                                           
                                         </div>
+                                        <ul className="post-class flex justify-between items-end p-[10px] flex-1">
+  <li className="text-[14px] flex gap-[10px] items-baseline">
+    <i className="far fa-books"></i>
+    {course.availableSeat}
+  </li>
+  <li className="text-[14px] flex gap-[10px] items-baseline">
+    <i className="far fa-user"></i>
+    {course.batchStartDate}
+  </li>
+</ul>
+                                       </div>
                                     </div>
-                                    <div className="courses-card-items-hover !mt-0">
+                                    {/* <div className="courses-card-items-hover !mt-0">
                                         <div className="courses-content">
-                                            {/* <ul className="post-cat">
+                                            <ul className="post-cat">
                                                 <li>
                                                     <Link to="/courses">Design</Link>
                                                 </li>
@@ -306,7 +313,7 @@ const PopularCoursesHomeOne = () => {
                                                     <i className="fas fa-star"></i>
                                                     <i className="fas fa-star"></i>
                                                 </li>
-                                            </ul> */}
+                                            </ul>
                                             <h5>
                                                 <Link to="/courses-details">
                                                   {course.name}
@@ -342,7 +349,7 @@ const PopularCoursesHomeOne = () => {
                                             </ul>
                                             <Link to="/courses-details" className="theme-btn yellow-btn">Enroll Now</Link>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                                 ))

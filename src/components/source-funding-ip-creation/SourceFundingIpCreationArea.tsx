@@ -56,7 +56,7 @@ const SourceFundingIpCreationArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Fuel Your Creativity – Source Funding and Protect Your Ideas</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Fuel Your Creativity – Source Funding and Protect Your Ideas</p>
                     <p>At IICS, we believe in turning your creative visions into tangible successes. Whether you’re a budding filmmaker, a game designer, or an entrepreneur, access to funding and solid intellectual property protection is key to transforming your passion into a thriving project. Our Source Funding and IP Creation program is designed to guide you every step of the way — from securing financial backing to safeguarding your ideas.
 </p>
                     {/* <div className="section-title !mb-0 ">

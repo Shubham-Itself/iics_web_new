@@ -48,7 +48,7 @@ const ImageGallery = ({imagesArr}:any) => {
              }}
                className="swiper live-courses-slider">
                 {
-                    imagesArr.map((imgs:any)=>(
+                    imagesArr?.map((imgs:any)=>(
                         <SwiperSlide className="swiper-slide">
                         <div className="">
                         <img src={imgs} alt="" className='object-contain w-[300px] h-[300px]' />

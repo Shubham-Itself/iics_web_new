@@ -37,7 +37,7 @@ const BreadcrumbEvent = ({ title, subtitle }: any) => {
 					<div className="row">
 						<div className="page-heading">
 							
-							<h1 className="normal-case">{title}</h1>
+							<h1 className="normal-case mobile:!text-[25px]">{title}</h1>
 							<ul className="breadcrumb-items">
 								<li>
 									<Link to="/">Home</Link>

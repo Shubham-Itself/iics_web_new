@@ -82,7 +82,7 @@ const WorkshopArea = () => {
                         </div>
                     </div> */}
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Indian Institute of Creative Skills</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Indian Institute of Creative Skills</p>
                     <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Upcoming Workshop</h6>
                    

@@ -48,7 +48,7 @@ const LiveProjectArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Where Students Become Creators</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Where Students Become Creators</p>
                     <p>The LIVE Projects platform is where students from all our programs collaborate on real-world, high-stakes projects with industry mentors, media houses, production studios, brands, and agencies. This isn’t just practice — it’s professional work that goes into public domain with your name on it.</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>

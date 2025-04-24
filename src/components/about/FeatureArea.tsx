@@ -2,7 +2,7 @@ const FeatureArea = () => {
   return (
     <>
       <div className="feature-section-3 section-padding !pt-0">
-        <div className="section-title ml-[50px] !mb-[10px] text-center">
+        <div className="section-title ml-[50px] !mb-[10px] text-center mobile:ml-0">
           <h6 className="wow fadeInUp">What makes us Unique</h6>
         </div>
         <div className="container">

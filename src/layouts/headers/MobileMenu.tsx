@@ -25,6 +25,23 @@ const MobileMenu = () => {
       setNavTitle2(menu);
     }
   };
+  const getNestedLink = (nested: { title?: string; link?: string }) => {
+	const courseTitles = [
+	  'Digital Content Creation',
+	  'Events And Experiential Media',
+	  'Performing Arts and Media Management',
+	  'Hair, Makeup & Prosthetics',
+	  'Sound Recording and Sound Design',
+	  '3D Game Art',
+	  'Advance Gaming and Extended Reality (XR) Innovations',
+	  'Journalism, PR, Image Strategization & Brand Custodianship Program'
+	];
+  
+	if (courseTitles.includes(nested.title || '')) {
+	  return `/courses-details/${encodeURIComponent(nested.title || '')}`;
+	}
+	return nested.link || '';
+  };
 	return (
 		<>
 			<div className="mean-bar">
@@ -49,22 +66,51 @@ const MobileMenu = () => {
 									<>
 									
 									<li>
-								 <Link to={inner_item.link ?? ""}>{inner_item.title}</Link>
+								 <Link to={getNestedLink(inner_item)}>{inner_item.title}</Link>
 								 {inner_item.inner_menu ? 
-									<a className={`mean-expand ${inner_item?.title === navTitle2 ? "mean-clicked" : ""}`} href="#" onClick={() => openMobileMenu2(inner_item?.title ?? "")}>
-										<i className="far fa-plus"></i>
-									</a>
+									<a
+									className={`mean-expand ${inner_item?.title === navTitle2 ? "mean-clicked" : ""}`}
+									href='#'
+									onClick={(e) => {
+									  // Prevent routing if icon was clicked
+									  if ((e.target as HTMLElement).tagName === "I") {
+										e.preventDefault();
+									  }
+									}}
+								  >
+									<i
+									  className="far fa-plus"
+									  onClick={() => openMobileMenu2(inner_item?.title ?? "")}
+									></i>
+								  </a>
 									: null              
 								}
 							 </li>
-							 {index === 5 &&  item.has_dropdown_inner &&  
-							 <li> 
-								 <ul className="submenu" style={{ display: navTitle2 === inner_item.title ? "block" : "none", }}>
-								 <li><Link to="/news">Blog</Link></li>
-								 <li><Link to="/news-details">Blog Details</Link></li>
-								 </ul> 
-							 </li>
-							 }
+							 {inner_item.inner_menu && inner_item.inner_menus && (
+      <li>
+        <ul
+          className="submenu"
+          style={{ display: navTitle2 === inner_item.title ? "block" : "none" }}
+        >
+          {inner_item.inner_menus.map((nested, idx) => (
+            <li key={idx}>
+              <Link to={
+				 [
+					"Shri Jayant Chaudhary",
+					"Shri Atul Kumar Tiwari",
+					"Shri Ved Mani Tiwari",
+				  ].includes(nested.title ?? '')
+					? `/details/${encodeURIComponent(nested.title ?? '')}?from=message`
+					: nested.link || "#"
+
+
+
+			  }>{nested.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </li>
+    )}
 									
 									</>
 								

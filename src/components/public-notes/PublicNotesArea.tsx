@@ -82,7 +82,7 @@ const PublicNotesArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Public Notices</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Public Notices</p>
                     <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Stay updated with the latest announcements, policies, and official information from IICS.</h6>
                    

@@ -32,6 +32,7 @@ export interface DataType {
     courseCurricullam?: {};
     careerJob?: string;
     careerEntrepreneurship?: string;
+	imagesArr?:string[];
     inner_menus?: {
       link?: string;
       title?: string;
@@ -161,11 +162,7 @@ const menu_data: DataType[] = [
     icon: "fas fa-gift",
     has_dropdown: true,
     sub_menus: [
-      {
-        inner_menu: true,
-        title: "Performing Arts And Media Management",
-        inner_menus: [
-          {
+		{
             link: "/courses-details",
             title: "Performing Arts and Media Management",
             mentorName: "Dr. (Hon) Amit Behl",
@@ -257,6 +254,9 @@ const menu_data: DataType[] = [
               "Freelance Makeup Studio, Beauty Brand Founder, Bridal & Film Makeup Studio",
             eligibilityCriteria:
               "Open to makeup artists, hairstylists, fashion professionals, beauty influencers, and graduates from related disciplines. ",
+			  imagesArr : Array.from({ length: 9 }, (_, i) => 
+				`/assets/iics_image/hair_art/hair_art_${i + 1}.webp`
+			  ),
             courseCurricullam: [
               {
                 title: "Semester 1",
@@ -264,14 +264,8 @@ const menu_data: DataType[] = [
               },
             ],
           },
-        ],
-      },
 
-      {
-        inner_menu: true,
-        title: "Sound And Music Production",
-        inner_menus: [
-          {
+		  {
             link: "/courses-details",
             title: "Sound Recording and Sound Design",
 
@@ -330,14 +324,8 @@ const menu_data: DataType[] = [
               },
             ],
           },
-        ],
-      },
 
-      {
-        inner_menu: true,
-        title: "Video Games And Digital Media",
-        inner_menus: [
-          {
+		  {
             link: "/courses-details",
             title: "3D Game Art",
             mentorName: "Mr. Manvendra Shukul",
@@ -358,6 +346,9 @@ const menu_data: DataType[] = [
               "Indie Game Studio Founder, Freelance 3D Modeling Services, VR/AR Asset Design Services",
             eligibilityCriteria:
               "Open to B.Sc., BFA, B.Tech graduates in Animation, Game Art, or related fields, digital artists, gaming professionals, and designers looking to enhance their 3D skills.",
+			  imagesArr : Array.from({ length: 8 }, (_, i) => 
+				`/assets/iics_image/3d_art/3d_game_${i + 1}.webp`
+			  ),
             courseCurricullam: [
               {
                 title: "Semester 1",
@@ -442,14 +433,8 @@ const menu_data: DataType[] = [
               },
             ],
           },
-        ],
-      },
 
-      {
-        inner_menu: true,
-        title: "Creative Communication",
-        inner_menus: [
-          {
+		  {
             link: "/courses-details",
             title:
               "Journalism, PR, Image Strategization & Brand Custodianship Program",
@@ -519,8 +504,6 @@ const menu_data: DataType[] = [
               },
             ],
           },
-        ],
-      },
 
       {
         link: "/event-details",

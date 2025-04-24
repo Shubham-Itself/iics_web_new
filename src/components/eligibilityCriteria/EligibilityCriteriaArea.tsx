@@ -83,7 +83,7 @@ const EligibilityCriteriaArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Find the Right Course for Your Passion and Potential</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Find the Right Course for Your Passion and Potential</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
                    

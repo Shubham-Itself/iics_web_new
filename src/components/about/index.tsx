@@ -34,8 +34,8 @@ const About = () => {
 			{/* <BrandsHomeOne /> */}
       {/* <NewsletterHomeOne /> */}
 			{/* <MarqueeOne style_2={true} /> */}
-			<div className="flex px-[200px] py-[20px] pb-[100px] justify-between">
-			<div className="header-button ">
+			<div className="flex px-[200px] mobile:p-[40px] mobile:pt-0 py-[20px] pb-[100px] justify-between mobile:flex-col mobile:items-center ">
+			<div className="header-button mobile:mb-[20px]">
                     <Link
                       to="/register"
                       className="theme-btn yellow-btn !px-[16px] !py-[12px] "
@@ -43,7 +43,7 @@ const About = () => {
                       Apply Now
                     </Link>
                   </div>
-				  <div className="header-button ">
+				  <div className="header-button mobile:mb-[20px]">
                     <Link
                       to="/register"
                       className="theme-btn yellow-btn !px-[16px] !py-[12px] "

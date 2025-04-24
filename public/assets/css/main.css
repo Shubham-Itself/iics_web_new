@@ -7354,9 +7354,9 @@ p {
   }
 }
 
-.top-category-wrapper-2 .top-category-left-items .top-category-box:hover {
+/* .top-category-wrapper-2 .top-category-left-items .top-category-box:hover {
   background-color: var(--theme-blue);
-}
+} */
 
 .top-category-wrapper-2 .top-category-left-items .top-category-box:hover .icon {
   color: var(--white);

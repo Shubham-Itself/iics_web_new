@@ -67,7 +67,7 @@ const CareerArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px]">Career Pathways by Program</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Career Pathways by Program</p>
                     <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
                    
@@ -99,7 +99,7 @@ const CareerArea = () => {
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
                                         <h4><Link to="/event-details">{career.name}</Link></h4>
-                                        <div className="flex  gap-[20px] mt-[40px] w-full">
+                                        <div className="flex  gap-[20px] mt-[40px] w-full mobile:flex-col">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>

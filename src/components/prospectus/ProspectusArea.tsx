@@ -48,7 +48,7 @@ const ProspectusArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-semibold text-black mb-[30px]">IICS Prospectus
+                    <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">IICS Prospectus
                     </p>
                     <div className="section-title !mb-[15px] ">
                     <h6 className="wow fadeInUp !mb-0">Your Creative Future Begins Here</h6>
