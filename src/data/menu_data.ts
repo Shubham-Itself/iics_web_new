@@ -289,6 +289,9 @@ const menu_data: DataType[] = [
               "Home Studio Business, Independent Sound Post-Production Services, Podcast & Music Production Studio Owner",
             eligibilityCriteria:
               "Open to B.Tech, B.Sc. graduates in Sound Engineering or related disciplines, music producers, audio technicians, and professionals in the music and film industry.",
+              imagesArr : Array.from({ length: 13 }, (_, i) => 
+                `/assets/iics_image/sound_images/sound_${i + 1}.webp`
+                ),
             courseCurricullam: [
               {
                 title: "Semester 1: Introduction to Cinema and Filmmaking",
