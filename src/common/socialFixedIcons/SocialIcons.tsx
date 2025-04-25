@@ -6,6 +6,7 @@ const SocialIcons = () => {
     <a
       href="https://linkedin.com/"
       aria-label="LinkedIn"
+      target="blank"
       data-social="linkedin"
     >
       <div className="filled"></div>
@@ -29,9 +30,10 @@ const SocialIcons = () => {
   
   <li className="icon-content">
     <a
-      href="https://www.instagram.com/"
+      href="https://www.instagram.com/iicsindiaorg/"
       aria-label="Instagram"
       data-social="instagram"
+      target="blank"
     >
       <div className="filled"></div>
       <svg
@@ -52,7 +54,7 @@ const SocialIcons = () => {
     <div className="tooltip">Instagram</div>
   </li>
   <li className="icon-content">
-    <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+    <a href="https://youtube.com/@iicsindiaorg?si=3jYkJMvyrO_lO97m" target="blank" aria-label="Youtube" data-social="youtube">
       <div className="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

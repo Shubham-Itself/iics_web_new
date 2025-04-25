@@ -42,11 +42,17 @@ const MarqueeOne = ({ style_2 }: any) => {
               <p>Associate with us</p>
                 <p>info@iicsindia.org</p>
                 <p>+91 959-4949-959</p>
-                <FontAwesomeIcon icon={faSquareFacebook} className="text-[#1877F2] text-[25px]" />
-                
-                
-                <FontAwesomeIcon icon={faInstagram} className="text-[#E4405F] text-[25px]"/>
-                <FontAwesomeIcon icon={faYoutube} className="text-[#FF0000] text-[25px]"/>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faSquareFacebook} className="text-[#1877F2] text-[25px] hover:scale-110 transition-transform" />
+</a>
+
+<a href="https://www.instagram.com/iicsindiaorg/" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faInstagram} className="text-[#E4405F] text-[25px] hover:scale-110 transition-transform" />
+</a>
+
+<a href="https://youtube.com/@iicsindiaorg?si=3jYkJMvyrO_lO97m" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faYoutube} className="text-[#FF0000] text-[25px] hover:scale-110 transition-transform" />
+</a>
               </div>
 
               {/* <div className={`cmn-textslide ${style_2? "text-color-2" : ""}`}><i className="flaticon-mortarboard"></i> Experience Instructors</div>
