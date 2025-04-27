@@ -1,5 +1,5 @@
 import BreacrumbEventDetails from "../../common/breadcrumb/BreacrumbEventDetails";
-import MarqueeOne from "../../common/MarqueeOne";
+// import MarqueeOne from "../../common/MarqueeOne";
 // import Preloader from "../../common/Preloader";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";

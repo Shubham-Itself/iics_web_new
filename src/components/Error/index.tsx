@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BreadcrumbEvent from "../../common/breadcrumb/BreadcrumbEvent";
 import HeaderOne from "../../layouts/headers/HeaderOne";
-import MarqueeOne from "../../common/MarqueeOne";
+// import MarqueeOne from "../../common/MarqueeOne";
 import FooterOne from "../../layouts/footers/FooterOne";
 import ScrollTop from "../../common/ScrollTop";
 import Preloader from "../../common/Preloader";
