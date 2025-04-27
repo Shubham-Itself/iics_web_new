@@ -11,9 +11,9 @@ const Faq = () => {
     <>
     {/* <Preloader /> */}
       <HeaderOne />
-			<BreadcrumbEvent title="Faq" subtitle="Faq" />
+			<BreadcrumbEvent title="FAQ" subtitle="FAQ" />
 			<FaqArea />       
-			<MarqueeOne style_2={true} />
+			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
       <ScrollTop />
     </>

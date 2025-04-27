@@ -14,7 +14,7 @@ const Courses = () => {
 			<HeaderOne />
 			<BreadcrumbCourses title="All Courses" subtitle="Courses" />
 			<CoursesArea />
-			<MarqueeOne style_2={true} />
+			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
 			<ScrollTop />
 		</>

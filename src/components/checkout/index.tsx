@@ -14,7 +14,7 @@ const Checkout = () => {
        <HeaderOne />
       <BreadcrumbShop title="Checkout" subtitle="Checkout" />
       <CheckoutArea />
-      <MarqueeOne style_2={true} />
+      {/* <MarqueeOne style_2={true} /> */}
       <FooterOne />
       <ScrollTop />
     </>

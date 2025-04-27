@@ -36,6 +36,7 @@ export interface DataType {
     inner_menus?: {
       link?: string;
       title?: string;
+      subHead?:string;
       mentorName?: string;
       mentorIcon?: string;
       mentorInfo?: string;
@@ -78,18 +79,21 @@ const menu_data: DataType[] = [
           {
             link: "/how-to-apply",
             title: "Shri Jayant Chaudhary",
+            subHead:'Message from Hon’ble Minister of State (Independent Charge)',
             mentorMessage:
               "The Media & Entertainment sector is a cornerstone of India’s global influence, and its future depends on skilled professionals who can push creative and technological boundaries. IICS plays a vital role in equipping young talent with cutting-edge expertise, ensuring they are ready to lead the industry. The Ministry of Skills Development & Entrepreneurship remains committed to strengthening skill- based education, industry collaborations, and infrastructure to make India the world’s creative powerhouse.",
           },
           {
             link: "/eligibilityCriteria",
             title: "Shri Atul Kumar Tiwari",
+            subHead:'Message from Secretary of the Ministry of Skill Development & Entrepreneurship',
             mentorMessage:
               "India’s Media & Entertainmentsector is poised for exponential growth, with the AVGC (Animation, Visual Effects, Gaming, and Comics) industry alone projected to exceed $25 billion by 2030. With a young, digitally native workforce, India has the potential to become a global hub for creative services. The Indian Institute of Creative Skills (IICS) is a pivotal initiative that aligns with our vision of transforming raw talent into future-ready professionals through industry-integrated training. By bridging the skill gap and fostering innovation, we are not only unlocking new job opportunities but also reinforcing India’s position as a leader in the global creative economy.",
           },
           {
             link: "/fees&studentSupport",
             title: "Shri Ved Mani Tiwari",
+            subHead:'Message from CEO, NSDC & Managing Director, NSDC International (NSDCI) ',
             mentorMessage:
               "Skilling is the cornerstone of societal progress, and fostering world-class institutes is essential to equip individuals with the capabilities needed to thrive in a dynamic Global economy. The Indian Institute of Creative Skills (IICS) is a visionary initiative that places creativity at the heart of skill development, nurturing talent that not only meets professional standards but also pioneers new possibilities. At IICS, the focus is on empowering individuals to become creative entrepreneurs, shaping Industries and driving innovation rather than merely joining the workforce. NSDC is proud to champion this initiative, providing unwavering support to build a world of boundless opportunities and a thriving creative ecosystem.",
           },
@@ -122,7 +126,7 @@ const menu_data: DataType[] = [
 
       { link: "/partners", title: "Partners" },
       { link: "/hiring", title: "Hiring" },
-      { link: "/campus", title: "Campus" },
+      { link: "/campus", title: "Campuses" },
 
       // { link: "#", demo_img: demo_img_6, title2: "Coming Soon" },
       // { link: "#", demo_img: demo_img_6, title2: "Coming Soon" },
@@ -246,7 +250,7 @@ const menu_data: DataType[] = [
             enrollmentDeadLine: "15.04.2025",
             courseStartDate: "19.05.2025",
             industryMentors: ["Mr. Harry"],
-            mentorIcon: "/assets/iics_image/leaders/yasmin_rodger.webp",
+            mentorIcon: "/assets/iics_image/leaders/yasmin_rodgers.webp",
             mentorInfo: "Celebrity Makeup & Prosthetics Artist",
             careerJob:
               "Makeup Artist, Hair Stylist, Prosthetic Designer, Film/TV Stylist",
@@ -281,7 +285,7 @@ const menu_data: DataType[] = [
             courseImg:
               "/assets/iics_course_image/sound-recording-sound-design.webp",
             industryMentors: [],
-            mentorIcon: "/assets/iics_image/leaders/resul_pookutty.webp",
+            mentorIcon: "/assets/iics_image/leaders/rasul.webp",
             mentorInfo: "Academy Award Winner, Indian Sound Designer ",
             careerJob:
               "Sound Designer, Sound Editor, Audio Engineer, Foley Artist, Mixing/Mastering Engineer",
@@ -341,7 +345,7 @@ const menu_data: DataType[] = [
             courseStartDate: "15.05.2025",
             courseImg: "/assets/iics_course_image/3d-game-art.webp",
             industryMentors: [],
-            mentorIcon: "/assets/iics_image/leaders/manvendra_shukul.webp",
+            mentorIcon: "/assets/iics_image/leaders/manvendar_shukul.webp",
             mentorInfo: "CEO, Lakshya Digital",
             careerJob:
               "3D Artist, Game Designer, Environment Artist, Character Modeler",
@@ -454,7 +458,7 @@ const menu_data: DataType[] = [
               "/assets/iics_course_image/journalism-PR-Image-strategization-Brand-Custodianship.webp",
             industryMentors: [],
             mentorIcon:
-              "/assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
+              "/assets/iics_image/leaders/anusha.webp",
             mentorInfo:
               "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
             careerJob:
@@ -524,7 +528,7 @@ const menu_data: DataType[] = [
         courseImg:
           "/assets/iics_course_image/event-experiential-management-program.webp",
         industryMentors: [],
-        mentorIcon: "/assets/iics_image/leaders/sushma_gaikwad.webp",
+        mentorIcon: "/assets/iics_image/leaders/susma.webp",
         mentorInfo: "Academy Award Winner, Indian Sound Designer ",
         careerJob:
           "Sound Designer, Sound Editor, Audio Engineer, Foley Artist, Mixing/Mastering Engineer",

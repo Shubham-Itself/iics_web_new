@@ -179,7 +179,7 @@ const SamplePaperArea = () => {
 
 
                     </ul>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
+                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-semibold">
                         Or <br />
                         Book Counselling Session
                             </span></p>

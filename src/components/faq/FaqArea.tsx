@@ -81,17 +81,18 @@ const FaqArea = () => {
                       </button>
 
                       <div
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        className={`overflow-x-hidden !overflow-y-scroll transition-all duration-300 ease-in-out ${
                           openIndex === 1
                             ? "max-h-40 opacity-100 mt-2"
                             : "max-h-0 opacity-0"
                         } text-gray-700`}
                       >
                        A. Currently, IICS has campuses in:
-                        <ul className="list-disc pl-[30px]">
+                        <ul className="list-disc pl-[30px] ">
                             <li>Delhi</li>
                             <li>Bhopal (at Sage University)</li>
                             <li>Chandigarh (CDCL Campus)</li>
+                            <li>Ahmedabad (Karnavati University) </li>
                         </ul>
                         <p> New campuses are coming soon in Kolkata and Bhubaneswar.</p>
                       </div>
@@ -130,17 +131,17 @@ const FaqArea = () => {
                       >
                        A. We offer specialized programs in:
                         <ul className="list-disc pl-[30px]">
-                            <li>Film & Production</li>
+                            <li>Performing Arts & Media Management</li>
                             <li>Hair, Makeup & Prosthetics</li>
-                            <li>3D Game Design
-Advance Gaming and Extended Reality (XR) Innovations
+                            <li>3D Game Art</li>
+                            <li>3D Game Design Advance Gaming and Extended Reality (XR) Innovations
 </li>
 <li>Digital Content Creation</li>
                             <li>Sound Recording & Sound Design</li>
                             <li>PR, Journalism & Media Communication
 </li>
-<li>Performing Arts & Media Management</li>
-                            <li>Event Management</li>
+
+                            <li>Event Management & Experiential Management </li>
                            
                         </ul>
                      
@@ -319,7 +320,7 @@ Advance Gaming and Extended Reality (XR) Innovations
                             : "max-h-0 opacity-0"
                         } text-gray-700`}
                       >
-                    A. Yes! Our unique 12+6+6 course model includes 6 months of hands-on industry projects followed by a 6-month paid internship, giving you real-world experience and exposure.
+                    A. Yes! Our unique 12+6+6 course model includes 6 months of hands-on industry projects followed by a 6-month paid apprenticeship, giving you real-world experience and exposure.
                       </div>
                     </div>
                   </div>
@@ -350,7 +351,7 @@ Advance Gaming and Extended Reality (XR) Innovations
                             : "max-h-0 opacity-0"
                         } text-gray-700`}
                       >
-                    A. Absolutely. Our career development team, industry mentors, and strategic partnerships ensure students are well-placed in India and on international platforms.
+                    A. Absolutely. Our career development team, chief mentors, and strategic partnerships ensure students are well-placed in India and on international platforms.
                       </div>
                     </div>
                   </div>

@@ -26,6 +26,14 @@ const CampusArea = () => {
 
         },
         {
+            campusState: 'Ahmedabad',
+            campusLocation:'Karnavati University',
+            campusSubLocation:'Uvarsad-Adalaj Road At.&Po.: Uvarsad, Dist, Gandhinagar, Gujarat 382422',
+            campusMobileNumber:'+91 959-4949-959',
+            campusEmailId:'info@iicsindia.org'
+
+        },
+        {
             campusState: 'Kolkata',
             campusLocation:'',
             campusSubLocation:'',

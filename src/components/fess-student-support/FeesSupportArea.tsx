@@ -147,9 +147,9 @@ const FeesSupportArea = () => {
                 <div>
                     <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[30px] ">What’s Included in the Fees?</p>
                     <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">12 months of on-campus learning </span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">12-24 months of on-campus learning </span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of live industry projects </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of paid internship</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of paid apprenticeship</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Access to industry-standard labs & equipment</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li>
 

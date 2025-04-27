@@ -9,7 +9,7 @@ const BlogHomeOne = () => {
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <h6 className="wow fadeInUp">
+                        <h6 className="wow fadeInUp !text-[35px]">
                         Latest News
                         </h6>
                         {/* <h2 className="wow fadeInUp" data-wow-delay=".3s"></h2> */}

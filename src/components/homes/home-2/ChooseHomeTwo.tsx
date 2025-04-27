@@ -35,7 +35,7 @@ const ChooseHomeTwo = () => {
                                                 <i className="flaticon-success"></i>
                                             </div>
                                             <div className="content">
-                                                <h2 className="!text-[20px]">25th April 2025</h2>
+                                                <h2 className="!text-[20px]">5th June 2025</h2>
                                                 <p>Entrance Exam</p>
                                             </div>
                                         </div>

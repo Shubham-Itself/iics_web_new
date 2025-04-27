@@ -58,7 +58,7 @@ const NavMenu = () => {
                                 {sub_item.title }
                                 <i className="fas fa-angle-right"></i>
                               </Link>
-                              <ul className="submenu" style={{insetInlineStart : '111%'}}>
+                              <ul className="submenu" style={{insetInlineStart : '111%' , 'minWidth':'400px'}}>
                                 {sub_item.inner_menus.map(
                                   (innerMenu, index) => (
                                     <li key={index} >
@@ -76,7 +76,7 @@ const NavMenu = () => {
   "Shri Atul Kumar Tiwari",
   "Shri Ved Mani Tiwari"
 ].includes(innerMenu.title ?? '') 
-  ? `Message from ${innerMenu.title}` 
+  ? `${innerMenu.subHead}` 
   : innerMenu.title}
                                        
                                       </Link>

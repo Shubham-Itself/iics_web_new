@@ -86,7 +86,7 @@ export const leadersDetails = [
     instagramLink: "",
     linkedIn: "",
     facebookLink: "",
-    image: "/assets/iics_image/leaders/resul_pookutty.webp",
+    image: "/assets/iics_image/leaders/rasul.webp",
      mentorType:'Leader',
       pathLink:'/leaders'
   },

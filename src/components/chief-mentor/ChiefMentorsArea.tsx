@@ -14,7 +14,7 @@ export const leadersDetails = [
 
   
     
-    image: "/assets/iics_image/leaders/resul_pookutty.webp",
+    image: "/assets/iics_image/leaders/rasul.webp",
     mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
      description:"Padma Shri Dr. Resul Pookutty (born 30 May 1971) is an Indian film sound designer, sound editor and audio mixer. He won the Academy Award for Best Sound Mixing, along with Richard Pryke and Ian Tapp, for Slumdog Millionaire. Resul Pookutty has worked in Hindi, Tamil, Telugu, Marathi and Malayalam languages in addition to British films. Resul Pookutty is a Governing Council Member of Media Entertainment Skills Council, working towards making India the Skill Capital of the World and promoting Vidyadaan, a new initiative by Mr. Subhash Ghai, Chairman, MESC to help share knowledge to the less privileged in the society."
@@ -25,7 +25,7 @@ export const leadersDetails = [
     instagramLink: "",
     linkedIn: "",
     facebookLink: "",
-    image: "/assets/iics_image/leaders/manvendra_shukul.webp",
+    image: "/assets/iics_image/leaders/manvendar_shukul.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
      description:"Mr. Manvendra Shukul is a prominent figure in the Indian gaming and animation industry. He is the CEO of Lakshya Digital, a leading game development company that was acquired by Keywords Studios in 2014. With over 25 years of experience, Shukul has played a crucial role in establishing India's presence in the global gaming and animation sectors. He is also a co-founder of the NASSCOM Gaming Forum and IGDC, and actively involved with GDAI and MESC. Additionally, he served as a BAFTA Breakthrough India 2023 jury member."
@@ -38,7 +38,7 @@ export const leadersDetails = [
     instagramLink: "",
     linkedIn: "",
     facebookLink: "",
-    image: "/assets/iics_image/leaders/anusha_srinivasan_iyer.webp",
+    image: "/assets/iics_image/leaders/anusha.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
      description:"Dr. (Hon) Anusha Srinivasan Iyer is a firebrand journalist, philanthropist, and one of India's most influential image strategists. With over three decades of experience, she has transformed Naarad PR & Image Strategists into a powerhouse that has served iconic corporates, celebrities, and global initiatives. Known for her razor-sharp storytelling and innovative branding techniques, she was recognized among India's 111 most powerful women by former President Dr. APJ Abdul Kalam. Anusha is also a global award-winning filmmaker and founder of social impact organizations like Make Earth Green Again Mega Foundation, Pawsitive Farm Sanctuary and Zindagi Helpline, reflecting her deep commitment to environmental conservation and community upliftment. As a disruptor in the PR industry, Anusha combines journalism and strategic insights to craft compelling narratives that have redefined public relations in India. Her expertise spans diverse sectors, including entertainment, art, culture, and politics. A global thought leader, she is also an Egalitarian Earth warrior and educationist who continues to inspire and mentor through her initiatives."
@@ -75,7 +75,7 @@ export const leadersDetails = [
     instagramLink: "",
     linkedIn: "",
     facebookLink: "",
-    image: "/assets/iics_image/leaders/yasmin_rodger.webp",
+    image: "/assets/iics_image/leaders/yasmin_rodgers.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
      description:"Ms. Yasmin Rodgers is a seasoned makeup, hair, and prosthetic artist with over 30 years of experience in the Bollywood, Tollywood and Hollywood film industries. Renowned for her expertise in transforming actors with her intricate designs, she has contributed to the creation of unforgettable looks in numerous high-profile films and projects, including Tenet,Eat pray love, Mission impossible, Fukrey, Article 15, Pagglait, Gyaarah Gyaarah, Kathal, Viceroy’s house and Bombay begums. Her ability to blend artistic vision with technical skill has made her a sought-after collaborator among directors, producers, and actors worldwide. She has worked with actors like Richard Gere, Julia Roberts, Amitabh Bachchan, Adrian Brody, Akshay Kumar, Tiger Shroff, Shabana Azmi, Kriti Sanon, Kiefer Sutherland, Jugal Hansraj, and Ali Fazal. Beyond her impressive body of work, Yasmin has dedicated much of her career to training and mentoring the next generation of artists, sharing her extensive knowledge and techniques with aspiring makeup, hair, and prosthetic specialists."
@@ -99,7 +99,7 @@ export const leadersDetails = [
     linkedIn: "",
     facebookLink: "",
     
-    image: "/assets/iics_image/leaders/sushma_gaikwad.webp",
+    image: "/assets/iics_image/leaders/susma.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
      description:"Ms. Sushma Gaikwad is a media entrepreneur, a communication specialist, Motivational and Tedex Speaker, a breakthrough therapist, and a Dale Carnegie certified trainer and NLP Master Practitioner. Sushma commenced her professional journey alongside her education in the Luxury industry and then joined the media industry as an experiential specialist at a time when the industry was very nascent. As one of the first few women in the media and entertainment domain, she worked with one of the top event agencies for over half a decade and was working with the pioneers in business. In the year 1997, Sushma was drawn into the arena of Corporate Identity and specialized in Corporate Identity Implementation Processes with Sista’s and Wolf-Olin’s in the UK. She was a part of the core team that designed and implemented the corporate identity of the TATA brand."

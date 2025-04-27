@@ -40,65 +40,65 @@ const InstagramHomeThree = () => {
                  
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
-                            <img src="assets/img/instagram/01.jpg" alt="img" />
-                            <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
+                            <img src="/assets/iics_image/infrastructure/infrastructure_22.webp" alt="img" />
+                            {/* <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link> */}
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
-                            <img src="assets/img/instagram/02.jpg" alt="img" />
-                            <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
+                            <img src="/assets/iics_image/infrastructure/infrastructure_24.webp" alt="img" />
+                            {/* <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link> */}
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
-                            <img src="assets/img/instagram/03.jpg" alt="img" />
-                            <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
+                            <img src="/assets/iics_image/infrastructure/infrastructure_25.webp" alt="img" />
+                            {/* <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link> */}
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
-                            <img src="assets/img/instagram/04.jpg" alt="img" />
-                            <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
+                            <img src="/assets/iics_image/infrastructure/infrastructure_26.webp" alt="img" />
+                            {/* <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link> */}
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
-                            <img src="assets/img/instagram/05.jpg" alt="img" />
-                            <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
+                            <img src="/assets/iics_image/infrastructure/infrastructure_27.webp" alt="img" />
+                            {/* <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link> */}
                         </div>
                     </SwiperSlide>
                  
-                    <SwiperSlide className="swiper-slide">
+                    {/* <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
                             <img src="assets/img/instagram/01.jpg" alt="img" />
                             <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
+                    </SwiperSlide> */}
+                    {/* <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
                             <img src="assets/img/instagram/02.jpg" alt="img" />
                             <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
+                    </SwiperSlide> */}
+                    {/* <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
                             <img src="assets/img/instagram/03.jpg" alt="img" />
                             <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
+                    </SwiperSlide> */}
+                    {/* <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
                             <img src="assets/img/instagram/04.jpg" alt="img" />
                             <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
+                    </SwiperSlide> */}
+                    {/* <SwiperSlide className="swiper-slide">
                         <div className="instagram-image">
                             <img src="assets/img/instagram/05.jpg" alt="img" />
                             <Link to="/courses-details" className="icon"><i className="far fa-arrow-right"></i></Link>
                         </div>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
             
             </Swiper>
         </div>

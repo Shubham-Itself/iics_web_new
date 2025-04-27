@@ -15,7 +15,7 @@ const EventDetails = () => {
 			<HeaderOne />
       <BreacrumbEventDetails />
       <EventDetailsArea />
-      <MarqueeOne style_2={true} />
+      {/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
 			<ScrollTop />
 		</>

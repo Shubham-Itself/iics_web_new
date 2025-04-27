@@ -13,7 +13,7 @@ const StakeHolderArea = () => {
             name:'Skill India Mission',
             logo:'assets/iics_image/stakeholder/skill_india_stakeholder.webp',
             information:'Launched in 2015, the Skill India Mission is a flagship initiative under MSDE aimed at training over 40 crore Indians in various industry-relevant skills by 2025. IICS is proud to contribute to this mission by creating high-impact learning experiences that turn raw talent into employable, entrepreneurial, and industry-ready professionals in the creative sector.',
-                path:''
+                path:'https://www.skillindiadigital.gov.in/home'
         },
         {
             name:'National Skill Development Corporation (NSDC)',

@@ -15,7 +15,7 @@ const News = () => {
 			<HeaderOne />
 			<BreadcrumbEvent title="Blog" subtitle="Blog" />
 			<NewsArea />       
-			<MarqueeOne style_2={true} />
+			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />
 			<ScrollTop />
 		</>

@@ -31,7 +31,7 @@ const NotFound = () => {
             </div>
         </div>
 
-        <MarqueeOne style_2={true} />
+        {/* <MarqueeOne style_2={true} /> */}
         <FooterOne />
         <ScrollTop />
     </>

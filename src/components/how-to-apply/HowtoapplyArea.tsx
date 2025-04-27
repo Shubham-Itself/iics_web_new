@@ -51,7 +51,7 @@ const HowtoapplyArea = () => {
                     <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">Take the First Step Toward a Career That Inspires
                     </p>
                     <div className=" !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Joining IICS means taking your first step toward a future in the Media, Entertainment & Creative Industry. Our application process is simple, transparent, and designed to help us discover passionate, driven individuals ready to make their mark.</h6>
+                    <h6 className="wow fadeInUp !mb-0">Joining the Indian Institute of Creative Skills means taking your first step toward a future in the media, entertainment & creative industry. Our application process is simple, transparent, and designed to help us discover passionate, driven individuals ready to make their mark.</h6>
                    
                 </div>
                     </div>
@@ -144,7 +144,7 @@ const HowtoapplyArea = () => {
 
 
                     </ul>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
+                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-semibold">
                         Or <br />
                         Book Counselling Session
                             </span></p>

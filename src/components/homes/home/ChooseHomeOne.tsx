@@ -5,7 +5,7 @@ import Count from "../../../common/Count";
 const ChooseHomeOne = () => {
   return (
     <>
-      <section className="choose-us-section fix mobile:!pt-[100px] pt-0  section-padding ">
+      <section className="choose-us-section fix mobile:!pt-[100px]   section-padding ">
             <div className="container">
                 <div className="main-choose-us-wrapper">
                     <div className="line-shape">
@@ -39,7 +39,7 @@ const ChooseHomeOne = () => {
                             </div>
                             <div className="content">
                                 {/* <p>Student Enrolled</p> */}
-                                <h2 className="flex gap-[5px] mobile:!text-[30px]"><span className="odometer" data-count="12"><Count number={12}  /></span>/<span className="odometer" data-count="24"><Count number={24}  /></span>Months</h2>
+                                <h2 className="flex gap-[5px] mobile:!text-[30px]"><span className="odometer" data-count="12"><Count number={12}  /></span>-<span className="odometer" data-count="24"><Count number={24}  /></span>Months</h2>
                                 <p className="mobile:text-start">
                                 Intensive Training to Build Your Foundation
                                 </p>

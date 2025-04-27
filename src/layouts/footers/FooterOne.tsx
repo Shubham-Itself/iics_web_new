@@ -1,152 +1,107 @@
 import { Link } from "react-router-dom";
 
- 
-
-const FooterOne = ({style_2} : any) => {
+const FooterOne = ({ style_2 }: any) => {
   return (
-    <>
-       <footer className={`footer-section fix ${style_2 ? "" : "footer-bg"}`}>
-            <div className="container">
-                <div className={`footer-widget-wrapper !py-[20px] ${style_2 ? "style-4" : ""}`}>
-                {/* <div className="flex gap-[10px]">
-                <img
-                  src="assets/iics_image/skill-logo-small.webp"
-                  alt="skill-logo"
-                  className="h-[50px]"
-                />
-                <img
-                  src="assets/iics_image/nsdc-small.webp"
-                  alt="skill-logo"
-                  className="h-[50px]"
-                />
-                <img
-                  src="assets/iics_image/mesc-logo-small.webp"
-                  alt="skill-logo"
-                  className="h-[50px]"
-                />
-              </div> */}
-                    <div className="row">
-                        <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp " data-wow-delay=".2s">
-                            <div className="single-footer-widget">
-                                <div className="widget-head">
-                                    <Link to="/">
-                                        {/* {style_2 ? <img src="assets/img/logo/black-logo-2.svg" alt="img" /> 
-                                        :                                        
-                                        <img src="assets/iics_image/logo_main_white.webp" alt="img" />
-                                        } */}
-                                        <p className="text-white text-[25px] font-bold">INDIAN INSTITUTE OF <span className="text-[#de4141]">CREATIVE</span> SKILLS</p>
-                                    </Link>
-                                </div>
-                                <div className="footer-content">
-                                    <p>
-                                    The Indian Institute of Creative Skills (IICS), affiliated with NSDC Academy and operated by MESC (funded by NSDC) under the aegis of the Ministry of Skill Development & Entrepreneurship (MSDE), is dedicated to shaping the future of creative education.
-                                    </p>
-                                   <div className="mt-[30px]">
-                                   <p >Follow Us:</p>
-                                    <div className="social-icon !mt-[10px]">
-                                    
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/iicsindiaorg/"><i className="fab fa-instagram"></i></a>
-                                        {/* <a href="#"><i className="fab fa-dribbble"></i></a>
-                                        <a href="#"><i className="fab fa-behance"></i></a> */}
-                                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                                        <a href="https://x.com/IICS_INDIA"><i className="fab fa-twitter"></i></a>
-
-                                        <a href="https://youtube.com/@iicsindiaorg?si=3jYkJMvyrO_lO97m"><i className="fab fa-youtube"></i></a>
-
-                                    </div>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
-                            <div className="single-footer-widget">
-                                <div className="widget-head">
-                                   <h3>Quick Links</h3>
-                                </div>
-                                <ul className="list-area">
-                                    <li><Link to="/courses">Enquire Now</Link></li>
-                                    <li><Link to="/courses">Schools</Link></li>
-                                    <li><Link to="/courses">Life at IICS</Link></li>
-                                    <li><Link to="/courses">Creative Incubator</Link></li>
-                                    <li><Link to="/courses">Admission</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6  wow fadeInUp" data-wow-delay=".6s">
-                            <div className="single-footer-widget">
-                                <div className="widget-head">
-                                   <h3>Contact Us</h3>
-                                </div>
-                                <ul className="list-area">
-                                    <li><Link to="/about">+91 959-4949-959</Link></li>
-                                    <li><Link to="/instructor">info@iicsindia.org</Link></li>
-                                    {/* <li><Link to="/courses">Best Courses</Link></li>
-                                    <li><Link to="/contact">Student Reviews</Link></li>
-                                    <li><Link to="/faq">FAQs</Link></li> */}
-                                </ul>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    <div className="  wow fadeInUp "  data-wow-delay=".8s">
-                            <div className="single-footer-widget">
-                                <div className="widget-head">
-                                   <h3>Address</h3>
-                                </div>
-                                <div className="footer-content">
-                                    <ul className="contact-info !flex justify-between gap-[40px] mobile:flex-wrap">
-                                        <li>
-                                            <span className="block text-[18px] font-semibold">Delhi Campus</span>
-                                            13-A 3rd Floor Above Tata Motors Showroom Main Ring Road Lajpat Nagar -4 New Delhi - 110024
-                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
-                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
-
-                                        </li>
-                                        <li>
-                                            <span className="block text-[18px] font-semibold">Bhopal</span>
-                                            Sage University, Katara Hills, Extension, Bhopal, Madhya Pradesh 462022
-                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
-                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
-                                            
-                                        </li>
-                                        <li>
-                                            <span className="block text-[18px] font-semibold">Ahmedabad</span>
-                                            Karnavati University, Uvarsad-Adalaj Road At.&Po.: Uvarsad, Dist, Gandhinagar, Gujarat 382422
-                                            <span className="font-bold">Mobile Number: </span><span>+91 959-4949-959</span>
-                                            <span className="font-bold">E-mail ID: </span><span>info@iicsindia.org</span>
-                                            
-                                        </li>
-                                        <li>
-                                            <span className="block text-[18px] font-semibold">Kolkata</span>
-                                            Coming Soon
-                                            
-                                            
-                                        </li>
-                                        <li>
-                                            <span className="block text-[18px] font-semibold">Bhubaneshwar</span>
-                                            Coming Soon
-                                            
-                                            
-                                        </li>
-                                     
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    <div className={`footer-bottom wow fadeInUp ${style_2 ? "style-4" : ""}`} data-wow-delay=".3s">
-                    <p>Copyright © <Link to="/">Indian Institute of Creative Skills</Link>, all rights reserved.</p>
+    <footer className={`footer-section fix ${style_2 ? "" : "footer-bg"}`}>
+      <div className="container">
+        <div className={`footer-widget-wrapper py-5 ${style_2 ? "style-4" : ""} text-white`}>
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="single-footer-widget">
+                <div className="widget-head mb-4">
+                  <Link to="/">
+                    <p className="text-xl font-bold leading-tight text-white">
+                      INDIAN INSTITUTE OF <span className="text-[#de4141]">CREATIVE</span> SKILLS
+                    </p>
+                  </Link>
                 </div>
+                <p className="text-sm mb-4">
+                  The Indian Institute of Creative Skills (IICS), affiliated with NSDC Academy and operated by MESC (funded by NSDC) under MSDE, is dedicated to shaping the future of creative education.
+                </p>
+                <div className="flex items-center gap-3 mt-2">
+                  <p className="text-sm font-semibold">Follow Us:</p>
+                  <div className="flex gap-3 text-lg">
+                    <a href="#" className="text-white"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/iicsindiaorg/" className="text-white"><i className="fab fa-instagram"></i></a>
+                    <a href="#" className="text-white"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/IICS_INDIA" className="text-white"><i className="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com/@iicsindiaorg?si=3jYkJMvyrO_lO97m" className="text-white"><i className="fab fa-youtube"></i></a>
+                  </div>
                 </div>
-               
+              </div>
             </div>
-            {/* <div className={`footer-name ${style_2 ? "style-2" : ""}`}>
-                <h2>
-                    Eduspace
-                </h2>
-            </div> */}
-        </footer>
-    </>
+
+            <div className="col-xl-8 col-lg-8 col-md-6">
+              <div className="single-footer-widget">
+                <div className="widget-head mb-4">
+                  <h3 className="text-lg font-semibold">Address</h3>
+                </div>
+                <ul className="contact-info grid grid-cols-2 gap-4 text-sm">
+                  {[
+                    {
+                      title: "Delhi Campus",
+                      address: "13-A 3rd Floor Above Tata Motors Showroom Main Ring Road Lajpat Nagar -4 New Delhi - 110024",
+                      phone: "+91 959-4949-959",
+                      email: "info@iicsindia.org",
+                    },
+                    {
+                      title: "Bhopal",
+                      address: "Sage University, Katara Hills, Extension, Bhopal, Madhya Pradesh 462022",
+                      phone: "+91 959-4949-959",
+                      email: "info@iicsindia.org",
+                    },
+                    {
+                      title: "Ahmedabad",
+                      address: "Karnavati University, Uvarsad-Adalaj Road, Gandhinagar, Gujarat 382422",
+                      phone: "+91 959-4949-959",
+                      email: "info@iicsindia.org",
+                    },
+                    { title: "Kolkata", address: "Coming Soon" },
+                    { title: "Bhubaneshwar", address: "Coming Soon" },
+                  ].map((item, idx) => (
+                    <li key={idx}>
+                      <span className="font-bold">{item.title}</span><br />
+                      {item.address}<br />
+                      {item.phone && (<><span className="font-semibold">Mobile: </span>{item.phone}<br /></>)}
+                      {item.email && (<><span className="font-semibold">Email: </span>{item.email}</>)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-between items-start mt-8 text-sm">
+            <div className="single-footer-widget mb-4">
+              <div className="widget-head mb-2">
+                <h3 className="text-lg font-semibold">Quick Links</h3>
+              </div>
+              <ul className="flex flex-wrap gap-3">
+                <li><Link to="/courses" className="text-white">Enquire Now</Link></li>
+                <li><Link to="/courses" className="text-white">Schools</Link></li>
+                <li><Link to="/courses" className="text-white">Life at IICS</Link></li>
+                <li><Link to="/courses" className="text-white">Creative Incubator</Link></li>
+                <li><Link to="/courses" className="text-white">Admission</Link></li>
+              </ul>
+            </div>
+
+            <div className="single-footer-widget mb-4">
+              <div className="widget-head mb-2">
+                <h3 className="text-lg font-semibold">Contact Us</h3>
+              </div>
+              <ul>
+                <li><a href="tel:+919594949959" className="text-white">+91 959-4949-959</a></li>
+                <li><a href="mailto:info@iicsindia.org" className="text-white">info@iicsindia.org</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={`footer-bottom mt-5 text-center text-xs ${style_2 ? "style-4" : ""}`}>
+            <p>© {new Date().getFullYear()} <Link to="/" className="underline text-white">Indian Institute of Creative Skills</Link>, all rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

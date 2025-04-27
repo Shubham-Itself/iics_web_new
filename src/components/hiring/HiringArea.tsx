@@ -42,6 +42,7 @@ const HiringArea = () => {
   // ]
   return (
     <div className="py-[50px] px-[100px]">
+      <p className="mb-[50px]">Indian Institute of Creative Skills (IICS) is dedicated to transforming creative education in India by integrating industry expertise, modern infrastructure, and a global perspective. Our goal is to nurture the talent in the creative field by offering innovative programs, hands-on training, and strong industry collaborations. We are expanding in multiple cities and are actively seeking people for multiple roles for New Delhi, Ahmedabad and Bhopal campuses.</p>
       <div className="flex gap-[30px]">
         <p className="text-[30px] font-semibold text-[#de4141]">1</p>
         <div className="border p-[50px] rounded-[20px] w-full">

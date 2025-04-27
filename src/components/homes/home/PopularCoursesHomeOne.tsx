@@ -29,22 +29,22 @@ const PopularCoursesHomeOne = () => {
 
         ScrollTrigger.matchMedia({
           "(min-width: 768px)": function () {
-           
+            gsap.to(sections, {
+                x: -totalScrollDistance,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: container,
+                  start: "top top",
+                  end: `+=${totalScrollDistance}`,
+                  scrub: true,
+                  pin: true,
+                  anticipatePin: 1,
+                  // markers: true, // optional: for debugging scroll area
+                },
+              });
           },
         });
-        gsap.to(sections, {
-            x: -totalScrollDistance,
-            ease: "none",
-            scrollTrigger: {
-              trigger: container,
-              start: "top top",
-              end: `+=${totalScrollDistance}`,
-              scrub: true,
-              pin: true,
-              anticipatePin: 1,
-              // markers: true, // optional: for debugging scroll area
-            },
-          });
+      
 
         // Ensure layout is measured correctly after load
         setTimeout(() => {
@@ -89,7 +89,7 @@ const PopularCoursesHomeOne = () => {
             mentorDesignation:"Celebrity Makeup & Prosthetics Artist",
             availableSeat:'15 Seats Available',
             batchStartDate:'15.05.2025',
-            mentorIcon:'/assets/iics_image/leaders/yasmin_rodger.webp',
+            mentorIcon:'/assets/iics_image/leaders/yasmin_rodgers.webp',
             fees:"6 Lakh Per Annum",
             duration:'1 Year',
                   courseImg:'assets/iics_course_image/hair-makeup-prosthetics.webp'
@@ -100,7 +100,7 @@ const PopularCoursesHomeOne = () => {
         mentorDesignation:"Academy Award Winner, Indian Sound Designer",
         availableSeat:'20 Seats Available',
         batchStartDate:'20.05.2025',
-        mentorIcon:'/assets/iics_image/leaders/resul_pookutty.webp',
+        mentorIcon:'/assets/iics_image/leaders/rasul.webp',
         fees:"6 Lakh Per Annum",
         duration:'2 Years',
               courseImg:'assets/iics_course_image/sound-recording-sound-design.webp'
@@ -111,7 +111,7 @@ const PopularCoursesHomeOne = () => {
     mentorDesignation:"CEO, Lakshya Digital",
     availableSeat:'25 Seats Available',
     batchStartDate:'15.05.2025',
-     mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
+     mentorIcon:'/assets/iics_image/leaders/manvendar_shukul.webp',
     fees:"6 Lakh Per Annum",
     duration:'2 Years',
           courseImg:'assets/iics_course_image/3d-game-art.webp'
@@ -122,7 +122,7 @@ const PopularCoursesHomeOne = () => {
     mentorDesignation:"CEO, Nilee Games",
     availableSeat:'25 Seats Available',
     batchStartDate:'20.05.2025',
-    mentorIcon:'/assets/iics_image/leaders/manvendra_shukul.webp',
+    mentorIcon:'/assets/iics_image/leaders/anand_jha.webp',
     fees:"6 Lakh Per Annum",
     duration:'2 Years',
           courseImg:'assets/iics_course_image/advance-gaming-extended-reality-innovations.webp'
@@ -136,7 +136,7 @@ const PopularCoursesHomeOne = () => {
     secondMentorDesignation:'Journalist, Filmmaker, Brand Strategist, Author, Theatrician',
     availableSeat:'20 Seats Available',
     batchStartDate:'20.05.2025',
-    mentorIcon:'/assets/iics_image/leaders/anusha_srinivasan_iyer.webp',
+    mentorIcon:'/assets/iics_image/leaders/anusha.webp',
     fees:"6 Lakh Per Annum",
     duration:'2 Years',
           courseImg:'assets/iics_course_image/journalism-PR-Image-strategization-Brand-Custodianship.webp'
@@ -147,7 +147,7 @@ const PopularCoursesHomeOne = () => {
     mentorDesignation:"Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
     availableSeat:'30 Seats Available',
     batchStartDate:'15.05.2025',
-    mentorIcon:'assets/iics_image/leaders/sushma_gaikwad.webp',
+    mentorIcon:'assets/iics_image/leaders/susma.webp',
     fees:"6 Lakh Per Annum",
     duration:'2 Years',
           courseImg:'assets/iics_course_image/event-experiential-management-program.webp'
@@ -168,15 +168,11 @@ const PopularCoursesHomeOne = () => {
   return (
     <>
        <section className=" popular-courses-section bg-white mobile:!pt-[50px] !pb-0 fix section-padding    !max-h-full !h-full"
-       ref={containerRef}  
+       
        >
             <div className="container !max-w-full"
             
-             style={{
-              position: 'relative',
-              height: '100vh', // full viewport height
-              overflow: 'hidden' // hide the native scrollbar to prevent regular scrolling
-            }}
+            
             >
                 <div className="section-title-area align-items-end">
                     <div className="section-title px-[100px]">
@@ -185,7 +181,7 @@ const PopularCoursesHomeOne = () => {
                         </h6>
                         <h2 className="wow fadeInUp mobile:!text-[20px]" data-wow-delay=".3S">Our Unique Courses</h2>
                     </div>
-                    {/* <ul className="nav">
+                    <ul className="nav">
                         <li className="nav-item wow fadeInUp" data-wow-delay=".2s">
                             <a href="#All" data-bs-toggle="tab" className="nav-link active">
                                 All Courses 
@@ -206,18 +202,20 @@ const PopularCoursesHomeOne = () => {
                                 Marketing
                             </a>
                         </li>
-                    </ul> */}
+                    </ul>
                 </div>
-                <div className="tab-content pl-[200px] mobile:pl-0">
+                <div className="tab-content pl-[20px] mobile:pl-0">
                     <div id="All" className="tab-pane fade show active ">
                         <div className="mobile:!gap-[10px] mobile:items-end"  ref={scrollRef}
         style={{
           display: 'flex',
-          gap:'50px'
+          gap:'10px',
+          flexWrap:'wrap',
+          justifyContent:'center'
         }} >
                             {
                                 coursesInformation.map((course , index)=>(
-<div key={index} className=" !w-[25%] mobile:!w-full col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp cardGsapAnimation mobile:h-full" data-wow-delay=".2s" >
+<div key={index} className=" !w-[335px] mobile:!w-full col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp  mobile:h-full" data-wow-delay=".2s" >
                                 <div className="courses-card-main-items h-full mobile:w-[300px]">
                                     <div className="courses-card-items !mt-0 !opacity-100 !visible flex flex-col ">
                                         <div className="courses-image">
