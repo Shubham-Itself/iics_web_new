@@ -361,8 +361,7 @@ courseImg,
                       <p>{courseInfo}</p>
                       <div className="courses-btn">
                         <Link
-                          to="/register
-                          "
+                          to="/register"
                           className="theme-btn w-full flex justify-center items-center"
                         >
                           Register Now
