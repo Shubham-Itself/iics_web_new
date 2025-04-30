@@ -9,7 +9,11 @@ const HowtoapplyArea = () => {
     {
        
         step:'1. Fill the Online Application Form',
-        information:'Click Here (Redirect it to application form) and complete the online application form. Make sure to enter accurate personal, academic, and contact details.'
+        information: (
+            <>
+              <Link to="/register" className="text-[#005BFF]">Click Here</Link> and complete the online application form. Make sure to enter accurate personal, academic, and contact details.
+            </>
+          ),
        
        
 

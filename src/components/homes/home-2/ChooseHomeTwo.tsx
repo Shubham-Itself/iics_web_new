@@ -10,11 +10,14 @@ const ChooseHomeTwo = () => {
                     <div className="row g-4 align-items-center">
                         <div className="col-xxl-5 col-xl-6">
                             <div className="section-title mb-0">
+                            <h2 className="text-white wow fadeInUp !text-[36px] !mb-[20px]" data-wow-delay=".3s">
+                            The Future of Media <br /> is You
+                                </h2>
                                 <h6 className="yellow-text wow fadeInUp">
                                 Apply Now
                                 </h6>
                                 <h2 className="text-white wow fadeInUp !text-[36px] !mb-[40px]" data-wow-delay=".3s">
-                                Admission Open 2025
+                                Admission Open
                                 </h2>
                                 <div className="header-button min-l:!hidden">
                     <Link
@@ -35,8 +38,9 @@ const ChooseHomeTwo = () => {
                                                 <i className="flaticon-success"></i>
                                             </div>
                                             <div className="content">
+                                            <p className="mt-0">Last Registration Date</p>
                                                 <h2 className="!text-[20px]">5th June 2025</h2>
-                                                <p>Last Registration Date</p>
+                                                
                                             </div>
                                         </div>
                                     </div>

@@ -12,7 +12,7 @@ const TopCategoryHomeTwo = () => {
             <div className="container">
                 <div className="section-title text-center">
                     <h6 className="text-white wow fadeInUp mobile:!text-[15px]">
-                    How to Join
+                    Your Journey to Media & Entertainment: Application and Program Structure
                     </h6>
                    
                 </div>
@@ -23,7 +23,7 @@ const TopCategoryHomeTwo = () => {
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                         <div className=" top-category-box bg-1 border-left-none border-top-none h-full overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon hover:!text-">
                                                     {/* <i className="flaticon-graphic-design"></i>
@@ -39,7 +39,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                         <div className="top-category-box bg-2 border-left-none border-top-none h-full overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -54,7 +54,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                         <div className="top-category-box bg-3 border-left-none border-bottom-none border-top-none overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -69,7 +69,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                         <div className="top-category-box bg-4 border-left-none border-bottom-none border-top-none h-full overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -102,7 +102,7 @@ const TopCategoryHomeTwo = () => {
                                 <div className="row g-0">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                         <div className="top-category-box bg-5 border-right-none border-top-none h-full overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -117,7 +117,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                         <div className="top-category-box bg-6 border-right-none border-top-none h-full overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -132,7 +132,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                         <div className="top-category-box bg-7 border-right-none border-bottom-none border-top-none overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">
@@ -147,7 +147,7 @@ const TopCategoryHomeTwo = () => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                         <div className="top-category-box bg-8 border-right-none border-bottom-none border-top-none overflow-hidden relative">
-                                        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+                                        <div className="absolute inset-0 bg-black/60  pointer-events-none" />
 
                                             <Link to="#" className="relative z-20">
                                                 <div className="icon">

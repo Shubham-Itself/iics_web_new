@@ -34,7 +34,7 @@ const PopularCoursesHomeOne = () => {
       type:['Certificate']
     },
     {
-        name: "Sound Recording & Sound Design",
+        name: "Sound Recording and Sound Design",
         mentorName: "Padma Shri Dr. Resul Pookutty",
         mentorDesignation: "Academy Award Winner, Indian Sound Designer",
         availableSeat: "20 Seats Available",
@@ -71,7 +71,7 @@ const PopularCoursesHomeOne = () => {
           type:['Certificate' , 'Degree']
       },
       {
-        name: "Journalism, PR, Image Strategization & Brand Custodianship",
+        name: "Journalism, PR, Image Strategization & Brand Custodianship Program",
         mentorName: "Dr. (Hon) Anusha Srinivasan Iyer",
         mentorDesignation:
           "Brand Custodian, Image Strategist, International Award- Winning Writer- Director, Firebrand Journalist, Egalitarian Activist",
@@ -89,7 +89,7 @@ const PopularCoursesHomeOne = () => {
           type:['Certificate' , 'Degree']
       },
       {
-        name: "Events and Experiential Management Program",
+        name: "Events And Experiential Media",
         mentorName: "Ms. Sushma Gaikwad",
         mentorDesignation:
           "Co-founder Ice Global, Experiential Media and Director, Wizcraft MIME",
@@ -103,7 +103,7 @@ const PopularCoursesHomeOne = () => {
           type:['Certificate' , 'Degree']
       },
       {
-        name: "Digital Management and Content Creation",
+        name: "Digital Content Creation",
         mentorName: "Ms. Ketki Pandit ",
         mentorDesignation:
           "Film Producer, Director, Storyteller, Founder- Youth Music",
@@ -282,12 +282,12 @@ const PopularCoursesHomeOne = () => {
                             </div>
                             <div className="flex-1 flex flex-col">
                               <div className="courses-content !p-[10px]">
-                                <h5 className="mobile:text-[16px] h-[65px]">
-                                  <Link to="/courses-details">
+                                <h5 className="mobile:text-[16px] h-[39.2px] text-[16px] font-[500]">
+                                  <Link to={`/courses-details/${encodeURIComponent(course.name?.toString() || '')}`}>
                                     {course.name}
                                   </Link>
                                 </h5>
-                                <div className="client-items !items-start !flex-col !border-none">
+                                <div className="client-items !items-start !flex-col !border-none h-[55px]">
                                   <div className="flex !items-center gap-[20px]">
                                     <img
                                       src={course.mentorIcon}
@@ -329,7 +329,7 @@ const PopularCoursesHomeOne = () => {
                                   {course.batchStartDate}
                                 </li> */}
                                    <Link
-                                    to="/courses-details"
+                                    to="/register"
                                     className="theme-btn yellow-btn mt-[10px] !py-[10px]"
                                   >
                                     Enroll Now

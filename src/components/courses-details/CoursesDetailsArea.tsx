@@ -63,7 +63,11 @@ courseImg,
   onlineEntranceExam,
   batchLaunchDate,
   mentorAbout,
-  courseOverview
+  courseOverview,
+  mentorTwoAbout,
+  mentorTwoIcon,
+  mentorTwoInfo,
+  mentorTwoName
 }: any) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
@@ -225,7 +229,7 @@ courseImg,
                       </div>
                       <div id="Instructors" className="tab-pane fade">
                         <div className="instructors-items">
-                          <h3>Chief Mentor</h3>
+                          <h3>{titleCourse == "Journalism, PR, Image Strategization & Brand Custodianship Program"? 'Chief Mentors' : 'Chief Mentor'}</h3>
                           <div className="instructors-box-items !items-start">
                             <div className="thumb">
                               <img
@@ -260,6 +264,42 @@ courseImg,
                               </div>
                             </div>
                           </div>
+                          {
+                            mentorTwoName && mentorTwoAbout && mentorTwoAbout &&  <div className="instructors-box-items !items-start">
+                            <div className="thumb">
+                              <img
+                                src={mentorTwoIcon}
+                                alt="img"
+                                className="w-[170px] h-[170px] object-cover"
+                              />
+                            </div>
+                            <div className="content">
+                              <h4>{mentorTwoName}</h4>
+                              <span>{mentorTwoInfo}</span> <br />
+                              <span className="text-[12px]">{mentorTwoAbout}</span>
+                              {/* <p>
+                                {mentorInfo}
+                              </p> */}
+                              <div className="social-icon">
+                                <a href="#">
+                                  <i className="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                  <i className="fab fa-instagram"></i>
+                                </a>
+                                {/* <a href="#">
+                                  <i className="fab fa-dribbble"></i>
+                                </a> */}
+                                {/* <a href="#">
+                                  <i className="fab fa-behance"></i>
+                                </a> */}
+                                <a href="#">
+                                  <i className="fab fa-linkedin-in"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          }
                           {/* <div className="instructors-box-items style-2">
                             <div className="thumb">
                               <img
@@ -372,16 +412,22 @@ courseImg,
                   <div className="courses-category-items">
                     <h5>Course Includes:</h5>
                     <ul>
-                      <li>
+                      {/* <li>
                         <span>
                           <i className="far fa-chalkboard-teacher"></i>
                           Chief Mentor
                         </span>
                         <span className="text">{mentor}</span>
-                      </li>
+                      </li> */}
                       {industryMentors && industryMentors.length > 0 && (
                         <li>
                           <span>
+                          {
+                            industryMentors.length >1 && <>
+                            <i className="far fa-chalkboard-teacher"></i>
+                            HOD <br />
+                            </>
+                          }
                             <i className="far fa-chalkboard-teacher"></i>
                             Industry Mentos
                           </span>

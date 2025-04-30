@@ -22,9 +22,10 @@ const HeroHomeTwo = () => {
                             </h1>
                             <p className="wow fadeInUp mobile:!text-[12px] !text-[16px]" data-wow-delay=".5s">
                             The Indian Institute of Creative Skills (IICS), an institution affiliated with NSDC Academy and operated by the Media & Entertainment Skills Council (MESC), funded by NSDC, functions under the aegis of the Ministry of Skill Development & Entrepreneurship (MSDE). We are a premier institution dedicated to shaping the next generation of creators, leaders, and entrepreneurs in the Media & Entertainment Industry. <br /> <br />
-                               <span className="font-bold">- </span> Industry-Driven Training with World-Class Facilities to equip you with real-world skills. <br />
-                               <span className="font-bold">- </span> Learn from Celebs, Oscar Award Winners and Industry Icons who bring decades of experience to the classroom. <br />
-                               <span className="font-bold">- </span> Fostering Entrepreneurship & IP Creation to position India as a global leader in Media & Entertainment. <br /> <br />
+                            
+                               <span className="font-bold">&#x2022; </span> Industry-Driven Training with World-Class Facilities to equip you with real-world skills. <br />
+                               <span className="font-bold">&#x2022; </span> Learn from Celebs, Oscar Award Winners and Industry Icons who bring decades of experience to the classroom. <br />
+                               <span className="font-bold">&#x2022; </span> Fostering Entrepreneurship & IP Creation to position India as a global leader in Media & Entertainment. <br /> <br />
                                <span className="font-bold text-black">Driven by Industry. Built for Creators. Backed by Legends.</span>
 
                             </p>

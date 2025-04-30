@@ -48,15 +48,17 @@ const CoursesDetails = () => {
     );
   }
 
-  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo , registrationStart , registrationEnd , onlineEntranceExam , batchLaunchDate ,mentorAbout , courseOverview} = courseData 
+  
+
+  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo , registrationStart , registrationEnd , onlineEntranceExam , batchLaunchDate ,mentorAbout , courseOverview , mentorTwoName , mentorTwoAbout , mentorTwoIcon , mentorTwoInfo} = courseData 
 
 
   return (
     <>
     
     <HeaderOne />
-    <BreadcrumbCoursesDetails titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} mentorIcon={mentorIcon}/>
-  <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria} courseImg={courseImg} courseVideo={courseVideo} registrationStart={registrationStart} registrationEnd={registrationEnd} onlineEntranceExam={onlineEntranceExam} batchLaunchDate={batchLaunchDate} mentorAbout={mentorAbout} courseOverview={courseOverview}/>
+    <BreadcrumbCoursesDetails titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} mentorIcon={mentorIcon} mentorTwoName={mentorTwoName} mentorTwoIcon={mentorTwoIcon}/>
+  <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria} courseImg={courseImg} courseVideo={courseVideo} registrationStart={registrationStart} registrationEnd={registrationEnd} onlineEntranceExam={onlineEntranceExam} batchLaunchDate={batchLaunchDate} mentorAbout={mentorAbout} courseOverview={courseOverview} mentorTwoName={mentorTwoName} mentorTwoIcon={mentorTwoIcon} mentorTwoAbout={mentorTwoAbout} mentorTwoInfo={mentorTwoInfo}/>
     {/* <RelatedCourses /> */}
     {/* <MarqueeOne style_2={true} /> */}
     {/* <ImageGallery imagesArr={imagesArr}/> */}

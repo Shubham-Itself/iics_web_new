@@ -2,7 +2,7 @@
 
  
 
-const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType , mentorIcon}:any) => {
+const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType , mentorIcon , mentorTwoName , mentorTwoIcon}:any) => {
    
   return (
     <>
@@ -36,6 +36,13 @@ const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType 
                                 <h5>{mentor}</h5>
                             </div>
                         </div>
+                       {mentorTwoName && mentorTwoIcon && <div className="client-image-items">
+                            <img src={mentorTwoIcon} alt="img" className="w-[60px] h-[60px] object-cover rounded-[50%]" />
+                            <div className="client-content">
+                                <span>Chief Mentor</span>
+                                <h5>{mentorTwoName}</h5>
+                            </div>
+                        </div>}
                         <div className="client-image-items">
                             <div className="client-content">
                                 <span>Duration</span>

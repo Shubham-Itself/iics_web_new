@@ -16,8 +16,13 @@ export interface DataType {
     demo_img?: string | any;
     inner_menu?: boolean;
     mentorName?: string;
+   
     mentorIcon?: string;
     mentorInfo?: string;
+    mentorTwoName?:string;
+    mentorTwoAbout?:string;
+    mentorTwoIcon?:string;
+    mentorTwoInfo?:string;
     duration?: string;
     courseType?: string;
     fees?: string;
@@ -47,6 +52,10 @@ export interface DataType {
       mentorIcon?: string;
       mentorInfo?: string;
       mentorAbout?:string;
+      mentorTwoName?:string;
+      mentorTwoAbout?:string;
+      mentorTwoIcon?:string;
+      mentorTwoInfo?:string;
       duration?: string;
       courseType?: string;
       fees?: string;
@@ -489,6 +498,10 @@ courseOverview:"This two-year production-oriented performing arts course is meti
             title:
               "Journalism, PR, Image Strategization & Brand Custodianship Program",
             mentorName: "Dr. (Hon) Anusha Srinivasan Iyer",
+            mentorTwoName:'Dr. (Hon) S Ramachandran',
+            mentorTwoInfo:'Journalist, Filmmaker, Brand Strategist, Author, Theatrician',
+            mentorTwoAbout:"Dr. ( Hon) S Ramachandran is a celebrated journalist, author, brand strategist, and filmmaker with over three decades of experience in print, television, and digital media. A prolific writer, he has authored thought-provoking books that delve into contemporary issues, offering unique perspectives that resonate with readers. His journalism career is marked by incisive storytelling and impactful narratives that have shaped public opinion and established him as a trusted voice in the industry also having worked in organisations like NDTV, Indian Express and Mid-day among others. In addition to his literary and journalistic accomplishments, Ramachandran is a renowned brand strategist who has successfully elevated the public personas of celebrities, corporates, and political figures. His innovative approach to image-building, combined with his deep understanding of human psychology, makes him a sought-after mentor and thought leader in the fields of media and public relations.",
+            mentorTwoIcon:"/assets/iics_image/leaders/ramachandran.webp",
             duration: "2 Year (12+6+6 Months)",
             courseType: "Certificate",
             fees: "6 Lakhs Per Annum",

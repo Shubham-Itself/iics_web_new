@@ -19,6 +19,14 @@ const ManagementArea = () => {
       image: "assets/iics_image/management/pooja.webp",
     },
     {
+      leaderName: "Ms. Sohini Dasgupta",
+      leaderDesignation: "Director Academics",
+      instagramLink: "",
+      linkedIn: "",
+      facebookLink: "",
+      image: "assets/iics_image/management/pooja.webp",
+    },
+    {
       leaderName: "Ms. Roshni Sehgal",
       leaderDesignation: "Business and International Alliances Head, Media and Entertainment Skills Council (MESC)",
       instagramLink: "",

@@ -62,8 +62,8 @@ const PartnersArea = () => {
                         partnersInformation.map(( partner , index )=>(
                             <div key={index} className="content cardStake  w-[30%] mobile:w-full flex flex-col items-center rounded-[20px] py-[20px]" style={{ boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff' }}>
                                 <div className="mb-[20px] flex gap-[10px] logo">
-                                    <img src={partner.logo} alt="logo" className="w-fit h-[100px] object-contain" />
-                                    {partner.logoTwo &&  <img src={partner.logoTwo} alt="logo" className="w-fit h-[100px] object-contain" />}
+                                    <img src={partner.logo} alt="logo" className=" h-[100px] object-contain" />
+                                    {partner.logoTwo &&  <img src={partner.logoTwo} alt="logo" className=" h-[100px] object-contain" />}
                                 </div>
                                 <div className="text-black text-[16px] text-center textPartner">
                                     {partner.name   }
