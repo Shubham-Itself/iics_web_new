@@ -14,7 +14,7 @@ const Event = () => {
     <>
     {/* <Preloader /> */}
       <HeaderOne />
-      <BreadcrumbEvent title="Events" subtitle="Event List" />
+      <BreadcrumbEvent title="Events & Workshop" subtitle="Event & Workshop" />
       <EventLisrArea />
 			{/* <MarqueeOne style_2={true} /> */}
       <EventGallery/>

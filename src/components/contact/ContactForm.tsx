@@ -27,12 +27,12 @@ const ContactForm = () => {
                                     </div>
                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                                         <div className="form-clt">
-                                            <input type="text" name="number" id="number" placeholder="Phone Number" />
+                                            <input type="number" name="number" id="number" placeholder="Phone Number" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                                         <div className="form-clt">
-                                            <input type="text" name="email" id="email3" placeholder="Email Address" />
+                                            <input type="email" name="email" id="email3" placeholder="Email Address" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">

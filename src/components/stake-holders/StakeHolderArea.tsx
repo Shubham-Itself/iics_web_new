@@ -55,6 +55,12 @@ const StakeHolderArea = () => {
                                 <h4 className="text-[14px] font-normal mobile:text-[12px]">
                                   {stakeHolder.information}
                                 </h4>
+                                <p className="text-[12px] text-[#005BFF]">
+                                    <a className="text-[#005BFF]" href={stakeHolder.path || '#'} target="blank">
+                                    Read More...  
+                                    </a>
+                                    </p>
+                               
                             </div>
                         </div>
                         ))

@@ -42,14 +42,13 @@ const AccordionItem = ({ title, content, isOpen, onClick }: any) => (
 );
 
 const CoursesDetailsArea = ({
-  fees,
+  // fees,
   courseInfo,
 courseImg,
   mentor,
   duration,
   courseType,
-  courseStartDate,
-  enrollmentDeadLine,
+
   studentsSeat,
   industryMentors,
   courseCurricullam,
@@ -58,7 +57,13 @@ courseImg,
   careerEntrepreneurship,
   mentorIcon,
   eligibilityCriteria,
-  titleCourse
+  titleCourse,
+  registrationStart,
+  registrationEnd,
+  onlineEntranceExam,
+  batchLaunchDate,
+  mentorAbout,
+  courseOverview
 }: any) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
@@ -128,7 +133,18 @@ courseImg,
                   </div>
                   <div className="courses-details-content">
                     <ul className="nav !gap-0 !justify-between">
-                      
+                    <li
+                        className="nav-item wow fadeInUp "
+                        data-wow-delay=".3s"
+                      >
+                        <a
+                          href="#Course"
+                          data-bs-toggle="tab"
+                          className="nav-link active afterMobile"
+                        >
+                          Course Overview
+                        </a>
+                      </li>
                       <li
                         className="nav-item wow fadeInUp  "
                         data-wow-delay=".5s"
@@ -136,23 +152,12 @@ courseImg,
                         <a
                           href="#Curriculum"
                           data-bs-toggle="tab"
-                          className="nav-link active afterMobile"
+                          className="nav-link  afterMobile"
                         >
                           Curriculum
                         </a>
                       </li>
-                      <li
-                        className="nav-item wow fadeInUp "
-                        data-wow-delay=".3s"
-                      >
-                        <a
-                          href="#Course"
-                          data-bs-toggle="tab"
-                          className="nav-link afterMobile"
-                        >
-                          Eligibility Criteria
-                        </a>
-                      </li>
+                     
                       <li
                         className="nav-item wow fadeInUp "
                         data-wow-delay=".5s"
@@ -179,14 +184,35 @@ courseImg,
                       </li>
                     </ul>
                     <div className="tab-content">
-                      <div id="Course" className="tab-pane fade  ">
+                      <div id="Course" className="tab-pane fade active show  ">
                         <div className="description-content">
+                        <p className="mb-3">
+                          
+                            {courseOverview}
+                          </p>
+                          <p className="mb-3 font-bold">
+                            Eligibility Criteria:
+                          
+                                    <img src="/assets/img/small-line.png" alt="img" />
+                         
+                          </p>
                           <p className="mb-3">
-                            {eligibilityCriteria}
+                            <span className="font-semibold">Degree Program: </span>
+                            {eligibilityCriteria[0]}
+                          </p>
+                          {
+                            eligibilityCriteria[2] &&  <p className="mb-3">
+                            <span className="font-semibold">Preferred: </span>
+                            {eligibilityCriteria[2]}
+                          </p>
+                          }
+                          <p className="mb-3">
+                            <span className="font-semibold">Certificate Program: </span>
+                            {eligibilityCriteria[1]}
                           </p>
                         </div>
                       </div>
-                      <div id="Curriculum" className="tab-pane active show fade">
+                      <div id="Curriculum" className="tab-pane  fade">
                         {courseCurricullam?.map((item:any, index:any) => (
                           <AccordionItem
                             key={index}
@@ -200,7 +226,7 @@ courseImg,
                       <div id="Instructors" className="tab-pane fade">
                         <div className="instructors-items">
                           <h3>Chief Mentor</h3>
-                          <div className="instructors-box-items">
+                          <div className="instructors-box-items !items-start">
                             <div className="thumb">
                               <img
                                 src={mentorIcon}
@@ -210,7 +236,8 @@ courseImg,
                             </div>
                             <div className="content">
                               <h4>{mentor}</h4>
-                              <span>{mentorInfo}</span>
+                              <span>{mentorInfo}</span> <br />
+                              <span className="text-[12px]">{mentorAbout}</span>
                               {/* <p>
                                 {mentorInfo}
                               </p> */}
@@ -330,11 +357,12 @@ courseImg,
                       </div>
                     </div>
                     <div className="courses-content ">
-                      <h3 className="!text-[25px]">&#8377;{fees}</h3>
+                      <h3 className="!text-[25px]">{titleCourse}</h3>
                       <p>{courseInfo}</p>
                       <div className="courses-btn">
                         <Link
-                          to="/courses-details"
+                          to="/register
+                          "
                           className="theme-btn w-full flex justify-center items-center"
                         >
                           Register Now
@@ -386,17 +414,31 @@ courseImg,
                       </li>
                       <li>
                         <span>
-                          <i className="far fa-globe"></i>
-                          Enrollment Deadline
+                        <i className="far fa-calendar-alt"></i>
+                          Registration Start Date
                         </span>
-                        <span className="text">{enrollmentDeadLine}</span>
+                        <span className="text">{registrationStart}</span>
                       </li>
                       <li>
                         <span>
                           <i className="far fa-calendar-alt"></i>
-                          Course Start Date
+                          Registration End Date
                         </span>
-                        <span className="text">{courseStartDate}</span>
+                        <span className="text">{registrationEnd}</span>
+                      </li>
+                      <li>
+                        <span>
+                          <i className="far fa-calendar-alt"></i>
+                          Online Entrance Exam Date
+                        </span>
+                        <span className="text">{onlineEntranceExam}</span>
+                      </li>
+                      <li>
+                        <span>
+                          <i className="far fa-calendar-alt"></i>
+                          Batch Launch Date
+                        </span>
+                        <span className="text">{batchLaunchDate}</span>
                       </li>
                       <li>
                         <span>

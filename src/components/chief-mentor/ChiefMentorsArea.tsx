@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// import ImageGallery from "../courses-details/ImageGallery";
 
 export const leadersDetails = [
    
@@ -17,7 +18,10 @@ export const leadersDetails = [
     image: "/assets/iics_image/leaders/rasul.webp",
     mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
-     description:"Padma Shri Dr. Resul Pookutty (born 30 May 1971) is an Indian film sound designer, sound editor and audio mixer. He won the Academy Award for Best Sound Mixing, along with Richard Pryke and Ian Tapp, for Slumdog Millionaire. Resul Pookutty has worked in Hindi, Tamil, Telugu, Marathi and Malayalam languages in addition to British films. Resul Pookutty is a Governing Council Member of Media Entertainment Skills Council, working towards making India the Skill Capital of the World and promoting Vidyadaan, a new initiative by Mr. Subhash Ghai, Chairman, MESC to help share knowledge to the less privileged in the society."
+     description:"Padma Shri Dr. Resul Pookutty (born 30 May 1971) is an Indian film sound designer, sound editor and audio mixer. He won the Academy Award for Best Sound Mixing, along with Richard Pryke and Ian Tapp, for Slumdog Millionaire. Resul Pookutty has worked in Hindi, Tamil, Telugu, Marathi and Malayalam languages in addition to British films. Resul Pookutty is a Governing Council Member of Media Entertainment Skills Council, working towards making India the Skill Capital of the World and promoting Vidyadaan, a new initiative by Mr. Subhash Ghai, Chairman, MESC to help share knowledge to the less privileged in the society.",
+     imagesArr : Array.from({ length: 13 }, (_, i) => 
+      `/assets/iics_image/sound_images/sound_${i + 1}.webp`
+      ),
   },
   {
     leaderName: "Mr. Manvendra Shukul",
@@ -28,7 +32,10 @@ export const leadersDetails = [
     image: "/assets/iics_image/leaders/manvendar_shukul.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
-     description:"Mr. Manvendra Shukul is a prominent figure in the Indian gaming and animation industry. He is the CEO of Lakshya Digital, a leading game development company that was acquired by Keywords Studios in 2014. With over 25 years of experience, Shukul has played a crucial role in establishing India's presence in the global gaming and animation sectors. He is also a co-founder of the NASSCOM Gaming Forum and IGDC, and actively involved with GDAI and MESC. Additionally, he served as a BAFTA Breakthrough India 2023 jury member."
+     description:"Mr. Manvendra Shukul is a prominent figure in the Indian gaming and animation industry. He is the CEO of Lakshya Digital, a leading game development company that was acquired by Keywords Studios in 2014. With over 25 years of experience, Shukul has played a crucial role in establishing India's presence in the global gaming and animation sectors. He is also a co-founder of the NASSCOM Gaming Forum and IGDC, and actively involved with GDAI and MESC. Additionally, he served as a BAFTA Breakthrough India 2023 jury member.",
+     imagesArr : Array.from({ length: 8 }, (_, i) => 
+      `/assets/iics_image/3d_art/3d_game_${i + 1}.webp`
+      ),
   },
  
   {
@@ -67,7 +74,10 @@ export const leadersDetails = [
     image: "/assets/iics_image/leaders/amit_behl.webp",
      mentorType:'Chief Mentor',
      pathLink:'/chiefMentors',
-     description:"Dr. Amit Behl is an Indian theatre, television and film actor. Amit Behl began his career in 1994 with a role in India's first daily soap opera Shanti. He later went on to do almost 100 TV serials in Hindi, English, Marathi, Punjabi and Urdu. He was the Hon’ble General secretary been the senior joint secretary of CINTAA (Cine & TV artistes association) from 2015 till 2024. He is a member of the governing council of MESC (Media & Entertainment skill council), advising NSDC to integrate and recognise skills in the media and entertainment industry. He is a visiting faculty at various media and management schools, including We School Mumbai, MET, DY Patil University etc."
+     description:"Dr. Amit Behl is an Indian theatre, television and film actor. Amit Behl began his career in 1994 with a role in India's first daily soap opera Shanti. He later went on to do almost 100 TV serials in Hindi, English, Marathi, Punjabi and Urdu. He was the Hon’ble General secretary been the senior joint secretary of CINTAA (Cine & TV artistes association) from 2015 till 2024. He is a member of the governing council of MESC (Media & Entertainment skill council), advising NSDC to integrate and recognise skills in the media and entertainment industry. He is a visiting faculty at various media and management schools, including We School Mumbai, MET, DY Patil University etc.",
+     imagesArr : Array.from({ length: 14 }, (_, i) => 
+      `/assets/iics_image/perform_art/perform_art_${i + 1}.webp`
+      ),
   },
   {
     leaderName: "Ms. Yasmin Rodgers",
@@ -202,6 +212,7 @@ const ChiefMentorsArea = () => {
           </div>
         </div>
       </section>
+     
     </>
   );
 };

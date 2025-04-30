@@ -88,55 +88,43 @@ const PublicNotesArea = () => {
                    
                 </div>
                     </div>
-                    <p className="text-[20px] font-semibold">Latest Notices</p>
+                    <p className="text-[20px] font-semibold mb-[30px]">Latest Notices</p>
                    
          
 
-                            <div className="event-list-items flex-col !items-start" style={{boxShadow:'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e'}}>
-                                {/* <div>
-                                <div className="flex items-center py-3">
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
-    </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
-    </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
-    </div>
-  </div>
-                                </div> */}
-                            <div className="event-content !w-full !basis-full">
-                                <div className="content w-full">
-                                    {/* <div className="date !px-[6px]">
-                                        <h2>{event.dateDay}</h2>
-                                        <span>{event.dateMonthYear}</span>
-                                    </div> */}
-                                    <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">Notice for Commencement  of Registration Process at Indian Institute of Creative Skills, Delhi</Link></h4>
-                                        <div className="flex  gap-[20px] mt-[10px] w-full">
-                                        <div className="p-[30px] border rounded-[20px]" style={{
-  boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                          
-                                            <p><span className="font-semibold">Date: </span> 11.04.2025</p>
-                                            
-                                            <p><span className="font-semibold">Download/View </span><a target="blank" href="/IICS PDF/IICS_Public_Notice.pdf">Download Here</a></p>
-                                           
-                                        </div>
-                                        {/* <div className="p-[30px] border rounded-[20px]" style={{
- boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                            <p className="font-semibold text-[18px] text-black">Career Outcomes (Entrepreneurship)</p>
-                                            <p>{career.entrepreneurship}</p>
-                                        </div> */}
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div className="overflow-x-auto">
+  <table className="min-w-full table-auto border-collapse rounded-xl overflow-hidden shadow-[inset_5px_5px_10px_#a9a9aa77,inset_-5px_-5px_10px_#ffffff7e]">
+    <thead className="bg-[#005BFF] text-left text-sm font-semibold text-white">
+      <tr>
+        <th className="px-4 py-3 w-[58rem]">Title</th>
+        <th className="px-4 py-3">Date</th>
+        <th className="px-4 py-3">Download/View</th>
+      </tr>
+    </thead>
+    <tbody className="text-gray-800">
+      <tr className="border-t ">
+        <td className="px-4 py-4 max-w-[300px]">
+          <Link to="#" className="text-[18px] font-medium text-blue-600 ">
+            Notice for Commencement of Registration Process at Indian Institute of Creative Skills, Delhi
+          </Link>
+        </td>
+        <td className="px-4 py-4">
+          11.04.2025
+        </td>
+        <td className="px-4 py-4">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/IICS PDF/IICS_Public_Notice.pdf"
+            className="text-blue-500 hover:underline"
+          >
+            Download Here
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
                  
                
                    

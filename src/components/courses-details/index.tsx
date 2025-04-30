@@ -9,7 +9,7 @@ import CoursesDetailsArea from "./CoursesDetailsArea";
 
 import { useEffect, useState } from "react";
 import menu_data from "../../data/menu_data";
-import ImageGallery from "./ImageGallery";
+// import ImageGallery from "./ImageGallery";
 
  
 
@@ -48,18 +48,18 @@ const CoursesDetails = () => {
     );
   }
 
-  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo, imagesArr} = courseData 
-  console.log(courseVideo)
+  const {title  , mentorName , duration , courseType , fees , courseInfo , studentsSeat , enrollmentDeadLine , courseStartDate , industryMentors , mentorIcon , courseCurricullam , mentorInfo , careerJob , careerEntrepreneurship , eligibilityCriteria  ,courseImg , courseVideo , registrationStart , registrationEnd , onlineEntranceExam , batchLaunchDate ,mentorAbout , courseOverview} = courseData 
+
 
   return (
     <>
     
     <HeaderOne />
     <BreadcrumbCoursesDetails titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} mentorIcon={mentorIcon}/>
-  <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria} courseImg={courseImg} courseVideo={courseVideo} />
+  <CoursesDetailsArea fees={fees} courseInfo = {courseInfo} titleCourse={title} mentor={mentorName} duration={duration} courseType={courseType} studentsSeat={studentsSeat} enrollmentDeadLine = {enrollmentDeadLine} courseStartDate={courseStartDate} industryMentors = {industryMentors} courseCurricullam = {courseCurricullam} mentorInfo={mentorInfo} careerEntrepreneurship ={careerEntrepreneurship} careerJob={careerJob} mentorIcon={mentorIcon} eligibilityCriteria={eligibilityCriteria} courseImg={courseImg} courseVideo={courseVideo} registrationStart={registrationStart} registrationEnd={registrationEnd} onlineEntranceExam={onlineEntranceExam} batchLaunchDate={batchLaunchDate} mentorAbout={mentorAbout} courseOverview={courseOverview}/>
     {/* <RelatedCourses /> */}
     {/* <MarqueeOne style_2={true} /> */}
-    <ImageGallery imagesArr={imagesArr}/>
+    {/* <ImageGallery imagesArr={imagesArr}/> */}
     <FooterOne /> 
     <ScrollTop />     
     </>

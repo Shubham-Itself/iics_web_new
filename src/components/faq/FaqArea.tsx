@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const FaqArea = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -389,7 +390,7 @@ const FaqArea = () => {
                             : "max-h-0 opacity-0"
                         } text-gray-700`}
                       >
-                     A. Course fees vary based on the program and campus. Please visit our Fees & Support page for details or speak to our admission counselors.
+                     A. Course fees vary based on the program and campus. Please visit our <Link to ="/fees&studentSupport" className="text-[#005BFF]">Fees & Support page</Link>  for details or speak to our admission counselors.
                       </div>
                     </div>
                   </div>
@@ -458,7 +459,7 @@ const FaqArea = () => {
                             : "max-h-0 opacity-0"
                         } text-gray-700`}
                       >
-                       A. Head to our Download Prospectus page and click the link to get your copy in PDF format.
+                       A. Head to our <Link to='/prospectus' className="text-[#005BFF]" >Download Prospectus</Link>  page and click the link to get your copy in PDF format.
                       </div>
                     </div>
                   </div>

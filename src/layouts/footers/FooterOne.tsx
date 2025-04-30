@@ -6,7 +6,7 @@ const FooterOne = ({ style_2 }: any) => {
       <div className="container">
         <div className={`footer-widget-wrapper py-5 ${style_2 ? "style-4" : ""} text-white`}>
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="single-footer-widget">
                 <div className="widget-head mb-4">
                   <Link to="/">
@@ -31,10 +31,10 @@ const FooterOne = ({ style_2 }: any) => {
               </div>
             </div>
 
-            <div className="col-xl-8 col-lg-8 col-md-6">
+            <div className="col-xl-7 col-lg-8 col-md-6">
               <div className="single-footer-widget">
                 <div className="widget-head mb-4">
-                  <h3 className="text-lg font-semibold">Address</h3>
+                  <h3 className="text-lg font-semibold">Campuses</h3>
                 </div>
                 <ul className="contact-info grid grid-cols-2 gap-4 text-sm">
                   {[
@@ -69,21 +69,22 @@ const FooterOne = ({ style_2 }: any) => {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className="flex flex-wrap justify-between items-start mt-8 text-sm">
-            <div className="single-footer-widget mb-4">
+            <div className="single-footer-widget mb-4 col-xl-2 col-lg-4 col-md-6">
               <div className="widget-head mb-2">
                 <h3 className="text-lg font-semibold">Quick Links</h3>
               </div>
-              <ul className="flex flex-wrap gap-3">
-                <li><Link to="/courses" className="text-white">Enquire Now</Link></li>
-                <li><Link to="/courses" className="text-white">Schools</Link></li>
-                <li><Link to="/courses" className="text-white">Life at IICS</Link></li>
-                <li><Link to="/courses" className="text-white">Creative Incubator</Link></li>
-                <li><Link to="/courses" className="text-white">Admission</Link></li>
+              <ul>
+                <li><Link to="/courses" className="text-white text-sm">Enquire Now</Link></li>
+                <li><Link to="/courses" className="text-white text-sm">Schools</Link></li>
+                <li><Link to="/courses" className="text-white text-sm">Life at IICS</Link></li>
+                <li><Link to="/courses" className="text-white text-sm">Creative Incubator</Link></li>
+                <li><Link to="/courses" className="text-white text-sm">Admission</Link></li>
               </ul>
             </div>
+          </div>
+
+          {/* <div className="flex flex-wrap justify-between items-start mt-8 text-sm">
+            
 
             <div className="single-footer-widget mb-4">
               <div className="widget-head mb-2">
@@ -94,7 +95,7 @@ const FooterOne = ({ style_2 }: any) => {
                 <li><a href="mailto:info@iicsindia.org" className="text-white">info@iicsindia.org</a></li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <div className={`footer-bottom mt-5 text-center text-xs ${style_2 ? "style-4" : ""}`}>
             <p>© {new Date().getFullYear()} <Link to="/" className="underline text-white">Indian Institute of Creative Skills</Link>, all rights reserved.</p>

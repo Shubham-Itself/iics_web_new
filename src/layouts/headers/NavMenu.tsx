@@ -48,17 +48,17 @@ const NavMenu = () => {
                         <React.Fragment key={sub_index}>
                           {sub_item?.link && !sub_item.inner_menu && (
                             <li >
-                              <Link to={sub_item.link} className="!text-[14px]">{sub_item.title}</Link>
+                              <Link to={sub_item.link} className="!text-[14px] !font-[400]">{sub_item.title}</Link>
                             </li>
                           )}
 
                           {sub_item?.inner_menu && sub_item?.inner_menus && (
                             <li className="has-dropdown">
-                              <Link to={sub_item.link || '#'} className="!text-[14px]">
+                              <Link to={sub_item.link || '#'} className="!text-[14px] !font-[400]">
                                 {sub_item.title }
                                 <i className="fas fa-angle-right"></i>
                               </Link>
-                              <ul className="submenu" style={{insetInlineStart : '111%' , 'minWidth':'400px'}}>
+                              <ul className="submenu" style={{insetInlineStart : '111%' ,  'minWidth': sub_item.title === 'About' ? '650px' : ''}}>
                                 {sub_item.inner_menus.map(
                                   (innerMenu, index) => (
                                     <li key={index} >
@@ -70,7 +70,7 @@ const NavMenu = () => {
     ].includes(innerMenu.title ?? '')
       ? `/details/${encodeURIComponent(innerMenu.title ?? '')}?from=message`
       : innerMenu.link || "#"
-  } className="!text-[14px] leading-[22px]">
+  } className="!text-[14px] leading-[22px] !font-[400]">
    {[
   "Shri Jayant Chaudhary",
   "Shri Atul Kumar Tiwari",
@@ -94,7 +94,9 @@ const NavMenu = () => {
               </ul>
             )}
             {item.has_dropdown && (
-              <ul className="submenu border border-white/30 rounded-br-[10px] rounded-bl-[10px] capitalize !p-[20px]">
+            
+              <ul className={`submenu border border-white/30 rounded-br-[10px] rounded-bl-[10px] capitalize !p-[20px] ${item.title === 'PROGRAMS'? '!w-[550px]':''} `}>
+               
                 {item.sub_menus?.map((sub_item, sub_index) => (
                   <React.Fragment key={sub_index}>
                     {sub_item?.link && !sub_item.inner_menu && (
@@ -112,13 +114,13 @@ const NavMenu = () => {
     ].includes(sub_item.title || '')
       ? `/courses-details/${encodeURIComponent(sub_item.title?.toString() || '')}`
       : sub_item.link
-  } className="!text-[14px] leading-[22px]">{sub_item.title}</Link>
+  } className="!text-[14px] leading-[22px] !font-[400]">{sub_item.title }</Link>
                       </li>
                     )}
 
                     {sub_item?.inner_menu && sub_item?.inner_menus && (
-                      <li className="has-dropdown">
-                        <Link to={sub_item.link || ''} className="!text-[14px]">
+                      <li className="has-dropdown !font-[400]">
+                        <Link to={sub_item.link || ''} className="!text-[14px] !font-[400]">
                           {sub_item.title}
                           <i className="fas fa-angle-right"></i>
                         </Link>
@@ -137,8 +139,8 @@ const NavMenu = () => {
                                 enrollmentDeadLine:innerMenu.enrollmentDeadLine,
                                 courseStartDate:innerMenu.courseStartDate,
                                 industryMentors: innerMenu.industryMentors
-                              }} className="!text-[14px]">
-                                {innerMenu.title  }
+                              }} className="!text-[14px] !font-[400]">
+                                {innerMenu.title }
                               </Link>
                             </li>
                           ))}

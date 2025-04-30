@@ -30,17 +30,17 @@ const ChooseHomeTwo = () => {
                             <div className="choose-us-counter-items !p-[15px]">
                                 <div className="row g-4">
                                     <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div className="choose-us-counter-box">
+                                        <div className="choose-us-counter-box w-[250px]">
                                             <div className="icon">
                                                 <i className="flaticon-success"></i>
                                             </div>
                                             <div className="content">
                                                 <h2 className="!text-[20px]">5th June 2025</h2>
-                                                <p>Entrance Exam</p>
+                                                <p>Last Registration Date</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    {/* <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                         <div className="choose-us-counter-box style-2">
                                             <div className="icon">
                                                 <i className="flaticon-instructor"></i>
@@ -50,7 +50,7 @@ const ChooseHomeTwo = () => {
                                                 <p>Start Date</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

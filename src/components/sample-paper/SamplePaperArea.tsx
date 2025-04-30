@@ -167,7 +167,7 @@ const SamplePaperArea = () => {
                 </div>
 
                 <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]"><span className="text-[#de4141] fa fa-phone" aria-hidden="true"></span>Need Guidance?</p>
+                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]"><span className="text-[#de4141] fa fa-phone rotate-[90deg]" aria-hidden="true"></span>Need Guidance?</p>
                  
                         <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
                         If you need help selecting the right course or understanding the entrance process, our admissions counselors are here for you.
@@ -179,10 +179,17 @@ const SamplePaperArea = () => {
 
 
                     </ul>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-semibold">
-                        Or <br />
-                        Book Counselling Session
-                            </span></p>
+                    <p className="font-bold text-[18px] text-black mb-[5px]">
+              <span className="font-semibold flex flex-col gap-[10px] justify-start items-start">
+                Or <br />
+                <a
+                  href="tel:9594949959"
+                  className="theme-btn yellow-btn !px-[16px] !py-[12px]"
+                >
+                  Book Counselling Session
+                </a>
+              </span>
+            </p>
                     
                 </div>
                

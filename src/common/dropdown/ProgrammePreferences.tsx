@@ -2,7 +2,7 @@ import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from "@headless
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const options = ["Ahmedabad" , "Mumbai" , "Online" ];
+const options = ["Delhi",  "Ahmedabad" , "Mumbai" , "Bhopal" ];
 
 const ProgrammePreferences = () => {
     const [selected, setSelected] = useState("");

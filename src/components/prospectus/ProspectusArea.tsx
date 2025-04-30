@@ -56,9 +56,18 @@ const ProspectusArea = () => {
                 </div>
                     <div className=" !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Explore everything you need to know about IICS — from our cutting-edge courses and world-class mentors to our campus locations and career-focused training approach. The IICS Prospectus is your complete guide to joining one of India’s most forward-thinking institutes in the Media & Entertainment industry.</h6>
-                    <p className="text-[18px] font-bold mt-[10px]">Download Now</p>
-                    <p className="text-[16px] mb-[10px]">Click the button below to download the IICS Prospectus (PDF).</p>
-                    <div className="flex gap-[10px] items-center">Delhi Campus: <div className="header-button min-l:!hidden">
+                    {/* <p className="text-[18px] font-bold mt-[10px]">Download Now</p>
+                    <p className="text-[16px] mb-[10px]">Click the button below to download the IICS Prospectus (PDF).</p> */}
+                    <div className="flex gap-[10px] items-center mt-[30px]">Delhi Campus: <div className="header-button min-l:!hidden">
+                    <a
+                      href="/IICS PDF/IICS_FINAL_PROSPECTUS_21 APRIL.pdf"
+                      target="blank"
+                      className="theme-btn yellow-btn !px-[16px] !py-[12px] "
+                    >
+                      Download Prospectus
+                    </a>
+                  </div></div>
+                  <div className="flex gap-[10px] items-center mt-[30px]">Ahemdabad Campus: <div className="header-button min-l:!hidden">
                     <a
                       href="/IICS PDF/IICS_FINAL_PROSPECTUS_21 APRIL.pdf"
                       target="blank"
@@ -205,7 +214,7 @@ const ProspectusArea = () => {
                   
                 </div> */}
                 <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]"><span className="text-[#de4141] fa fa-phone" aria-hidden="true"></span>Still have questions?</p>
+                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]"><span className="text-[#de4141] fa fa-phone rotate-[90deg]" aria-hidden="true"></span>Still have questions?</p>
                  
                         <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
                         Have questions? Our admissions counselors are here to guide you.
@@ -217,10 +226,17 @@ const ProspectusArea = () => {
 
 
                     </ul>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-semibold">
-                        Or <br />
-                        Book Counselling Session
-                            </span></p>
+                    <p className="font-bold text-[18px] text-black mb-[5px]">
+              <span className="font-semibold flex flex-col gap-[10px] justify-start items-start">
+                Or <br />
+                <a
+                  href="tel:9594949959"
+                  className="theme-btn yellow-btn !px-[16px] !py-[12px]"
+                >
+                  Book Counselling Session
+                </a>
+              </span>
+            </p>
                     
                 </div>
             </div>

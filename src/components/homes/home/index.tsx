@@ -1,5 +1,6 @@
 // import MarqueeOne from "../../../common/MarqueeOne";
 // import Preloader from "../../../common/Preloader";
+import { useRef } from "react";
 import ScrollTop from "../../../common/ScrollTop";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import HeaderOne from "../../../layouts/headers/HeaderOne";
@@ -23,19 +24,29 @@ import PopularCoursesHomeOne from "./PopularCoursesHomeOne";
 
 
 const HomeOne = () => {
-	
+	const coursesRef = useRef<HTMLDivElement | null>(null);
+
+	// Scroll to CoursesHomeTwo when the button is clicked
+	const handleScrollToCourses = () => {
+	  if (coursesRef.current) {
+		coursesRef.current.scrollIntoView({ behavior: 'smooth' });
+	  }
+	};
 
 	return (
 		<> 
 		{/* <Preloader /> */}
 			<HeaderOne />
-      <HeroHomeOne />
+      <HeroHomeOne  onSchoolButtonClick={handleScrollToCourses}/>
       {/* <FeatureHomeOne /> */}
       {/* <TopCategoryHomeOne /> */}
       {/* <AboutHomeOne /> */}
 	  <HeroHomeTwo/>
 	  <TopCategoryHomeTwo/>
-			<PopularCoursesHomeOne />
+	  <div ref={coursesRef}>
+	  <PopularCoursesHomeOne />
+	  </div>
+			
 			{/* <MarqueeOne /> */}
 			<ChooseHomeOne />
 			<InstagramHomeThree/>
@@ -44,6 +55,7 @@ const HomeOne = () => {
 			{/* <NewsletterHomeOne /> */}
 			{/* <TestimonialHomeOne /> */}
 			<CoursesHomeTwo/>
+		
 			<BrandsHomeOne />
 			<BlogHomeOne />
 			{/* <MarqueeOne />  */}

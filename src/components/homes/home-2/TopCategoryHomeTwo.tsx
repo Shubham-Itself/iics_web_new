@@ -14,9 +14,7 @@ const TopCategoryHomeTwo = () => {
                     <h6 className="text-white wow fadeInUp mobile:!text-[15px]">
                     How to Join
                     </h6>
-                    <h2 className="text-white wow fadeInUp mobile:!text-[25px] !text-[35px] " data-wow-delay=".3s">
-                    The Most Innovative Program in Media <span className="text-[#de4141]">&</span> Entertainment
-                    </h2>
+                   
                 </div>
                 <div className="top-category-wrapper-2 mt-4 mt-md-0">
                     <div className="row">
@@ -88,8 +86,12 @@ const TopCategoryHomeTwo = () => {
                             </div>
                         </div>
                         <div className="col-xl-4 col-lg-6">
+                        <h2 className=" wow fadeInUp mobile:!text-[12px] !text-[25px] mt-[30px] text-center" data-wow-delay=".3s">
+                    The Most Innovative Program in Media <span className="text-[#de4141]">&</span> Entertainment
+                    </h2>
                             <div className="courses-image mb-5 mb-lg-0">
-                                <img src="/assets/iics_image/how_to_join_center.webp" alt="img" className="wow img-custom-anim-left w-[350px] h-[400px] object-cover rounded-t-[60px]" />
+                                
+                                <img src="/assets/iics_image/how_to_join_center.webp" alt="img" className="wow img-custom-anim-left w-[350px] h-[500px] object-cover rounded-t-[60px]" />
                                 <div className="bg-shape">
                                     <img src="assets/img/boy-bg-shape.png" alt="img" />
                                 </div>

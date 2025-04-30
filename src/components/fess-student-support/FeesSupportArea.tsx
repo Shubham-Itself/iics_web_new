@@ -8,69 +8,61 @@ const FeesSupportArea = () => {
   const careers = [
     {
        
-        name:'1. Performing Arts & Media Management',
+        name:'Performing Arts And Media Management',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+      
+        fees:'INR 6,00,000'
        
 
     },
     {
-       name:'2. Hair, Makeup & Prosthetics',
+       name:'Hair, Makeup & Prosthetics',
         courseDuration:'1 Year (6 Months Learning + 3 Months Industry Experience + 3 Months Paid Internship)',
-        numberofSeat:'15',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+      
+        fees:'INR 6,00,000'
      
         
     },
     {
-        name:'3. Sound Recording & Sound Design',
+        name:'Sound Recording And Sound Design',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+     
+        fees:'INR 6,00,000'
         
     },
     {
-        name:'4. 3D Game Art',
+        name:'3D Game Art',
         courseDuration:'2 Years (12 months Game Art Foundation + 6 months Game Art Specialization + 6 months Paid Internship)',
-        numberofSeat:'25',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+     
+        fees:'INR 6,00,000'
         
     },
     {
-        name:'5. Advanced Gaming & XR Innovations',
+        name:'Advance Gaming and Extended Reality (XR) Innovations',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'25',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+       
+        fees:'INR 6,00,000'
         
     },
     {
-        name:'6. Journalism, PR, Image Strategization & Branding',
+        name:'Journalism, PR, Image Strategization & Brand Custodianship Program',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+     
+        fees:'INR 6,00,000'
         
     },
     {
-        name:'7. Events & Experiential Management',
+        name:'Events And Experiential Media',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'30',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+       
+        fees:'INR 6,00,000'
         
     },
     {
-        name:'8. Digital Management & Content Creation',
+        name:'Digital Content Creation',
         courseDuration:'2 Years (12 Months Learning + 6 Months Industry Experience + 6 Months Paid Internship)',
-        numberofSeat:'20',
-        courseLocation:'Lajpat Nagar, New Delhi',
-        fees:'6,00,000 Rs'
+
+        fees:'INR 6,00,000'
         
     },
   ]
@@ -89,62 +81,70 @@ const FeesSupportArea = () => {
                 </div> */}
                     </div>
                    
-                    {
-                        careers.map((career)=>(
+                    <div className="overflow-x-auto md:border md:border-gray-300 md:rounded-[20px]">
+                    <table className="min-w-full table-auto  md:shadow-md hidden md:table">
+  <thead className="bg-[#005BFF] ">
+    <tr>
+      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Name</th>
+      <th className="px-4 py-4 text-left text-sm font-semibold text-white w-[700px]">Course Duration</th>
+      <th className="px-4 py-4 text-left text-sm font-semibold text-white whitespace-nowrap w-[150px]">Annual Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    {careers.map((career, idx) => (
+      <tr
+        key={idx}
+        className="even:bg-gray-50 hover:bg-gray-100 transition"
+        style={{
+          boxShadow: 'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e',
+        }}
+      >
+        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+  <Link
+    to={`/courses-details/${encodeURIComponent(career.name?.toString() || '')}`}
+    className="text-blue-600 hover:underline"
+  >
+    {career.name}
+  </Link>
+</td>
+        <td className="px-4 py-4 text-sm text-gray-900 whitespace-normal">{career.courseDuration}</td>
+        <td className="px-4 py-4 text-sm text-gray-900 whitespace-nowrap">{career.fees}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
-                            <div className="event-list-items flex-col !items-start" style={{boxShadow:'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e'}}>
-                                {/* <div>
-                                <div className="flex items-center py-3">
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
-    </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
-    </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
-    </div>
+  {/* Mobile View (Cards) */}
+  <div className="space-y-4 md:hidden">
+    {careers.map((career, idx) => (
+      <div
+        key={idx}
+        className="border rounded-[20px] p-4 md:shadow"
+        style={{
+          boxShadow: 'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e',
+        }}
+      >
+        <p className="text-base font-semibold text-gray-800">
+          <Link to="/event-details" className="text-blue-600 hover:underline">
+            {career.name}
+          </Link>
+        </p>
+        <p className="text-sm mt-2">
+          <span className="font-medium">Course Duration:</span> {career.courseDuration} months
+        </p>
+        <p className="text-sm">
+          <span className="font-medium">Annual Fee:</span> {career.fees}
+        </p>
+      </div>
+    ))}
   </div>
-                                </div> */}
-                            <div className="event-content !w-full !basis-full">
-                                <div className="content w-full">
-                                    {/* <div className="date !px-[6px]">
-                                        <h2>{event.dateDay}</h2>
-                                        <span>{event.dateMonthYear}</span>
-                                    </div> */}
-                                    <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">{career.name}</Link></h4>
-                                        <div className="flex  gap-[20px] mt-[10px] w-full">
-                                        <div className="p-[30px] border rounded-[20px]" style={{
-  boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                            <p className="font-semibold text-[18px] text-black">Course Structure</p>
-                                            <p><span className="font-semibold">Course Duration (In Months): </span> {career.courseDuration}</p>
-                                            
-                                            <p><span className="font-semibold">Total Number of Seats: </span> {career.numberofSeat}</p>
-                                            <p><span className="font-semibold">Course Location: </span> {career.courseLocation}</p>
-                                            <p><span className="font-semibold">Annual Fee: </span> {career.fees}</p>
-                                        </div>
-                                        {/* <div className="p-[30px] border rounded-[20px]" style={{
- boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                            <p className="font-semibold text-[18px] text-black">Career Outcomes (Entrepreneurship)</p>
-                                            <p>{career.entrepreneurship}</p>
-                                        </div> */}
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        ))
-                    }
+</div>
                    
                    
                  
                 </div>
-                <div>
+               <div className="flex justify-between">
+               <div>
                     <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[30px] ">What’s Included in the Fees?</p>
                     <ul className="list-disc pl-[40px]">
                         <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">12-24 months of on-campus learning </span></li>
@@ -158,23 +158,23 @@ const FeesSupportArea = () => {
                 </div>
                
 
-                <div>
+                {/* <div>
                     <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[10px]">Payment Options</p>
-                    {/* <p className="text-[16px] text-black mb-[30px]">Our dedicated placement cell actively connects students with opportunities across:</p> */}
+                    <p className="text-[16px] text-black mb-[30px]">Our dedicated placement cell actively connects students with opportunities across:</p>
                     <ul className="list-disc pl-[40px]">
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Full Payment (5% discount applicable) </span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">Semester-Wise Installments</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Monthly EMI Plans (through partner NBFCs)</span></li>
-                        {/* <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Media Agencies</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Media Agencies</span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Event Firms</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Digital Brands</span></li> */}
+                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Digital Brands</span></li>
 
 
                     </ul>
 
                     <p className="text-[16px] text-black mt-[30px]">
                    EMI starting as low as ₹4,999/month*</p>
-                </div>
+                </div> */}
 
                 <div>
                     <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[5px] ">Student Support Services
@@ -190,6 +190,7 @@ const FeesSupportArea = () => {
 
                     </ul>
                 </div>
+               </div>
             </div>
         </section>
     </>

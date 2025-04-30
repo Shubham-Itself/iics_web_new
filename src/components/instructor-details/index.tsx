@@ -12,6 +12,7 @@ import { leadersDetails } from "../instructor/InstructorArea";
 import { leadersDetails as chiefMentors } from "../chief-mentor/ChiefMentorsArea";
 import { leadersDetails as industryMentors } from "../industry-mentor/IndustryMentorsArea";
 import { leadersDetails as internationalMentors } from "../international-mentor/InternationMentorsArea";
+import ImageGallery from "../courses-details/ImageGallery";
 
  
 const InstructorDetails = () => {
@@ -52,14 +53,18 @@ const InstructorDetails = () => {
   }
 
     
-  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorMessage , description} = leaderData;
+  const {leaderName , leaderDesignation , instagramLink , linkedIn , facebookLink , image , mentorMessage , description , imagesArr} = leaderData;
  console.log(leaderData)
   return (
     <>
     {/* <Preloader /> */}
       <HeaderOne />
 			{/* <BreadcrumbInstructor  breadCrumbName={mentorType} pathLink = {pathLink}/> */}
-      <InstructorDetailsArea  leaderName={leaderName} leaderDesignation={leaderDesignation} instagramLink={instagramLink} linkedIn={linkedIn} facebookLink={facebookLink} image={image} mentorMessage={mentorMessage} mentorBio={description}/>       
+      <InstructorDetailsArea  leaderName={leaderName} leaderDesignation={leaderDesignation} instagramLink={instagramLink} linkedIn={linkedIn} facebookLink={facebookLink} image={image} mentorMessage={mentorMessage} mentorBio={description}/> 
+    {
+      imagesArr && <ImageGallery imagesArr={imagesArr}/>
+    }
+
       {/* <CoursesDetailsArea />        */}
 			{/* <MarqueeOne style_2={true} /> */}
 			<FooterOne />

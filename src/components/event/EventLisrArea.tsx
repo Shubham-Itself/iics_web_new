@@ -84,7 +84,7 @@ const EventLisrArea = () => {
                     <div className="my-[60px]">
                     <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Indian Institute of Creative Skills</p>
                     <div className="section-title !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Upcoming Events</h6>
+                    <h6 className="wow fadeInUp !mb-0">Upcoming Events & Workshop</h6>
                    
                 </div>
                     </div>
