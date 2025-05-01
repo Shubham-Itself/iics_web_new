@@ -32,7 +32,7 @@ const FixedItemOnWeb = () => {
           <img
             src="/assets/iics_image/chatbot/robot-assistant.webp"
             alt="chatbot"
-            className="w-[40px] h-[40px]"
+            className="w-[40px] h-[40px] mobile:w-[30px] mobile:h-[30px]"
             onClick={() => setOpenChatBot(!openChatBot)}
           />
           <div className="absolute z-[10000] -top-[442px] right-[67px]">
