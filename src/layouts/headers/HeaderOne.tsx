@@ -20,8 +20,8 @@ const HeaderOne = () => {
           id="header-stick"
           className={`header-1 ${
             sticky
-              ? "!top-[15px] fixed  !animate-none !transition-none"
-              : "absolute !top-[85px] !animate-none"
+              ? "!top-[15px] fixed  !animate-none !transition-none mobile:!top-[8px] mobile:mt-[5px]"
+              : "absolute !top-[85px] !animate-none mobile:!top-[40px]"
           } !left-1/2 -translate-x-1/2  z-[200] !w-[95%] rounded-full !bg-white/50 shadow-[0_4px_12px_-1px_rgba(0,0,0,0.1)] backdrop-blur-[15px] border border-white/30 !animate-none`}
         
         >
@@ -32,7 +32,7 @@ const HeaderOne = () => {
                   <div className="logo">
                     <Link to="/" className="header-logo">
                       <img
-                        className="main-logo h-[60px]"
+                        className="main-logo h-[60px] mobile:h-[42px]"
                         src="/assets/iics_image/iics_logo_main.webp"
                         alt="logo-img"
                         height="60"
@@ -65,7 +65,7 @@ const HeaderOne = () => {
                   <div className="header__hamburger d-xl-none my-auto">
                     <div className="sidebar__toggle">
                       <div
-                        className="header-bar"
+                        className="header-bar mobile:h-[13px]"
                         onClick={() => setOpenCanvas(!openCanvas)}
                       >
                         <span></span>

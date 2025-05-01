@@ -56,91 +56,91 @@ const BrandsHomeOne = () => {
              className="swiper brand-slider mt-3 mt-md-0">
 							 
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/iwata.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/lakshay_one.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]" />
 										
 
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/schwarzkopf.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]" />
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										
 										<img src="assets/iics_image/partners/lakshay_two.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/makeup.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/moira.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/nilee_games.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/smoothOn.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]" />
 									</div>
 								</SwiperSlide>
             {/* swiper slider repite */}
 			<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/iwata.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/schwarzkopf.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide ">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/lakshay_one.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 										
 
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide ">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										
 										<img src="assets/iics_image/partners/lakshay_two.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/makeup.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/moira.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/nilee_games.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>
 								<SwiperSlide className="swiper-slide">
-									<div className="brand-img text-center">
+									<div className="brand-img text-center mobile:flex mobile:justify-center">
 										<img src="assets/iics_image/partners/smoothOn.webp" alt="img" className="h-[152.3px] object-fit rounded-[20px]"/>
 									</div>
 								</SwiperSlide>

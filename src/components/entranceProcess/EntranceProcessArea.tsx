@@ -33,7 +33,7 @@ const EntranceProcessArea = () => {
         <div className="container">
           <div className="event-list-wrapper">
             <div className="my-[60px]">
-              <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">
+              <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px] mobile:text-center">
                 Entrance Process
               </p>
               <div className="section-title !mb-[15px] ">
@@ -42,7 +42,7 @@ const EntranceProcessArea = () => {
                 </h6>
               </div>
               <div className=" !mb-0 ">
-                <h6 className="wow fadeInUp !mb-0">
+                <h6 className="wow fadeInUp !mb-0 mobile:text-[14px]">
                   Joining IICS means taking your first step toward a future in
                   the Media, Entertainment & Creative Industry. Our application
                   process is simple, transparent, and designed to help us
@@ -102,27 +102,27 @@ const EntranceProcessArea = () => {
                     } */}
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md ">
-            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[20px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[20px] mobile:text-[20px]">
               Online Entrance Exam
             </p>
 
-            <p className="font-bold text-[18px] text-black mb-[5px]">
+            <p className="font-bold text-[18px] mobile:text-[14px] text-black mb-[5px]">
               <span className="font-normal">
                 Once your application is submitted, eligible candidates will
                 receive login credentials to take the IICS Online Entrance Test.
               </span>
             </p>
             <ul className="list-disc pl-[40px]">
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 <span className="font-normal">Tailored to your program</span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 <span className="font-normal">
                   Tests creativity, aptitude, general awareness & industry
                   interest
                 </span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 <span className="font-normal">
                   Conducted remotely and monitored
                 </span>
@@ -130,25 +130,25 @@ const EntranceProcessArea = () => {
             </ul>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]"> 
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px] mobile:text-[20px]">
               Portfolio Review / Audition
             </p>
-            <p className="font-bold text-[18px] text-black mb-[5px]">
+            <p className="font-bold text-[18px] mobile:text-[14px] text-black mb-[5px]">
               <span className="font-normal">
                 Depending on your selected course:
               </span>
             </p>
 
             <ul className="list-disc pl-[40px]">
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 Creative Programs:{" "}
                 <span className="font-normal">
                   Your portfolio shall be reviewed to assess your artistic
                   vision, originality, and skill.
                 </span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 Performance Programs:
                 <span className="font-normal">
                   You’ll be invited to submit or perform an audition task to
@@ -158,10 +158,10 @@ const EntranceProcessArea = () => {
             </ul>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px] mobile:text-[20px]">
               Personal Interview
             </p>
-            <p className="font-bold text-[18px] text-black mb-[5px]">
+            <p className="font-bold text-[18px] mobile:text-[14px] text-black mb-[5px]">
               <span className="font-normal">
                 Shortlisted applicants will go through a one-on-one interview
                 round (online or in-person), where our mentors will explore:
@@ -169,12 +169,12 @@ const EntranceProcessArea = () => {
             </p>
 
             <ul className="list-disc pl-[40px]">
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 <span className="font-normal">
                   Your motivation, career goals, and creative background
                 </span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 <span className="font-normal">
                   Alignment with the course and industry expectations
                 </span>
@@ -182,10 +182,10 @@ const EntranceProcessArea = () => {
             </ul>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px] mobile:text-[20px]">
               Final Evaluation & Selection
             </p>
-            <p className="font-bold text-[18px] text-black mb-[5px]">
+            <p className="font-bold text-[18px] mobile:text-[14px] text-black mb-[5px]">
               <span className="font-normal">
                 Your performance across all stages — entrance test,
                 portfolio/audition, and interview — is considered for final
@@ -204,7 +204,7 @@ const EntranceProcessArea = () => {
                     </ul> */}
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <p className="text-[25px] font-semibold text-[#005BFF] mb-[10px] flex  gap-[10px]">
+            <p className="text-[25px] font-semibold text-[#005BFF] mb-[10px] flex  gap-[10px] mobile:text-[20px]">
               <i
                 className="fa fa-calendar text-[#de4141]"
                 aria-hidden="true"
@@ -213,29 +213,29 @@ const EntranceProcessArea = () => {
             </p>
 
             <ul className="list-disc pl-[40px]">
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 Entrance Exam:{" "}
                 <span className="font-normal">April 25, 2025</span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 Personal Interviews:{" "}
                 <span className="font-normal">May 1, 2025</span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
+              <li className="font-semibold text-[18px] mobile:text-[14px] text-black mb-[5px]">
                 Course Launch: <span className="font-normal">May 20, 2025</span>
               </li>
             </ul>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <h3 className="text-[25px] font-semibold text-[#005BFF] flex items-center gap-2 mb-4">
+            <h3 className="text-[25px] font-semibold text-[#005BFF] flex items-center gap-2 mb-4 mobile:text-[20px]">
               <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
               Need Help?
             </h3>
-            <p className="text-[16px] text-black mb-4">
+            <p className="text-[16px] mobile:text-[14px] text-black mb-4">
               If you need help selecting the right course or understanding the
               entrance process, our admissions counselors are here for you.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+            <ul className="list-disc pl-6 space-y-2 text-[16px] mobile:text-[14px] text-black">
               <li>
                 <strong>Email:</strong>{" "}
                 <span className="font-normal">info@iicsindia.org</span>

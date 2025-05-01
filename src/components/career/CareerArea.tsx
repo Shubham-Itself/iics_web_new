@@ -98,18 +98,18 @@ const CareerArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details">{career.name}</Link></h4>
+                                        <h4><Link to="/event-details" className="mobile:!text-[20px]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[40px] w-full mobile:flex-col">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className="font-semibold text-[18px] text-black">Career Outcomes (Employment Opportunities)</p>
+                                            <p className="font-semibold text-[18px] text-black mobile:!text-[15px]">Career Outcomes (Employment Opportunities)</p>
                                             <p>{career.jobOpportunity}</p>
                                         </div>
                                         <div className="p-[30px] border rounded-[20px]" style={{
  boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className="font-semibold text-[18px] text-black">Career Outcomes (Entrepreneurship)</p>
+                                            <p className="font-semibold text-[18px] text-black mobile:!text-[15px]">Career Outcomes (Entrepreneurship)</p>
                                             <p>{career.entrepreneurship}</p>
                                         </div>
                                         </div>
@@ -126,28 +126,28 @@ const CareerArea = () => {
                  
                 </div>
                 <div>
-                    <p className="text-[35px] font-bold text-black mt-[60px] mb-[30px]">Why Careers at IICS Stand Out</p>
+                    <p className="text-[35px] font-bold text-black mt-[60px] mb-[30px] mobile:text-[25px] mobile:font-semibold">Why Careers at IICS Stand Out</p>
                     <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Learn from Industry Icons: <span className="font-normal">Celebrity mentors and global experts shape your journey. </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Work on Live Projects: <span className="font-normal">Gain hands-on experience from Day 1. </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Global Curriculum: <span className="font-normal">Be ready for both Indian and international career opportunities.</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Entrepreneurial Focus: <span className="font-normal">Launch your own ventures in media, entertainment, or digital business.</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Industry Placements: <span className="font-normal">Strong tie-ups with top companies, studios, and media houses.</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]">Learn from Industry Icons: <span className="font-normal">Celebrity mentors and global experts shape your journey. </span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]">Work on Live Projects: <span className="font-normal">Gain hands-on experience from Day 1. </span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]">Global Curriculum: <span className="font-normal">Be ready for both Indian and international career opportunities.</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]">Entrepreneurial Focus: <span className="font-normal">Launch your own ventures in media, entertainment, or digital business.</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]">Industry Placements: <span className="font-normal">Strong tie-ups with top companies, studios, and media houses.</span></li>
 
 
                     </ul>
                 </div>
 
                 <div>
-                    <p className="text-[35px] font-bold text-black mt-[60px] mb-[10px]">Placement Support & Opportunities</p>
-                    <p className="text-[16px] text-black mb-[30px]">Our dedicated placement cell actively connects students with opportunities across:</p>
+                    <p className="text-[35px] font-bold text-black mt-[60px] mb-[10px] mobile:text-[25px] mobile:font-semibold">Placement Support & Opportunities</p>
+                    <p className="text-[16px] text-black mb-[30px] mobile:text-[14px]">Our dedicated placement cell actively connects students with opportunities across:</p>
                     <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Film & TV Production Houses </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">OTT Platforms</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Gaming Studios</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Media Agencies</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Event Firms</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Digital Brands</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"><span className="font-normal">Film & TV Production Houses </span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"> <span className="font-normal">OTT Platforms</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"><span className="font-normal">Gaming Studios</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"><span className="font-normal">Media Agencies</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"><span className="font-normal">Event Firms</span></li>
+                        <li className="font-bold text-[18px] text-black mb-[5px] mobile:text-[16px]"><span className="font-normal">Digital Brands</span></li>
 
 
                     </ul>

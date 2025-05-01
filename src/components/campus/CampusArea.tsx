@@ -56,7 +56,7 @@ const CampusArea = () => {
             <div className="container">
                 <div className="section-title text-center">
                     <h6 className="wow fadeInUp">Our Campuses</h6>
-                    <h2 className="wow fadeInUp !text-[18px] !font-normal " data-wow-delay=".3s">
+                    <h2 className="wow fadeInUp !text-[18px] !font-normal mobile:!text-[14px] " data-wow-delay=".3s">
                     At IICS, we believe that creativity has no boundaries — and neither should training. Our campuses are strategically located in India’s emerging creative hubs, equipped with world-class infrastructure, studio-grade labs, and immersive learning environments.
                     </h2>
                 </div>

@@ -86,7 +86,7 @@ const TopCategoryHomeTwo = () => {
                             </div>
                         </div>
                         <div className="col-xl-4 col-lg-6">
-                        <h2 className=" wow fadeInUp mobile:!text-[12px] !text-[25px] mt-[30px] text-center" data-wow-delay=".3s">
+                        <h2 className=" wow fadeInUp mobile:!text-[12px] !text-[25px] mt-[30px] text-center mobile:!text-[18px] mobile:mb-[20px]" data-wow-delay=".3s">
                     The Most Innovative Program in Media <span className="text-[#de4141]">&</span> Entertainment
                     </h2>
                             <div className="courses-image mb-5 mb-lg-0">

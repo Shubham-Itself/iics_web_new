@@ -104,7 +104,7 @@ const ManagementArea = () => {
 
             </h6>
             <h2
-              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[12px] mobile:!leading-[15px]"
+              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[12px] mobile:!leading-[15px] mobile:mt-[30px]"
               data-wow-delay=".3s"
             >
               At the Indian Institute of Creative Skills, management is not just about running systems — it’s about empowering students, supporting mentors, and enabling industry integration. Our team is accessible, accountable, and agile, constantly evolving to meet the dynamic needs of the creative industries and the students we serve.

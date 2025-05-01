@@ -52,14 +52,14 @@ const HowtoapplyArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[25px]">Take the First Step Toward a Career That Inspires
+                    <p className="text-[35px] font-semibold text-black mb-[30px] mobile:text-[20px]">Take the First Step Toward a Career That Inspires
                     </p>
                     <div className=" !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Joining the Indian Institute of Creative Skills means taking your first step toward a future in the media, entertainment & creative industry. Our application process is simple, transparent, and designed to help us discover passionate, driven individuals ready to make their mark.</h6>
+                    <h6 className="wow fadeInUp !mb-0 font-normal mobile:leading-[25px]">Joining the Indian Institute of Creative Skills means taking your first step toward a future in the media, entertainment & creative industry. Our application process is simple, transparent, and designed to help us discover passionate, driven individuals ready to make their mark.</h6>
                    
                 </div>
                     </div>
-                    <p className="text-[25px] text-black flex  gap-[10px] mobile:text-[20px]">
+                    <p className="text-[25px] text-black flex  gap-[10px] mobile:text-[16px] items-center">
                     <span className="fa fa-step-forward text-[#de4141]" aria-hidden="true"></span>
                         Step-by-Step Application Process</p>
                    
@@ -87,11 +87,11 @@ const HowtoapplyArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4 className="text-[#005BFF]">{career.step}</h4>
+                                        <h4 className="text-[#005BFF] mobile:!text-[18px]">{career.step}</h4>
                                         <div className="flex flex-col  gap-[10px] mt-[20px] w-full">
-                                        <p className="text-[18px]">{career.information}</p>
+                                        <p className="text-[18px] mobile:text-[16px]">{career.information}</p>
                                         {
-                                            career.documentOne && <ul className="pl-[30px]">
+                                            career.documentOne && <ul className="pl-[30px] mobile:text-[16px]">
                                                 <li className="list-disc">{career.documentOne}</li>
                                                 <li className="list-disc">{career.documentTwo}</li>
                                                 <li className="list-disc">{career.documentThree}</li>
@@ -113,15 +113,15 @@ const HowtoapplyArea = () => {
                  
                 </div>
                 <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
+            <h3 className="text-[25px] mobile:text-[20px] font-bold text-black flex items-center gap-2 mb-4">
               {/* <span className="text-[#de4141] fa fa-phone rotate-[90deg]" /> */}
               Submit the Application Form
             </h3>
-            <p className="text-[16px] text-black mb-4">
+            <p className="text-[16px] text-black mb-4 mobile:text-[14px]">
             Once all required documents have been uploaded and details filled in, submit the form to complete your application.
             You will receive a confirmation email and further instructions for the entrance process.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black mobile:text-[14px]">
               <li>
                 <strong>Email:</strong>{" "}
                 <span className="font-normal">info@iicsindia.org</span>
@@ -143,11 +143,11 @@ const HowtoapplyArea = () => {
                
 
                 <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-                    <p className="text-[25px] font-bold text-black  mb-[10px] flex  gap-[10px] mobile:text-[20px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
+                    <p className="text-[25px] font-bold text-black  mb-[10px] flex  gap-[10px]  items-center mobile:text-[20px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
                    
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Registration Start Date: <span className="font-normal">April 01, 2025</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Registration End Date: <span className="font-normal">April 20, 2025</span></li>
+                    <ul className="list-disc pl-[40px] ">
+                        <li className="font-semibold text-[18px] mobile:text-[16px] text-black mb-[5px]">Registration Start Date: <span className="font-normal">April 01, 2025</span></li>
+                        <li className="font-semibold text-[18px] mobile:text-[16px] text-black mb-[5px]">Registration End Date: <span className="font-normal">April 20, 2025</span></li>
                        
 
 
@@ -156,8 +156,8 @@ const HowtoapplyArea = () => {
                   
                 </div>
                 <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
-              <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
+            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4 mobile:text-[20px]">
+              <span className="text-[#de4141] fa fa-phone rotate-[90deg] " />
               Need Guidance?
             </h3>
             <p className="text-[16px] text-black mb-4">

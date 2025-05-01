@@ -5,7 +5,7 @@ import Count from "../../../common/Count";
 const ChooseHomeOne = () => {
   return (
     <>
-      <section className="choose-us-section fix mobile:!pt-[100px]   section-padding ">
+      <section className="choose-us-section fix mobile:!pt-[100px]   section-padding mobile:!pb-0">
             <div className="container">
                 <div className="main-choose-us-wrapper">
                     <div className="line-shape">

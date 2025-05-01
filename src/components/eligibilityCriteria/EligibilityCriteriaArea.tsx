@@ -83,12 +83,12 @@ const EligibilityCriteriaArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px] ">Find the Right Course for Your Passion and Potential</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px] ">Find the Right Course for Your Passion and Potential</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
                    
                 </div> */}
-                <p className="text-[18px]  text-black mb-[10px]">At IICS, we offer a diverse range of programs designed to turn your creative interests into career opportunities. Whether you're into filmmaking, beauty and prosthetics, gaming, music, digital content, or media strategy — there's a path for you here.</p>
+                <p className="text-[18px] mobile:text-[16px]  text-black mb-[10px]">At IICS, we offer a diverse range of programs designed to turn your creative interests into career opportunities. Whether you're into filmmaking, beauty and prosthetics, gaming, music, digital content, or media strategy — there's a path for you here.</p>
                     </div>
                    
                     {
@@ -115,16 +115,16 @@ const EligibilityCriteriaArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="#" className="!text-[22px] text-[#005BFF]">{career.name}</Link></h4>
+                                        <h4><Link to="#" className="!text-[22px] mobile:!text-[18px] text-[#005BFF]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className="font-semibold text-[18px] text-black">Eligibility Criteria</p>
-                                            <p><span className="font-semibold text-black">Degree Program: </span> {career.degreeProgram}</p>
-                                           {career.preferred && <p><span className="font-semibold text-black">Preferred: </span> {career.preferred}</p>}
-                                            <p><span className="font-semibold text-black">Certificate Program: </span> {career.certificateProgram}</p>
-                                            <p><span className="font-semibold text-black">Course Outcome: </span> {career.outcome}</p>
+                                            <p className="font-semibold text-[18px] mobile:!text-[16px] text-black">Eligibility Criteria</p>
+                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black ">Degree Program: </span> {career.degreeProgram}</p>
+                                           {career.preferred && <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Preferred: </span> {career.preferred}</p>}
+                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Certificate Program: </span> {career.certificateProgram}</p>
+                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Course Outcome: </span> {career.outcome}</p>
                                             
                                         </div>
                                         {/* <div className="p-[30px] border rounded-[20px]" style={{

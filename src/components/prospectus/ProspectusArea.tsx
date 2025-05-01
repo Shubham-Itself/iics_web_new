@@ -55,7 +55,7 @@ const ProspectusArea = () => {
                    
                 </div>
                     <div className=" !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Explore everything you need to know about IICS — from our cutting-edge courses and world-class mentors to our campus locations and career-focused training approach. The IICS Prospectus is your complete guide to joining one of India’s most forward-thinking institutes in the Media & Entertainment industry.</h6>
+                    <h6 className="wow fadeInUp !mb-0 mobile:text-[14px] mobile:font-normal mobile:leading-[25px]">Explore everything you need to know about IICS — from our cutting-edge courses and world-class mentors to our campus locations and career-focused training approach. The IICS Prospectus is your complete guide to joining one of India’s most forward-thinking institutes in the Media & Entertainment industry.</h6>
                     {/* <p className="text-[18px] font-bold mt-[10px]">Download Now</p>
                     <p className="text-[16px] mb-[10px]">Click the button below to download the IICS Prospectus (PDF).</p> */}
                     <div className="flex gap-[10px] items-center mt-[30px]">Delhi Campus: <div className="header-button min-l:!hidden">
@@ -133,96 +133,17 @@ const ProspectusArea = () => {
                    
                  
                 </div>
-                {/* <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px]">Online Entrance Exam</p>
-                 
-                        <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                        Once your application is submitted, eligible candidates will receive login credentials to take the IICS Online Entrance Test.
-                            </span></p>
-                            <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Tailored to your program</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Tests creativity, aptitude, general awareness & industry interest</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Conducted remotely and monitored</span></li>
-
-                       
-
-
-                    </ul>
-                </div> */}
-
-                {/* <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">Portfolio Review / Audition</p>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                    Depending on your selected course:
-                            </span></p>
-                   
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Creative Programs: <span className="font-normal">Your portfolio shall be reviewed to assess your artistic vision, originality, and skill.</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Performance Programs:<span className="font-normal">You’ll be invited to submit or perform an audition task to showcase your talent.</span></li>
-                       
-
-
-                    </ul>
-
-                  
-                </div> */}
-                {/* <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">Personal Interview</p>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                    Shortlisted applicants will go through a one-on-one interview round (online or in-person), where our mentors will explore:
-                            </span></p>
-                   
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Your motivation, career goals, and creative background</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Alignment with the course and industry expectations</span></li>
-                       
-
-
-                    </ul>
-
-                  
-                </div> */}
-                {/* <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">Final Evaluation & Selection</p>
-                    <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                    Your performance across all stages — entrance test, portfolio/audition, and interview — is considered for final selection. <br />
-                    Selected students will receive a formal Offer Letter with details on admission, fee, and joining formalities.
-                            </span></p>
-                   
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Your motivation, career goals, and creative background</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]"><span className="font-normal">Alignment with the course and industry expectations</span></li>
-                       
-
-
-                    </ul>
-
-                  
-                </div> */}
-                {/* <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Key Dates:</p>
-                   
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Entrance Exam: <span className="font-normal">April 25, 2025</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Personal Interviews: <span className="font-normal">May 1, 2025</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Course Launch: <span className="font-normal">May 20, 2025</span></li>
-                       
-
-
-                    </ul>
-
-                  
-                </div> */}
+             
                 <div className="bg-gray-50 p-6 rounded-xl shadow-md">
-            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
+            <h3 className="text-[25px] mobile:text-[18px] font-bold text-black flex items-center  gap-2 mb-4">
               <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
               Have questions? Our admissions counselors are here to guide you.
             </h3>
-            <p className="text-[16px] text-black mb-4">
+            <p className="text-[16px] mobile:text-[14px] text-black mb-4">
               If you need help selecting the right course or understanding the
               entrance process, our admissions counselors are here for you.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+            <ul className="list-disc pl-6 space-y-2 text-[16px] mobile:text-[14px] text-black">
               <li>
                 <strong>Email:</strong>{" "}
                 <span className="font-normal">info@iicsindia.org</span>

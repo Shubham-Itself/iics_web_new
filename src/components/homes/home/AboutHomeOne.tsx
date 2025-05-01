@@ -17,13 +17,13 @@ const AboutHomeOne = () => {
                     <div className="col-xl-5 col-lg-6 col-md-6 mobile:!w-full !w-[64%]">
                         <div className="about-content w-full !max-w-full">
                             <div className="section-title w-full !mb-[5px]">
-                                <h6 className="wow fadeInUp mobile:!text-[12px]">The Future of Creative India Begins Here!</h6>
-                                <h2 className="wow fadeInUp leading-[65px] !text-[30px] mobile:!text-[20px] mobile:leading-[30px]" data-wow-delay=".3s">
+                                <h6 className="wow fadeInUp mobile:!text-[16px]">The Future of Creative India Begins Here!</h6>
+                                <h2 className="wow fadeInUp leading-[65px] !text-[30px] mobile:!text-[20px] mobile:leading-[30px] mobile:text-start" data-wow-delay=".3s">
                                    
                                    ABOUT INDIAN INSTITUTE OF <span className="text-[#de4141]">CREATIVE</span> SKILLS
                                 </h2>
                             </div>
-                            <p className="mt-3 mt-md-0 wow fadeInUp mobile:!text-[12px] !text-[16px]" data-wow-delay=".5s">
+                            <p className="mt-3 mt-md-0 wow fadeInUp mobile:!text-[12px] !text-[16px] mobile:text-start" data-wow-delay=".5s">
                             The Indian Institute of Creative Skills (IICS) is India’s premier destination for next-gen education in the Media & Entertainment Sector. <br /> <br />
 
                             Affiliated with the <span className="font-bold">NSDC Academy</span> and operated by the <span className="font-bold">Media & Entertainment Skills Council (MESC, funded by NSDC)</span>, with the support of the Ministry of Skill Development & Entrepreneurship (MSDE). IICS is a pioneering initiative in building India’s creative economy <br /> <br />

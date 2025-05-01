@@ -104,7 +104,7 @@ const PublicNotesArea = () => {
     <tbody className="text-gray-800">
       <tr className="border-t ">
         <td className="px-4 py-4 max-w-[300px]">
-          <Link to="#" className="text-[18px] font-medium text-blue-600 ">
+          <Link to="#" className="text-[18px] font-medium text-blue-600 mobile:text-[16px]">
             Notice for Commencement of Registration Process at Indian Institute of Creative Skills, Delhi
           </Link>
         </td>
@@ -128,10 +128,10 @@ const PublicNotesArea = () => {
                  
                
                    
-                   <p className="mt-[30px] font-semibold text-[20px]">Note:</p>
+                   <p className="mt-[30px] font-semibold text-[20px] mobile:text-[16px]">Note:</p>
                    <ul className="list-disc pl-[30px]">
-                    <li>All notices are released by the <span className="font-bold">IICS Administrative Office.</span></li>
-                    <li>For any clarification, contact us at: info@iicsindia.org</li>
+                    <li className="mobile:text-[14px]">All notices are released by the <span className="font-bold">IICS Administrative Office.</span></li>
+                    <li className="mobile:text-[14px]">For any clarification, contact us at: info@iicsindia.org</li>
                    </ul>
                  
                 </div>

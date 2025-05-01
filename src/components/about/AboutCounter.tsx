@@ -6,7 +6,7 @@ const AboutCounter = () => {
     <>
     <div className="counter-section-23 section-padding ">
             <div className="container custom-container">
-                <div className="counter-wrapper-2 bg-cover" style={{background: `url(/assets/img/counter-bg-3.jpg)`}}>
+                <div className="counter-wrapper-2 bg-cover mobile:!justify-start" style={{background: `url(/assets/img/counter-bg-3.jpg)`}}>
                     <div className="counter-items">
                         {/* <div className="icon">
                             <i className="flaticon-success"></i>

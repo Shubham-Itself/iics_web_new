@@ -14,22 +14,22 @@ const MarqueeOne = ({ style_2 }: any) => {
       <div className="marquee-section style-header">
         <div className={`mycustom-marque`}>
           <div className="scrolling-wrap">
-            <div className="comm justify-between w-full">
+            <div className="comm justify-between w-full mobile:mb-[10px]">
               <div className="flex gap-[10px]">
                 <img
                   src="/assets/iics_image/skill-logo-small.webp"
                   alt="skill-logo"
-                  className="h-[50px]"
+                  className="h-[50px] mobile:h-[30px]"
                 />
                 <img
                   src="/assets/iics_image/nsdc-small.webp"
                   alt="skill-logo"
-                  className="h-[50px]"
+                  className="h-[50px] mobile:h-[30px]"
                 />
                 <img
                   src="/assets/iics_image/mesc-logo-small.webp"
                   alt="skill-logo"
-                  className="h-[50px]"
+                  className="h-[50px] mobile:h-[30px]"
                 />
               </div>
 

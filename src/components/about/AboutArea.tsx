@@ -4,12 +4,12 @@ const AboutArea = () => {
       <section className="about-section fix">
         <div className="about-wrapper-5">
           <div className="container !m-0  !max-w-full bg-[#F4F9FF]">
-            <div className=" g-4 justify-content-between !px-[40px] py-[40px] gap-[30px] ">
+            <div className=" g-4 justify-content-between !px-[40px] py-[40px] mobile:!p-[20px] gap-[30px] ">
               <div className=" flex gap-[50px] mobile:flex-col">
                 <div className="section-title mb-0 w-[50%] mobile:w-full">
                   <h6 className="wow fadeInUp">Our Vision</h6>
                   <p
-                    className="wow fadeInUp !text-[16px]  text-black"
+                    className="wow fadeInUp !text-[16px]  text-black mobile:text-start"
                     data-wow-delay=".3s"
                   >
                     To establish India as a global powerhouse in creative talent
@@ -45,7 +45,7 @@ const AboutArea = () => {
                   <div className="section-title mb-0 w-[50%] mobile:w-full">
                     <h6 className="wow fadeInUp">Our Mission</h6>
                     <p
-                      className="wow fadeInUp !text-[16px] !font-normal text-black"
+                      className="wow fadeInUp !text-[16px] !font-normal text-black mobile:text-start"
                       data-wow-delay=".3s"
                     >
                       <ul className="list-disc">

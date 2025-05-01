@@ -16,7 +16,7 @@ const SamplePaperArea = () => {
   
           {/* Sample Paper List */}
           <div className="mb-12">
-            <p className="text-[25px] font-bold text-[#005BFF] mb-2">
+            <p className="text-[25px] font-bold text-[#005BFF] mb-2 mobile:text-[20px]">
               Practice. Prepare. Perform.
             </p>
             <p className="text-[16px] font-semibold text-black mb-4">
@@ -32,13 +32,13 @@ const SamplePaperArea = () => {
                 "PR, Journalism & Media Communication",
                 "Performing Arts & Media Management",
               ].map((title, index) => (
-                <li key={index} className="text-[18px] font-semibold text-black">
+                <li key={index} className="text-[18px] mobile:text-[16px] font-semibold text-black">
                   {title}
                   <span className="font-normal text-[16px] ml-2">
                     –{" "}
                     <a
                       href="#"
-                      className="text-[#005BFF] underline hover:text-blue-700"
+                      className="text-[#005BFF] underline hover:text-blue-700 mobile:text-[16px]"
                     >
                       Download PDF
                     </a>
@@ -55,7 +55,7 @@ const SamplePaperArea = () => {
   
           {/* Guidance Section */}
           <div className="bg-gray-50 p-6 rounded-xl shadow-md">
-            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
+            <h3 className="text-[25px] mobile:text-[20px] font-bold text-black flex items-center gap-2 mb-4">
               <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
               Need Guidance?
             </h3>

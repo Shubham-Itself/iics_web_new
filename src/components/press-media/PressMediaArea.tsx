@@ -41,9 +41,9 @@ const PressMediaArea = () => {
                 <div className="event-list-wrapper">
                  
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">IICS in the News: <span className="font-normal">Press & Media Coverage </span></p>
-                    <p className="text-[25px] font-semibold  mb-[10px]">Get in Touch with Our Media Team</p>
-                    <p className="text-[18px] mb-[10px]">Have a press inquiry or want to collaborate with IICS? Our media team is here to assist.</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px]">IICS in the News: <span className="font-normal">Press & Media Coverage </span></p>
+                    <p className="text-[25px] font-semibold  mb-[10px] mobile:text-[20px]">Get in Touch with Our Media Team</p>
+                    <p className="text-[18px] mb-[10px] mobile:text-[16px]">Have a press inquiry or want to collaborate with IICS? Our media team is here to assist.</p>
                     <p className="text-[15px] font-bold text-black ">Email: <span className="font-normal">info@iicsindia.org </span></p>
                     <p className="text-[15px] font-bold text-black">Phone: <span className="font-normal">+91-959-4949-959 </span></p>
                     </div>

@@ -139,7 +139,7 @@ const ChiefMentorsArea = () => {
               Driven by Purpose, Defined by Passion
             </h6>
             <h2
-              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[16px] mobile:!leading-[20px]"
+              className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[12px] mobile:!leading-[20px] mobile:mt-[20px]"
               data-wow-delay=".3s"
             >
               At IICS, leadership is rooted in collaboration, creativity, and
@@ -192,7 +192,7 @@ const ChiefMentorsArea = () => {
                     {/* <div className="social-icon"></div> */}
                   </div>
                   <div className="content">
-                    <h4>
+                    <h4 className="mobile:text-[16px]">
                       <Link    to={`/details/${encodeURIComponent(leader.leaderName?.toString() || '')}`}
                       state={{
                         leaderName: leader.leaderName,
@@ -204,7 +204,7 @@ const ChiefMentorsArea = () => {
                       }}
                       >{leader.leaderName}</Link>
                     </h4>
-                    <p>{leader.leaderDesignation}</p>
+                    <p className="mobile:text-[12px]">{leader.leaderDesignation}</p>
                   </div>
                 </div>
               </div>

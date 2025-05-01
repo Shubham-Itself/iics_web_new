@@ -56,7 +56,7 @@ const StartupSupportArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Startup Support – Launch Your Creative Venture with Confidence</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px]">Startup Support – Launch Your Creative Venture with Confidence</p>
                     <p>At IICS, we believe innovation is just the beginning. For students with entrepreneurial ambitions, our Startup Support Program is designed to help transform your ideas into impactful ventures in the media and entertainment space.
 Whether you're launching a production house, building a creative agency, or starting your own makeup brand or gaming studio — we’ve got you covered.
 </p>
@@ -90,12 +90,12 @@ Whether you're launching a production house, building a creative agency, or star
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">{career.name}</Link></h4>
+                                        <h4><Link to="/event-details" className="!text-[22px] mobile:!text-[18px]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className=" text-[18px] text-black">{career.description}</p>
+                                            <p className=" text-[18px] text-black mobile:!text-[16px]">{career.description}</p>
                                             {/* <p><span className="font-semibold">Course Duration (In Months): </span> {career.courseDuration}</p>
                                             
                                             <p><span className="font-semibold">Total Number of Seats: </span> {career.numberofSeat}</p>

@@ -12,7 +12,7 @@ const ContactArea = () => {
                 </div>
                 <div className="row">
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <i className="flaticon-map"></i>
                             </div>
@@ -28,7 +28,7 @@ const ContactArea = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <i className="flaticon-send-data"></i>
                             </div>
@@ -45,7 +45,7 @@ const ContactArea = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <img src="assets/img/call.png" alt="img" />
                             </div>
@@ -62,7 +62,7 @@ const ContactArea = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <i className="flaticon-map"></i>
                             </div>
@@ -78,7 +78,7 @@ const ContactArea = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <i className="flaticon-map"></i>
                             </div>
@@ -94,7 +94,7 @@ const ContactArea = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div className="contact-box-items p-0 !h-[250px] flex flex-col justify-center items-center">
+                        <div className="contact-box-items !p-[10px] !h-[250px] flex flex-col justify-center items-center">
                             <div className="icon !mb-[20px]">
                                 <i className="flaticon-map"></i>
                             </div>

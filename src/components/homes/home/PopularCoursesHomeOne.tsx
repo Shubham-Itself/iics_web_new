@@ -142,8 +142,8 @@ const PopularCoursesHomeOne = () => {
     <>
       <section className=" popular-courses-section bg-white mobile:!pt-[50px] !pb-0 fix section-padding    !max-h-full !h-full">
         <div className="container !max-w-full">
-          <div className="section-title-area align-items-end">
-            <div className="section-title px-[100px]">
+          <div className="section-title-area align-items-end  mobile:!mb-[20px]">
+            <div className="section-title px-[100px] mobile:px-[50px]">
               <h6 className="wow fadeInUp mobile:!text-[12px]">
                 Popular Courses
               </h6>
@@ -157,7 +157,7 @@ const PopularCoursesHomeOne = () => {
             <ul className="nav">
               <li className="nav-item wow fadeInUp" data-wow-delay=".2s">
                 <a  data-bs-toggle="tab"
-                  className={`nav-link ${activeTab === "All" ? "active" : ""}`}
+                  className={`nav-link mobile:!text-[14px] ${activeTab === "All" ? "active" : ""}`}
                   onClick={() => setActiveTab("All")}
                 >
                   All Courses
@@ -165,7 +165,7 @@ const PopularCoursesHomeOne = () => {
               </li>
               <li className="nav-item wow fadeInUp" data-wow-delay=".4s">
                 <a  data-bs-toggle="tab" 
-                  className={`nav-link ${activeTab === "Certificate" ? "active" : ""}`}
+                  className={`nav-link mobile:!text-[14px] ${activeTab === "Certificate" ? "active" : ""}`}
                   onClick={() => setActiveTab("Certificate")}
                 
                 >
@@ -174,7 +174,7 @@ const PopularCoursesHomeOne = () => {
               </li>
               <li className="nav-item wow fadeInUp" data-wow-delay=".6s">
                 <a  data-bs-toggle="tab" 
-                 className={`nav-link ${activeTab === "Degree" ? "active" : ""}`}
+                 className={`nav-link mobile:!text-[14px] ${activeTab === "Degree" ? "active" : ""}`}
                  onClick={() => setActiveTab("Degree")}
                 >
                   Degree
@@ -233,7 +233,7 @@ const PopularCoursesHomeOne = () => {
                   {getFilteredCourses().map((course, index) => (
                     <SwiperSlide key={index} className="swiper-slide">
                       <div
-                        className=" !w-[335px] mobile:!w-full col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp  mobile:h-full"
+                        className=" !w-[335px] mobile:!w-full col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp  mobile:h-full mobile:flex mobile:justify-center"
                         data-wow-delay=".2s"
                       >
                         <div className="courses-card-main-items h-full mobile:w-[300px]">
@@ -319,7 +319,7 @@ const PopularCoursesHomeOne = () => {
                                
                                 </div>
                               </div>
-                              <ul className="post-class flex justify-between items-end p-[10px] flex-1">
+                              <ul className="post-class flex justify-between items-end p-[10px] flex-1 mobile:flex-col mobile:justify-start mobile:items-start">
                                 <li className="text-[14px] flex gap-[10px] items-baseline">
                                   <i className="far fa-books"></i>
                                   {course.availableSeat}

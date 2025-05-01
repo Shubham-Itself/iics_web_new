@@ -48,7 +48,7 @@ const ApprenticeshipArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Immersive Apprenticeships for Every Creative Mind</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px]">Immersive Apprenticeships for Every Creative Mind</p>
                     <p>At our institute, apprenticeship isn’t an afterthought — it’s a core part of your education. Every student, regardless of course, is placed in paid, skill-matched roles that are embedded within the creative and media ecosystem.</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
@@ -80,12 +80,12 @@ const ApprenticeshipArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">{career.name}</Link></h4>
+                                        <h4><Link to="/event-details" className="!text-[22px] mobile:!text-[18px]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className=" text-[18px] text-black">{career.description}</p>
+                                            <p className=" text-[18px] text-black mobile:!text-[16px]">{career.description}</p>
                                             {/* <p><span className="font-semibold">Course Duration (In Months): </span> {career.courseDuration}</p>
                                             
                                             <p><span className="font-semibold">Total Number of Seats: </span> {career.numberofSeat}</p>
@@ -131,12 +131,12 @@ const ApprenticeshipArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">All students enrolled in our programs are guaranteed apprenticeship opportunities in their final semester — across domains like:</Link></h4>
+                                        <h4><Link to="/event-details" className="!text-[22px] mobile:!text-[16px]">All students enrolled in our programs are guaranteed apprenticeship opportunities in their final semester — across domains like:</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <ul className=" text-[18px] text-black list-disc">
+                                            <ul className=" text-[18px] text-black list-disc mobile:!text-[14px]">
                                                 <li>Film, TV & OTT</li>
                                                 <li>Gaming & XR</li>
                                                 <li>Sound & Audio</li>

@@ -5,7 +5,7 @@ const FeatureHomeOne = () => {
     <>
       <section className="feature-section mt-[100px]">
       <div className="section-title ml-[50px] !mb-[10px] mobile:ml-0">
-                    <h6 className="wow fadeInUp !text-[35px]">Core Pillars</h6>
+                    <h6 className="wow fadeInUp !text-[35px] mobile:!text-[24px]">Core Pillars</h6>
                     </div>
             <div className="row gx-0 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5">
                 <div className="col wow fadeInUp">

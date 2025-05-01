@@ -58,7 +58,7 @@ const IndustryAssociateArea = () => {
                 </div> */}
                     </div>
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Strong Industry Ties, Real-World Learning</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px]">Strong Industry Ties, Real-World Learning</p>
                     <p>We understand the value of industry exposure in shaping well-rounded professionals. That’s why we’ve forged strong connections with top media houses, production studios, event agencies, gaming companies, and more. Through these associations, students have access to exclusive internships, live projects, mentorship, and career placements.
 </p>
                     {/* <div className="section-title !mb-0 ">
@@ -91,12 +91,12 @@ const IndustryAssociateArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">{career.name}</Link></h4>
+                                        <h4><Link to="/event-details" className="!text-[22px] mobile:!text-[18px]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
 }}>
-                                            <p className=" text-[18px] text-black">{career.description}</p>
+                                            <p className=" text-[18px] text-black mobile:!text-[16px]">{career.description}</p>
                                             {/* <p><span className="font-semibold">Course Duration (In Months): </span> {career.courseDuration}</p>
                                             
                                             <p><span className="font-semibold">Total Number of Seats: </span> {career.numberofSeat}</p>

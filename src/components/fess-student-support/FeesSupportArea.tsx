@@ -145,13 +145,13 @@ const FeesSupportArea = () => {
                 </div>
                <div className="flex justify-between gap-[20px] mobile:flex-col ">
                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px] w-[50%] mobile:w-full">
-                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[30px] ">What’s Included in the Fees?</p>
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">12-24 months of on-campus learning </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of live industry projects </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of paid apprenticeship</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Access to industry-standard labs & equipment</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li>
+                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[30px] mobile:text-[20px]">What’s Included in the Fees?</p>
+                    <ul className="list-disc pl-[40px] mobile:pl-[20px]">
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"> <span className="font-normal">12-24 months of on-campus learning </span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">6 months of live industry projects </span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">6 months of paid apprenticeship</span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">Access to industry-standard labs & equipment</span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li>
 
 
                     </ul>
@@ -177,14 +177,14 @@ const FeesSupportArea = () => {
                 </div> */}
 
                 <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px] w-[50%] mobile:w-full">
-                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[5px] ">Student Support Services
+                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[5px] mobile:text-[20px]">Student Support Services
                     </p>
-                    <p className="mb-[5px]">Our support extends beyond financial aid — we’re here to guide you through every step:</p>
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">One-on-one Counseling Sessions </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Admission & Career Guidance</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Application Help Desk</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship Connect</span></li>
+                    <p className="mb-[5px] mobile:text-[16px]">Our support extends beyond financial aid — we’re here to guide you through every step:</p>
+                    <ul className="list-disc pl-[40px] mobile:pl-[20px]">
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"> <span className="font-normal">One-on-one Counseling Sessions </span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">Admission & Career Guidance</span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">Application Help Desk</span></li>
+                        <li className="font-bold text-[18px] mobile:text-[16px] text-black mb-[5px]"><span className="font-normal">Mentorship Connect</span></li>
                         {/* <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li> */}
 
 

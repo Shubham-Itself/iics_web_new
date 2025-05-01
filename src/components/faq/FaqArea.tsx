@@ -14,7 +14,7 @@ const FaqArea = () => {
           <div className="container">
             <div className="section-title text-center">
               <h6>Frequently Asked Questions?</h6>
-              <h2 className="!text-[25px] mb-[10px]">
+              <h2 className="!text-[25px] mobile:!text-[20px] mb-[10px]">
                 Everything You Need to Know About Joining IICS
               </h2>
               <p className="text-[16px]">

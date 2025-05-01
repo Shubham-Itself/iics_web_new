@@ -14,15 +14,38 @@ const BlogHomeOne = () => {
           
           {/* Swiper Container */}
           <Swiper
-            direction="horizontal"  // Vertical scroll direction
-            slidesPerView={3}  // Automatically adjusts the number of slides visible based on their size
-            spaceBetween={20}     // Space between slides
-            loop={true}           // Loop infinitely
-            autoplay={{           // Autoplay settings
-              delay: 2500,        // Change slides every 1 second
+            direction="horizontal" 
+            slidesPerView={3}  
+            spaceBetween={20}    
+            loop={true}           
+            autoplay={{          
+              delay: 2500,        
               disableOnInteraction: false,
             }}
             modules={[Pagination, Autoplay]}
+            breakpoints={{
+              1399: {
+                  slidesPerView: 6,
+              },
+              1199: {
+                  slidesPerView: 5,
+              },
+              991: {
+                  slidesPerView: 5,
+              },
+              767: {
+                  slidesPerView: 4,
+              },
+              575: {
+                  slidesPerView: 3,
+              },
+              400: {
+                  slidesPerView: 2,
+              },
+              0: {
+                  slidesPerView: 1,
+              },
+          }}
             grabCursor={true}     // Enable grab cursor on hover
             className="swiper live-courses-slider"
              // Ensure that only a part of the slides is visible at a time

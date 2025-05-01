@@ -25,12 +25,12 @@ const ImportantCtaArea = ({ onSchoolButtonClick }: any) => {
     };
   return (
    <div className="flex justify-center">
-     <div className=" w-[50%]  flex  gap-[20px]  justify-between p-[20px]">
+     <div className=" w-[50%]  flex  gap-[20px]  justify-between p-[20px] mobile:w-full ">
     {registrationInfo.map((items, index) => (
       <div key={index} className="flex flex-col gap-[5px]">
         <button
           onClick={() => handleButtonClick(items.procees)}
-          className="theme-btn yellow-btn !px-[16px] !py-[12px]"
+          className="theme-btn yellow-btn !px-[16px] !py-[12px] mobile:!text-[8px]"
         >
           {items.procees}
         </button>

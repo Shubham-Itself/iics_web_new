@@ -21,13 +21,13 @@ const BreadcrumbCoursesDetails = ({titleCourse , mentor , duration , courseType 
         </div>
         <div className="container">
             <div className="page-heading">
-                <ul className="breadcrumb-items !mt-[60px] !mb-[20px]">
+                <ul className="breadcrumb-items !mt-[60px] !mb-[20px] mobile:!hidden">
                     {/* <li><Link to="/">Home</Link></li> */}
                     {/* <li><Link to="/courses-grid">Courses</Link></li> */}
                     {/* <li className="style-2"> Course Details</li> */}
                 </ul>
                 <div className="breadcrumb-content">
-                    <h1>{titleCourse}</h1>
+                    <h1 className="mobile:!text-[22px]">{titleCourse}</h1>
                     <div className="courses-breadcrumb-items">
                         <div className="client-image-items">
                             <img src={mentorIcon} alt="img" className="w-[60px] h-[60px] object-cover rounded-[50%]" />
