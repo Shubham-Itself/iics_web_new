@@ -37,7 +37,7 @@ const MarqueeOne = ({ style_2 }: any) => {
                
               </div> */}
 
-              <div className="flex gap-[20px] items-center mobile:hidden">
+              <div className="flex gap-[20px] items-center mobile:hidden tablet:hidden">
               <p>Our Legacy</p>
               <p>Associate with us</p>
                 <p>info@iicsindia.org</p>

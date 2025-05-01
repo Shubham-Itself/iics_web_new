@@ -29,7 +29,7 @@ const NavMenu = () => {
     <>
       <ul>
         {menu_data.map((item, i) => (
-          <li className="has-dropdown menu-thumb " key={i}>
+          <li className="has-dropdown menu-thumb specialCase:!me-[17px]" key={i}>
             <Link to={item.link} className="!text-[14px]">
               {/* <span className="head-icon">
                 <i className={item.icon}></i>
