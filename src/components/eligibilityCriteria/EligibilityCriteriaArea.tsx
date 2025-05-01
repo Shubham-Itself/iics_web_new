@@ -83,7 +83,7 @@ const EligibilityCriteriaArea = () => {
                 <div className="event-list-wrapper">
                   
                     <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Find the Right Course for Your Passion and Potential</p>
+                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px] ">Find the Right Course for Your Passion and Potential</p>
                     {/* <div className="section-title !mb-0 ">
                     <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
                    
@@ -115,7 +115,7 @@ const EligibilityCriteriaArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details" className="!text-[22px]">{career.name}</Link></h4>
+                                        <h4><Link to="#" className="!text-[22px] text-[#005BFF]">{career.name}</Link></h4>
                                         <div className="flex  gap-[20px] mt-[10px] w-full">
                                         <div className="p-[30px] border rounded-[20px]" style={{
   boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
@@ -146,8 +146,8 @@ const EligibilityCriteriaArea = () => {
                    
                  
                 </div>
-                <div>
-                    <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[10px] ">Additional Requirements</p>
+                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+                    <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] ">Additional Requirements</p>
                     <p className="text-[15px] font-semibold text-black  mb-[10px]">Some courses may require:</p>
                     <ul className="list-disc pl-[40px]">
                         <li className="font-bold text-[18px] text-black mb-[5px]">Portfolio submission <span className="font-normal">(for creative programs)</span></li>

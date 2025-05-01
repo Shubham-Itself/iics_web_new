@@ -101,8 +101,8 @@ const EntranceProcessArea = () => {
                         ))
                     } */}
           </div>
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md ">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[20px]">
               Online Entrance Exam
             </p>
 
@@ -130,8 +130,8 @@ const EntranceProcessArea = () => {
             </ul>
           </div>
 
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
               Portfolio Review / Audition
             </p>
             <p className="font-bold text-[18px] text-black mb-[5px]">
@@ -157,8 +157,8 @@ const EntranceProcessArea = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
               Personal Interview
             </p>
             <p className="font-bold text-[18px] text-black mb-[5px]">
@@ -181,8 +181,8 @@ const EntranceProcessArea = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] flex  gap-[10px]">
               Final Evaluation & Selection
             </p>
             <p className="font-bold text-[18px] text-black mb-[5px]">
@@ -203,8 +203,8 @@ const EntranceProcessArea = () => {
 
                     </ul> */}
           </div>
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px]">
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <p className="text-[25px] font-semibold text-[#005BFF] mb-[10px] flex  gap-[10px]">
               <i
                 className="fa fa-calendar text-[#de4141]"
                 aria-hidden="true"
@@ -226,40 +226,33 @@ const EntranceProcessArea = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px]">
-              <span
-                className="text-[#de4141] fa fa-phone rotate-[90deg]"
-                aria-hidden="true"
-              ></span>{" "}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <h3 className="text-[25px] font-semibold text-[#005BFF] flex items-center gap-2 mb-4">
+              <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
               Need Help?
+            </h3>
+            <p className="text-[16px] text-black mb-4">
+              If you need help selecting the right course or understanding the
+              entrance process, our admissions counselors are here for you.
             </p>
-
-            <p className="font-bold text-[18px] text-black mb-[5px]">
-              <span className="font-normal">
-                Have questions? Our admissions counselors are here to guide you.
-              </span>
-            </p>
-            <ul className="list-disc pl-[40px]">
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
-                Email: <span className="font-normal"> info@iicsindia.org</span>
+            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+              <li>
+                <strong>Email:</strong>{" "}
+                <span className="font-normal">info@iicsindia.org</span>
               </li>
-              <li className="font-semibold text-[18px] text-black mb-[5px]">
-                Call/WhatsApp:{" "}
+              <li>
+                <strong>Call/WhatsApp:</strong>{" "}
                 <span className="font-normal">+91-959-4949-959</span>
               </li>
             </ul>
-            <p className="font-bold text-[18px] text-black mb-[5px]">
-              <span className="font-semibold flex flex-col gap-[10px] justify-start items-start">
-                Or <br />
-                <a
-                  href="tel:9594949959"
-                  className="theme-btn yellow-btn !px-[16px] !py-[12px]"
-                >
-                  Book Counselling Session
-                </a>
-              </span>
-            </p>
+            <div className="mt-6">
+              <a
+                href="tel:9594949959"
+                className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-500 transition"
+              >
+                Book Counselling Session
+              </a>
+            </div>
           </div>
         </div>
       </section>

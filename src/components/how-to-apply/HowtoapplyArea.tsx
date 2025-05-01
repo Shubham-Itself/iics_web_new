@@ -87,7 +87,7 @@ const HowtoapplyArea = () => {
                                         <span>{event.dateMonthYear}</span>
                                     </div> */}
                                     <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="/event-details">{career.step}</Link></h4>
+                                        <h4 className="text-[#005BFF]">{career.step}</h4>
                                         <div className="flex flex-col  gap-[10px] mt-[20px] w-full">
                                         <p className="text-[18px]">{career.information}</p>
                                         {
@@ -112,18 +112,38 @@ const HowtoapplyArea = () => {
                    
                  
                 </div>
-                <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] mobile:text-[20px]">Submit the Application Form</p>
-                 
-                        <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                        Once all required documents have been uploaded and details filled in, submit the form to complete your application.
-                        You will receive a confirmation email and further instructions for the entrance process.
-                            </span></p>
-                    
-                </div>
+                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
+              {/* <span className="text-[#de4141] fa fa-phone rotate-[90deg]" /> */}
+              Submit the Application Form
+            </h3>
+            <p className="text-[16px] text-black mb-4">
+            Once all required documents have been uploaded and details filled in, submit the form to complete your application.
+            You will receive a confirmation email and further instructions for the entrance process.
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+              <li>
+                <strong>Email:</strong>{" "}
+                <span className="font-normal">info@iicsindia.org</span>
+              </li>
+              <li>
+                <strong>Call/WhatsApp:</strong>{" "}
+                <span className="font-normal">+91-959-4949-959</span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <a
+                href="tel:9594949959"
+                className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-500 transition"
+              >
+                Book Counselling Session
+              </a>
+            </div>
+          </div>
+               
 
-                <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[10px] flex  gap-[10px] mobile:text-[20px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
+                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+                    <p className="text-[25px] font-bold text-black  mb-[10px] flex  gap-[10px] mobile:text-[20px]"><i className="fa fa-calendar text-[#de4141]" aria-hidden="true"></i> Important Dates</p>
                    
                     <ul className="list-disc pl-[40px]">
                         <li className="font-semibold text-[18px] text-black mb-[5px]">Registration Start Date: <span className="font-normal">April 01, 2025</span></li>
@@ -135,32 +155,34 @@ const HowtoapplyArea = () => {
 
                   
                 </div>
-                <div>
-                    <p className="text-[25px] font-bold text-black mt-[60px] mb-[20px] flex  gap-[10px] mobile:text-[20px]"><span className="text-[#de4141] fa fa-phone rotate-[90deg]" aria-hidden="true"></span> Need Help?</p>
-                 
-                        <p className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">
-                        Have questions? Our admissions counselors are here to guide you.
-                            </span></p>
-                            <ul className="list-disc pl-[40px]">
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Email: <span className="font-normal">info@iicsindia.org</span></li>
-                        <li className="font-semibold text-[18px] text-black mb-[5px]">Call/WhatsApp: <span className="font-normal">+91-959-4949-959</span></li>
-                       
-
-
-                    </ul>
-                    <p className="font-bold text-[18px] text-black mb-[5px]">
-              <span className="font-semibold flex flex-col gap-[10px] justify-start items-start">
-                Or <br />
-                <a
-                  href="tel:9594949959"
-                  className="theme-btn yellow-btn !px-[16px] !py-[12px]"
-                >
-                  Book Counselling Session
-                </a>
-              </span>
+                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
+            <h3 className="text-[25px] font-bold text-black flex items-center gap-2 mb-4">
+              <span className="text-[#de4141] fa fa-phone rotate-[90deg]" />
+              Need Guidance?
+            </h3>
+            <p className="text-[16px] text-black mb-4">
+              If you need help selecting the right course or understanding the
+              entrance process, our admissions counselors are here for you.
             </p>
-                    
-                </div>
+            <ul className="list-disc pl-6 space-y-2 text-[16px] text-black">
+              <li>
+                <strong>Email:</strong>{" "}
+                <span className="font-normal">info@iicsindia.org</span>
+              </li>
+              <li>
+                <strong>Call/WhatsApp:</strong>{" "}
+                <span className="font-normal">+91-959-4949-959</span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <a
+                href="tel:9594949959"
+                className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-500 transition"
+              >
+                Book Counselling Session
+              </a>
+            </div>
+          </div>
             </div>
         </section>
     </>

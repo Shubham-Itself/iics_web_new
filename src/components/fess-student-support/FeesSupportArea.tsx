@@ -125,7 +125,7 @@ const FeesSupportArea = () => {
         }}
       >
         <p className="text-base font-semibold text-gray-800">
-          <Link to="/event-details" className="text-blue-600 hover:underline">
+          <Link     to={`/courses-details/${encodeURIComponent(career.name?.toString() || '')}`} className="text-blue-600 hover:underline">
             {career.name}
           </Link>
         </p>
@@ -143,9 +143,9 @@ const FeesSupportArea = () => {
                    
                  
                 </div>
-               <div className="flex justify-between">
-               <div>
-                    <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[30px] ">What’s Included in the Fees?</p>
+               <div className="flex justify-between gap-[20px] mobile:flex-col ">
+               <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px] w-[50%] mobile:w-full">
+                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[30px] ">What’s Included in the Fees?</p>
                     <ul className="list-disc pl-[40px]">
                         <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">12-24 months of on-campus learning </span></li>
                         <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">6 months of live industry projects </span></li>
@@ -176,8 +176,8 @@ const FeesSupportArea = () => {
                    EMI starting as low as ₹4,999/month*</p>
                 </div> */}
 
-                <div>
-                    <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[5px] ">Student Support Services
+                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px] w-[50%] mobile:w-full">
+                    <p className="text-[25px] font-bold text-[#005BFF]  mb-[5px] ">Student Support Services
                     </p>
                     <p className="mb-[5px]">Our support extends beyond financial aid — we’re here to guide you through every step:</p>
                     <ul className="list-disc pl-[40px]">

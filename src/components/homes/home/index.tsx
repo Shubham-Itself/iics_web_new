@@ -17,6 +17,7 @@ import ChooseHomeOne from "./ChooseHomeOne";
 import HeroHomeOne from "./HeroHomeOne";
 
 import PopularCoursesHomeOne from "./PopularCoursesHomeOne";
+import ImportantCtaArea from "./ImportantCtaArea";
 
 
 
@@ -37,10 +38,11 @@ const HomeOne = () => {
 		<> 
 		{/* <Preloader /> */}
 			<HeaderOne />
-      <HeroHomeOne  onSchoolButtonClick={handleScrollToCourses}/>
+      <HeroHomeOne  />
       {/* <FeatureHomeOne /> */}
       {/* <TopCategoryHomeOne /> */}
       {/* <AboutHomeOne /> */}
+	  <ImportantCtaArea onSchoolButtonClick={handleScrollToCourses}/>
 	  <HeroHomeTwo/>
 	  <TopCategoryHomeTwo/>
 	  <div ref={coursesRef}>

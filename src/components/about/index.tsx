@@ -21,7 +21,7 @@ const About = () => {
 		<>
 		{/* <Preloader /> */}
 			<HeaderOne />
-			<BreadcrumbEvent title="About" subtitle="About" />
+			<BreadcrumbEvent title="About Us" subtitle="About Us" />
 			<AboutHomeOne/>
       <AboutArea />
 	  <FeatureHomeOne/>
