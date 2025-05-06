@@ -36,7 +36,7 @@ const ContactForm = () => {
     setForm((prev) => ({ ...prev, course: value }));
   };
 
-  const apiUrl = import.meta.env.REACT_APP_ODDO_BACKEND_URL;
+  const apiUrl = import.meta.env.VITE_APP_ODDO_BACKEND_URL;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
