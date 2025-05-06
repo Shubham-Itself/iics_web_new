@@ -111,6 +111,7 @@ const ContactArea = () => {
                     </div>
                 </div>
             </div>
+          
         </section>
     </>
   );

@@ -33,17 +33,17 @@ const RegisterForm = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value, type } = e.target;
-  
+
     const inputValue =
       type === "checkbox" && e.target instanceof HTMLInputElement
         ? e.target.checked
         : value;
-  
+
     setFormData((prev) => ({
       ...prev,
       [name]: inputValue,
     }));
-  
+
     setErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -53,9 +53,12 @@ const RegisterForm = () => {
   const validate = () => {
     const newErrors: Errors = {};
 
-    if (!formData.firstName.trim()) newErrors.firstName = "First name is required.";
-    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required.";
-    if (!formData.nationality.trim()) newErrors.nationality = "Nationality is required.";
+    if (!formData.firstName.trim())
+      newErrors.firstName = "First name is required.";
+    if (!formData.lastName.trim())
+      newErrors.lastName = "Last name is required.";
+    if (!formData.nationality.trim())
+      newErrors.nationality = "Nationality is required.";
     if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
@@ -63,7 +66,8 @@ const RegisterForm = () => {
       newErrors.email = "Invalid email format.";
     }
 
-    if (!formData.agreement) newErrors.agreement = "You must agree to continue.";
+    if (!formData.agreement)
+      newErrors.agreement = "You must agree to continue.";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -86,7 +90,8 @@ const RegisterForm = () => {
               <div className="title text-center">
                 <h2>Registration Form</h2>
                 <p className="text-danger">
-                The fee of Rs. 2000 needs to be paid to complete the registration form and proceed with your application process.
+                  The fee of Rs. 2000 needs to be paid to complete the
+                  registration form and proceed with your application process.
                 </p>
               </div>
               <form onSubmit={handleSubmit} id="registration-form">
@@ -101,7 +106,9 @@ const RegisterForm = () => {
                         onChange={handleChange}
                         placeholder="First Name"
                       />
-                      {errors.firstName && <p className="text-danger">{errors.firstName}</p>}
+                      {errors.firstName && (
+                        <p className="text-danger">{errors.firstName}</p>
+                      )}
                     </div>
                   </div>
                   <div className="col-lg-6">
@@ -114,7 +121,9 @@ const RegisterForm = () => {
                         onChange={handleChange}
                         placeholder="Last Name"
                       />
-                      {errors.lastName && <p className="text-danger">{errors.lastName}</p>}
+                      {errors.lastName && (
+                        <p className="text-danger">{errors.lastName}</p>
+                      )}
                     </div>
                   </div>
 
@@ -149,7 +158,9 @@ const RegisterForm = () => {
                         onChange={handleChange}
                         placeholder="Your Nationality"
                       />
-                      {errors.nationality && <p className="text-danger">{errors.nationality}</p>}
+                      {errors.nationality && (
+                        <p className="text-danger">{errors.nationality}</p>
+                      )}
                     </div>
                   </div>
 
@@ -164,7 +175,9 @@ const RegisterForm = () => {
                         onChange={handleChange}
                         placeholder="Phone Number"
                       />
-                      {errors.phone && <p className="text-danger">{errors.phone}</p>}
+                      {errors.phone && (
+                        <p className="text-danger">{errors.phone}</p>
+                      )}
                     </div>
                   </div>
 
@@ -179,7 +192,9 @@ const RegisterForm = () => {
                         onChange={handleChange}
                         placeholder="Email Address"
                       />
-                      {errors.email && <p className="text-danger">{errors.email}</p>}
+                      {errors.email && (
+                        <p className="text-danger">{errors.email}</p>
+                      )}
                     </div>
                   </div>
 
@@ -189,7 +204,9 @@ const RegisterForm = () => {
                     <div className="form-clt">
                       <span>Highest Qualification</span>
                       <QualificationDropdown />
-                      <div>Other: <input type="text" placeholder="Specify" /></div>
+                      <div>
+                        Other: <input type="text" placeholder="Specify" />
+                      </div>
                     </div>
                   </div>
 
@@ -197,7 +214,13 @@ const RegisterForm = () => {
                   <div className="col-lg-12">
                     <div className="form-clt">
                       <span>Program Interested In</span>
-                      <Dropdown />
+                      <Dropdown
+                        value={""}
+                        onChange={function (value: string): void {
+                          console.log(value);
+                          throw new Error("Function not implemented.");
+                        }}
+                      />
                     </div>
                   </div>
 
@@ -215,9 +238,23 @@ const RegisterForm = () => {
                   <div className="col-lg-12">
                     <div className="form-clt">
                       <span>How did you hear about IICS?</span>
-                      {["Website", "Social Media", "Referral", "Advertisement"].map((label, index) => (
-                        <div key={index} className="flex items-center gap-[10px]">
-                          <input type="radio" name="source" value={label} className="!w-fit" /> {label}
+                      {[
+                        "Website",
+                        "Social Media",
+                        "Referral",
+                        "Advertisement",
+                      ].map((label, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-[10px]"
+                        >
+                          <input
+                            type="radio"
+                            name="source"
+                            value={label}
+                            className="!w-fit"
+                          />{" "}
+                          {label}
                         </div>
                       ))}
                     </div>
@@ -238,36 +275,38 @@ const RegisterForm = () => {
                         I agree to the terms and conditions...
                       </label>
                     </div>
-                    {errors.agreement && <p className="text-danger">{errors.agreement}</p>}
+                    {errors.agreement && (
+                      <p className="text-danger">{errors.agreement}</p>
+                    )}
                   </div>
 
                   {/* Submit */}
                   <div className="col-lg-4">
-                  <button
-  type="submit"
-  className={`theme-btn ${
-    !formData.firstName.trim() ||
-    !formData.lastName.trim() ||
-    !formData.email.trim() ||
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ||
-    !formData.phone.trim() ||
-    !formData.nationality.trim() ||
-    !formData.agreement
-      ? "bg-gray-400 cursor-not-allowed"
-      : ""
-  }`}
-  disabled={
-    !formData.firstName.trim() ||
-    !formData.lastName.trim() ||
-    !formData.email.trim() ||
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ||
-    !formData.phone.trim() ||
-    !formData.nationality.trim() ||
-    !formData.agreement
-  }
->
-  Proceed
-</button>
+                    <button
+                      type="submit"
+                      className={`theme-btn ${
+                        !formData.firstName.trim() ||
+                        !formData.lastName.trim() ||
+                        !formData.email.trim() ||
+                        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ||
+                        !formData.phone.trim() ||
+                        !formData.nationality.trim() ||
+                        !formData.agreement
+                          ? "bg-gray-400 cursor-not-allowed"
+                          : ""
+                      }`}
+                      disabled={
+                        !formData.firstName.trim() ||
+                        !formData.lastName.trim() ||
+                        !formData.email.trim() ||
+                        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ||
+                        !formData.phone.trim() ||
+                        !formData.nationality.trim() ||
+                        !formData.agreement
+                      }
+                    >
+                      Proceed
+                    </button>
                   </div>
                 </div>
               </form>

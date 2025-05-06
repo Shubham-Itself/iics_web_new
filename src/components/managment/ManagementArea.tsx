@@ -24,11 +24,12 @@ const ManagementArea = () => {
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
-      image: "assets/iics_image/management/pooja.webp",
+      image: "assets/iics_image/management/sohini.webp",
     },
     {
       leaderName: "Ms. Roshni Sehgal",
-      leaderDesignation: "Business and International Alliances Head, Media and Entertainment Skills Council (MESC)",
+      leaderDesignation:
+        "Business and International Alliances Head, Media and Entertainment Skills Council (MESC)",
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
@@ -44,7 +45,8 @@ const ManagementArea = () => {
     // },
     {
       leaderName: "Ms. Nancy Singhal",
-      leaderDesignation: "Deputy General Manager, Media and Entertainment Skills Council (MESC)",
+      leaderDesignation:
+        "Deputy General Manager, Media and Entertainment Skills Council (MESC)",
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
@@ -53,8 +55,7 @@ const ManagementArea = () => {
 
     {
       leaderName: "Ms. Payal Diwakar",
-      leaderDesignation:
-        "Executive Assistant",
+      leaderDesignation: "Executive Assistant",
       instagramLink: "",
       linkedIn: "",
       facebookLink: "",
@@ -91,8 +92,7 @@ const ManagementArea = () => {
       linkedIn: "",
       facebookLink: "",
       image: "assets/iics_image/management/prishita.webp",
-    }
-   
+    },
   ];
   return (
     <>
@@ -100,14 +100,18 @@ const ManagementArea = () => {
         <div className="container">
           <div className="section-title  text-center">
             <h6 className="wow fadeInUp">
-            Strategic Minds Powering Creative Education
-
+              Strategic Minds Powering Creative Education
             </h6>
             <h2
               className="wow fadeInUp !text-[18px] !font-normal !text-start leading-[30px] mobile:!text-[12px] mobile:!leading-[15px] mobile:mt-[30px]"
               data-wow-delay=".3s"
             >
-              At the Indian Institute of Creative Skills, management is not just about running systems — it’s about empowering students, supporting mentors, and enabling industry integration. Our team is accessible, accountable, and agile, constantly evolving to meet the dynamic needs of the creative industries and the students we serve.
+              At the Indian Institute of Creative Skills, management is not just
+              about running systems — it’s about empowering students, supporting
+              mentors, and enabling industry integration. Our team is
+              accessible, accountable, and agile, constantly evolving to meet
+              the dynamic needs of the creative industries and the students we
+              serve.
             </h2>
           </div>
           <div className="row">

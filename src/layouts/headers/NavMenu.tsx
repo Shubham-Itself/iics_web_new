@@ -22,8 +22,8 @@ const NavMenu = () => {
   //   text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
 
 	useEffect(() => {
-		window.addEventListener("scroll", checkScrollTop);
-		return () => window.removeEventListener("scroll", checkScrollTop);
+		window.addEventListener("scroll", checkScrollTop , { passive: false });
+		return () => window.removeEventListener("scroll", checkScrollTop );
 	}, []);
   return (
     <>

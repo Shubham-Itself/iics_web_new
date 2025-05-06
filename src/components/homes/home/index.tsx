@@ -19,52 +19,60 @@ import HeroHomeOne from "./HeroHomeOne";
 import PopularCoursesHomeOne from "./PopularCoursesHomeOne";
 import ImportantCtaArea from "./ImportantCtaArea";
 
-
-
-
-
-
 const HomeOne = () => {
-	const coursesRef = useRef<HTMLDivElement | null>(null);
+  const coursesRef = useRef<HTMLDivElement | null>(null);
+  const importantDateRef = useRef<HTMLDivElement | null>(null);
 
-	// Scroll to CoursesHomeTwo when the button is clicked
-	const handleScrollToCourses = () => {
-	  if (coursesRef.current) {
-		coursesRef.current.scrollIntoView({ behavior: 'smooth' });
-	  }
-	};
+  // Scroll to CoursesHomeTwo when the button is clicked
+  const handleScrollToCourses = () => {
+    if (coursesRef.current) {
+      coursesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-	return (
-		<> 
-		{/* <Preloader /> */}
-			<HeaderOne />
-      <HeroHomeOne  />
+  const handleImportantScroll = () => {
+    if (importantDateRef.current) {
+      importantDateRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <>
+      {/* <Preloader /> */}
+      <HeaderOne />
+      <HeroHomeOne />
       {/* <FeatureHomeOne /> */}
       {/* <TopCategoryHomeOne /> */}
       {/* <AboutHomeOne /> */}
-	  <ImportantCtaArea onSchoolButtonClick={handleScrollToCourses}/>
-	  <HeroHomeTwo/>
-	  <TopCategoryHomeTwo/>
-	  <div ref={coursesRef}>
-	  <PopularCoursesHomeOne />
-	  </div>
-			
-			{/* <MarqueeOne /> */}
-			<ChooseHomeOne />
-			<InstagramHomeThree/>
-			<ChooseHomeTwo/>
-			{/* <TeamHomeOne /> */}
-			{/* <NewsletterHomeOne /> */}
-			{/* <TestimonialHomeOne /> */}
-			<CoursesHomeTwo/>
-		
-			<BrandsHomeOne />
-			<BlogHomeOne />
-			{/* <MarqueeOne />  */}
-			<FooterOne />  
-			<ScrollTop />    
-		</>
-	);
+      <ImportantCtaArea
+        onSchoolButtonClick={handleScrollToCourses}
+        onImportantClick={handleImportantScroll}
+      />
+      <HeroHomeTwo />
+      <TopCategoryHomeTwo />
+      <div ref={coursesRef}>
+        <PopularCoursesHomeOne />
+      </div>
+
+      {/* <MarqueeOne /> */}
+      <ChooseHomeOne />
+      <InstagramHomeThree />
+      <div ref={importantDateRef}>
+        <ChooseHomeTwo />
+      </div>
+
+      {/* <TeamHomeOne /> */}
+      {/* <NewsletterHomeOne /> */}
+      {/* <TestimonialHomeOne /> */}
+      <CoursesHomeTwo />
+
+      <BrandsHomeOne />
+      <BlogHomeOne />
+      {/* <MarqueeOne />  */}
+      <FooterOne />
+      <ScrollTop />
+    </>
+  );
 };
 
 export default HomeOne;

@@ -1,19 +1,40 @@
-import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from "@headlessui/react";
-import { useState } from "react";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOptions,
+  ListboxOption,
+} from "@headlessui/react";
 import { ChevronDown } from "lucide-react";
+import { useEffect } from "react";
 
-const options = ["Performing Arts & Media Management", "Hair Makeup & Prosthetics", "Sound Recording & Sound Design", "3D Game Art" , "Advance Gaming and Extended Reality (XR) Innovations" , "Journalism, PR, Image Strategization & Brand Custodianship" , "Events and Experiential Management Program" , "Digital Management & Content Creation"];
+const options = [
+  "Performing Arts & Media Management",
+  "Hair Makeup & Prosthetics",
+  "Sound Recording & Sound Design",
+  "3D Game Art",
+  "Advance Gaming and Extended Reality (XR) Innovations",
+  "Journalism, PR, Image Strategization & Brand Custodianship",
+  "Events and Experiential Management Program",
+  "Digital Management & Content Creation",
+];
 
-const Dropdown = () => {
-  const [selected, setSelected] = useState("");
+type DropdownProps = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+const Dropdown = ({ value, onChange }: DropdownProps) => {
+  useEffect(() => {
+    console.log(value);
+  }, [value]);
 
   return (
-    <div className=" wow fadeInUp" data-wow-delay=".2s">
+    <div className="wow fadeInUp col-lg-12" data-wow-delay=".2s">
       <div className="form-clt relative">
-        <Listbox value={selected} onChange={setSelected}>
+        <Listbox value={value} onChange={onChange}>
           <div className="relative">
             <ListboxButton className="w-full bg-white rounded-md py-3 px-4 text-left text-[#555] text-[16px] flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-primary">
-              {selected || "Select Programme"}
+              {value || "Select Programme"}
               <ChevronDown className="w-4 h-4 text-gray-400" />
             </ListboxButton>
 
@@ -25,7 +46,9 @@ const Dropdown = () => {
                   className={({ active, selected }) =>
                     `cursor-pointer select-none px-4 py-2 text-sm ${
                       active ? "bg-gray-100" : ""
-                    } ${selected ? "font-semibold text-black" : "text-gray-700"}`
+                    } ${
+                      selected ? "font-semibold text-black" : "text-gray-700"
+                    }`
                   }
                 >
                   {option}

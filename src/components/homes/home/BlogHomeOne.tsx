@@ -25,16 +25,16 @@ const BlogHomeOne = () => {
             modules={[Pagination, Autoplay]}
             breakpoints={{
               1399: {
-                  slidesPerView: 6,
+                  slidesPerView: 3,
               },
               1199: {
-                  slidesPerView: 5,
+                  slidesPerView: 3,
               },
               991: {
-                  slidesPerView: 5,
+                  slidesPerView: 3,
               },
               767: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
               },
               575: {
                   slidesPerView: 3,

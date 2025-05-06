@@ -438,3 +438,9 @@ ul {
   }
 }
   
+.s_title_form{
+
+}
+.o_full_screen_height, .o_half_screen_height, .cover_full, .cover_mid {
+  min-height: auto !important;
+}

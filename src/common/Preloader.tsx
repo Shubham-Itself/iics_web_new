@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-// import animationLoader from '../../public/assets/iics_image/loader-animation.json';
-// import Lottie from "lottie-react";
+
 
 export default function Preloader() {
 	const [isVisible, setIsVisible] = useState(true);
@@ -21,10 +20,10 @@ export default function Preloader() {
 				<div id="preloader" className="preloader">
 					<div className="animation-preloader">
 						<div className="edu-preloader-icon">
-							{/* <img src="assets/img/preloader.gif" alt="" /> */}
+						
 						</div>
 						<div className="w-64 h-64 mx-auto">
-      {/* <Lottie animationData={animationLoader} loop={true} /> */}
+     
     </div>
 
 						{/* First Line: INDIAN INSTITUTE */}
