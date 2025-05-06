@@ -251,7 +251,7 @@ const CoursesDetailsArea = ({
                               ? "Chief Mentors"
                               : "Chief Mentor"}
                           </h3>
-                          <div className="instructors-box-items !items-start">
+                          <div className="instructors-box-items !items-start flex-col">
                             <div className="thumb">
                               <img
                                 src={mentorIcon}
@@ -259,7 +259,7 @@ const CoursesDetailsArea = ({
                                 className="w-[170px] h-[170px] object-cover"
                               />
                             </div>
-                            <div className="content">
+                            <div className="content !max-w-full">
                               <h4>{mentor}</h4>
                               <span>{mentorInfo}</span> <br />
                               <span className="text-[12px]">{mentorAbout}</span>
@@ -288,7 +288,7 @@ const CoursesDetailsArea = ({
                           {mentorTwoName &&
                             mentorTwoAbout &&
                             mentorTwoAbout && (
-                              <div className="instructors-box-items !items-start">
+                              <div className="instructors-box-items !items-start flex-col">
                                 <div className="thumb">
                                   <img
                                     src={mentorTwoIcon}
@@ -296,7 +296,7 @@ const CoursesDetailsArea = ({
                                     className="w-[170px] h-[170px] object-cover"
                                   />
                                 </div>
-                                <div className="content">
+                                <div className="content !max-w-full">
                                   <h4>{mentorTwoName}</h4>
                                   <span>{mentorTwoInfo}</span> <br />
                                   <span className="text-[12px]">
