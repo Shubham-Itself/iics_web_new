@@ -1,46 +1,39 @@
-import { Link } from "react-router-dom";
-
-
- 
+// import { Link } from "react-router-dom";
 
 const EventLisrArea = () => {
-
-  const events = [
-    {
-        dateDay:'18',
-        dateMonthYear:'April 2025',
-        name:'Careers in Game',
-        officeLocation:'Lakshya Ingame Academy',
-        placeLocation:'Lajpat Nagar, Delhi',
-        time:'03:00 PM',
-
-    },
-    {
-        dateDay:'25',
-        dateMonthYear:'April 2025',
-        name:'AI Game Jam',
-        officeLocation:'Nilee Games',
-        placeLocation:'Lajpat Nagar, Delhi',
-        time:'09:00 AM',
-        
-    },
-    {
-        dateDay:'26',
-        dateMonthYear:'April 2025',
-        name:'AI Game Jam',
-        officeLocation:'Nilee Games',
-        placeLocation:'Lajpat Nagar, Delhi',
-        time:'09:00 AM',
-        
-    },
-  ]
+  //   const events = [
+  //     {
+  //       dateDay: "18",
+  //       dateMonthYear: "April 2025",
+  //       name: "Careers in Game",
+  //       officeLocation: "Lakshya Ingame Academy",
+  //       placeLocation: "Lajpat Nagar, Delhi",
+  //       time: "03:00 PM",
+  //     },
+  //     {
+  //       dateDay: "25",
+  //       dateMonthYear: "April 2025",
+  //       name: "AI Game Jam",
+  //       officeLocation: "Nilee Games",
+  //       placeLocation: "Lajpat Nagar, Delhi",
+  //       time: "09:00 AM",
+  //     },
+  //     {
+  //       dateDay: "26",
+  //       dateMonthYear: "April 2025",
+  //       name: "AI Game Jam",
+  //       officeLocation: "Nilee Games",
+  //       placeLocation: "Lajpat Nagar, Delhi",
+  //       time: "09:00 AM",
+  //     },
+  //   ];
 
   return (
     <>
-        <section className="event-list-section fix section-padding pt-0">
-            <div className="container">
-                <div className="event-list-wrapper">
-                    {/* <div className="event-list-top-area">
+      <section className="event-list-section fix section-padding pt-0 !pb-[0px]">
+        <div className="container">
+          <div className="event-list-wrapper">
+            {/* <div className="event-list-top-area">
                         <div className="search-widget">
                             <input type="text" placeholder="Find event" />
                             <div className="sub-icon"><i className="fal fa-search"></i></div>
@@ -81,14 +74,15 @@ const EventLisrArea = () => {
                             <button type="submit" className="theme-btn">Find Event</button>
                         </div>
                     </div> */}
-                    <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">Indian Institute of Creative Skills</p>
-                    <div className="section-title !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Upcoming Events & Workshop</h6>
-                   
-                </div>
-                    </div>
-                    {
+            <div className="my-[60px]">
+              <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[25px]">
+                Indian Institute of Creative Skills
+              </p>
+              <div className="section-title !mb-0 ">
+                {/* <h6 className="wow fadeInUp !mb-0">Upcoming Events & Workshop</h6> */}
+              </div>
+            </div>
+            {/* {
                         events.map((event)=>(
                             <div className="event-list-items">
                             <div className="event-content">
@@ -117,15 +111,14 @@ const EventLisrArea = () => {
                             </div>
                         </div>
                         ))
-                    }
-                   
-                   
-                    {/* <div className="event-button">
+                    } */}
+
+            {/* <div className="event-button">
                         <Link to="/event-details" className="theme-btn">View All Events</Link>
                     </div> */}
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

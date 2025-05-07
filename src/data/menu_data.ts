@@ -761,7 +761,7 @@ const menu_data: DataType[] = [
     icon: "fas fa-shopping-bag",
     has_dropdown: true,
     sub_menus: [
-      { link: "/gallery", title: "Gallery" },
+      // { link: "/gallery", title: "Gallery" },
       {
         inner_menu: false,
         title: "Events & Workshop",

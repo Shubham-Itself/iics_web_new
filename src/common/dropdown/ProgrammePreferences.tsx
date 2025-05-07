@@ -1,21 +1,34 @@
-import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from "@headlessui/react";
-import { useState } from "react";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOptions,
+  ListboxOption,
+} from "@headlessui/react";
+import { useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
-const options = ["Delhi",  "Ahmedabad" , "Mumbai" , "Bhopal" ];
+const options = ["Delhi", "Ahmedabad", "Mumbai", "Bhopal"];
 
-const ProgrammePreferences = () => {
-    const [selected, setSelected] = useState("");
-    return (
-      <div className="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
+type DropdownProps = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+const ProgrammePreferences = ({ value, onChange }: DropdownProps) => {
+  // const [selected, setSelected] = useState("");
+  useEffect(() => {
+    // console.log(value);
+  }, [value]);
+  return (
+    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
       <div className="form-clt relative">
-        <Listbox value={selected} onChange={setSelected}>
+        <Listbox value={value} onChange={onChange}>
           <div className="relative">
             <ListboxButton className="w-full bg-white rounded-md py-3 px-4 text-left text-[#555] text-[16px] flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-primary">
-              {selected || "Select Program Preferences"}
+              {value || "Select Program Preferences"}
               <ChevronDown className="w-4 h-4 text-gray-400" />
             </ListboxButton>
-  
+
             <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg z-10 border border-[#D9D9D9]">
               {options.map((option, idx) => (
                 <ListboxOption
@@ -24,7 +37,9 @@ const ProgrammePreferences = () => {
                   className={({ active, selected }) =>
                     `cursor-pointer select-none px-4 py-2 text-sm ${
                       active ? "bg-gray-100" : ""
-                    } ${selected ? "font-semibold text-black" : "text-gray-700"}`
+                    } ${
+                      selected ? "font-semibold text-black" : "text-gray-700"
+                    }`
                   }
                 >
                   {option}
@@ -35,7 +50,7 @@ const ProgrammePreferences = () => {
         </Listbox>
       </div>
     </div>
-    )
-}
+  );
+};
 
-export default ProgrammePreferences
+export default ProgrammePreferences;
