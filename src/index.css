@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,112 +13,108 @@
 @import "../public/assets/css/style.css";
 @import "../public/assets/css/responsive.css"; */
 
-body{
+body {
   scrollbar-width: 0px;
 }
 
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
-.leader-overlay{
-    position: absolute;
-    inset: 0;
-    background-color: black;
-    opacity: 0;
-    z-index: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .team-card-items:hover .leader-overlay{
-    opacity: 0.5;
-  }
+.leader-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
 
-  .box {
-    position: absolute;
-    padding: 10px;
-    text-align: right;
-    background: rgba(255, 255, 255, 0.389);
-    border-top: 2px solid rgb(255, 255, 255);
-    border-right: 1px solid white;
-    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
-    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
-    transform-origin: bottom left;
-    transition: all 1s ease-in-out;
-  }
+.team-card-items:hover .leader-overlay {
+  opacity: 0.5;
+}
 
-  .box1 {
-    width: 70%;
-    height: 70%;
-    bottom: -70%;
-    left: -70%;
-  }
+.box {
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.389);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 1px solid white;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
 
-  .box2 {
-    width: 50%;
-    height: 50%;
-    bottom: -50%;
-    left: -50%;
-    transition-delay: 0.2s;
-  }
+.box1 {
+  width: 70%;
+  height: 70%;
+  bottom: -70%;
+  left: -70%;
+}
 
-  .box3 {
-    width: 30%;
-    height: 30%;
-    bottom: -30%;
-    left: -30%;
-    transition-delay: 0.4s;
-  }
+.box2 {
+  width: 50%;
+  height: 50%;
+  bottom: -50%;
+  left: -50%;
+  transition-delay: 0.2s;
+}
 
-  .box4 {
-    width: 10%;
-    height: 10%;
-    bottom: -10%;
-    left: -10%;
-    transition-delay: 0.6s;
-  }
+.box3 {
+  width: 30%;
+  height: 30%;
+  bottom: -30%;
+  left: -30%;
+  transition-delay: 0.4s;
+}
 
-  .team-card-items:hover .box {
-    bottom: -1px;
-    left: -5px;
-  }
-  .cardStake{
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform .5s;
-  }
+.box4 {
+  width: 10%;
+  height: 10%;
+  bottom: -10%;
+  left: -10%;
+  transition-delay: 0.6s;
+}
 
-  .textPartner{
-    transition: transform .5s;
+.team-card-items:hover .box {
+  bottom: -1px;
+  left: -5px;
+}
+.cardStake {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.5s;
+}
 
-  }
+.textPartner {
+  transition: transform 0.5s;
+}
 
-  .cardStake:hover {
-    transform: translateZ(10px) rotateX(15deg) rotateY(15deg);
-  }
+.cardStake:hover {
+  transform: translateZ(10px) rotateX(15deg) rotateY(15deg);
+}
 
-  .cardStake:hover .logo {
-    transform: translateZ(20px);
-  }
-  .cardStake:hover .textPartner{
-    transition-delay: 0.2s;
-    transform: translateZ(20px);
-    
-  }
-  
-  
+.cardStake:hover .logo {
+  transform: translateZ(20px);
+}
+.cardStake:hover .textPartner {
+  transition-delay: 0.2s;
+  transform: translateZ(20px);
+}
 
-  /* .card-wrapper-partner {
+/* .card-wrapper-partner {
     transform: skewX(6deg);
     transition: all 0.5s ease;
     position: relative;
@@ -164,88 +159,83 @@ input[type='number'] {
     font-weight: 300;            
   } */
 
-  .imageItemPopular {
-    width: 500px;
-    height: 100%;       /* ✅ match container */
-    flex-shrink: 0;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  .imagesPopular {
-    display: flex;
-    gap: 20px;
-    height: 100%;        /* ✅ important */
-    padding: 0 4rem;
-    overflow: hidden;    /* ✅ hides internal scroll */
-    align-items: center;
-    will-change: transform;
-  }
-  
-  .contentContainerPopular{
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    /* align-items: center; */
-  
-  }
-  
-  .carouselPopular{
-    background-color: gray;
-    height: 300vh;
-  }
+.imageItemPopular {
+  width: 500px;
+  height: 100%; /* ✅ match container */
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.imagesPopular {
+  display: flex;
+  gap: 20px;
+  height: 100%; /* ✅ important */
+  padding: 0 4rem;
+  overflow: hidden; /* ✅ hides internal scroll */
+  align-items: center;
+  will-change: transform;
+}
 
-  .react-chatbot-kit-chat-input-form{
-   border-top: none;
-  }
-.react-chatbot-kit-chat-input-container{
+.contentContainerPopular {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  /* align-items: center; */
+}
+
+.carouselPopular {
+  background-color: gray;
+  height: 300vh;
+}
+
+.react-chatbot-kit-chat-input-form {
+  border-top: none;
+}
+.react-chatbot-kit-chat-input-container {
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
 
   /* padding: 20px; */
 }
-  .react-chatbot-kit-chat-input{
-    color: black !important;
-  }
-  .react-chatbot-kit-chat-btn-send{
-    background-color: #FFD25D !important;
-  }
-
-  .react-chatbot-kit-chat-input-form{
-    border: 1px solid grey;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-
- 
-
-  .react-chatbot-kit-chat-message-container{
-    scrollbar-width: none;
-    height: 391px;
-  }
-  .react-chatbot-kit-chat-container{
-    width: 400px;
-    overflow: hidden;
-    border-radius: 20px;
-    /* background-color: green; */
-  }
-  .react-chatbot-kit-chat-bot-message{
-    width: 100%;
-    background-color: #2898ec !important;
-    margin-left: 0 ;
-  }
-  .react-chatbot-kit-chat-bot-message-arrow{
-    border-right: 8px solid #2898ec !important;
-  }
-
-  
-   
-.react-chatbot-kit-chat-inner-container{
-/* background-color: green; */
+.react-chatbot-kit-chat-input {
+  color: black !important;
 }
-  /* From Uiverse.io by wilsondesouza */ 
+.react-chatbot-kit-chat-btn-send {
+  background-color: #ffd25d !important;
+}
+
+.react-chatbot-kit-chat-input-form {
+  border: 1px solid grey;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.react-chatbot-kit-chat-message-container {
+  scrollbar-width: none;
+  height: 391px;
+}
+.react-chatbot-kit-chat-container {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  /* background-color: green; */
+}
+.react-chatbot-kit-chat-bot-message {
+  width: 100%;
+  background-color: #2898ec !important;
+  margin-left: 0;
+}
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right: 8px solid #2898ec !important;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  /* background-color: green; */
+}
+/* From Uiverse.io by wilsondesouza */
 ul {
   list-style: none;
 }
@@ -291,10 +281,9 @@ ul {
   color: #4d4d4d;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
-
 }
-@media screen and (max-width:767px) {
-  .example-2 .icon-content a{
+@media screen and (max-width: 767px) {
+  .example-2 .icon-content a {
     width: 40px;
     height: 40px;
   }
@@ -309,8 +298,8 @@ ul {
   height: 30px;
 }
 
-@media screen and (max-width:767px) {
-  .example-2 .icon-content a svg{
+@media screen and (max-width: 767px) {
+  .example-2 .icon-content a svg {
     width: 20px;
     height: 20px;
   }
@@ -367,80 +356,170 @@ ul {
 .top-category-box:hover .icon p {
   color: white !important; /* removes all hover styles */
 }
-.top-category-box:hover .content{
+.top-category-box:hover .content {
   color: white !important;
 }
-.top-category-box .content{
+.top-category-box .content {
   color: white !important;
 }
-.top-category-box .content h6{
+.top-category-box .content h6 {
   color: white !important;
 }
 
 .bg-1 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_1.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_1.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-2 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_2.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_2.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-3 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_3.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_3.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-4 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_4.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_4.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-5 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_5.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_5.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-6 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_6.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_6.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-7 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_7.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_7.webp");
   background-position: center;
   background-size: cover;
 }
 
 .bg-8 {
-  background-image: url('/assets/iics_image/how_to_join/how_to_join_8.webp');
+  background-image: url("/assets/iics_image/how_to_join/how_to_join_8.webp");
   background-position: center;
   background-size: cover;
 }
 
-@media screen and (max-width:767px) {
-  .header-1 .container-fluid{
+@media screen and (max-width: 767px) {
+  .header-1 .container-fluid {
     padding: 0px 15px !important;
   }
 
-  .header-1 .header-left{
+  .header-1 .header-left {
     max-width: 150px !important;
   }
-  .afterMobile::after{
+  .afterMobile::after {
     bottom: 10px !important;
   }
 }
-  
-.s_title_form{
 
+.s_title_form {
 }
-.o_full_screen_height, .o_half_screen_height, .cover_full, .cover_mid {
+.o_full_screen_height,
+.o_half_screen_height,
+.cover_full,
+.cover_mid {
   min-height: auto !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker {
+  border: none !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem !important;
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+}
+
+.react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+}
+
+.react-datepicker__current-month {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #444;
+  font-weight: 500;
+  margin: 0.25rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  border-radius: 9999px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #de4141 !important;
+  color: white !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f3f3f3;
+}
+
+.react-datepicker__month-dropdown,
+.react-datepicker__year-dropdown {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #de4141 !important;
+}
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown {
+  max-height: 200px !important; /* Adjust as needed */
+  overflow-y: auto !important;
+  background: #fff;
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+/* PREVENT DROPDOWN FROM OPENING UPWARDS */
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select {
+  position: relative;
+}
+
+/* STYLE SCROLLBAR FOR BETTER UX */
+.react-datepicker__year-dropdown::-webkit-scrollbar,
+.react-datepicker__month-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.react-datepicker__year-dropdown::-webkit-scrollbar-thumb,
+.react-datepicker__month-dropdown::-webkit-scrollbar-thumb {
+  background-color: #de4141;
+  border-radius: 4px;
+}
+.react-datepicker__input-container input {
+  padding: 16px 30px !important;
+  border: 1px solid rgba(0, 91, 255, 0.2) !important;
 }

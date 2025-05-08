@@ -20,7 +20,7 @@ const ProgrammePreferences = ({ value, onChange }: DropdownProps) => {
     // console.log(value);
   }, [value]);
   return (
-    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
+    <div className="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
       <div className="form-clt relative">
         <Listbox value={value} onChange={onChange}>
           <div className="relative">
