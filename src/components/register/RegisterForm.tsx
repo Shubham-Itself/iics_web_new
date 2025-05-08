@@ -1,8 +1,8 @@
 import { useState, FormEvent } from "react";
 import Dropdown from "../../common/dropdown/Dropdown";
-import GenderDropdown from "../../common/dropdown/GenderDropdown";
+// import GenderDropdown from "../../common/dropdown/GenderDropdown";
 import ProgrammePreferences from "../../common/dropdown/ProgrammePreferences";
-import QualificationDropdown from "../../common/dropdown/QualificationDropdown";
+// import QualificationDropdown from "../../common/dropdown/QualificationDropdown";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";

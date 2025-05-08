@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BreadcrumbCourses from "../../common/breadcrumb/BreadcrumbCourses";
-import MarqueeOne from "../../common/MarqueeOne";
+// import MarqueeOne from "../../common/MarqueeOne";
 import ScrollTop from "../../common/ScrollTop";
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderOne from "../../layouts/headers/HeaderOne";
