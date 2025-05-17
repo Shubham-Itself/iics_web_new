@@ -147,9 +147,9 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <div className="previewMessage">
-    Please contact at portaltesting897@gmail.com for preview of this website
-  </div>
+  // return <div className="previewMessage">
+  //   Please contact at portaltesting897@gmail.com for preview of this website
+  // </div>
   return (
     <Wrapper>
       <RouterProvider router={router} />
