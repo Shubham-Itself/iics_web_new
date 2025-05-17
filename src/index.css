@@ -553,3 +553,10 @@ ul {
   font-weight: normal;
   padding: 20px;
 }
+
+@media screen and (max-width:500px) {
+  .previewMessage{
+    font-size: 15px;
+  }
+  
+}
