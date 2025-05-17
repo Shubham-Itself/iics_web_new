@@ -65,7 +65,7 @@ const FooterOne = ({ style_2 }: any) => {
                     {
                       title: "Delhi Campus",
                       address:
-                        "13-A 3rd Floor Above Tata Motors Showroom Main Ring Road Lajpat Nagar -4 New Delhi - 110024",
+                        "13-A, 3rd Floor, Above Tata Motors Showroom, Main Ring Road, Lajpat Nagar-4, New Delhi- 110024",
                       phone: "+91 959-4949-959",
                       email: "info@iicsindia.org",
                     },
@@ -84,7 +84,7 @@ const FooterOne = ({ style_2 }: any) => {
                       email: "info@iicsindia.org",
                     },
                     { title: "Kolkata", address: "Coming Soon" },
-                    { title: "Bhubaneshwar", address: "Coming Soon" },
+                    { title: "Chandigarh", address: "Coming Soon" },
                   ].map((item, idx) => (
                     <li key={idx}>
                       <span className="font-bold block">{item.title}</span>

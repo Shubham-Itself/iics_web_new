@@ -68,6 +68,7 @@ import Podcast from "./components/podcast";
 import Hiring from "./components/hiring";
 import Infrastructure from "./components/infrastructure";
 import DummyForm from "./common/DummyForm";
+import ImportantDates from "./components/important-date";
 
 const router = createBrowserRouter([
   {
@@ -138,6 +139,7 @@ const router = createBrowserRouter([
       { path: "/hiring", element: <Hiring /> },
       { path: "/infrastructure", element: <Infrastructure /> },
       { path: "/dummy", element: <DummyForm /> },
+      { path: "/importantDate", element: <ImportantDates /> },
 
       { path: "*", element: <NotFound /> },
     ],
@@ -145,6 +147,9 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  return <div className="previewMessage">
+    Please contact at portaltesting897@gmail.com for preview of this website
+  </div>
   return (
     <Wrapper>
       <RouterProvider router={router} />

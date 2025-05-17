@@ -17,39 +17,46 @@ const HeroHomeTwo = () => {
                   className="wow mobile:!text-[20px] fadeInUp !text-[30px]"
                   data-wow-delay=".3s"
                 >
-                  WELCOME TO THE INDIAN INSTITUTE OF{" "}
-                  <span>
-                    CREATIVE SKILLS
-                    <img
-                      src="assets/img/hero/bar-shape-2.png"
-                      alt="shape-img"
-                    />
-                  </span>
+                  WELCOME TO THE <br /> INDIAN INSTITUTE OF{" "}
+                  <span className="!text-[#de4141]">CREATIVE</span> SKILLS
                 </h1>
                 <p
                   className="wow fadeInUp mobile:!text-[12px] !text-[16px]"
                   data-wow-delay=".5s"
                 >
-                  The Indian Institute of Creative Skills (IICS), an institution
-                  affiliated with NSDC Academy and operated by the Media &
-                  Entertainment Skills Council (MESC), funded by NSDC, functions
-                  under the aegis of the Ministry of Skill Development &
-                  Entrepreneurship (MSDE). We are a premier institution
-                  dedicated to shaping the next generation of creators, leaders,
-                  and entrepreneurs in the Media & Entertainment Industry.{" "}
-                  <br /> <br />
-                  <span className="font-bold">&#x2022; </span> Industry-Driven
-                  Training with World-Class Facilities to equip you with
-                  real-world skills. <br />
-                  <span className="font-bold">&#x2022; </span> Learn from
-                  Celebs, Oscar Award Winners and Industry Icons who bring
-                  decades of experience to the classroom. <br />
-                  <span className="font-bold">&#x2022; </span> Fostering
-                  Entrepreneurship & IP Creation to position India as a global
-                  leader in Media & Entertainment. <br /> <br />
-                  <span className="font-bold text-black">
-                    Driven by Industry. Built for Creators. Backed by Legends.
+                  At IICS, we are redefining the future of creative education in
+                  India. As a premier institution dedicated to nurturing talent
+                  in the Media & Entertainment industry, IICS empowers the next
+                  generation of creators, innovators, and industry leaders. Our
+                  cutting-edge curriculum, world-class facilities, and hands-on
+                  industry exposure make us the ideal launchpad for aspiring
+                  professionals in fields such as film, music, gaming,
+                  performing arts, and beyond.
+                  <br />
+                  Backed by the{" "}
+                  <span className="text-sm font-semibold">
+                    NSDC Academy
+                  </span>{" "}
+                  and operated by the{" "}
+                  <span className="text-sm font-semibold">
+                    Media &amp; Entertainment Skills Council (MESC)
                   </span>
+                  , IICS is proudly funded by the{" "}
+                  <span className="text-sm font-semibold">
+                    National Skill Development Corporation (NSDC)
+                  </span>{" "}
+                  and functions under the aegis of the{" "}
+                  <span className="text-sm font-semibold">
+                    Ministry of Skill Development &amp; Entrepreneurship (MSDE)
+                  </span>
+                  ,{" "}
+                  <span className="text-sm font-semibold">
+                    Government of India
+                  </span>
+                  . As a Creative Incubator, IICS ensures the training is
+                  industry-relevant, globally competitive, and focused on
+                  fostering innovation, entrepreneurship, and IP creation in
+                  India's creative economy.
                 </p>
                 <div className="hero-button">
                   <Link

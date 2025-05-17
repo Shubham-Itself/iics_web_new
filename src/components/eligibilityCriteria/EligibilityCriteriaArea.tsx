@@ -78,126 +78,75 @@ const EligibilityCriteriaArea = () => {
 
   return (
     <>
-        <section className="event-list-section fix section-padding pt-0">
-            <div className="container">
-                <div className="event-list-wrapper">
-                  
-                    <div className="my-[60px]">
-                    <p className="text-[35px] font-bold text-black mb-[30px] mobile:text-[20px] ">Find the Right Course for Your Passion and Potential</p>
-                    {/* <div className="section-title !mb-0 ">
-                    <h6 className="wow fadeInUp !mb-0">Here’s a glimpse of the exciting career opportunities across our programs:</h6>
-                   
-                </div> */}
-                <p className="text-[18px] mobile:text-[16px]  text-black mb-[10px]">At IICS, we offer a diverse range of programs designed to turn your creative interests into career opportunities. Whether you're into filmmaking, beauty and prosthetics, gaming, music, digital content, or media strategy — there's a path for you here.</p>
-                    </div>
-                   
-                    {
-                        careers.map((career)=>(
+       <section className="event-list-section fix section-padding pt-0">
+  <div className="container">
+    {/* Section Header */}
+    <div className="text-center max-w-3xl mx-auto my-[60px]">
+      <p className="text-[35px] mobile:text-[24px] font-extrabold text-black leading-tight mb-[20px]">
+        Find the Right Course for Your Passion and Potential
+      </p>
+      <p className="text-[18px] mobile:text-[16px] text-gray-700">
+        At IICS, we offer a diverse range of programs to turn your creative interests into career opportunities. Whether it's filmmaking, beauty and prosthetics, gaming, music, content creation, or media strategy — your journey starts here.
+      </p>
+    </div>
 
-                            <div className="event-list-items flex-col !items-start" style={{boxShadow:'inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e'}}>
-                                {/* <div>
-                                <div className="flex items-center py-3">
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
+    {/* Career Cards */}
+    <div className="grid gap-[40px]">
+      {careers.map((career, index) => (
+        <div
+          key={index}
+          className="p-6 bg-white rounded-2xl shadow-[inset_5px_5px_10px_#a9a9aa55,_inset_-5px_-5px_10px_#ffffff7e] transition hover:shadow-[0_10px_30px_rgba(0,0,0,0.1)]"
+        >
+          <h4 className="text-[22px] mobile:text-[18px] text-[#005BFF] font-bold mb-4">
+            <Link to="#">{career.name}</Link>
+          </h4>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-5 bg-[#f9fafb] rounded-xl border shadow-[5px_5px_12px_#a9a9aa55,_-5px_-5px_12px_#ffffff7a]">
+              <p className="font-semibold text-[18px] mobile:text-[16px] text-black mb-2">🎓 Eligibility Criteria</p>
+              <ul className="space-y-2 text-black text-[15px] mobile:text-[14px]">
+                <li>
+                  <span className="font-semibold">Degree Program:</span> {career.degreeProgram}
+                </li>
+                {career.preferred && (
+                  <li>
+                    <span className="font-semibold">Preferred:</span> {career.preferred}
+                  </li>
+                )}
+                <li>
+                  <span className="font-semibold">Certificate Program:</span> {career.certificateProgram}
+                </li>
+                <li>
+                  <span className="font-semibold">Course Outcome:</span> {career.outcome}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
-    </div>
-    <div className="px-1">
-      <span className="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
+
+    {/* Additional Requirements Note */}
+    <div className="bg-[#fefefe] p-6 rounded-xl shadow-md mt-[60px] border-l-[6px] border-[#005BFF]">
+      <p className="text-[22px] font-semibold text-[#005BFF] mb-3">📌 Additional Requirements</p>
+      <p className="text-[16px] font-semibold text-black mb-3">Some courses may require:</p>
+      <ul className="list-disc pl-6 text-[16px] text-gray-800 space-y-2">
+        <li>
+          <span className="font-bold">Portfolio submission</span> <span className="font-normal">(for creative programs)</span>
+        </li>
+        <li>
+          <span className="font-bold">Audition</span> <span className="font-normal">(for performing arts)</span>
+        </li>
+        <li>
+          <span className="font-bold">Interview</span> <span className="font-normal">as part of the final selection</span>
+        </li>
+      </ul>
+      <p className="text-[15px] text-gray-600 mt-5 italic">
+        *Final selection is based on performance in the entrance test, portfolio/audition, and personal interview.
+      </p>
     </div>
   </div>
-                                </div> */}
-                            <div className="event-content !w-full !basis-full">
-                                <div className="content w-full">
-                                    {/* <div className="date !px-[6px]">
-                                        <h2>{event.dateDay}</h2>
-                                        <span>{event.dateMonthYear}</span>
-                                    </div> */}
-                                    <div className="title-text w-full !max-w-full">
-                                        <h4><Link to="#" className="!text-[22px] mobile:!text-[18px] text-[#005BFF]">{career.name}</Link></h4>
-                                        <div className="flex  gap-[20px] mt-[10px] w-full">
-                                        <div className="p-[30px] border rounded-[20px]" style={{
-  boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                            <p className="font-semibold text-[18px] mobile:!text-[16px] text-black">Eligibility Criteria</p>
-                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black ">Degree Program: </span> {career.degreeProgram}</p>
-                                           {career.preferred && <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Preferred: </span> {career.preferred}</p>}
-                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Certificate Program: </span> {career.certificateProgram}</p>
-                                            <p className="mobile:!text-[14px]"><span className="font-semibold text-black">Course Outcome: </span> {career.outcome}</p>
-                                            
-                                        </div>
-                                        {/* <div className="p-[30px] border rounded-[20px]" style={{
- boxShadow: '-5px -5px 8px #ffffff7a, 5px 5px 8px #a9a9aa7a'
-}}>
-                                            <p className="font-semibold text-[18px] text-black">Career Outcomes (Entrepreneurship)</p>
-                                            <p>{career.entrepreneurship}</p>
-                                        </div> */}
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        ))
-                    }
-                   
-                   
-                 
-                </div>
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md mt-[20px]">
-                    <p className="text-[25px] font-semibold text-[#005BFF]  mb-[10px] ">Additional Requirements</p>
-                    <p className="text-[15px] font-semibold text-black  mb-[10px]">Some courses may require:</p>
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Portfolio submission <span className="font-normal">(for creative programs)</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Audition<span className="font-normal">(for performing arts)</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]">Interview<span className="font-normal"> as part of the final selection</span></li>
-                        {/* <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Access to industry-standard labs & equipment</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li> */}
-
-
-                    </ul>
-                    <p className="text-[16px] text-black mt-[30px]">
-                    *Final selection is based on performance in the entrance test, portfolio/audition, and personal interview.
-</p>
-                </div>
-               
-
-                {/* <div>
-                    <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[10px]">Payment Options</p>
-                    <p className="text-[16px] text-black mb-[30px]">Our dedicated placement cell actively connects students with opportunities across:</p>
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Full Payment (5% discount applicable) </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">Semester-Wise Installments</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Monthly EMI Plans (through partner NBFCs)</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Media Agencies</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Event Firms</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Digital Brands</span></li>
-
-
-                    </ul>
-
-                    <p className="text-[16px] text-black mt-[30px]">
-                   EMI starting as low as ₹4,999/month*</p>
-                </div> */}
-
-                {/* <div>
-                    <p className="text-[25px] font-bold text-[#005BFF] mt-[60px] mb-[5px] ">Student Support Services
-                    </p>
-                    <p className="mb-[5px]">Our support extends beyond financial aid — we’re here to guide you through every step:</p>
-                    <ul className="list-disc pl-[40px]">
-                        <li className="font-bold text-[18px] text-black mb-[5px]"> <span className="font-normal">One-on-one Counseling Sessions </span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Admission & Career Guidance</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Application Help Desk</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship Connect</span></li>
-                        <li className="font-bold text-[18px] text-black mb-[5px]"><span className="font-normal">Mentorship from top industry experts</span></li>
-
-
-                    </ul>
-                </div> */}
-            </div>
-        </section>
+</section>
     </>
   );
 };

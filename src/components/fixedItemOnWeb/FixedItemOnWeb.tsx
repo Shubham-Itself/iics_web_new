@@ -35,7 +35,7 @@ const FixedItemOnWeb = () => {
             className="w-[40px] h-[40px] mobile:w-[30px] mobile:h-[30px]"
             onClick={() => setOpenChatBot(!openChatBot)}
           />
-          <div className="absolute z-[10000] -top-[442px] right-[67px]">
+          <div className="absolute z-[10000] -top-[442px] right-[67px] mobile:right-[-80px] mobile:top-[-506px]">
             {openChatBot && <ChatbotWrapper setOpenChatBot={setOpenChatBot}/>}
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const ImportantCtaArea = ({ onSchoolButtonClick, onImportantClick }: any) => {
+const ImportantCtaArea = ({ onSchoolButtonClick }: any) => {
   const navigate = useNavigate(); // React Router v6+ hook for navigation
 
   const registrationInfo = [
@@ -11,17 +11,17 @@ const ImportantCtaArea = ({ onSchoolButtonClick, onImportantClick }: any) => {
       procees: "Upcoming Event",
     },
     {
-      procees: "School",
+      procees: "Pages",
     },
   ];
 
   const handleButtonClick = (process: string) => {
     if (process === "Upcoming Event") {
       navigate("/event"); // Redirect to /events when the "Upcoming Event" button is clicked
-    } else if (process === "School") {
+    } else if (process === "Pages") {
       onSchoolButtonClick(); // Call the passed function for other buttons
     } else {
-      onImportantClick();
+      navigate("/importantDate");
     }
   };
   return (

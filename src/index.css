@@ -198,7 +198,15 @@ input[type="number"] {
   padding-left: 20px;
   padding-right: 20px;
 
+  
+
   /* padding: 20px; */
+}
+
+@media screen and (max-width: 767px) {
+  .react-chatbot-kit-chat-input-container {
+    width: 320px;
+  }
 }
 .react-chatbot-kit-chat-input {
   color: black !important;
@@ -233,7 +241,15 @@ input[type="number"] {
 }
 
 .react-chatbot-kit-chat-inner-container {
+
   /* background-color: green; */
+}
+
+@media screen and (max-width: 767px) {
+  .react-chatbot-kit-chat-inner-container {
+    width: 320px;
+    /* background-color: green; */
+  }
 }
 /* From Uiverse.io by wilsondesouza */
 ul {
@@ -522,4 +538,18 @@ ul {
 .react-datepicker__input-container input {
   padding: 16px 30px !important;
   border: 1px solid rgba(0, 91, 255, 0.2) !important;
+}
+
+
+.previewMessage{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 20px;
 }

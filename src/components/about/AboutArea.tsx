@@ -23,25 +23,24 @@ const AboutArea = () => {
                     </span>
                   </p>
                 </div>
-                <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden">
+                <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden flex justify-center">
                   <img
                     src="/assets/iics_image/our_vision.webp"
                     alt="Our Vision"
-                    className="w-full h-full object-cover"
+                    className="w-[500px] h-full object-cover"
                   />
                   {/* <div className="absolute inset-0 bg-black bg-opacity-50" /> */}
                 </div>
               </div>
               <div className="flex mt-[100px] ">
                 <div className="about-content flex gap-[50px] mobile:flex-col">
-                <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden !w-[50%] mobile:!w-full">
-                <img
-                    src="/assets/iics_image/our_mission.webp"
-                    alt="Our Vision"
-                    className="w-full h-full object-cover"
-                  />
-                  
-                </div>
+                  <div className="relative md:w-1/2 w-full rounded-xl overflow-hidden !w-[50%] mobile:!w-full flex justify-center">
+                    <img
+                      src="/assets/iics_image/our_mission.webp"
+                      alt="Our Vision"
+                      className="w-[500px]  h-full object-contain"
+                    />
+                  </div>
                   <div className="section-title mb-0 w-[50%] mobile:w-full">
                     <h6 className="wow fadeInUp">Our Mission</h6>
                     <p
